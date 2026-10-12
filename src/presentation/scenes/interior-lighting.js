@@ -109,9 +109,12 @@ export default function createInteriorLighting(B, scene, prefix, meshes, casters
   }
   const resizeObserver = engine.onResizeObservable.add(refreshStaticShadows);
   const restoreObserver = engine.onContextRestoredObservable.add(refreshStaticShadows);
-  scene.onDisposeObservable.add(() => {
+  function releaseObservers() {
     engine.onResizeObservable.remove(resizeObserver);
     engine.onContextRestoredObservable.remove(restoreObserver);
-  });
+    scene.onDisposeObservable.remove(disposeObserver);
+  }
+  const disposeObserver = scene.onDisposeObservable.add(releaseObservers);
+  down.onDisposeObservable.add(releaseObservers);
   return { names: lights.map((light) => light.name.slice(prefix.length)), shadowMaps };
 }

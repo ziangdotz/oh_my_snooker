@@ -96,6 +96,7 @@ test('scene family keeps shared textures, lazy cushions, material arguments and 
       DynamicLightingMaterial: Material,
       ColorThree: Color,
       CushionBodyType: Cushion,
+      interiorDesignRegistry: null,
       originalInterior: {
         initialize(scene, manifest) {
           operations.push(['original', scene, manifest]);

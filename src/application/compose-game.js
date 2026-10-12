@@ -262,6 +262,9 @@ export default function composeGameModule(module, exports, loadModule) {
     get interiorDesign() {
       return interiorDesign;
     },
+    get interiorDesignRegistry() {
+      return interiorDesignRegistry;
+    },
     get applyModernWallStudy() {
       return applyModernWallStudy;
     },

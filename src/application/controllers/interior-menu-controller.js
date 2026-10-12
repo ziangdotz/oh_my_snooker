@@ -36,6 +36,7 @@ export default function createInteriorMenuController(dependencies) {
       };
       this._onInteriorClosed = () => {
         this._homeMainMenu.activate();
+        this._homeMainMenu.element.inert = false;
         this._restoreInteriorFocus = true;
       };
       this._onInteriorSelected = (id) => {
@@ -49,7 +50,30 @@ export default function createInteriorMenuController(dependencies) {
           return;
         }
         this._interiorDialog.setBusy(id);
-        dependencies.transition.begin(selection);
+        const scene = this._gView.camera.getScene();
+        const switcher = scene.interiorSwitcher;
+        dependencies.transition.begin(
+          selection,
+          switcher
+            ? {
+                quick: switcher.isCached(id),
+                run: () => switcher.switchTo(id),
+                cancel: () => switcher.cancel(),
+                finish: () => {
+                  this._currentInterior = dependencies.registry.get(
+                    scene.metadata.interiorDesign.id,
+                  );
+                  this._homeMainMenu.setCurrentInterior(this._currentInterior);
+                  this._homeMainMenu.activate();
+                  // Animate both surfaces together, but keep menu input locked
+                  // until the drawer has finished leaving the dialog stack.
+                  this._homeMainMenu.element.inert = true;
+                  this._uiLayer.closeBox('interiorBox');
+                  this._gView.requireRender(2);
+                },
+              }
+            : null,
+        );
       };
     }
     _unbindUI() {

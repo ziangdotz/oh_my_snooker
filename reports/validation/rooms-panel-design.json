@@ -1,0 +1,757 @@
+{
+  "date": "2026-10-12T04:03:44.398Z",
+  "scope": "Wider panel design prototype; no live game or room service",
+  "previousInteractionValidation": {
+    "date": "2026-10-12T03:27:22.023Z",
+    "browsers": [
+      {
+        "name": "chrome",
+        "version": "154.0.8037.98",
+        "checks": [
+          "name normalization, duplicate/length validation, venue draft preservation, input editing, focus loop, local turn/HUD/result/rematch presentation",
+          "user names render as text; blank second name uses default",
+          "room code validation/normalization, guest cannot start, leave confirmation defaults to cancel and Escape cancels",
+          "host start gates all nonready room states; venue retry/change cancels readiness; online rematch waits for agreement",
+          "closed-room recovery, nested Escape navigation and focus restoration",
+          "seven panel states at 320/480/720/1440px without horizontal overflow, local images/fonts, reduced-motion access"
+        ],
+        "errors": []
+      },
+      {
+        "name": "edge",
+        "version": "155.0.4283.45",
+        "checks": [
+          "name normalization, duplicate/length validation, venue draft preservation, input editing, focus loop, local turn/HUD/result/rematch presentation",
+          "user names render as text; blank second name uses default",
+          "room code validation/normalization, guest cannot start, leave confirmation defaults to cancel and Escape cancels",
+          "host start gates all nonready room states; venue retry/change cancels readiness; online rematch waits for agreement",
+          "closed-room recovery, nested Escape navigation and focus restoration",
+          "seven panel states at 320/480/720/1440px without horizontal overflow, local images/fonts, reduced-motion access"
+        ],
+        "errors": []
+      }
+    ],
+    "passed": true
+  },
+  "browsers": [
+    {
+      "name": "chrome",
+      "version": "154.0.8037.98",
+      "scenarios": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "overview"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "hotseat"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "rooms"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "create"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "join"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "lobby"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "guest"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "result"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "overview"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "hotseat"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "rooms"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "create"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "join"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "lobby"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "guest"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "result"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "result"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "overview"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "hotseat"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "rooms"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "create"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "join"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "lobby"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "guest"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "result"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "overview"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "hotseat"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "rooms"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "create"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "join"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "lobby"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "guest"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "result"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "result"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "result"
+        }
+      ],
+      "keyboardAndInteractionChecksPassed": true,
+      "errors": []
+    },
+    {
+      "name": "edge",
+      "version": "155.0.4283.45",
+      "scenarios": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "overview"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "hotseat"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "rooms"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "create"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "join"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "lobby"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "guest"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "view": "result"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "overview"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "hotseat"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "rooms"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "create"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "join"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "lobby"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "guest"
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "view": "result"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "view": "result"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "overview"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "hotseat"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "rooms"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "create"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "join"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "lobby"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "guest"
+        },
+        {
+          "width": 1014,
+          "height": 704,
+          "view": "result"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "overview"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "hotseat"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "rooms"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "create"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "join"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "lobby"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "guest"
+        },
+        {
+          "width": 720,
+          "height": 704,
+          "view": "result"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 480,
+          "height": 800,
+          "view": "result"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "overview"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "hotseat"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "rooms"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "create"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "join"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "lobby"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "guest"
+        },
+        {
+          "width": 320,
+          "height": 800,
+          "view": "result"
+        }
+      ],
+      "keyboardAndInteractionChecksPassed": true,
+      "errors": []
+    }
+  ],
+  "passed": true,
+  "runtimeValidation": {
+    "projectCheck": "node scripts/check-project.mjs --browser",
+    "unitIntegrationPassed": 122,
+    "interiorUiTargets": 6,
+    "drawerMotionScenarios": 18,
+    "interiorUiReport": "reports/validation/interior-ui.json",
+    "drawerMotionReport": "reports/validation/drawer-motion.json",
+    "screenshot": "artifacts/testing/rooms-panel-design/runtime-wide-panel-1440.png",
+    "passed": true
+  },
+  "copyCleanup": {
+    "date": "2026-10-12T04:21:40.374Z",
+    "removed": [
+      "One table. Two players.",
+      "Take turns together. Challenge a friend.",
+      "This preview shows both planned phases. Neither starts a real match.",
+      "PLAY TOGETHER"
+    ],
+    "scope": "Source and template inspection; prototype browser not reloaded",
+    "checks": [
+      "Four selected strings absent in runtime and prototype",
+      "Unused introduction styles removed",
+      "Overview contains only two-card group",
+      "Overview kicker hidden; subpage mode labels retained",
+      "Prototype module syntax parses"
+    ],
+    "sha256": {
+      "prototype": "28536da62a45f42ff5a662482c21b2218dac8cbe22d73dd4aeaab3295ff61c57",
+      "runtime": "aa75f1a592f726e4715c1f523951d74f860e38b9234c16b576b226fd038a0ddf",
+      "styles": "272c93e77c1895cdc2c5f9eec1421e918764e7a8f57339e979a11dc2293b297a"
+    },
+    "passed": true,
+    "runtimeValidation": {
+      "projectBrowserCheckPassed": true,
+      "unitIntegrationPassed": 122,
+      "interiorUiTargets": 6,
+      "interiorUiDate": "2026-10-12T04:21:41.19Z",
+      "interiorUiReport": "reports/validation/interior-ui.json",
+      "passed": true
+    }
+  },
+  "hotseatSetupRevision": {
+    "date": "2026-10-12T04:36:40.611Z",
+    "scope": "Static template/CSS parsing and isolated Node VM checks; file preview not reloaded or visually inspected",
+    "checks": [
+      "Four real local interior preview assets exist",
+      "Four labelled native radio choices with exactly one selection",
+      "Each choice updates the preview background and retains both live names without rerendering",
+      "Invalid venue indices ignored",
+      "Existing online venue readiness reset retained",
+      "Hotseat hints, rule list and kicker removed; validation associations retained",
+      "Module and CSS syntax parse; responsive image and grid declarations present"
+    ],
+    "sha256": "dea2c26f741704fd2e4b58f8ac2a56b4e46eafd14bd773a9e148923e98771489",
+    "projectCheck": {
+      "command": "node scripts/check-project.mjs",
+      "unitIntegrationPassed": 122,
+      "passed": true
+    },
+    "browserValidation": "Pending manual refresh; earlier browser evidence applies to previous prototype versions",
+    "passed": true
+  },
+  "hudAlignmentRevision": {
+    "date": "2026-10-12T04:50:34.670Z",
+    "scope": "Source comparison with Single Play, CSS/module parsing and isolated Node VM checks with DOM doubles; no current prototype browser visual verification",
+    "references": [
+      "src/presentation/styles/game-ui.css",
+      "src/presentation/templates/scoreboard.html",
+      "src/presentation/ui/game-scoreboard.js",
+      "src/presentation/templates/keyboard-shortcuts.html"
+    ],
+    "checks": [
+      "Shared runtime HUD layout and responsive CSS linked without duplicated scoreboard rules",
+      "Mirrored left/right scores, one highlighted current player, target icon and live status",
+      "User names rendered as text with full title and accessible seat labels",
+      "Pause/Replay atlas and ball icon assets exist; replay explicitly unavailable without a shot",
+      "Local pause menu order, guide entry/return and single-modal reuse",
+      "Pause arrow/Home/End navigation and Tab endpoints",
+      "Restart/quit default Cancel; restart preserves names/venue and returns to opening player",
+      "Quit returns to home; online menu excludes unilateral restart and retains room leave confirmation",
+      "Escape returns from guide to pause, then closes pause",
+      "Old full-width HUD and in-scene explanatory copy removed; results make background HUD inert"
+    ],
+    "sha256": "56a2eaab49fc42659a9ef5fdc1619b7e9bf29e41350a238836d6b9a5b1e193be",
+    "browserValidation": "Pending manual refresh; browser records above refer to earlier prototype versions",
+    "projectCheck": {
+      "command": "node scripts/check-project.mjs",
+      "unitIntegrationPassed": 122,
+      "passed": true
+    },
+    "passed": true
+  },
+  "openingSceneRevision": {
+    "date": "2026-10-12T05:05:38.174Z",
+    "captureCommand": "node scripts/capture-match-opening.mjs",
+    "captureReport": "reports/validation/match-opening-scenes.json",
+    "actualSinglePlayScenarios": 4,
+    "checks": [
+      "Four source Single Play openings captured after actual AI-1 selection and stable camera",
+      "Initial ball-in-hand, player 0 and zero scores verified; opening camera differs from lobby",
+      "Captures have no DOM HUD overlay; scene geometry, lighting and camera unchanged",
+      "Each venue maps to its own opening image; game/result use captured view and setup/menu retain thumbnails",
+      "Switching out of game ignores late image loads; missing captures display regeneration command; recovery load clears it",
+      "All capture hashes match; inline module and CSS parse"
+    ],
+    "sha256": "5860ad42fba3ee1d3a7a60ab18531f82c5d474ddafe9b565ca1b82f761b5e082",
+    "browserValidation": "Real Single Play capture verified; current file prototype not refreshed or visually verified through browser automation",
+    "limitation": "Static design frames only; actual two-human scene/controller wiring remains pending feature development",
+    "projectCheck": {
+      "command": "node scripts/check-project.mjs",
+      "unitIntegrationPassed": 122,
+      "passed": true
+    },
+    "captureEntryRebuildPassed": true,
+    "passed": true
+  },
+  "backgroundTransitionRevision": {
+    "date": "2026-10-12T05:29:25.553Z",
+    "scope": "Design prototype only; controlled image decoding and animation doubles verify actual inline handlers",
+    "durationMs": 220,
+    "unitSuite": "tests/unit/rooms-panel-background.test.mjs",
+    "unitChecksPassed": 8,
+    "checks": [
+      "Previous frame stays fully visible until the new image is decoded",
+      "Two layers fade without changing crop, focus, names or scroll",
+      "Latest request wins out-of-order completions; active fades finish before the latest ready frame",
+      "Intermediate clicks skipped; returning to the current frame invalidates stale preparation",
+      "Duplicate requests share decoding; decoded scene images reused",
+      "Failed image preserved as old frame with retry; failed decode not cached",
+      "Venue/menu and match/result map to the correct frame family; stale errors ignored",
+      "Reduced motion skips fading; a preference change finishes the current animation",
+      "Inline module and CSS parse"
+    ],
+    "projectCheck": {
+      "command": "node scripts/check-project.mjs",
+      "unitIntegrationPassed": 130,
+      "passed": true
+    },
+    "sha256": "b033ea12c15d87466b054fe89ad63c044b741850038fbe60873510a3d289258c",
+    "browserValidation": "Current file prototype not refreshed or visually verified; actual native decode timing and fade appearance pending manual inspection",
+    "passed": true
+  }
+}

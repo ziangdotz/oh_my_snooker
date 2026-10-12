@@ -13,7 +13,7 @@ await mkdir(directory, { recursive: true });
 const report = {
   date: new Date().toISOString(),
   method:
-    'Actual venue clicks and native RAF observation; no game handles or response rewriting. Font-delay case gates font delivery only. Servers use no-store; native-fonts does not claim an HTTP cache hit.',
+    'Actual in-page venue clicks and native RAF observation; no game handles or response rewriting. Target artwork delivery is held while observing the loading surface. Fonts are reused; a cold font failure validates the retained fallback.',
   targets: [],
   passed: false,
 };
@@ -26,7 +26,7 @@ try {
         for (const scenario of [
           { name: 'native-fonts', design: '001', viewport: { width: 1440, height: 900 } },
           {
-            name: 'delayed-fonts',
+            name: 'delayed-texture',
             design: '002',
             viewport: { width: 1440, height: 900 },
             delay: true,
@@ -131,22 +131,29 @@ try {
             window.requestAnimationFrame(observe);
           });
           let switching = false;
+          let repeatedFonts = 0;
           let releaseFonts;
           const fonts = new Promise((resolve) => {
             releaseFonts = resolve;
           });
-          if (scenario.delay || scenario.fallback) {
-            await page.route('**/assets/fonts/**', async (route) => {
-              if (switching && scenario.fallback) {
-                await route.abort();
-                return;
-              }
+          await page.route('**/*', async (route) => {
+            const pathname = new URL(route.request().url()).pathname;
+            if (pathname.includes('/assets/fonts/')) {
               if (switching) {
-                await fonts;
+                repeatedFonts++;
               }
-              await route.continue();
-            });
-          }
+              if (scenario.fallback) {
+                return route.abort();
+              }
+            }
+            if (
+              switching &&
+              pathname.endsWith('/interior-design-' + scenario.design + '-art.png')
+            ) {
+              await fonts;
+            }
+            await route.continue();
+          });
           try {
             await page.goto(target.origin + '/?interior=interior-design-original');
             await page.locator('.interior-transition').waitFor({ state: 'hidden' });
@@ -161,16 +168,12 @@ try {
             });
             frames.length = 0;
             switching = true;
-            const navigation = page.waitForURL('**/?interior=interior-design-' + scenario.design, {
-              waitUntil: 'commit',
-            });
             await page
               .locator('[data-design-id="interior-design-' + scenario.design + '"]')
               .click();
-            await navigation;
             const prefix = candidate.name + '-' + target.name + '-' + scenario.name;
             if (scenario.delay) {
-              await page.locator('.interior-transition[data-display-phase="handoff"]').waitFor();
+              await page.locator('.interior-transition[data-display-phase="content"]').waitFor();
               await page.evaluate(
                 () =>
                   new Promise((resolve) => {
@@ -185,8 +188,7 @@ try {
                     window.requestAnimationFrame(observe);
                   }),
               );
-              // Playwright screenshots await document.fonts.ready; these fonts
-              // are deliberately held. Capture the actual waiting page via CDP.
+              // Capture the actual resource wait without releasing the target image.
               const capture = await context.newCDPSession(page);
               try {
                 const screenshot = await capture.send('Page.captureScreenshot', { format: 'png' });
@@ -197,7 +199,6 @@ try {
               } finally {
                 await capture.detach();
               }
-              releaseFonts();
             }
             await page.locator('.interior-transition[data-display-phase="content"]').waitFor();
             if (scenario.fallback) {
@@ -229,6 +230,8 @@ try {
               'Loading text exceeded its reserved slots or overlapped',
             );
             await page.screenshot({ path: path.join(directory, prefix + '-content.png') });
+            releaseFonts();
+            await page.waitForURL('**/?interior=interior-design-' + scenario.design);
             await page.locator('.interior-transition').waitFor({ state: 'hidden' });
             await page
               .locator('.interior-home-menu .side-button')
@@ -237,28 +240,20 @@ try {
             await page.evaluate(
               () => new Promise((resolve) => window.requestAnimationFrame(resolve)),
             );
-            const handoff = frames.filter(
-              (frame) => frame.document === previousDocument && !frame.hidden,
-            );
-            const next = frames.filter((frame) => frame.document !== previousDocument);
-            const loading = next.filter((frame) => !frame.hidden);
-            assert.ok(handoff.length >= 1, 'Navigation bypassed the outgoing loading frame');
             assert.ok(
-              handoff.every((frame) => frame.phase === 'handoff'),
-              'Outgoing page exposed its formal card',
+              frames.every((frame) => frame.document === previousDocument),
+              'Venue switch reloaded the document',
             );
-            assert.ok(loading.length >= 1, 'New page never presented its loading surface');
+            assert.equal(repeatedFonts, 0, 'Venue switch fetched fonts again');
+            const next = frames;
+            const loading = frames.filter((frame) => !frame.hidden);
+            assert.ok(loading.length >= 1, 'Resource wait never presented its loading surface');
             assert.ok(
               loading.some((frame) => frame.phase === 'content'),
               'Fonts never settled to content',
             );
-            if (scenario.delay) {
-              assert.ok(
-                loading.some((frame) => frame.fontState === 'pending' && frame.phase === 'handoff'),
-              );
-            }
-            const rectangle = handoff[0].rectangle;
-            for (const frame of [...handoff, ...loading]) {
+            const rectangle = loading[0].rectangle;
+            for (const frame of loading) {
               assert.equal(
                 frame.covered,
                 true,
@@ -280,13 +275,12 @@ try {
                   Math.abs(frame.handoffBarCenter - 0.5) < 0.02,
                   'The static handoff bar was not centered',
                 );
-                assert.ok(
-                  Math.abs(frame.handoffBarCenter - handoff[0].handoffBarCenter) < 0.001,
-                  'The handoff bar moved between documents',
-                );
               }
             }
-            const completion = next.findIndex((frame) => frame.hidden);
+            const firstLoading = next.findIndex((frame) => !frame.hidden);
+            const completion = next.findIndex(
+              (frame, index) => index > firstLoading && frame.hidden,
+            );
             assert.ok(completion >= 0);
             assert.ok(
               next.slice(completion).every((frame) => frame.hidden),
@@ -304,6 +298,8 @@ try {
               sameCardGeometry: true,
               nodesRetained: true,
               animationRestarted: false,
+              documentRetained: true,
+              repeatedFonts,
               passed: true,
             });
             console.log(

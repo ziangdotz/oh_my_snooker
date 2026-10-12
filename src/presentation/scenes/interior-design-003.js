@@ -1,4 +1,6 @@
 /** 室内设计003 — cobalt gallery with terrazzo, curved seating, halo lights and botanical accents. */
+import createInteriorTexture from './create-interior-texture.js';
+
 export default function interiorDesign003Module(module, _exports, loadModule) {
   const createRoom = loadModule('presentation/scenes/interior-design-builder');
   const artworkUrl = loadModule('assets/images-interior-design-003-art');
@@ -66,7 +68,7 @@ export default function interiorDesign003Module(module, _exports, loadModule) {
     }
     // A continuous image is separated geometrically into a triptych with a shared texture.
     const artwork = material('artwork', '#ffffff', 0.025);
-    artwork.diffuseTexture = new B.Texture(artworkUrl, scene);
+    artwork.diffuseTexture = createInteriorTexture(B, artworkUrl, scene);
     box('triptych-mounting-panel', [4.15, 2.52, 0.026], [-1.77, 1.84, -3.978], 'chalk');
     for (let panel = 0; panel < 3; panel++) {
       const x = -3.05 + panel * 1.28;

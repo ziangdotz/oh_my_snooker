@@ -165,25 +165,6 @@
   font-size: 16px;
   line-height: 1.3;
 }
-.game-ui-panel .basic-controls-img {
-  width: 455px;
-  max-width: 100%;
-  height: auto;
-  margin: 12px auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px 4px;
-  background: none;
-}
-.game-ui-panel .control-guide-movement,
-.game-ui-panel .control-guide-camera {
-  position: relative;
-  left: auto;
-  top: auto;
-  color: var(--interior-text);
-}
 .game-ui-panel .subhead-section {
   margin: 0;
   padding: 12px 0 8px;

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11T13:58:44.279Z",
+  "date": "2026-10-12T08:34:09.524Z",
   "targets": [
     {
       "browser": "chrome",
@@ -13,17 +13,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54933/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55124/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     },
     {
       "browser": "chrome",
@@ -37,17 +779,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54934/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55125/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     },
     {
       "browser": "chrome",
@@ -61,17 +1545,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54935/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55126/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     },
     {
       "browser": "edge",
@@ -85,17 +2311,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54933/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55124/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     },
     {
       "browser": "edge",
@@ -109,17 +3077,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54934/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55125/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     },
     {
       "browser": "edge",
@@ -133,17 +3843,759 @@
       ],
       "guide": {
         "background": "none",
-        "mouseAsset": "url(\"http://127.0.0.1:54935/assets/images/ui-sprite-atlas.svg\")",
+        "mouseAsset": "url(\"http://127.0.0.1:55126/assets/images/ui-sprite-atlas.svg\")",
         "liveLettering": [
           "AIMING MODE",
           "LEFT",
           "RIGHT",
           "STAND",
-          "MOUSE DRAG TO LOOK AROUND",
+          "LOOK AROUNDLeft mouse button + drag",
           "RESET VIEW"
         ],
         "letteringFits": true
-      }
+      },
+      "guideDesktopLayout": {
+        "viewport": {
+          "width": 1140,
+          "height": 850
+        },
+        "panelFits": true,
+        "noHorizontalOverflow": true,
+        "rows": [
+          {
+            "action": "AIM",
+            "input": {
+              "x": 455,
+              "y": 458.5703125,
+              "right": 615,
+              "bottom": 488.5703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 461.4140625,
+              "right": 443,
+              "bottom": 485.7109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 463.7734375,
+              "right": 821,
+              "bottom": 483.3671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "CROUCH",
+            "input": {
+              "x": 455,
+              "y": 503.0703125,
+              "right": 615,
+              "bottom": 533.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 505.9140625,
+              "right": 443,
+              "bottom": 530.2109375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "PLACE BALL",
+            "input": {
+              "x": 455,
+              "y": 547.0703125,
+              "right": 615,
+              "bottom": 577.0703125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 549.9140625,
+              "right": 443,
+              "bottom": 574.2109375
+            },
+            "condition": {
+              "x": 627,
+              "y": 552.2734375,
+              "right": 821,
+              "bottom": 571.8671875
+            },
+            "inputFits": true
+          },
+          {
+            "action": "SHOOT",
+            "input": {
+              "x": 455,
+              "y": 642.7578125,
+              "right": 615,
+              "bottom": 672.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 645.6015625,
+              "right": 443,
+              "bottom": 669.8984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ADD SPIN",
+            "input": {
+              "x": 455,
+              "y": 686.7578125,
+              "right": 615,
+              "bottom": 731.7578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 697.1015625,
+              "right": 443,
+              "bottom": 721.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "CLEAR SPIN",
+            "input": {
+              "x": 455,
+              "y": 745.2578125,
+              "right": 615,
+              "bottom": 775.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 748.1015625,
+              "right": 443,
+              "bottom": 772.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "SET POWER",
+            "input": {
+              "x": 455,
+              "y": 791.2578125,
+              "right": 615,
+              "bottom": 817.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 792.1015625,
+              "right": 443,
+              "bottom": 816.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "ELEVATION",
+            "input": {
+              "x": 455,
+              "y": 833.2578125,
+              "right": 615,
+              "bottom": 863.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 836.1015625,
+              "right": 443,
+              "bottom": 860.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          },
+          {
+            "action": "STAND",
+            "input": {
+              "x": 455,
+              "y": 877.2578125,
+              "right": 615,
+              "bottom": 907.2578125
+            },
+            "actionBounds": {
+              "x": 319,
+              "y": 880.1015625,
+              "right": 443,
+              "bottom": 904.3984375
+            },
+            "condition": null,
+            "inputFits": true
+          }
+        ],
+        "header": {
+          "x": 291,
+          "y": 140.8046875,
+          "right": 849,
+          "bottom": 212.1953125
+        },
+        "footer": {
+          "x": 291,
+          "y": 640.1953125,
+          "right": 849,
+          "bottom": 709.1953125
+        }
+      },
+      "guideLayouts": [
+        {
+          "viewport": {
+            "width": 578,
+            "height": 577
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 181,
+                "y": 334.765625,
+                "right": 341,
+                "bottom": 364.765625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 337.609375,
+                "right": 169,
+                "bottom": 361.90625
+              },
+              "condition": {
+                "x": 353,
+                "y": 339.96875,
+                "right": 533,
+                "bottom": 359.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 181,
+                "y": 379.265625,
+                "right": 341,
+                "bottom": 409.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 382.109375,
+                "right": 169,
+                "bottom": 406.40625
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 181,
+                "y": 423.265625,
+                "right": 341,
+                "bottom": 453.265625
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 426.109375,
+                "right": 169,
+                "bottom": 450.40625
+              },
+              "condition": {
+                "x": 353,
+                "y": 428.46875,
+                "right": 533,
+                "bottom": 448.0625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 181,
+                "y": 518.953125,
+                "right": 341,
+                "bottom": 548.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 521.796875,
+                "right": 169,
+                "bottom": 546.09375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 181,
+                "y": 562.953125,
+                "right": 341,
+                "bottom": 607.953125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 573.296875,
+                "right": 169,
+                "bottom": 597.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 181,
+                "y": 621.453125,
+                "right": 341,
+                "bottom": 651.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 624.296875,
+                "right": 169,
+                "bottom": 648.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 181,
+                "y": 667.453125,
+                "right": 341,
+                "bottom": 693.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 668.296875,
+                "right": 169,
+                "bottom": 692.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 181,
+                "y": 709.453125,
+                "right": 341,
+                "bottom": 739.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 712.296875,
+                "right": 169,
+                "bottom": 736.59375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 181,
+                "y": 753.453125,
+                "right": 341,
+                "bottom": 783.453125
+              },
+              "actionBounds": {
+                "x": 45,
+                "y": 756.296875,
+                "right": 169,
+                "bottom": 780.59375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 17,
+            "y": 17,
+            "right": 561,
+            "bottom": 88.390625
+          },
+          "footer": {
+            "x": 17,
+            "y": 491,
+            "right": 561,
+            "bottom": 560
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 455,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 455,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 455,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 455,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 455,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 455,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 455,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 455,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 455,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 455,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 455,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 471,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 372,
+            "right": 471,
+            "bottom": 441
+          }
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "panelFits": true,
+          "noHorizontalOverflow": true,
+          "rows": [
+            {
+              "action": "AIM",
+              "input": {
+                "x": 131,
+                "y": 472.96875,
+                "right": 295,
+                "bottom": 502.96875
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 475.8125,
+                "right": 119,
+                "bottom": 500.109375
+              },
+              "condition": {
+                "x": 131,
+                "y": 506.96875,
+                "right": 295,
+                "bottom": 526.5625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "CROUCH",
+              "input": {
+                "x": 131,
+                "y": 540.0625,
+                "right": 295,
+                "bottom": 570.0625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 542.90625,
+                "right": 119,
+                "bottom": 567.203125
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "PLACE BALL",
+              "input": {
+                "x": 131,
+                "y": 583.5625,
+                "right": 295,
+                "bottom": 613.5625
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 586.40625,
+                "right": 119,
+                "bottom": 610.703125
+              },
+              "condition": {
+                "x": 131,
+                "y": 617.5625,
+                "right": 295,
+                "bottom": 637.15625
+              },
+              "inputFits": true
+            },
+            {
+              "action": "SHOOT",
+              "input": {
+                "x": 131,
+                "y": 702.34375,
+                "right": 295,
+                "bottom": 732.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 705.1875,
+                "right": 119,
+                "bottom": 729.484375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ADD SPIN",
+              "input": {
+                "x": 131,
+                "y": 746.34375,
+                "right": 295,
+                "bottom": 791.34375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 756.6875,
+                "right": 119,
+                "bottom": 780.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "CLEAR SPIN",
+              "input": {
+                "x": 131,
+                "y": 804.84375,
+                "right": 295,
+                "bottom": 834.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 807.6875,
+                "right": 119,
+                "bottom": 831.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "SET POWER",
+              "input": {
+                "x": 131,
+                "y": 850.84375,
+                "right": 295,
+                "bottom": 876.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 851.6875,
+                "right": 119,
+                "bottom": 875.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "ELEVATION",
+              "input": {
+                "x": 131,
+                "y": 892.84375,
+                "right": 295,
+                "bottom": 922.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 895.6875,
+                "right": 119,
+                "bottom": 919.984375
+              },
+              "condition": null,
+              "inputFits": true
+            },
+            {
+              "action": "STAND",
+              "input": {
+                "x": 131,
+                "y": 936.84375,
+                "right": 295,
+                "bottom": 966.84375
+              },
+              "actionBounds": {
+                "x": 25,
+                "y": 939.6875,
+                "right": 119,
+                "bottom": 963.984375
+              },
+              "condition": null,
+              "inputFits": true
+            }
+          ],
+          "header": {
+            "x": 9,
+            "y": 9,
+            "right": 311,
+            "bottom": 75.59375
+          },
+          "footer": {
+            "x": 9,
+            "y": 322,
+            "right": 311,
+            "bottom": 391
+          }
+        }
+      ]
     }
   ],
   "passed": true

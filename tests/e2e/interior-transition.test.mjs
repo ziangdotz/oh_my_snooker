@@ -164,6 +164,9 @@ try {
           if (pathname.includes('/assets/fonts/')) {
             await (pathname.includes('semibold') ? semiBold : fonts);
           }
+          if (fault && pathname.endsWith('/interior-design-002-art.png')) {
+            return route.fulfill({ status: 503, body: '' });
+          }
           if (
             pathname.endsWith('/compose-game.js') ||
             pathname.endsWith('/scripts/snooker-game.js')

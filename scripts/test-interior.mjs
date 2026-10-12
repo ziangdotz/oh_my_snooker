@@ -10,6 +10,7 @@ for (const suite of [
   'interior-ui',
   'interior-transition',
   'interior-selection',
+  'interior-switching',
   'startup-recovery',
 ]) {
   const code = await new Promise((resolve, reject) => {

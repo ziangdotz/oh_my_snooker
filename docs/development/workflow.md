@@ -23,6 +23,7 @@
 | 旧界面清理专项         | node tests/e2e/retired-ui-cleanup.test.mjs                                                   |
 | 游戏内UI专项           | node tests/e2e/game-ui.test.mjs                                                              |
 | PCOL布局实际对照       | node tests/e2e/pcol-ui-layout.test.mjs                                                       |
+| 双人设计稿开局实景采集 | node scripts/capture-match-opening.mjs                                                       |
 | 矢量操作图及高密度显示 | node tests/e2e/ui-vector-artwork.test.mjs                                                    |
 | 加载连续性专项         | node tests/e2e/interior-loading-continuity.test.mjs                                          |
 | 仅复制src独立启动专项  | node tests/e2e/source-standalone.test.mjs                                                    |
@@ -51,7 +52,7 @@
 | 装载、组合根、场景或引用组织   | 上述整体浏览器检查                                       | src独立复制启动、原始场景对照；室内相关加统一专项 |
 | AI、回放、输入与共享对局状态   | 上述整体浏览器检查                                       | continuous-play专项及对应行为刻画                 |
 
-浏览器专项使用有效的开发/生产构建；源码或构建规则改变后先完成构建和verify。室内统一入口校验现有构建，不自动构建，随后顺序运行interior-loading-continuity、interior-ui、interior-transition、interior-selection、startup-recovery，先检查加载交接与布局；五个套件使用同一个测试夹具实现，但各自拥有服务器生命周期。详见 [室内选择](interior-selection.md)。耗时专项不隐式加入每次整体检查。
+浏览器专项使用有效的开发/生产构建；源码或构建规则改变后先完成构建和verify。室内统一入口校验现有构建，不自动构建，随后顺序运行interior-loading-continuity、interior-ui、interior-transition、interior-selection、interior-switching、startup-recovery，先检查加载交接与布局；六个套件使用同一个测试夹具实现，但各自拥有服务器生命周期。interior-switching核对同页身份、独占灯光、有界缓存、直接加载像素及切换耗时。详见 [室内选择](interior-selection.md)。耗时专项不隐式加入每次整体检查。
 
 自动格式化只执行`node scripts/format-code.mjs --write`的既有白名单，不对根目录递归写入，不格式化冻结、第三方或二进制资产。仅文档维护时核对运行文件与受保护文件哈希，避免格式整理夹带源码变化。
 

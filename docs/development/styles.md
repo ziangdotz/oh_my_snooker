@@ -6,11 +6,11 @@
 | ---- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | 1    | [game-base.css](../../src/presentation/styles/game-base.css)                       | 当前文档、画布、键帽、图标及目标球等共用基础                 |
 | 2    | [typography.css](../../src/presentation/styles/typography.css)                     | 字体声明、字体栈、常规文字与标题/按钮字重                    |
-| 2a   | [controls-guide.css](../../src/presentation/styles/controls-guide.css)             | 原操作图的页面文字、键帽、指示连线与矢量鼠标布局             |
+| 2a   | [controls-guide.css](../../src/presentation/styles/controls-guide.css)             | 操作说明的示意图、键帽、动作/操作/条件列与响应式布局         |
 | 3    | [interior-tokens.css](../../src/presentation/styles/interior-tokens.css)           | 室内公共颜色、字号、圆角、间距、操作按钮和焦点；集中窄屏变量 |
 | 4    | [interior-menu.css](../../src/presentation/styles/interior-menu.css)               | 启动菜单及响应式布局                                         |
 | 5    | [interior-drawer.css](../../src/presentation/styles/interior-drawer.css)           | 场馆卡片、滚动与关闭/返回布局                                |
-| 5a   | [interior-more-things.css](../../src/presentation/styles/interior-more-things.css) | 后续房间及双人对战面板的说明与预留卡片                       |
+| 5a   | [interior-more-things.css](../../src/presentation/styles/interior-more-things.css) | 双人宽面板、主次卡片、标题层次与响应式；设计预览共用此样式   |
 | 5b   | [interior-about.css](../../src/presentation/styles/interior-about.css)             | About简介、作者、引擎链接及装饰球台，共用抽屉框架            |
 | 6    | [interior-transition.css](../../src/presentation/styles/interior-transition.css)   | 加载/恢复、字体状态、光带动画及响应式布局                    |
 | 7    | [game-ui.css](../../src/presentation/styles/game-ui.css)                           | PCOL紧凑比分、工具栏、回放、通知、居中面板及结果的独立作用域 |

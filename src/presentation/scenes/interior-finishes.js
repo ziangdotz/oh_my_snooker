@@ -1,3 +1,5 @@
+import createInteriorTexture from './create-interior-texture.js';
+
 /** Material-scale UVs keep the same weave and grain size on walls and furniture. */
 export default function createInteriorFinishes(B, scene) {
   const mappings = new Map();
@@ -6,7 +8,7 @@ export default function createInteriorFinishes(B, scene) {
   return {
     texture(material, url, scale = 1) {
       if (!textures.has(url)) {
-        const texture = new B.Texture(url, scene);
+        const texture = createInteriorTexture(B, url, scene);
         texture.anisotropicFilteringLevel = 8;
         textures.set(url, texture);
       }

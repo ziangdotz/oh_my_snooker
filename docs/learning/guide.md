@@ -21,4 +21,6 @@ docs记录当前机制与维护方法，reports记录验证输入和结果，art
 
 后续双人功能的实施提案见[房间与双人对战方案](../development/rooms-and-two-player-plan.md)：先交付同机轮流比赛，再验证权威比赛服务并扩展联网房间；该文档不代表功能已实现。
 
+本轮前端面板的[系统设计](../development/rooms-panel-design.md)与[交互预览](../development/rooms-panel-prototype.html)覆盖 One more thing... 入口、同机设置、后续联网等待及结果状态。预览是独立设计稿，模拟状态不能作为真实双人功能验收。
+
 Git 提交分类、冻结字节保护和维护审计见[仓库维护](../development/repository-workflow.md)。开始新增功能前先完成整体检查，并按专题验证矩阵选择受影响的测试。

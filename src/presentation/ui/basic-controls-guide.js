@@ -17,10 +17,14 @@ export default function createVectorControlsDialog(Dialog) {
       <span class="control-guide-connector control-guide-down-line" aria-hidden="true"></span>
     </div>
     <div class="control-guide-camera">
-      <span class="control-guide-mouse m-d-i sprite" role="img" aria-label="Hold the left mouse button and drag"></span>
-      <span class="control-guide-label control-guide-drag">MOUSE DRAG TO LOOK AROUND</span>
-      <span class="control-guide-key control-guide-reset-key">R</span>
-      <span class="control-guide-label control-guide-reset-label">RESET VIEW</span>
+      <div class="control-guide-camera-row">
+        <span class="control-guide-mouse m-d-i sprite" role="img" aria-label="Hold the left mouse button and drag"></span>
+        <span class="control-guide-label control-guide-drag">LOOK AROUND<span class="control-guide-hint">Left mouse button + drag</span></span>
+      </div>
+      <div class="control-guide-camera-row">
+        <span class="control-guide-key control-guide-reset-key">R</span>
+        <span class="control-guide-label control-guide-reset-label">RESET VIEW</span>
+      </div>
     </div>`;
   }
 

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-12T06:31:04.570Z",
+  "passed": true,
+  "method": "One before/after source-runtime trial in Chrome on the same machine at 1440x900. Actual venue drawer clicks; completion measured when the home menu is interactive. No clock or WebGL substitutions. Additional cached timings use the six-target 960x600 switching verification.",
+  "browser": "154.0.8037.98",
+  "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "rawMeasurements": [
+    {
+      "path": "artifacts/testing/venue-switch-before.json",
+      "sha256": "1098fcf47ae881c97650521e5abc9df5b89b22e4c952f3a68be766d96a93dc47",
+      "date": "2026-10-12T05:43:25.032Z"
+    },
+    {
+      "path": "artifacts/testing/venue-switch-after.json",
+      "sha256": "7b7a2b6a747258b7f326f38c43c78b42fd86f20b31b06dc9481145cd457b68b5",
+      "date": "2026-10-12T06:30:05.392Z"
+    }
+  ],
+  "sourceHashes": {
+    "src/presentation/scenes/create-interior-switcher.js": "452e6e056e072aa8ae381b106473bb1f0e21e99571863bcd4730fdcc4f731567",
+    "src/application/interior-transition.js": "171093b493cf89924b3cf8d8e9009da373d4aed060be83a0286175c193bd962f",
+    "src/application/controllers/interior-menu-controller.js": "28ccda7d4cab04994ca744b74f4a8eb9cde0b2b41541691ccd6cb019d5306048"
+  },
+  "buildManifestHashes": {
+    "development": "2a92f6a912cddda7b7644e2136cf85e9521a46bb794b5e8da0fb8e7fd3f857b8",
+    "production": "2a92f6a912cddda7b7644e2136cf85e9521a46bb794b5e8da0fb8e7fd3f857b8"
+  },
+  "comparisons": [
+    {
+      "from": "interior-design-original",
+      "to": "interior-design-001",
+      "cached": false,
+      "beforeMs": 4870.2626,
+      "afterMs": 1083.0342999999993,
+      "sceneReadyMs": 636.9258,
+      "reductionPercent": 77.76230176992922,
+      "beforeRequests": 289,
+      "afterRequests": 6
+    },
+    {
+      "from": "interior-design-001",
+      "to": "interior-design-002",
+      "cached": false,
+      "beforeMs": 4949.343499999999,
+      "afterMs": 1070.303899999999,
+      "sceneReadyMs": 627.1821,
+      "reductionPercent": 78.37483092454588,
+      "beforeRequests": 291,
+      "afterRequests": 5
+    },
+    {
+      "from": "interior-design-002",
+      "to": "interior-design-003",
+      "cached": false,
+      "beforeMs": 5005.519,
+      "afterMs": 1366.7721999999994,
+      "sceneReadyMs": 912.4264999999996,
+      "reductionPercent": 72.69469559500226,
+      "beforeRequests": 291,
+      "afterRequests": 4
+    },
+    {
+      "from": "interior-design-003",
+      "to": "interior-design-original",
+      "cached": true,
+      "beforeMs": 4329.775300000001,
+      "afterMs": 518.4771000000001,
+      "sceneReadyMs": 65.42900000000009,
+      "reductionPercent": 88.02531161374587,
+      "beforeRequests": 285,
+      "afterRequests": 2
+    },
+    {
+      "from": "interior-design-original",
+      "to": "interior-design-001",
+      "cached": true,
+      "beforeMs": 4580.238000000001,
+      "afterMs": 521.1177000000007,
+      "sceneReadyMs": 68.97639999999956,
+      "reductionPercent": 88.62247551328117,
+      "beforeRequests": 289,
+      "afterRequests": 2
+    }
+  ],
+  "sixTargetCachedSamples": {
+    "count": 36,
+    "sceneReadyMedianMs": 30.58715000000666,
+    "sceneReadyRangeMs": [
+      24.29899999999907,
+      107.20629999999073
+    ],
+    "interactiveMedianMs": 451.7727999999988,
+    "loadingFlashes": 0
+  },
+  "validation": "reports/validation/interior-switching.json",
+  "limitations": [
+    "The before/after pair is a single local trial, not a statistical hardware benchmark. The pre-change trial did not capture a browser version or renderer string.",
+    "Headless browser timing on the reported Intel Arc 140V renderer is machine-specific; first visits still prepare textures, materials and static shadows.",
+    "Two cached requests are favicon refreshes caused by the URL update; scripts, models, fonts and room resources are retained.",
+    "The preserved menu animation accounts for about 432ms of interactive completion time."
+  ]
+}

@@ -69,6 +69,9 @@ export default function composeScenes(dependencies) {
     get interiorDesign() {
       return dependencies.interiorDesign;
     },
+    get interiorDesignRegistry() {
+      return dependencies.interiorDesignRegistry;
+    },
     get LightProbeManager() {
       return dependencies.LightProbeManager;
     },

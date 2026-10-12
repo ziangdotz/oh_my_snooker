@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { runInNewContext } from 'node:vm';
+import { setImmediate } from 'node:timers';
 import transitionModule from '../../src/application/interior-transition.js';
 
 function fixture() {
@@ -13,6 +14,7 @@ function fixture() {
     href: 'http://localhost/?interior=interior-design-original',
     read: () => null,
     clear: () => events.push(['clear']),
+    commit: (selection) => events.push(['commit', selection.id]),
     begin(selection) {
       events.push(['navigate', selection.id]);
       return { ...selection, previousHref: this.href };
@@ -40,7 +42,7 @@ function fixture() {
       removeEventListener: (type) => listeners.delete(type),
     },
     setTimeout(callback, duration) {
-      assert.equal(duration, 45000);
+      assert.ok(duration === 45000 || duration === 150);
       timers.set(callback, duration);
       return callback;
     },
@@ -108,5 +110,85 @@ test('navigation I/O failure after paint displays recovery rather than escaping 
   assert.doesNotThrow(() => state.frames.shift()());
   assert.deepEqual(state.events.at(-1), ['error']);
   assert.equal(state.listeners.size, 0);
+  assert.equal(state.timers.size, 0);
+});
+
+test('live switch keeps the document and ignores the old scene until the target is ready', async () => {
+  const state = fixture();
+  let resolve;
+  const ready = new Promise((done) => {
+    resolve = done;
+  });
+  const actions = {
+    run: () => ready,
+    cancel: () => state.events.push(['cancel']),
+    finish: () => state.events.push(['finish']),
+  };
+  state.transition.begin(selection, actions);
+  state.transition.begin(selection, actions);
+  state.transition.complete('interior-design-original');
+  state.frames.shift()();
+  state.frames.shift()();
+  await Promise.resolve();
+  assert.ok(!state.events.some(([event]) => event === 'commit' || event === 'navigate'));
+  resolve();
+  await new Promise(setImmediate);
+  assert.deepEqual(state.events.slice(-4), [
+    ['commit', selection.id],
+    ['finish'],
+    ['clear'],
+    ['hide'],
+  ]);
+  assert.equal(state.timers.size, 0);
+});
+
+test('failed live switch retries in place and back invalidates a late completion', async () => {
+  const state = fixture();
+  let resolve;
+  let attempts = 0;
+  const actions = {
+    run() {
+      attempts++;
+      if (attempts === 1) {
+        return Promise.reject(new Error('Missing texture'));
+      }
+      return new Promise((done) => {
+        resolve = done;
+      });
+    },
+    cancel: () => state.events.push(['cancel']),
+    finish: () => state.events.push(['finish']),
+  };
+  state.transition.begin(selection, actions);
+  state.frames.shift()();
+  state.frames.shift()();
+  await new Promise(setImmediate);
+  assert.deepEqual(state.events.at(-1), ['error']);
+  state.callbacks.onRetry();
+  state.frames.shift()();
+  state.frames.shift()();
+  await Promise.resolve();
+  state.callbacks.onBack();
+  resolve();
+  await new Promise(setImmediate);
+  assert.equal(attempts, 2);
+  assert.ok(
+    !state.events.some(([event]) => ['navigate', 'retry', 'back', 'commit'].includes(event)),
+  );
+  assert.deepEqual(state.events.slice(-3), [['cancel'], ['hide'], ['finish']]);
+});
+
+test('cached switch completes without flashing a loading card or waiting for handoff frames', async () => {
+  const state = fixture();
+  state.transition.begin(selection, {
+    quick: true,
+    run: () => Promise.resolve(),
+    cancel() {},
+    finish() {},
+  });
+  assert.equal(state.frames.length, 0);
+  await new Promise(setImmediate);
+  assert.ok(!state.events.some(([event]) => event === 'loading' || event === 'navigate'));
+  assert.ok(state.events.some(([event]) => event === 'commit'));
   assert.equal(state.timers.size, 0);
 });

@@ -201,7 +201,7 @@ try {
             assert.equal(await morePanel.locator('h2').textContent(), 'One more thing...');
             assert.deepEqual(
               await morePanel.locator('.interior-more-option h3').allTextContents(),
-              ['ROOMS', 'TWO-PLAYER MATCH'],
+              ['TWO-PLAYER MATCH', 'ROOMS'],
             );
             assert.deepEqual(await morePanel.locator('.interior-more-status').allTextContents(), [
               'COMING SOON',
@@ -209,6 +209,21 @@ try {
             ]);
             assert.equal(await morePanel.locator('.interior-more-option button').count(), 0);
             const moreBounds = await morePanel.boundingBox();
+            const expectedMoreWidth =
+              viewport.width <= 480
+                ? viewport.width - 16
+                : Math.min(840, Math.max(480, viewport.width * 0.6), viewport.width - 48);
+            assert.ok(Math.abs(moreBounds.width - expectedMoreWidth) <= 1);
+            const options = await morePanel.locator('.interior-more-option').evaluateAll((cards) =>
+              cards.map((card) => {
+                const bounds = card.getBoundingClientRect();
+                return { x: bounds.x, y: bounds.y, right: bounds.right };
+              }),
+            );
+            assert.equal(
+              viewport.width > 1000,
+              Math.abs(options[0].y - options[1].y) < 1 && options[1].x >= options[0].right,
+            );
             assert.ok(
               moreBounds.x >= 0 &&
                 moreBounds.y >= 0 &&

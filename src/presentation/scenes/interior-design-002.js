@@ -1,4 +1,6 @@
 /** 室内设计002 — amber Art Deco salon, arches, lounge seating and a dedicated bar. */
+import createInteriorTexture from './create-interior-texture.js';
+
 export default function interiorDesign002Module(module, _exports, loadModule) {
   const createRoom = loadModule('presentation/scenes/interior-design-builder');
   const artworkUrl = loadModule('assets/images-interior-design-002-art');
@@ -95,7 +97,7 @@ export default function interiorDesign002Module(module, _exports, loadModule) {
       feature('wall', 'brass-lined-arch', [x, 1.9, -3.91], [2.65, 2.21, 0.08]);
     }
     const artwork = material('artwork', '#ffffff', 0.025);
-    artwork.diffuseTexture = new B.Texture(artworkUrl, scene);
+    artwork.diffuseTexture = createInteriorTexture(B, artworkUrl, scene);
     box('picture-wall-spacer', [1.96, 1.22, 0.024], [-0.4, 1.92, -3.895], 'trim');
     box('picture-frame', [2.17, 1.47, 0.065], [-0.4, 1.92, -3.865], 'bronze');
     box('picture-matboard', [2.11, 1.41, 0.02], [-0.4, 1.92, -3.826], 'ivory');

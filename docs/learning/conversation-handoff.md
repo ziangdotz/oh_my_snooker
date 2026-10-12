@@ -2,13 +2,21 @@
 
 更新于2026-10-12。先读根目录[AGENTS](../../AGENTS.md)、[架构](../architecture/overview.md)与[工作流](../development/workflow.md)。当前源码、冻结基准及有效验证结果为事实依据。
 
+## 双人功能的待启动计划
+
+2026-10-12用户已确认当前[面板设计](../development/rooms-panel-design.md)可行，要求保留并等后续随时启动；当前不继续实施真实同机比赛或联网功能。后续明确启动时，按[实施方案](../development/rooms-and-two-player-plan.md)先做同机双人，再扩展联网房间。
+
+已确认设计包括更宽的One more thing...入口、两位姓名与四套室内点选、复用Single Play的紧凑HUD／暂停菜单／真实开局场景，以及加载解码后220ms背景淡入、最新选择优先、失败保留原图与重试、减少动画。独立[预览](../development/rooms-panel-prototype.html)中的比赛和房间仍为模拟；开局背景是实际Single Play采集的静态帧，不是真实双人场景。图片为本地产物，可用node scripts/capture-match-opening.mjs重建。
+
+设计阶段的工程检查为130项单元／集成测试通过，其中8项覆盖设计稿异步背景逻辑；四套Single Play开局场景采集通过。当前file预览未自动刷新或完成最新浏览器视觉验收，详见[设计记录](../../reports/validation/rooms-panel-design.json)与[场景记录](../../reports/validation/match-opening-scenes.json)。恢复开发时先核对当时源码与已有修改，再实施同机模型和操作权绑定；这些设计验证不替代真实双人验收。
+
 ## 运行与现状
 
 全部实际运行内容位于src。node src/start.mjs仅依赖Node内置模块，默认http://127.0.0.1:5173/；整个src可独立复制启动。构建从同一源码生成开发/生产输出，baselines/pcol只用于冻结对照。
 
 原始、001、002、003四套室内设计均可选择。启动页、室内选择及About保持当前布局；游戏内使用PCOL紧凑布局和操作顺序，沿用深绿、暖金及Saira字体。One more thing...中的房间与双人对战仍为预留功能。
 
-启动与场馆切换共享HTML加载卡片、字体回退和RETRY/BACK；切换采用受控重载。三套新房间保留八盏室内灯，两张静态阴影图首次完整生成后复用，窗口变化或WebGL恢复后刷新。具体实现见[室内系列](../development/interior-design-collection.md)及[性能方法](../validation/interior-performance.md)。
+启动与场馆切换共享HTML加载卡片、字体回退和RETRY/BACK。四套正式场馆现在同页切换：保留引擎、球台、球和控制器，每套装饰只准备一次，仅启用当前场馆的网格和灯光。首次访问等待贴图与阴影，已缓存场馆直接复用，快速完成时不闪加载卡片。失败回退原场馆并可重试；wall-study保留兼容重载。三套新房间保留八盏室内灯，两张静态阴影图首次完整生成后复用，窗口变化或WebGL恢复后刷新。专项证据见[切换验证](../../reports/validation/interior-switching.json)，实现见[室内选择](../development/interior-selection.md)。
 
 模块清单当前登记115个模块：73工厂、34资产、8模板。基础UI与球杆装配通过总根的ESM导入登记；加载器异常收尾和球杆缓存字段已修正。球杆定义及材质归presentation/rendering，文件缓存归infrastructure/assets，预取标记和克隆编号由球杆子装配拥有；网格管理器内核不改写。具体契约见[球杆装配](../architecture/cue-composition.md)。本轮已接入动画/显示/场景、设置/AI/对局状态、输入/相机/回放三个批次，新增24个职责工厂；三个批次均已完成验收，18项同组行为刻画先后通过。模块ID不变；共享状态及扩展入口见[游戏装配](../architecture/game-composition.md)，当前证据见[验证记录](../../reports/validation/game-composition.json)。根继续负责最终跨组连接，CushionBody保留原碰撞运算。
 

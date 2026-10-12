@@ -10,6 +10,8 @@
 | -------------------- | ------------ | -------- | -------- | ----------- |
 | 左侧五项主标签       | Bold 700     | 24px     | 22px     | 32px / 28px |
 | 抽屉标题             | Bold 700     | 32px     | 28px     | 1.2         |
+| 双人宽面板标题       | Bold 700     | 40px     | 28px     | 1.2         |
+| 双人玩法卡片标题     | Bold 700     | 28px     | 28px     | 1.2         |
 | 场馆名称 / About作者 | Bold 700     | 22px     | 20px     | 1.2         |
 | About品牌            | Bold 700     | 40px     | 36px     | 1.04        |
 | About引导句          | SemiBold 600 | 18px     | 18px     | 1.4         |
@@ -22,6 +24,8 @@
 | RETRY / BACK恢复按钮 | Bold 700     | 18px     | 18px     | 1.4         |
 
 公共字号与窄屏值集中在 [interior-tokens.css](../../src/presentation/styles/interior-tokens.css)，组件负责应用和布局。标题为关闭按钮留空间，列表独立滚动；同时检查桌面、窄屏和矮屏，不缩放整块界面实现字体放大。
+
+One more thing... 的宽面板字号例外限定在 [interior-more-things.css](../../src/presentation/styles/interior-more-things.css)；1000px 以下标题回到32px，480px以下回到28px。场馆与About字号保持原值，宽面板的层次与布局见[双人面板设计](rooms-panel-design.md)。
 
 About眉题、模式标签和引擎辅助文字复用12px编号角色，正文复用14px说明角色；引导句与引擎名称的局部字号在About样式中应用。简介的行高为1.6，长正文可在面板内部滚动。
 

@@ -1,3 +1,5 @@
+import createInteriorSwitcher from './create-interior-switcher.js';
+
 /** Preserve the original definition and evaluation order. */
 export default function createTableScene(dependencies) {
   return {
@@ -53,7 +55,13 @@ export default function createTableScene(dependencies) {
         dependencies.applyModernWallStudy(t);
       }
       if (dependencies.interiorDesign) {
-        dependencies.interiorDesign.apply(t);
+        if (dependencies.interiorDesignRegistry) {
+          dependencies.originalInterior(t);
+          t.interiorSwitcher = createInteriorSwitcher(t, dependencies.interiorDesignRegistry);
+          t.interiorSwitcher.initialize(dependencies.interiorDesign.id);
+        } else {
+          dependencies.interiorDesign.apply(t);
+        }
       }
     },
     createLightProbeManager: function (t) {

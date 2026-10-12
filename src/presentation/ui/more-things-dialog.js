@@ -16,16 +16,18 @@ export default function createMoreThingsDialog(dependencies) {
     data() {
       this._busy = false;
       this._list.replaceChildren();
-      const introduction = document.createElement('p');
-      introduction.className = 'interior-more-introduction';
-      introduction.textContent = 'More ways to play together are on the way.';
-      this._list.append(introduction);
-      for (const [title, description] of [
-        ['ROOMS', 'Create or join a room.'],
-        ['TWO-PLAYER MATCH', 'Challenge another player.'],
+      const options = document.createElement('div');
+      options.className = 'interior-more-options';
+      for (const [title, description, mode] of [
+        ['TWO-PLAYER MATCH', 'Share one computer and take turns.', 'SAME COMPUTER'],
+        ['ROOMS', 'Create a private room or join a friend.', 'PLAY ONLINE'],
       ]) {
         const card = document.createElement('article');
         card.className = 'interior-more-option';
+        card.classList.toggle('is-featured', mode === 'SAME COMPUTER');
+        const label = document.createElement('span');
+        label.className = 'interior-more-eyebrow';
+        label.textContent = mode;
         const heading = document.createElement('h3');
         heading.textContent = title;
         const copy = document.createElement('p');
@@ -33,9 +35,10 @@ export default function createMoreThingsDialog(dependencies) {
         const status = document.createElement('span');
         status.className = 'interior-more-status';
         status.textContent = 'COMING SOON';
-        card.append(heading, copy, status);
-        this._list.append(card);
+        card.append(label, heading, copy, status);
+        options.append(card);
       }
+      this._list.append(options);
       return this;
     }
     _handleKey(event) {

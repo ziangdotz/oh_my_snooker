@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-12T05:06:11.633Z",
+  "method": "Actual source runtime, Single Play > AI-1, initial ball-in-hand phase after camera settles. Screenshot-only CSS hides DOM overlays, preserving the rendered scene and gameplay. No prototype page loaded.",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scenes": [
+    {
+      "design": "interior-design-original",
+      "phase": "inHand",
+      "playerIndex": 0,
+      "camera": {
+        "position": [
+          -3.1774999999999998,
+          1.7,
+          2.5105259382520737e-16
+        ],
+        "target": [
+          0,
+          0.93625,
+          0
+        ],
+        "fov": 0.88
+      },
+      "players": [
+        {
+          "name": "PLAYER 1",
+          "score": 0
+        },
+        {
+          "name": "AI-1",
+          "score": 0
+        }
+      ],
+      "lobbyCamera": [
+        -2.913047124436316,
+        1.7,
+        1.0602624443095734
+      ],
+      "file": "artifacts/testing/rooms-panel-design/interior-design-original-opening-scene.jpg",
+      "sha256": "44231f75d4ff542c47fc3a29f9fa0c8d2b472bbf0ac6dcd2418fd6048ee07b2e",
+      "browser": "chrome",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "design": "interior-design-001",
+      "phase": "inHand",
+      "playerIndex": 0,
+      "camera": {
+        "position": [
+          -3.1774999999999998,
+          1.7,
+          2.5105259382520737e-16
+        ],
+        "target": [
+          0,
+          0.93625,
+          0
+        ],
+        "fov": 0.88
+      },
+      "players": [
+        {
+          "name": "PLAYER 1",
+          "score": 0
+        },
+        {
+          "name": "AI-1",
+          "score": 0
+        }
+      ],
+      "lobbyCamera": [
+        -2.913047124436316,
+        1.7,
+        1.0602624443095734
+      ],
+      "file": "artifacts/testing/rooms-panel-design/interior-design-001-opening-scene.jpg",
+      "sha256": "b3753fc5b3c6be370cfb83720096a20173aed6f6f95258b66993744394284459",
+      "browser": "chrome",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "design": "interior-design-002",
+      "phase": "inHand",
+      "playerIndex": 0,
+      "camera": {
+        "position": [
+          -3.1774999999999998,
+          1.7,
+          2.5105259382520737e-16
+        ],
+        "target": [
+          0,
+          0.93625,
+          0
+        ],
+        "fov": 0.88
+      },
+      "players": [
+        {
+          "name": "PLAYER 1",
+          "score": 0
+        },
+        {
+          "name": "AI-1",
+          "score": 0
+        }
+      ],
+      "lobbyCamera": [
+        -2.913047124436316,
+        1.7,
+        1.0602624443095734
+      ],
+      "file": "artifacts/testing/rooms-panel-design/interior-design-002-opening-scene.jpg",
+      "sha256": "f47a48efdb956dfc8e64f0d735f912d49c8a399bd7f8c8c9af29b04adc18839a",
+      "browser": "chrome",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "design": "interior-design-003",
+      "phase": "inHand",
+      "playerIndex": 0,
+      "camera": {
+        "position": [
+          -3.1774999999999998,
+          1.7,
+          2.5105259382520737e-16
+        ],
+        "target": [
+          0,
+          0.93625,
+          0
+        ],
+        "fov": 0.88
+      },
+      "players": [
+        {
+          "name": "PLAYER 1",
+          "score": 0
+        },
+        {
+          "name": "AI-1",
+          "score": 0
+        }
+      ],
+      "lobbyCamera": [
+        -2.913047124436316,
+        1.7,
+        1.0602624443095734
+      ],
+      "file": "artifacts/testing/rooms-panel-design/interior-design-003-opening-scene.jpg",
+      "sha256": "3583471cd16371d8f2dd4a2518e5dab42c82e73c29ffb142b0dfd31f56930113",
+      "browser": "chrome",
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

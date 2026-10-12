@@ -43,6 +43,10 @@ export default function createInteriorDesignNavigation(browser) {
     },
     read,
     clear,
+    commit(selection) {
+      browser.history.replaceState(browser.history.state, '', selection.href);
+      clear();
+    },
     begin(selection) {
       const record = { ...selection, previousHref: browser.location.href, startedAt: Date.now() };
       try {

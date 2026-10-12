@@ -62,7 +62,9 @@ try {
           }
           if (
             fault === 'bundle' &&
-            (url.pathname.endsWith('/compose-game.js') || url.pathname.endsWith('/snooker-game.js'))
+            (url.pathname.endsWith('/compose-game.js') ||
+              url.pathname.endsWith('/snooker-game.js') ||
+              /interior-design-00[12]-art\.png$/.test(url.pathname))
           ) {
             return route.fulfill({ status: 503, body: '' });
           }
@@ -151,6 +153,9 @@ try {
           await page.keyboard.press('Escape');
           await page.locator('.interior-venue-drawer').waitFor({ state: 'hidden' });
           fault = null;
+          // Start a new scene: previously visited rooms are intentionally cached.
+          await page.goto(target.origin + '/?interior=interior-design-original');
+          await home(page, DESIGN_IDS[0]);
           await open(page);
           fault = 'bundle';
           await page.locator('[data-design-id="interior-design-001"]').click();

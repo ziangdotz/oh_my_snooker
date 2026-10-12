@@ -22,7 +22,7 @@ tests/e2e/game.test.mjs阻断非本地请求，在Chrome/Edge比较渲染和相�
 
 规则专项使用原模型入口构造接触/入袋结果，覆盖红彩切换、罚分、白球复位、球权、连击及清彩状态；受控规则结果不能称为真实物理击球。恢复专项另通过真实两杆、回放退出与重开核对模型和球状态。
 
-源码独立复制、原始场景五视角、室内选择/字体/恢复、游戏界面/布局/矢量图和阴影均有独立专项。[WebGL完整恢复](context-restoration.md)覆盖四个室内方案的连续真实丢失、精确画面、恢复后击球/Replay/重开和闲置首页自动刷新。室内统一入口包含五套测试；其他专项按修改范围运行。连续AI测试见[方法](continuous-play.md)，真实GPU阴影测量见[说明](interior-performance.md)。
+源码独立复制、原始场景五视角、室内选择/字体/恢复、游戏界面/布局/矢量图和阴影均有独立专项。[WebGL完整恢复](context-restoration.md)覆盖四个室内方案的连续真实丢失、精确画面、恢复后击球/Replay/重开和闲置首页自动刷新。室内统一入口包含六套测试；新增[同页切换](../../tests/e2e/interior-switching.test.mjs)核对同一引擎/场景/球、有界缓存和独占灯光，逐像素比较直接加载，测量实际切换，并验证全部室内缓存后的WebGL恢复。其他专项按修改范围运行。连续AI测试见[方法](continuous-play.md)，真实GPU阴影测量见[说明](interior-performance.md)。
 
 测试以真实状态变化等待，不通过固定睡眠、替换全局时钟/RAF或放宽行为断言处理失败。浏览器诊断保存在artifacts/testing，JSON结果在reports或对应测试主题；失败先检查phase、diagnostics、异常及截图。
 

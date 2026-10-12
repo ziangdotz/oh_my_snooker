@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-12T02:49:36.257Z",
+  "date": "2026-10-12T08:33:48.801Z",
   "passed": true,
-  "sourceManifestSHA256": "0353606ff524a76c4d3517356ece2f9d2ed89eca9590578318482afff3ba442f",
+  "sourceManifestSHA256": "a584a1777073246251bf3f19ededb1b46972f81ed74b2397f831c7436f0baf60",
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
   "runtime": {
     "modules": 115,
@@ -10,11 +10,11 @@
     "unreachable": [],
     "passed": true
   },
-  "runtimeSourceFiles": 327,
+  "runtimeSourceFiles": 329,
   "assetReferences": 91,
   "unreferencedAssets": [],
   "docs": {
-    "documents": 35,
+    "documents": 36,
     "links": [
       {
         "from": "README.md",
@@ -363,6 +363,11 @@
       },
       {
         "from": "docs/development/interior-selection.md",
+        "to": "docs/development/rooms-panel-design.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
         "to": "reports/validation/drawer-motion.json",
         "generated": false
       },
@@ -398,7 +403,17 @@
       },
       {
         "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/interior-switching.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
         "to": "reports/validation/startup-loading-recovery.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/measurement/interior-switching-summary.json",
         "generated": false
       },
       {
@@ -429,6 +444,21 @@
       {
         "from": "docs/development/repository-workflow.md",
         "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/development/rooms-panel-design.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/development/rooms-panel-prototype.html",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/learning/conversation-handoff.md",
         "generated": false
       },
       {
@@ -495,6 +525,56 @@
         "from": "docs/development/rooms-and-two-player-plan.md",
         "to": "docs/development/workflow.md",
         "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "docs/development/rooms-panel-prototype.html",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "src/presentation/styles/game-ui.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "reports/validation/match-opening-scenes.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "tests/unit/rooms-panel-background.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "reports/validation/interior-ui.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "reports/validation/drawer-motion.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "reports/validation/rooms-panel-design.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "artifacts/testing/rooms-panel-design",
+        "generated": true
       },
       {
         "from": "docs/development/styles.md",
@@ -603,6 +683,16 @@
       },
       {
         "from": "docs/development/typography.md",
+        "to": "src/presentation/styles/interior-more-things.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "docs/development/rooms-panel-design.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
         "to": "src/presentation/styles/typography.css",
         "generated": false
       },
@@ -683,12 +773,37 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/interior-design-collection.md",
+        "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/validation/interior-performance.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/rooms-panel-prototype.html",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "reports/validation/rooms-panel-design.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "reports/validation/match-opening-scenes.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "reports/validation/interior-switching.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/interior-selection.md",
         "generated": false
       },
       {
@@ -868,6 +983,16 @@
       },
       {
         "from": "docs/learning/guide.md",
+        "to": "docs/development/rooms-panel-design.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/rooms-panel-prototype.html",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
         "to": "docs/development/repository-workflow.md",
         "generated": false
       },
@@ -944,6 +1069,11 @@
       {
         "from": "docs/validation/README.md",
         "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "tests/e2e/interior-switching.test.mjs",
         "generated": false
       },
       {

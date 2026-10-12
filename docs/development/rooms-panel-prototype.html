@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>One more thing... · Panel design preview</title>
+    <link rel="stylesheet" href="../../src/presentation/styles/typography.css" />
+    <link rel="stylesheet" href="../../src/presentation/styles/interior-tokens.css" />
+    <link rel="stylesheet" href="../../src/presentation/styles/interior-drawer.css" />
+    <link rel="stylesheet" href="../../src/presentation/styles/interior-more-things.css" />
+    <link rel="stylesheet" href="../../src/presentation/styles/game-ui.css" />
+    <style>
+      * { box-sizing: border-box; }
+      [hidden] { display: none !important; }
+      body { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; margin: 0; background: #0c1512; color: #f1f0e9; font: 600 16px/1.5 var(--page-font); }
+      button, input, select { font: inherit; }
+      button { cursor: pointer; }
+      button:disabled { cursor: default !important; opacity: 0.45; }
+      button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid #c9b587; outline-offset: 3px; }
+      .review-bar { flex-shrink: 0; position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; padding: 12px 20px; border-bottom: 1px solid #38443a; background: #101916; }
+      .review-bar strong { color: #c9b587; }
+      .review-bar label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+      .review-bar select, .review-bar button { min-height: 36px; border: 1px solid #536354; border-radius: 4px; color: #f1f0e9; background: #18271f; padding: 4px 10px; }
+      .review-note { flex-basis: 100%; margin: 0; color: #a0b0a6; font: 12px/1.5 sans-serif; }
+      .stage { flex: 1; position: relative; min-height: 0; overflow: hidden; background: #0c1512; }
+      .scene-background { position: absolute; inset: 0; overflow: hidden; pointer-events: none; isolation: isolate; }
+      .scene-background-layer { position: absolute; inset: 0; opacity: 0; }
+      .scene-background-layer img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+      .scene-background-layer[data-kind='venue']::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #0c1512e6, #0c15128c); }
+      .home-menu { position: absolute; left: 12%; top: 50%; transform: translateY(-50%); display: grid; gap: 10px; }
+      .home-menu button { padding: 8px 0; background: transparent; border: 0; color: #a0b0a6; text-align: left; font: 700 24px/32px var(--game-heading-font); letter-spacing: 0.06em; }
+      .home-menu .active { color: #c9b587; }
+      .scene-note { position: absolute; left: 24px; bottom: 18px; margin: 0; font-size: 12px; color: #a0b0a6; }
+      .interior-drawer { display: flex; z-index: 1; }
+      .interior-design-list { gap: 16px; }
+      .interior-drawer-header { padding-bottom: 22px; }
+      .interior-more-things .option .badge { align-self: flex-start; }
+      .interior-more-things .option .arrow { margin-top: auto; }
+      .interior-more-things[data-view='lobby'] .interior-design-list > :nth-child(n + 4) { grid-column: 1 / -1; }
+      @media (min-width: 1001px) {
+        .interior-more-things[data-view='lobby'] .interior-design-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; }
+        .interior-more-things[data-view='lobby'] .interior-design-list > .card:has(.seat) { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+        .interior-more-things[data-view='lobby'] .seat + .seat { margin: 0; padding: 0 0 0 24px; border-top: 0; border-left: 1px solid #c9b58733; }
+        .interior-more-things[data-view='lobby'] .venue { flex-direction: column; align-items: flex-start; justify-content: center; }
+        .interior-more-things[data-view='lobby'] .venue img { width: 100%; height: 108px; }
+      }
+      .eyebrow { margin: 0 0 8px; color: #c9b587; font-size: 12px; letter-spacing: 0.14em; }
+      .intro { margin: 0; color: #a0b0a6; font-size: 16px; }
+      .option, .card { flex-shrink: 0; padding: 20px; border: 1px solid var(--interior-line); border-radius: 6px; background: #15231dcc; }
+      .option { display: block; width: 100%; color: inherit; text-align: left; }
+      .option:hover { border-color: #c9b587; background: #20362a; }
+      .option h3, .card h3 { margin: 6px 0 8px; font: 700 22px/1.2 var(--game-heading-font); }
+      .option p, .card p { margin: 0; color: #a0b0a6; }
+      .option .arrow { display: block; margin-top: 18px; color: #c9b587; letter-spacing: 0.08em; }
+      .badge { display: inline-block; padding: 3px 8px; border: 1px solid #c9b58755; border-radius: 3px; font-size: 12px; color: #c9b587; }
+      .badge.muted { color: #a0b0a6; border-color: #a0b0a655; }
+      .form { flex-shrink: 0; display: flex; flex-direction: column; gap: 18px; }
+      .hotseat-form { gap: 28px; }
+      .hotseat-players { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      .hotseat-players .field { min-width: 0; gap: 10px; }
+      .hotseat-players input { min-height: 52px; border-color: #a0b0a64d; }
+      .hotseat-venue-picker { min-width: 0; margin: 0; padding: 0; border: 0; }
+      .hotseat-venue-picker legend { margin: 0 0 16px; padding: 0; font: 700 22px/1.2 var(--game-heading-font); letter-spacing: 0.04em; }
+      .hotseat-venue-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .hotseat-venue-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #c9b58733; border-radius: 6px; background: #15231d; cursor: pointer; transition: border-color 160ms, background-color 160ms; }
+      .hotseat-venue-card:hover { border-color: #c9b58799; }
+      .hotseat-venue-card input { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip-path: inset(50%); }
+      .hotseat-venue-card:has(input:checked) { border-color: #c9b587; background: #20362a; box-shadow: inset 0 -2px #c9b587; }
+      .hotseat-venue-card:has(input:focus-visible) { outline: 2px solid #c9b587; outline-offset: 3px; }
+      .hotseat-venue-card::after { content: '✓'; position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #c9b587; color: #122017; opacity: 0; }
+      .hotseat-venue-card:has(input:checked)::after { opacity: 1; }
+      .hotseat-venue-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+      .hotseat-venue-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 8px; padding: 12px; }
+      .hotseat-venue-meta strong { min-width: 0; color: #f1f0e9; font: 700 20px/1.2 var(--game-heading-font); }
+      .hotseat-venue-code { color: #c9b587; font-size: 12px; letter-spacing: 0.1em; }
+      @media (min-width: 1201px) { .hotseat-venue-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .hotseat-venue-meta { align-items: flex-start; flex-direction: column; } }
+      @media (max-width: 480px) { .hotseat-players { grid-template-columns: minmax(0, 1fr); gap: 16px; } .hotseat-form { gap: 24px; } .hotseat-venue-grid { gap: 10px; } .hotseat-venue-meta { padding: 10px; } .hotseat-venue-meta strong { font-size: 18px; } }
+      .field { display: flex; flex-direction: column; gap: 6px; }
+      .field label { display: flex; align-items: center; gap: 10px; font: 700 20px/1.3 var(--game-heading-font); }
+      .seat-index { display: inline-grid; place-items: center; width: 24px; height: 24px; border: 1px solid #c9b58766; border-radius: 50%; color: #c9b587; font: 600 12px/1 var(--page-font); }
+      .field input, .field select { width: 100%; min-width: 0; min-height: 48px; border: 1px solid #6b7b6d; border-radius: 4px; padding: 10px 12px; background: #0c1512; color: #f1f0e9; font-size: 18px; }
+      .field small, .fine { color: #a0b0a6; font-size: 14px; line-height: 1.5; }
+      .field input[aria-invalid='true'] { border-color: #e6a68f; }
+      .error { margin: 0; color: #edb6a2; font-size: 16px; }
+      .venue { display: flex; gap: 14px; align-items: center; }
+      .venue img { width: 116px; height: 78px; object-fit: cover; border-radius: 3px; }
+      .venue strong { display: block; font: 700 22px/1.3 var(--game-heading-font); }
+      .venue .eyebrow { margin: 0; }
+      .text-button { min-height: 44px; padding: 6px 0; border: 0; background: transparent; color: #c9b587; font-size: 14px; text-align: left; letter-spacing: 0.04em; }
+      .interior-drawer-footer { gap: 12px; justify-content: space-between; }
+      .secondary, .primary, .danger { min-height: 44px; padding: 10px 16px; border: 1px solid #c9b58766; border-radius: 4px; background: transparent; color: #f1f0e9; font: 700 20px/1.2 var(--game-heading-font); letter-spacing: 0.04em; }
+      .primary { border-color: #c9b587; background: #c9b587; color: #122017; }
+      .primary:hover:enabled { background: #e0cca3; }
+      .danger { border-color: #e6a68f; color: #edb6a2; }
+      .room-code { display: block; margin: 10px 0; color: #f1f0e9; font: 700 40px/1.1 var(--game-heading-font); letter-spacing: 0.18em; user-select: all; }
+      .split { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+      .seat { display: flex; flex-direction: column; gap: 8px; }
+      .seat strong { font-size: 20px; overflow-wrap: anywhere; }
+      .seat + .seat { margin-top: 16px; padding-top: 16px; border-top: 1px solid #c9b58733; }
+      .state { margin: 0; color: #a0b0a6; }
+      .state.ready { color: #c9b587; }
+      .status-box { padding: 12px 14px; border-left: 2px solid #c9b587; background: #c9b5870c; color: #a0b0a6; }
+      .game-layer { position: absolute; inset: 0; }
+      .game-layer::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 80px; background: linear-gradient(transparent, #0008); pointer-events: none; }
+      .game-layer .game-ui-toolbar { display: flex; }
+      .game-layer .sprite, #hud-dialog .sprite { overflow: hidden; background: url('../../src/assets/images/ui-sprite-atlas.svg') no-repeat; background-size: 114px 114px; }
+      .game-layer .pause-icon { width: 27px; height: 31px; background-position: -83px -41px; }
+      .game-layer .replay-icon { width: 40px; height: 31px; background-position: -46px -4px; }
+      .game-layer .ball-on-icon { width: 20px; height: 20px; border: 1px solid #fff; border-radius: 50%; background: url('../../src/assets/images/snooker-ball-icons.svg') no-repeat; background-origin: border-box; background-size: 20px; visibility: hidden; }
+      .game-layer .game-ui-current-player .ball-on-icon { visibility: visible; }
+      .game-layer .shortcut-group, .game-layer .shortcut-item, #hud-dialog .shortcut-item { display: flex; align-items: center; }
+      .game-layer .shortcut-item { white-space: nowrap; line-height: 1.8; }
+      .game-layer .kb, #hud-dialog .kb { display: inline-block; margin-right: 0.4em; padding: 0 0.6em; border-radius: 0.2em; background: linear-gradient(#e4e4e4, #cecece); box-shadow: inset 0 1px #f5f5f5, inset 0 -1px #aaa; color: #272727; font-size: 0.7em; }
+      #hud-dialog { position: fixed; margin: 0; transform: translate(-50%, -50%); max-width: calc(100% - 32px); }
+      #hud-dialog[open] { display: flex; }
+      #hud-dialog .game-ui-panel-header h2 { margin: 0; }
+      #hud-dialog .box-body section[data-sid]:last-child { border: 0; }
+      .result { position: absolute; z-index: 1; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(480px, calc(100% - 32px)); padding: 28px; border: 1px solid #c9b58755; background: #0c1512f5; border-radius: 8px; }
+      .result h2 { margin: 0 0 16px; font-size: 32px; overflow-wrap: anywhere; }
+      .result table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+      .result th, .result td { padding: 10px 4px; border-bottom: 1px solid #c9b58722; text-align: center; overflow-wrap: anywhere; }
+      .result th:first-child, .result td:first-child { text-align: left; color: #a0b0a6; }
+      .result-actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 24px; }
+      dialog { max-width: min(420px, calc(100% - 32px)); padding: 24px; border: 1px solid #c9b58766; border-radius: 8px; background: #0c1512; color: #f1f0e9; }
+      dialog::backdrop { background: #0008; }
+      dialog h2 { margin: 0; font-size: 28px; }
+      dialog p { color: #a0b0a6; }
+      @media (max-width: 720px) { .home-menu { left: 5%; } .review-bar { padding: 10px 12px; gap: 8px 12px; } }
+      @media (max-width: 480px) { .review-bar label { flex-wrap: wrap; } .review-bar select { max-width: 180px; } .card, .option { padding: 16px; } .venue img { width: 92px; height: 68px; } .result { padding: 20px; } }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+    </style>
+  </head>
+  <body>
+    <header class="review-bar" lang="zh-CN">
+      <strong>设计预览 · One more thing...</strong>
+      <label
+        >面板
+        <select id="review-view" aria-label="预览面板">
+          <option value="overview">模式入口</option>
+          <option value="hotseat">同机双人 · 设置</option>
+          <option value="rooms">联网房间 · 入口</option>
+          <option value="create">创建房间</option>
+          <option value="join">加入房间</option>
+          <option value="lobby">等待面板 · 房主</option>
+          <option value="guest">等待面板 · 访客</option>
+          <option value="game">对局 HUD</option>
+          <option value="result">赛后结果</option>
+        </select></label
+      >
+      <label
+        >房间状态
+        <select id="review-state" aria-label="模拟房间状态">
+          <option value="waiting">等待另一席</option>
+          <option value="loading">对手加载中</option>
+          <option value="unready">对手未准备</option>
+          <option value="ready">双方可准备</option>
+          <option value="disconnected">对手断线</option>
+          <option value="failed">场馆加载失败</option>
+          <option value="closed">房间已关闭</option>
+        </select></label
+      >
+      <button id="review-turn" type="button">模拟下一回合</button>
+      <button id="review-result" type="button">查看结果样例</button>
+      <button id="review-scene-retry" type="button" hidden>重试背景</button>
+      <p class="review-note">
+        独立交互设计稿。房间、球权、分数及结果均为模拟，未启动游戏或连接服务。顶部控件不进入正式界面。
+        <span id="review-scene-note" role="status" hidden></span>
+      </p>
+    </header>
+    <main class="stage" id="stage">
+      <div class="scene-background" aria-hidden="true">
+        <div class="scene-background-layer" data-kind="venue" style="opacity: 1">
+          <img src="../../src/assets/images/interior-design-001-preview.jpg" alt="" />
+        </div>
+        <div class="scene-background-layer"><img alt="" /></div>
+      </div>
+      <nav class="home-menu" aria-label="Home menu">
+        <button type="button" disabled>SINGLE PLAY</button>
+        <button type="button" class="active" id="open-more">One more thing...</button>
+        <button type="button" disabled>PRACTICE</button>
+        <button type="button" disabled>INTERIOR DESIGN</button>
+        <button type="button" disabled>ABOUT</button>
+      </nav>
+      <p class="scene-note">VENUE THUMBNAIL · DESIGN BACKGROUND</p>
+      <aside
+        class="interior-drawer interior-more-things"
+        id="drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="panel-title"
+      >
+        <header class="interior-drawer-header">
+          <p class="eyebrow" id="panel-kicker"></p>
+          <h2 id="panel-title">One more thing...</h2>
+          <button type="button" class="interior-close" id="close-drawer" aria-label="Close panel">
+            ×
+          </button>
+        </header>
+        <div class="interior-design-list" id="panel-body"></div>
+        <footer class="interior-drawer-footer" id="panel-footer"></footer>
+      </aside>
+      <section class="game-layer" id="game-layer" aria-label="Simulated game HUD" hidden></section>
+      <section class="result" id="result" aria-labelledby="result-title" hidden></section>
+    </main>
+    <dialog
+      id="hud-dialog"
+      class="game-ui-panel pause-box"
+      aria-labelledby="hud-dialog-title"
+    ></dialog>
+    <dialog id="leave-dialog" aria-labelledby="leave-title">
+      <h2 id="leave-title">END ROOM?</h2>
+      <p id="leave-description"></p>
+      <div class="result-actions">
+        <button type="button" class="secondary" id="cancel-leave" autofocus>CANCEL</button
+        ><button type="button" class="danger" id="confirm-leave">END ROOM</button>
+      </div>
+    </dialog>
+    <script type="module">
+      // This isolated prototype simulates presentation states only; no game or room service is loaded.
+      const venues = [
+        { code: 'ORIGINAL', name: 'Original Club', file: 'original' },
+        { code: '001', name: 'Modern Club', file: '001' },
+        { code: '002', name: 'Amber Lounge', file: '002' },
+        { code: '003', name: 'Cobalt Gallery', file: '003' },
+      ];
+      const state = { view: 'overview', names: ['PLAYER 1', 'PLAYER 2'], venue: 1, role: 'host', roomState: 'waiting', ownReady: false, turn: 0, opening: 0, mode: 'hotseat', rematch: false, joinCode: '' };
+      const drawer = document.querySelector('#drawer');
+      const body = document.querySelector('#panel-body');
+      const footer = document.querySelector('#panel-footer');
+      const home = document.querySelector('.home-menu');
+      const game = document.querySelector('#game-layer');
+      const result = document.querySelector('#result');
+      const leave = document.querySelector('#leave-dialog');
+      const hudDialog = document.querySelector('#hud-dialog');
+      const sceneLayers = [...document.querySelectorAll('.scene-background-layer')];
+      const sceneNote = document.querySelector('#review-scene-note');
+      const sceneRetry = document.querySelector('#review-scene-retry');
+      const sceneImages = new Map();
+      const backgroundMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const background = { version: 0, active: 0, key: 'venue:../../src/assets/images/interior-design-001-preview.jpg', pendingKey: null, pending: null, fade: null, animation: null };
+      const viewSelect = document.querySelector('#review-view');
+      const roomSelect = document.querySelector('#review-state');
+      let returnFocus = null;
+      let hudReturnFocus = null;
+      let hudView = 'pause';
+      let hudBack = 'game';
+      const nameField = (id, label, seat = '', compact = false) => `<div class="field"><label for="${id}">${seat ? `<span class="seat-index">${seat}</span>` : ''}${label}</label><input id="${id}" name="${id}" autocomplete="off" aria-describedby="${compact ? 'form-error' : id + '-help form-error'}" />${compact ? '' : `<small id="${id}-help">Up to 20 characters. Blank names use the default.</small>`}</div>`;
+      const formError = '<p id="form-error" class="error" role="alert" hidden></p>';
+      const button = (action, text, kind = 'secondary') => `<button type="button" class="${kind}" data-action="${action}">${text}</button>`;
+      function setText(selector, value, root = body) { root.querySelector(selector).textContent = value; }
+      function venueCard(change = true) {
+        const venue = venues[state.venue];
+        return `<section class="card venue" aria-label="Current venue"><img src="../../src/assets/images/interior-design-${venue.file}-preview.jpg" alt="" /><div><p class="eyebrow">${venue.code} · VENUE</p><strong>${venue.name}</strong>${change ? button('venue', 'CHANGE VENUE', 'text-button') : '<span class="fine">HOST SELECTS</span>'}</div></section><div class="field" id="venue-picker" hidden><label for="venue-select">SELECT VENUE</label><select id="venue-select">${venues.map((item, index) => `<option value="${index}" ${index === state.venue ? 'selected' : ''}>${item.code} · ${item.name}</option>`).join('')}</select><small>Design preview only. The game uses its existing venue selector.</small></div>`;
+      }
+      function venueChoices() {
+        return `<fieldset class="hotseat-venue-picker"><legend>INTERIOR DESIGN</legend><div class="hotseat-venue-grid">${venues.map((venue, index) => `<label class="hotseat-venue-card"><input type="radio" name="hotseat-venue" value="${index}" aria-label="${venue.name}" ${state.venue === index ? 'checked' : ''} /><img src="../../src/assets/images/interior-design-${venue.file}-preview.jpg" alt="" width="320" height="180" /><span class="hotseat-venue-meta"><strong>${venue.name}</strong><span class="hotseat-venue-code">${venue.code}</span></span></label>`).join('')}</div></fieldset>`;
+      }
+      function updateVenueBackground() {
+        const venue = venues[state.venue];
+        const isMatch = ['game', 'result'].includes(state.view);
+        const kind = isMatch ? 'match' : 'venue';
+        const source = isMatch ? `../../artifacts/testing/rooms-panel-design/interior-design-${venue.file}-opening-scene.jpg` : `../../src/assets/images/interior-design-${venue.file}-preview.jpg`;
+        const key = kind + ':' + source;
+        if (background.pendingKey === key) { return background.pending; }
+        const version = ++background.version;
+        sceneNote.hidden = true;
+        sceneRetry.hidden = true;
+        background.pendingKey = key;
+        background.pending = transitionScene({ source, kind, key, version }).finally(() => { if (version === background.version) { background.pendingKey = null; background.pending = null; } });
+        return background.pending;
+      }
+      function loadSceneImage(source) {
+        if (!sceneImages.has(source)) {
+          const image = new Image();
+          image.decoding = 'async';
+          image.src = source;
+          const ready = image.decode().then(() => image).catch((error) => { sceneImages.delete(source); throw error; });
+          sceneImages.set(source, ready);
+        }
+        return sceneImages.get(source);
+      }
+      async function transitionScene(request) {
+        const { source, kind, key, version } = request;
+        try {
+          if (!background.fade && background.key === key) { return true; }
+          const image = await loadSceneImage(source);
+          if (version !== background.version) { return false; }
+          if (background.fade) { await background.fade; }
+          if (version !== background.version) { return false; }
+          if (background.key === key) { return true; }
+          const nextIndex = 1 - background.active;
+          const next = sceneLayers[nextIndex];
+          const previous = sceneLayers[background.active];
+          const nextImage = next.querySelector('img');
+          nextImage.src = image.src;
+          await nextImage.decode();
+          if (version !== background.version) { return false; }
+          next.dataset.kind = kind;
+          next.style.zIndex = '1'; previous.style.zIndex = '0'; next.style.opacity = '0';
+          const reduced = backgroundMotion.matches;
+          const animation = reduced ? null : next.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'forwards' });
+          background.animation = animation;
+          const fade = (async () => {
+            if (animation) { await animation.finished; }
+            next.style.opacity = '1'; previous.style.opacity = '0';
+            if (animation) { animation.cancel(); }
+            if (background.animation === animation) { background.animation = null; }
+            next.style.zIndex = ''; previous.style.zIndex = '';
+            background.active = nextIndex; background.key = key;
+          })();
+          background.fade = fade;
+          try { await fade; } finally { if (background.fade === fade) { background.fade = null; } }
+          return version === background.version;
+        } catch {
+          if (version === background.version) { sceneNote.hidden = false; sceneRetry.hidden = false; sceneNote.textContent = kind === 'match' ? '开局实景加载失败，保留原背景。可重试；缺图时运行 node scripts/capture-match-opening.mjs。' : '室内预览加载失败，保留原背景。请重试。'; }
+          return false;
+        }
+      }
+      function saveDraft() {
+        const first = body.querySelector('#player-one');
+        const second = body.querySelector('#player-two');
+        const local = body.querySelector('#your-name');
+        const code = body.querySelector('#room-code-input');
+        if (first) { state.names[0] = first.value; }
+        if (second) { state.names[1] = second.value; }
+        if (local) { state.names[state.role === 'host' ? 0 : 1] = local.value; }
+        if (code) { state.joinCode = code.value; }
+      }
+      function show(view, focus = true) {
+        if (hudDialog.open) { hudDialog.close(); }
+        const previousView = state.view;
+        saveDraft();
+        state.view = view;
+        if (view === 'guest') { state.role = 'guest'; state.view = 'lobby'; }
+        else if (view === 'lobby' || view === 'create') { state.role = 'host'; }
+        else if (view === 'join') { state.role = 'guest'; }
+        drawer.dataset.view = state.view;
+        updateVenueBackground();
+        drawer.hidden = ['home', 'game', 'result'].includes(state.view);
+        drawer.inert = drawer.hidden;
+        home.inert = !drawer.hidden || state.view !== 'home';
+        home.hidden = ['game', 'result'].includes(state.view);
+        game.hidden = !['game', 'result'].includes(state.view);
+        game.inert = state.view === 'result';
+        document.querySelector('.scene-note').hidden = ['game', 'result'].includes(state.view);
+        result.hidden = state.view !== 'result';
+        viewSelect.value = state.view === 'lobby' && state.role === 'guest' ? 'guest' : state.view === 'home' ? 'overview' : state.view;
+        roomSelect.value = state.roomState;
+        document.querySelector('#review-turn').disabled = state.view !== 'game';
+        document.querySelector('#review-result').disabled = !['game', 'result'].includes(state.view);
+        if (state.view === 'home') { document.querySelector('#open-more').focus({ preventScroll: true }); return; }
+        if (['game', 'result'].includes(state.view)) { renderGame(); if (state.view === 'result') { renderResult(); } else if (focus) { document.querySelector('#review-turn').focus({ preventScroll: true }); } return; }
+        body.replaceChildren(); footer.replaceChildren();
+        const title = document.querySelector('#panel-title');
+        const kicker = document.querySelector('#panel-kicker');
+        const titles = { overview: 'One more thing...', hotseat: 'TWO-PLAYER MATCH', rooms: 'ROOMS', create: 'CREATE ROOM', join: 'JOIN ROOM', lobby: 'ROOM' };
+        title.textContent = titles[state.view];
+        kicker.hidden = ['overview', 'hotseat'].includes(state.view);
+        kicker.textContent = kicker.hidden ? '' : 'ONLINE · NEXT PHASE · SIMULATED';
+        if (state.view === 'overview') {
+          body.innerHTML = `<div class="interior-more-options"><button class="option interior-more-option is-featured" data-action="hotseat"><span class="badge">FIRST RELEASE · LOCAL</span><h3>TWO-PLAYER MATCH</h3><p>Share one computer and take turns.<br />Two names, independent scores.</p><span class="arrow">SET UP A MATCH ↗</span></button><button class="option interior-more-option" data-action="rooms"><span class="badge muted">ONLINE · NEXT</span><h3>ROOMS</h3><p>Create a private room or join a friend.<br />Two seats, one shared venue.</p><span class="arrow">EXPLORE THE DESIGN ↗</span></button></div>`;
+          footer.innerHTML = button('home', 'BACK');
+        } else if (state.view === 'hotseat') {
+          body.innerHTML = `<form id="setup-form" class="form hotseat-form"><div class="hotseat-players">${nameField('player-one', 'PLAYER 1', '1', true)}${nameField('player-two', 'PLAYER 2', '2', true)}</div>${formError}${venueChoices()}</form>`;
+          body.querySelector('#player-one').value = state.names[0]; body.querySelector('#player-two').value = state.names[1];
+          footer.innerHTML = `${button('overview', 'BACK')}<button class="primary" type="submit" form="setup-form">START MATCH</button>`;
+        } else if (state.view === 'rooms') {
+          body.innerHTML = `<p class="intro">A private table for you and a friend.</p><div class="status-box">ONLINE DESIGN PREVIEW<br />Room service is planned after local two-player.</div><button class="option" data-action="create"><h3>CREATE ROOM</h3><p>Choose a venue, share a room code.<br />You host the match.</p><span class="arrow">CREATE ↗</span></button><button class="option" data-action="join"><h3>JOIN ROOM</h3><p>Enter the six-character code from your friend.</p><span class="arrow">JOIN ↗</span></button><p class="fine">The local match works independently of online services.</p>`;
+          footer.innerHTML = button('overview', 'BACK');
+        } else if (['create', 'join'].includes(state.view)) {
+          body.innerHTML = `<p class="intro">${state.view === 'create' ? 'Choose your name and table.' : 'Take the second seat at a private table.'}</p><form id="setup-form" class="form">${nameField('your-name', 'YOUR NAME')}${state.view === 'create' ? venueCard() : '<div class="field"><label for="room-code-input">ROOM CODE</label><input id="room-code-input" autocomplete="off" spellcheck="false" aria-describedby="code-help form-error" /><small id="code-help">Six letters or numbers, excluding 0, O, 1 and I. Spaces and hyphens are accepted.</small></div>'}${formError}<div class="status-box">SIMULATED REQUEST · No room will be created or joined.</div></form>`;
+          body.querySelector('#your-name').value = state.names[state.role === 'host' ? 0 : 1];
+          if (state.view === 'join') { body.querySelector('#room-code-input').value = state.joinCode; }
+          footer.innerHTML = `${button('rooms', 'BACK')}<button class="primary" type="submit" form="setup-form">${state.view === 'create' ? 'CREATE ROOM' : 'JOIN ROOM'}</button>`;
+        } else { renderLobby(); }
+        body.scrollTop = 0;
+        if (focus) {
+          const returnAction = state.view === 'overview' && previousView === 'rooms' ? 'rooms' : state.view === 'rooms' && previousView === 'join' ? 'join' : state.view === 'rooms' && previousView === 'create' ? 'create' : null;
+          (returnAction ? body.querySelector('[data-action="' + returnAction + '"]') : body.querySelector('input, button') || document.querySelector('#close-drawer')).focus({ preventScroll: true });
+        }
+      }
+      function renderLobby() {
+        const isHost = state.role === 'host';
+        const otherSeat = state.roomState !== 'waiting';
+        const canReady = !['failed', 'closed'].includes(state.roomState);
+        const canStart = isHost && state.ownReady && state.roomState === 'ready';
+        const otherStatus = { waiting: 'Empty seat · Share your code', loading: 'Loading venue…', unready: 'Online · Not ready', ready: '✓ Ready', disconnected: 'Disconnected · Reconnecting', failed: 'Venue failed to load', closed: 'Room closed by host' }[state.roomState];
+        body.innerHTML = `<section class="card"><div class="split"><span class="badge">PRIVATE · 2 SEATS</span><span class="fine">SIMULATED</span></div><strong class="room-code" id="room-code">K7M R2X</strong>${button('copy', 'COPY CODE', 'text-button')}<p class="fine" id="copy-status" role="status">Select the code to copy it manually.</p></section>${venueCard(isHost && state.roomState !== 'closed')}<section class="card"><div class="seat"><div class="split"><strong id="own-name"></strong><span class="badge">${isHost ? 'HOST · YOU' : 'YOU'}</span></div><p class="state ${state.ownReady ? 'ready' : ''}">${state.roomState === 'failed' ? 'Venue failed to load' : state.ownReady ? '✓ Ready' : 'Venue loaded · Not ready'}</p></div><div class="seat"><div class="split"><strong id="other-name"></strong><span class="badge muted">${isHost ? 'GUEST' : 'HOST'}</span></div><p class="state ${state.roomState === 'ready' ? 'ready' : ''}">${otherStatus}</p></div></section><p class="status-box" role="status">${state.roomState === 'closed' ? 'This room is no longer available. Return to Rooms.' : state.roomState === 'disconnected' ? 'The next turn waits for reconnection. Keep your seat while recovery is available.' : state.roomState === 'failed' ? 'Retry venue loading before preparing.' : canStart ? 'Both players are ready. Host can start.' : state.roomState === 'waiting' ? 'Waiting for a second player.' : !isHost && state.ownReady ? 'Waiting for the host to start.' : 'Both players must load the venue and confirm ready.'}</p><div class="split">${button('ready', state.ownReady ? 'CANCEL READY' : 'READY', 'primary')}${state.roomState === 'failed' ? button('retry', 'RETRY VENUE') : ''}</div>`;
+        setText('#own-name', state.names[isHost ? 0 : 1] || (isHost ? 'PLAYER 1' : 'PLAYER 2'));
+        setText('#other-name', otherSeat ? state.names[isHost ? 1 : 0] || 'OTHER PLAYER' : 'WAITING FOR PLAYER');
+        body.querySelector('[data-action="ready"]').disabled = !canReady;
+        footer.innerHTML = state.roomState === 'closed' ? button('rooms', 'BACK TO ROOMS') : `${button('leave', isHost ? 'END ROOM' : 'LEAVE ROOM', 'danger')}<button type="button" class="primary" data-action="start-online" ${canStart ? '' : 'disabled'}>${isHost ? 'START MATCH' : 'WAITING FOR HOST'}</button>`;
+      }
+      function normalize(value, fallback) { return value.trim().replace(/\s+/gu, ' ') || fallback; }
+      function validate() {
+        saveDraft();
+        const error = body.querySelector('#form-error');
+        for (const input of body.querySelectorAll('input')) { input.removeAttribute('aria-invalid'); }
+        const fail = (id, message) => { error.hidden = false; error.textContent = message; const input = body.querySelector('#' + id); input.setAttribute('aria-invalid', 'true'); input.focus({ preventScroll: true }); return false; };
+        const indexes = state.view === 'hotseat' ? [0, 1] : [state.role === 'host' ? 0 : 1];
+        for (const index of indexes) {
+          const id = state.view === 'hotseat' ? (index === 0 ? 'player-one' : 'player-two') : 'your-name';
+          state.names[index] = normalize(state.names[index], 'PLAYER ' + (index + 1));
+          body.querySelector('#' + id).value = state.names[index];
+          if (Array.from(state.names[index]).length > 20) { return fail(id, 'Use a name with no more than 20 characters.'); }
+        }
+        if (state.view === 'hotseat' && state.names[0].toLowerCase() === state.names[1].toLowerCase()) { return fail('player-two', 'Use different names so each player is easy to identify.'); }
+        if (state.view === 'join') {
+          const code = state.joinCode.toUpperCase().replace(/[\s-]/gu, '');
+          if (!/^[A-HJ-NP-Z2-9]{6}$/.test(code)) { return fail('room-code-input', 'Enter six valid characters. Do not use 0, O, 1 or I.'); }
+          state.joinCode = code;
+        }
+        error.hidden = true; return true;
+      }
+      function renderGame() {
+        game.innerHTML = `<div class="game-ui-hud" aria-label="Scoreboard" data-mode="match">${[0, 1].map((index) => `<div class="${index === 0 ? 'left' : 'right'} ${state.turn === index ? 'game-ui-current-player' : ''}" data-seat="${index}"><h2 class="head" data-name="${index}"></h2><span class="ball-on-icon" role="img" aria-label="${state.turn === index ? 'Target: red' : 'Waiting turn'}"></span><span class="brk-label">BRK</span><span class="brk">0</span><span class="pts">0</span></div>`).join('')}<div class="game-ui-status" id="turn-status" role="status"></div></div><div class="game-ui-toolbar lower" role="group" aria-label="Game controls"><button type="button" class="game-ui-icon-button" aria-label="Replay last shot" title="No shot to replay in this design preview" disabled><span class="sprite replay-icon" aria-hidden="true"></span></button><button type="button" class="game-ui-icon-button" data-hud-action="pause" aria-label="Pause game" title="Pause game"><span class="sprite pause-icon" aria-hidden="true"></span></button></div><div class="game-ui-shortcuts"><div class="shortcut-group stand-group"><span class="shortcut-item"><span class="kb">W</span>AIM</span><span class="shortcut-item"><span class="kb">X</span>CROUCH</span></div><button type="button" class="more-button" data-hud-action="controls" aria-label="Open controls guide">CONTROLS</button></div>`;
+        for (const name of game.querySelectorAll('[data-name]')) {
+          const index = Number(name.dataset.name);
+          name.textContent = state.names[index]; name.title = name.textContent;
+          game.querySelector(`[data-seat="${index}"]`).setAttribute('aria-label', name.textContent + ', score 0' + (state.turn === index ? ', current turn' : ''));
+        }
+        setText('#turn-status', state.names[state.turn] + ' · YOUR TURN', game);
+      }
+      function openHudPanel(view, back = 'game') {
+        if (!hudDialog.open) { hudReturnFocus = document.activeElement; hudBack = back; }
+        hudView = view;
+        hudDialog.classList.toggle('pause-box', view === 'pause');
+        hudDialog.classList.toggle('confirm-box', ['restart', 'quit'].includes(view));
+        const titles = { pause: 'PAUSED', controls: 'CONTROLS GUIDE', restart: 'RESTART MATCH?', quit: 'QUIT MATCH?' };
+        let content;
+        if (view === 'pause') {
+          content = `<div class="game-ui-panel-content"><div class="box-body">${[['resume', 'RESUME'], ...(state.mode === 'hotseat' ? [['restart', 'RESTART']] : []), ['controls', 'CONTROLS GUIDE'], ['quit', 'QUIT']].map(([action, label]) => `<section data-sid="${action}"><button type="button" class="game-ui-choice" data-hud-action="${action}">${label}</button></section>`).join('')}</div></div>`;
+        } else if (view === 'controls') {
+          content = `<div class="game-ui-panel-content"><div class="box-body"><section><h3 class="subhead-section">STANDING</h3>${[['AIM', 'W'], ['CROUCH', 'X'], ['PLACE BALL', 'P · WHEN BALL IN HAND']].map(([label, key]) => `<div class="flex-section"><label>${label}</label><span class="shortcut-item"><span class="kb">${key}</span></span></div>`).join('')}</section><section><h3 class="subhead-section">AIMING</h3>${[['SHOT', 'SPACE'], ['STAND', 'S'], ['ADD SPIN', 'Alt + MOUSE'], ['CLEAR SPIN', 'C'], ['SET POWER', 'MOUSE WHEEL'], ['ELEVATION', 'Alt + MOUSE WHEEL']].map(([label, key]) => `<div class="flex-section"><label>${label}</label><span class="shortcut-item"><span class="kb">${key}</span></span></div>`).join('')}</section></div></div><footer class="box-foot"><button type="button" class="default-button" data-hud-action="back">${hudBack === 'pause' ? 'BACK' : 'CLOSE'}</button></footer>`;
+        } else {
+          content = `<div class="game-ui-panel-content"><p class="box-body-copy">${view === 'restart' ? 'Restart this frame with the same players and venue.' : state.mode === 'online' ? 'Leave this match and return to Rooms.' : 'Return to the main menu. This frame will end.'}</p></div><footer class="box-foot"><button type="button" class="default-button" data-hud-action="back">CANCEL</button><button type="button" class="default-button game-ui-danger-action" data-hud-action="confirm">${view === 'restart' ? 'RESTART' : 'QUIT'}</button></footer>`;
+        }
+        hudDialog.innerHTML = `<header class="game-ui-panel-header"><h2 class="box-head" id="hud-dialog-title">${titles[view]}</h2></header>${content}`;
+        if (!hudDialog.open) { hudDialog.showModal(); }
+        hudDialog.querySelector('button').focus({ preventScroll: true });
+      }
+      function hudAction(action) {
+        if (action === 'resume') { hudDialog.close(); }
+        else if (action === 'back') { if (hudBack === 'pause') { const previous = hudView; openHudPanel('pause'); hudDialog.querySelector(`[data-hud-action="${previous}"]`)?.focus({ preventScroll: true }); } else { hudDialog.close(); } }
+        else if (action === 'confirm') {
+          const view = hudView;
+          hudDialog.close();
+          if (view === 'restart') { state.turn = state.opening; renderGame(); game.querySelector('[data-hud-action="pause"]').focus({ preventScroll: true }); }
+          else { if (state.mode === 'online') { requestLeave(); } else { show('home'); } }
+        } else { const back = hudDialog.open ? 'pause' : 'game'; hudBack = back; openHudPanel(action, back); }
+      }
+      function renderResult() {
+        result.innerHTML = `<p class="eyebrow">ONE FRAME · DISPLAY SAMPLE</p><h2 id="result-title"></h2><table aria-label="Fictional match statistics"><thead><tr><th>STATISTIC</th><th data-result-name="0"></th><th data-result-name="1"></th></tr></thead><tbody><tr><td>Score</td><td>64</td><td>42</td></tr><tr><td>Highest break</td><td>24</td><td>18</td></tr><tr><td>Penalty points</td><td>4</td><td>8</td></tr></tbody></table><p class="fine" role="status" id="rematch-status">${state.mode === 'online' ? 'Both players must agree to a new frame.' : 'Next frame: the opening player alternates.'}</p><div class="result-actions">${button('home', state.mode === 'online' ? 'LEAVE ROOM' : 'MAIN MENU')}${button('rematch', state.mode === 'online' ? 'REQUEST REMATCH' : 'PLAY AGAIN', 'primary')}</div>`;
+        setText('#result-title', state.names[0] + ' WINS', result);
+        for (const name of result.querySelectorAll('[data-result-name]')) { name.textContent = state.names[Number(name.dataset.resultName)]; }
+        result.querySelector('.primary').focus({ preventScroll: true });
+      }
+      function requestLeave() {
+        returnFocus = document.activeElement;
+        const isHost = state.role === 'host';
+        document.querySelector('#leave-title').textContent = isHost ? 'END ROOM?' : 'LEAVE ROOM?';
+        document.querySelector('#leave-description').textContent = isHost ? 'The room will close for both players. This preview simulates the confirmation only.' : 'Your seat will be released. This preview does not contact a room service.';
+        document.querySelector('#confirm-leave').textContent = isHost ? 'END ROOM' : 'LEAVE ROOM';
+        leave.showModal(); document.querySelector('#cancel-leave').focus();
+      }
+      function action(name) {
+        if (name === 'venue') { body.querySelector('#venue-picker').hidden = false; body.querySelector('#venue-select').focus({ preventScroll: true }); }
+        else if (name === 'ready') { state.ownReady = !state.ownReady; renderLobby(); body.querySelector('[data-action="ready"]').focus({ preventScroll: true }); }
+        else if (name === 'retry') { state.roomState = 'unready'; state.ownReady = false; show(state.role === 'guest' ? 'guest' : 'lobby'); }
+        else if (name === 'copy') {
+          const status = body.querySelector('#copy-status');
+          const feedback = (message) => { if (status.isConnected) { status.textContent = message; } };
+          navigator.clipboard?.writeText('K7MR2X').then(() => feedback('Preview code copied. This is not a real room.')).catch(() => feedback('Copy unavailable. Select K7M R2X and copy manually.'));
+          if (!navigator.clipboard) { feedback('Copy unavailable. Select K7M R2X and copy manually.'); }
+        }
+        else if (name === 'leave') { requestLeave(); }
+        else if (name === 'start-online') { if (state.role === 'host' && state.ownReady && state.roomState === 'ready') { state.mode = 'online'; state.turn = 0; show('game'); } }
+        else if (name === 'rematch') {
+          if (state.mode === 'online') { state.rematch = true; setText('#rematch-status', '1/2 agreed · Waiting for the other player. No new frame has started.', result); result.querySelector('[data-action="rematch"]').disabled = true; }
+          else { state.opening = 1 - state.opening; state.turn = state.opening; show('game'); }
+        } else if (name === 'home' && state.view === 'result' && state.mode === 'online') { requestLeave(); }
+        else { show(name); }
+      }
+      document.querySelector('#stage').addEventListener('click', (event) => { const target = event.target.closest('[data-action]'); if (target && !target.disabled) { action(target.dataset.action); } });
+      game.addEventListener('click', (event) => { const target = event.target.closest('[data-hud-action]'); if (target && !target.disabled && state.view === 'game') { hudAction(target.dataset.hudAction); } });
+      sceneRetry.addEventListener('click', updateVenueBackground);
+      backgroundMotion.addEventListener('change', (event) => { if (event.matches) { background.animation?.finish(); } });
+      hudDialog.addEventListener('click', (event) => { const target = event.target.closest('[data-hud-action]'); if (target) { hudAction(target.dataset.hudAction); } });
+      hudDialog.addEventListener('cancel', (event) => { event.preventDefault(); hudAction(hudView === 'pause' ? 'resume' : 'back'); });
+      hudDialog.addEventListener('close', () => { if (hudReturnFocus?.isConnected && hudReturnFocus.getClientRects().length > 0 && !hudDialog.open && !leave.open && state.view === 'game') { hudReturnFocus.focus({ preventScroll: true }); } });
+      hudDialog.addEventListener('keydown', (event) => {
+        const controls = [...hudDialog.querySelectorAll('button:not(:disabled)')];
+        const index = controls.indexOf(document.activeElement);
+        if (event.key === 'Tab' && ((event.shiftKey && index === 0) || (!event.shiftKey && index === controls.length - 1))) { event.preventDefault(); controls[event.shiftKey ? controls.length - 1 : 0].focus({ preventScroll: true }); }
+        else if (hudView === 'pause' && ['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) { event.preventDefault(); const next = event.key === 'Home' ? 0 : event.key === 'End' ? controls.length - 1 : (index + (event.key === 'ArrowUp' ? -1 : 1) + controls.length) % controls.length; controls[next].focus({ preventScroll: true }); }
+      });
+      body.addEventListener('submit', (event) => {
+        event.preventDefault(); if (!validate()) { return; }
+        if (state.view === 'hotseat') { state.mode = 'hotseat'; state.opening = 0; state.turn = 0; show('game'); }
+        else { state.ownReady = false; if (state.view === 'join') { state.roomState = 'ready'; } show(state.role === 'guest' ? 'guest' : 'lobby'); }
+      });
+      body.addEventListener('change', (event) => {
+        if (state.view === 'hotseat' && event.target.name === 'hotseat-venue') {
+          const index = Number(event.target.value);
+          if (Number.isInteger(index) && index >= 0 && index < venues.length) { saveDraft(); state.venue = index; updateVenueBackground(); }
+        } else if (event.target.id === 'venue-select') {
+          saveDraft(); state.venue = Number(event.target.value); state.ownReady = false;
+          if (state.view === 'lobby' && state.roomState === 'ready') { state.roomState = 'unready'; }
+          show(state.view === 'lobby' && state.role === 'guest' ? 'guest' : state.view);
+        }
+      });
+      document.querySelector('#close-drawer').addEventListener('click', () => { if (state.view === 'lobby' && state.roomState !== 'closed') { requestLeave(); } else { show('home'); } });
+      document.querySelector('#open-more').addEventListener('click', () => show('overview'));
+      viewSelect.addEventListener('change', () => { if (['create', 'join', 'lobby', 'guest'].includes(viewSelect.value)) { state.mode = 'online'; } else if (viewSelect.value === 'hotseat') { state.mode = 'hotseat'; } show(viewSelect.value); });
+      roomSelect.addEventListener('change', () => { state.roomState = roomSelect.value; if (['failed', 'closed'].includes(state.roomState)) { state.ownReady = false; } show(state.role === 'guest' ? 'guest' : 'lobby'); });
+      document.querySelector('#review-turn').addEventListener('click', () => { state.turn = 1 - state.turn; renderGame(); });
+      document.querySelector('#review-result').addEventListener('click', () => show('result'));
+      document.querySelector('#cancel-leave').addEventListener('click', () => leave.close());
+      document.querySelector('#confirm-leave').addEventListener('click', () => { leave.close(); show('rooms'); });
+      leave.addEventListener('close', () => { if (returnFocus?.isConnected) { returnFocus.focus({ preventScroll: true }); } });
+      document.addEventListener('keydown', (event) => {
+        if (hudDialog.open) { return; }
+        if (state.view === 'game' && event.key === 'Escape' && !leave.open) { event.preventDefault(); openHudPanel('pause'); return; }
+        if (leave.open || drawer.hidden || !drawer.contains(document.activeElement)) { return; }
+        if (event.key === 'Tab') {
+          const controls = [...drawer.querySelectorAll('button:not(:disabled), input:not(:disabled), select:not(:disabled), a[href]')].filter((control) => control.getClientRects().length > 0);
+          const index = controls.indexOf(document.activeElement);
+          if ((event.shiftKey && index === 0) || (!event.shiftKey && index === controls.length - 1)) { event.preventDefault(); controls[event.shiftKey ? controls.length - 1 : 0].focus({ preventScroll: true }); }
+        } else if (event.key === 'Escape') {
+          event.preventDefault();
+          if (state.view === 'lobby' && state.roomState !== 'closed') { requestLeave(); }
+          else { show({ overview: 'home', hotseat: 'overview', rooms: 'overview', create: 'rooms', join: 'rooms', lobby: 'rooms' }[state.view]); }
+        }
+      });
+      show('overview', false);
+    </script>
+  </body>
+</html>

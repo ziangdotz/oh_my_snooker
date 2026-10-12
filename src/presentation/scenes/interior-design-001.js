@@ -1,4 +1,5 @@
 import createInteriorFinishes from './interior-finishes.js';
+import createInteriorTexture from './create-interior-texture.js';
 import createInteriorGeometry from './interior-geometry.js';
 import createInteriorArchitecture from './interior-architecture.js';
 import createInteriorLighting from './interior-lighting.js';
@@ -241,7 +242,7 @@ export default function interiorDesign001Module(module, _exports, loadModule) {
     box('art-frame', [2.46, 1.68, 0.07], [-1.55, 1.82, -3.91], 'bronze');
     box('art-mount', [2.4, 1.62, 0.08], [-1.55, 1.82, -3.875], 'frame-inner');
     const art = material('artwork', '#ffffff', 0.025);
-    art.diffuseTexture = new B.Texture(artworkUrl, scene);
+    art.diffuseTexture = createInteriorTexture(B, artworkUrl, scene);
     plane('art', 2.34, 1.56, [-1.55, 1.82, -3.828], art);
     architecture.pictureLight(-1.55, 2.79, -3.9, 1.6);
 

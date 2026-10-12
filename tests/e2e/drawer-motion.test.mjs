@@ -68,7 +68,8 @@ try {
                         style.transform === 'none'
                           ? 0
                           : new window.DOMMatrixReadOnly(style.transform).m41,
-                      width: element.offsetWidth,
+                      // Viewport proportions can produce fractional CSS widths.
+                      width: element.getBoundingClientRect().width,
                       containerScrollLeft: document.querySelector('#game-container').scrollLeft,
                       documentScrollLeft: document.documentElement.scrollLeft,
                     });
