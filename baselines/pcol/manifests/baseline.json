@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "baselineId": "local-runtime-v1",
+  "createdDate": "2026-10-03",
+  "purpose": "Self-contained local runtime baseline; compatibility and plain-text credits included",
+  "files": [
+    {
+      "path": "compatibility/browser.js",
+      "bytes": 899,
+      "sha256": "6253c7faead87f1d01c3aab1c7780f55857ab86897ee6166ffaec6e682a12de1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4402,
+      "sha256": "8303bbf2639a190443936a08d95876dfbeff7f69e8c1cfbf9fe8009991c37ffc"
+    },
+    {
+      "path": "res/0.chunk.js",
+      "bytes": 1865309,
+      "sha256": "bd0983fab902463bdb24056e98a5517c0c419d32c7f9e281ccf55dba3d51e09b"
+    },
+    {
+      "path": "res/03d23c55623e6d9695455b64e626cd3c.svg",
+      "bytes": 254661,
+      "sha256": "17f62b682106c9ad8f4e1691d8c399a940d24c50dfbff3abd91c5fb3a5d393fb"
+    },
+    {
+      "path": "res/0b8abbd09ae011d71d4558e0d30e0c85.png",
+      "bytes": 4066,
+      "sha256": "dc0421170290541f75d543d9e930b10d8ce8530fa98844fbade5131ee70d39e3"
+    },
+    {
+      "path": "res/0cf175d36e4c6d7b1532090871e4b6ac.png",
+      "bytes": 39759,
+      "sha256": "0f35aa34d2305f39b5478f568852399e71962ab35fa97942dedcc5745c623ec1"
+    },
+    {
+      "path": "res/1.chunk.js",
+      "bytes": 332200,
+      "sha256": "4052fdc3ab5809d0b15857caa3694d801500aa0b74718108eac8c33732d4b2bd"
+    },
+    {
+      "path": "res/154a31248c69da93379562cbf6763238.jpg",
+      "bytes": 49986,
+      "sha256": "4e6ea676cef0d056ec6fd89658aaf9ab1f40c6f9dfdc319ab309a18bdab9fc67"
+    },
+    {
+      "path": "res/19cfc57b94b49b3ebac00319a7b7a0f0.hdr",
+      "bytes": 295463,
+      "sha256": "6cb93810cfb503a488461c13c4df16da7fbadf114b5920dfaaeec23c9a3e3cae"
+    },
+    {
+      "path": "res/19fde9655ac9e264f1555d6fdd06c7be.png",
+      "bytes": 3698,
+      "sha256": "8a357eba5b1ccf576e2bdbe642908895a78da24d47b6e463f081d6aa4f91b7d9"
+    },
+    {
+      "path": "res/1a2152a3740bde223ab5523cc9458021.png",
+      "bytes": 57507,
+      "sha256": "dde41bfa214c9ea3add008c8c343748457f9ac9abf41ad04bf7b5480c5eb0ef7"
+    },
+    {
+      "path": "res/1d6ef5b7e6c568c14684b0458ea0f5f4.png",
+      "bytes": 7243,
+      "sha256": "ca06ecb5b8d12ccec8b32857f7c0b77247d61cc410c48a6d2b0ba46ab74ca485"
+    },
+    {
+      "path": "res/1d7af82a4bcfa1d965e85bf46a90bb29.jpg",
+      "bytes": 2110,
+      "sha256": "c174f2fb1f7e64579fe09531653a41a59ef49cb56c55964ec19a69a4129be299"
+    },
+    {
+      "path": "res/3427c4cbb59a2e2ab0efe1f0ecc91863.babylon",
+      "bytes": 35361,
+      "sha256": "c2d077b236c0833bf75495c8703c8fd91c8532375141f8bfb1559d06f0e65255"
+    },
+    {
+      "path": "res/3d1b758c77b1da54d5dedf70d7a4d4d3.png",
+      "bytes": 1537,
+      "sha256": "e912beed685c86e535aee291361a2bc067a83f4cdeb00bc697f610683c9d9e02"
+    },
+    {
+      "path": "res/413ac7b2bf52ce05e45f4f6d8497a651.babylon",
+      "bytes": 602127,
+      "sha256": "8c7fe334be3aa5fe0f5620c6cb2d9661dfe486fba61a6e131b49973f05974b5c"
+    },
+    {
+      "path": "res/49d071e163c3ec19a212dd057dad38a1.hdr",
+      "bytes": 200152,
+      "sha256": "dda79c4027ac00c99f482839ddb06d0a41f40ccebd970f4c5a236fa2028e0823"
+    },
+    {
+      "path": "res/4aa9c46c9e05cd604db6b101017a8e68.woff",
+      "bytes": 50224,
+      "sha256": "93850a1308bfd8d0b0791d25857dac59c1f9d662227d020bcfac0c1da8924201"
+    },
+    {
+      "path": "res/50bfb6586540c6eca915efab8949b3fc.jpg",
+      "bytes": 33435,
+      "sha256": "8b6f0387f482cdb35623701fe4d944bf3dd3b42100f08f4fadc9ea793191d1dd"
+    },
+    {
+      "path": "res/5401661d949732feeeb754ef7f93f5be.jpg",
+      "bytes": 4345,
+      "sha256": "e295eff5130988840587b236f8e07c2e0dbd90a11d85e5ae56eb4cbf6c6732d0"
+    },
+    {
+      "path": "res/55fb3a149e6ca62215283ef802a8e674.png",
+      "bytes": 14793,
+      "sha256": "8d0f61370a3ea74b62f52e25f5e17ec609eb6a97a77f323d06cdb87f7845b359"
+    },
+    {
+      "path": "res/71d7e9a206dbcc1777cadd7484cc700e.jpg",
+      "bytes": 200820,
+      "sha256": "d09e684087618388d794cbdb79009ffb54f0cfb982a402a5442c022c235925f3"
+    },
+    {
+      "path": "res/71fdd0575b210fed1648f685c99a7f6d.png",
+      "bytes": 124,
+      "sha256": "2b05025b526893737a6f93f0baa9f97ed02d7d0b93a81cffd3d3b22d18baade6"
+    },
+    {
+      "path": "res/76d6f505c99a8c4332a09785d278b9ea.ttf",
+      "bytes": 106912,
+      "sha256": "214b4a50c0f13aa9885499e8162876fc7962f58479aa8b87e8d8296b42329290"
+    },
+    {
+      "path": "res/7b6d5b9069bc3bf01daa9e92b8be8204.ttf",
+      "bytes": 106820,
+      "sha256": "d692d170acf75057cf6291ae4a24d9f5ad0148d609f957a5e591bc9bbc17ff93"
+    },
+    {
+      "path": "res/7ce00256097ccf0d2c0641fce8a96e57.eot",
+      "bytes": 114746,
+      "sha256": "5c44efaf07d84233ad8facee13b5a8bd1455681740390792d27b38590ff334a2"
+    },
+    {
+      "path": "res/7d4e3834fece222609998dc85373431c.eot",
+      "bytes": 107168,
+      "sha256": "937e15fb25eaccb4b6ae048170b2610f8bffa966cd50941584d1136e181ac3d4"
+    },
+    {
+      "path": "res/819e348970711b27f3ad5f5ffeeac62e.hdr",
+      "bytes": 1103949,
+      "sha256": "a3215d438c2433b575c44b5d020f7f39bd9703a57c366e15e1f3c08a84f98fbf"
+    },
+    {
+      "path": "res/855a855dc11807208be448e1ba95dde0.woff",
+      "bytes": 50164,
+      "sha256": "1ebd367239bdeda96b322e233e8913a418bcd8eccef2bbc3f3fa1b45a39f9cb2"
+    },
+    {
+      "path": "res/9015e788e127487984ded77dd0bac1a8.woff2",
+      "bytes": 50144,
+      "sha256": "a3df721321815dc7ba85e8f1914fc7ead0fff39b2603d4e3a36a2b83b0306787"
+    },
+    {
+      "path": "res/912c4020723463fc80e708a4ed8356cf.jpg",
+      "bytes": 21680,
+      "sha256": "b3ec3edc232489e4d07b9adf9c753b2ba98b0775c3f0fa03403596ccf6f5879e"
+    },
+    {
+      "path": "res/9f6cbb23fff05a957bdf1a770a398644.svg",
+      "bytes": 1168844,
+      "sha256": "c1927c6c5b70866c1ba288131947151484a19a634f2a0611589dea2ffdd38376"
+    },
+    {
+      "path": "res/a88748791c366be26c9bdf959d583d3f.ttf",
+      "bytes": 114556,
+      "sha256": "bf4bf60828401a5fea2ff3a0097ed50864085f9ba54826f48146207bbe97a23e"
+    },
+    {
+      "path": "res/b5198a9d33ee6ddd70a2b62c32cbc866.hdr",
+      "bytes": 869891,
+      "sha256": "3bc9008b6ed4012e8957155bd7e91d9cd6916d9a9fb9fd7563054b6f1f11761a"
+    },
+    {
+      "path": "res/b95c6631886fb0bdbe29a27af7fdd4cd.woff2",
+      "bytes": 36228,
+      "sha256": "9263b5295f46f4e382a4dfc31fd6f315d3eeff87fad90986709de1698f5e9aee"
+    },
+    {
+      "path": "res/bccbcdf0859ab8fd3ba7f7adac09c284.png",
+      "bytes": 32537,
+      "sha256": "30abf54cdab2ffe6a0df75e78f36a58db6b939e05cc5b5faa3aa1f4e8b027331"
+    },
+    {
+      "path": "res/browser-logos/chrome.png",
+      "bytes": 5195,
+      "sha256": "26a84e206a7f6d446233d9b2b6b497b32980183bea20c0221a341e84ee4b9928"
+    },
+    {
+      "path": "res/browser-logos/edge.png",
+      "bytes": 1521,
+      "sha256": "a725e4e07392732df6633bb78adb9eec63f44060a745c3e0ef71e18a8ff8ca57"
+    },
+    {
+      "path": "res/browser-logos/firefox.png",
+      "bytes": 6386,
+      "sha256": "8d71908b806408a583c76039aa6394972a02dbc21af0823f44b1017dba982192"
+    },
+    {
+      "path": "res/browser-logos/safari.png",
+      "bytes": 8441,
+      "sha256": "0610a47ba21e402131fdfc2d0885ee1d0b720b056fa76b23ea980e226994a4dd"
+    },
+    {
+      "path": "res/ce2af0abf8b75bf6158c85631595b617.eot",
+      "bytes": 107058,
+      "sha256": "dec179e8671bae43919c5024d6bb9fe17ad53c5a7f1440da8d6373c73899b130"
+    },
+    {
+      "path": "res/ce3b96ab2b51255e60d2d1aae633dae3.woff",
+      "bytes": 67540,
+      "sha256": "baec724e63a42c587dcde455031c730f69002246904cadffcfaf20a3d75948bd"
+    },
+    {
+      "path": "res/corridor-com.jpg",
+      "bytes": 75258,
+      "sha256": "7cc5dacb95a4922e333cf0d60172fc5c7e9e614a2629d31798e4f4fb4fc0569a"
+    },
+    {
+      "path": "res/d23994603bc78d7edf3a1c75cc893a6d.png",
+      "bytes": 937,
+      "sha256": "02d70d899c6c04af74380baff028dbd4a0a491fb5ea59d4e8c35e0202cb9c1b8"
+    },
+    {
+      "path": "res/d6e4cbeb6e1babc3e26cb444422bed49.png",
+      "bytes": 51712,
+      "sha256": "e94581fc4467260c1d233c09e0afcb1c0929a3a66544ebfa637e41f8d784a015"
+    },
+    {
+      "path": "res/d73140d10f68139d2e8571c275106f8d.png",
+      "bytes": 8056,
+      "sha256": "f584278ef6552ca561a0a00ff7307cfe4e3a7799ecb2fb93b51da7cc9215006f"
+    },
+    {
+      "path": "res/d9ffaafe595fd0df1c3eb7f32b7ece5a.jpg",
+      "bytes": 97631,
+      "sha256": "ff83544f3c11d8965d372b915e0473cc0b4c675eabf6162c282e265c690b2b48"
+    },
+    {
+      "path": "res/dbbde6970d29f635825a2403197b8699.jpg",
+      "bytes": 16949,
+      "sha256": "cffd521a163a230b79d81ffeee8e7fa0c4a98072c585a842e0e45b12286e49d3"
+    },
+    {
+      "path": "res/dc91752b541a41f86c5cd588195a6e7b.woff2",
+      "bytes": 36224,
+      "sha256": "ac31980893cce5eca54db7e0741258c531eaabeae59415da025fc1a0b3091e84"
+    },
+    {
+      "path": "res/e27dc4c3e6790d75a949d0b743b7457b.svg",
+      "bytes": 252524,
+      "sha256": "bc401ff1eb4c12550b8636a2b222d8be4712a7c335318bbcdb4da8249a040f3a"
+    },
+    {
+      "path": "res/f04dbae40e7d593c7914bf51880dfe87.jpg",
+      "bytes": 65986,
+      "sha256": "e5123fa813d4cc0fba7bab80a5448195c3add905e8b7461b82e2f9765954940a"
+    },
+    {
+      "path": "res/fab6def1bc4a56974cd45ffc0be44b25.jpg",
+      "bytes": 55679,
+      "sha256": "8108744ea2c14c53021541453bb701d98f6a09e31abf2f424659fce90bcb805e"
+    },
+    {
+      "path": "res/favicon.ico",
+      "bytes": 33310,
+      "sha256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601"
+    },
+    {
+      "path": "res/fea245db64f3c20d58337e086797b65a.png",
+      "bytes": 2237,
+      "sha256": "7a0648baaad16bc54edad1193048be54ae069e844f7c67ba9f0dc3e26882f3b4"
+    },
+    {
+      "path": "res/ground-com.jpg",
+      "bytes": 13961,
+      "sha256": "72ac82658b4000f9aa98b5559ffa6d7b38945bdff2b909355f6ed1409857c62e"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-114x114.png",
+      "bytes": 5858,
+      "sha256": "fbf18c0d1c3b78e1a971e1597ba747fd274d7787cf2b19c63edd57959a045d64"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-120x120.png",
+      "bytes": 6161,
+      "sha256": "752f7e5ee18fe8b9548980e4ff8608f068b3a9ef1803072dfe992619903f2a6f"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-144x144.png",
+      "bytes": 7570,
+      "sha256": "7740e48eef856db582333338920ffb70e1138b6ac658870402e985a42515c2e4"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-152x152.png",
+      "bytes": 7990,
+      "sha256": "325940da8b6115ae7372b29b372646e04e3cfca24bd867dec47b6b26188b434a"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-180x180.png",
+      "bytes": 9741,
+      "sha256": "5c27cbc6b775963d7fda50854ecf97a0ed9c1b5d2d638ba41314539a53c2a1e5"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-57x57.png",
+      "bytes": 2758,
+      "sha256": "c11a61313a3946a55a50262401048f3ceaa57f244a14b615beded903006757ff"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-60x60.png",
+      "bytes": 2913,
+      "sha256": "bae813267570ac886f814a89de174f7006315c35150effc39591d93986ba87b2"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-72x72.png",
+      "bytes": 3526,
+      "sha256": "965e1728e6507eaddae8697aa47e043e81c7dcd167ca98157e0480daa9b140cf"
+    },
+    {
+      "path": "res/icons/apple-touch-icon-76x76.png",
+      "bytes": 3747,
+      "sha256": "6f3e3c8f9b915a75ba0a3ad778f81d4e67405510c05b65134b45357c74d32fc9"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-1182x2208.png",
+      "bytes": 138386,
+      "sha256": "78d9390ff7f3d9760b7b3d5c717bfc64399074aa1f5ba6be095b2892109506de"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-1242x2148.png",
+      "bytes": 146357,
+      "sha256": "380b45a3462cbd3ac8de40bc40bf9f29eb28184441b471859b44a5bab3c20015"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-1496x2048.png",
+      "bytes": 194488,
+      "sha256": "a199bf7397699e54936162ce6d917c838eeef8318458b29fe57b84190db3cbe1"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-1536x2008.png",
+      "bytes": 183965,
+      "sha256": "6fa2ed024da40433a865bd3044fe07ce89b5ef2ff8610e8d327b678973d4e465"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-320x460.png",
+      "bytes": 19568,
+      "sha256": "dffae105ad3e6f14860ca308eb607c7fac1e2aa92e6295a97a2e4d280181039f"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-640x1096.png",
+      "bytes": 52506,
+      "sha256": "bb906c6bbb306332966bd1fd1d822a4ed76f036a2f94cd731b7df6b9ee07c94a"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-640x920.png",
+      "bytes": 51959,
+      "sha256": "cea9d9e9e0f0db9c9b88005315b965b5e1ff500351710d06868e71177c1e0e3b"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-748x1024.png",
+      "bytes": 65867,
+      "sha256": "96a66b2b2940766bb1425b5a1f6941afe1a3a6eab5eec2546062a241e0d5c791"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-750x1294.png",
+      "bytes": 67704,
+      "sha256": "83fec40a9eba0420986a2699597d3815940949dc567e110d211853327813f0f2"
+    },
+    {
+      "path": "res/icons/apple-touch-startup-image-768x1004.png",
+      "bytes": 63559,
+      "sha256": "fb22d2a5564c6a61ecd9ab72b2d4b483bba8983f88cbaa95371225daf7f02919"
+    },
+    {
+      "path": "res/icons/favicon-16x16.png",
+      "bytes": 522,
+      "sha256": "3fdb01c930db3317e6352285c6c8fd8b0818e3f0dbc7ec6cca723b0cd11a1981"
+    },
+    {
+      "path": "res/icons/favicon-32x32.png",
+      "bytes": 1192,
+      "sha256": "19e39515fd319fa2be49f90f39f020f80a96de9de106e83e996a0504717b7fed"
+    },
+    {
+      "path": "res/icons/favicon.ico",
+      "bytes": 33310,
+      "sha256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601"
+    },
+    {
+      "path": "res/index.css",
+      "bytes": 14559,
+      "sha256": "4354ca93d00445c6e15d9b3c8c8465d4c9a204e4fe403f1c425c359f98422a96"
+    },
+    {
+      "path": "res/index.js",
+      "bytes": 13106,
+      "sha256": "d23512bda8043412872c64f10f27f4674687d4d23d99804448c87f54007a1d48"
+    },
+    {
+      "path": "res/items-com.jpg",
+      "bytes": 292354,
+      "sha256": "314710796d0bdc4f895f26aa9c83746e0088a8757e90978be577b6ff6c9ab590"
+    },
+    {
+      "path": "res/mainlight-com.jpg",
+      "bytes": 1358,
+      "sha256": "cc75fe4dd5f6d15fff48e16e47ac41b148d82724de1e1fc70474c86de67c194e"
+    },
+    {
+      "path": "res/pillars-com.jpg",
+      "bytes": 43319,
+      "sha256": "d249515957988d6091ce90e91a3fc8e0e6a07bb5944e0c90bee4d4a720bfda3b"
+    },
+    {
+      "path": "res/planebatch.fragment.fx",
+      "bytes": 370,
+      "sha256": "7fe1a44e93089582aa27876e3ca3abec7dd76ff122f8bb5d617a695c7743e931"
+    },
+    {
+      "path": "res/planebatch.vertex.fx",
+      "bytes": 545,
+      "sha256": "2c250feedcd49205a87dd566c4e2a9a6a47fc829f2048e2691ad1cc3308a0927"
+    },
+    {
+      "path": "res/pocket-normal.jpg",
+      "bytes": 282494,
+      "sha256": "92cb5e6b41e2eec43b6a0997287b1aa1db6ca49e6d94253d39438fa10fdd887e"
+    },
+    {
+      "path": "res/powerview.fragment.fx",
+      "bytes": 418,
+      "sha256": "a58df4142408a9a46bf591f311e2111415a96e9075a37c189bfdbe57e4a6cecf"
+    },
+    {
+      "path": "res/powerview.vertex.fx",
+      "bytes": 306,
+      "sha256": "933e4f084cc19a9c5f762cacb67ffea43e815212e687751c63e0067bfdb590f6"
+    },
+    {
+      "path": "res/rgbnt.png",
+      "bytes": 12534,
+      "sha256": "13f2218ebca0c225bcefd4ba4ada76818c42cb0508ac93d57e2887d71c06ed54"
+    },
+    {
+      "path": "res/room-com.jpg",
+      "bytes": 206434,
+      "sha256": "1df9b626fb0600ab77988a5507f6a3cf9ad65fdf20f9eb2b8e92fad6b006f4fd"
+    },
+    {
+      "path": "res/tiger-club-sno-rgb.json",
+      "bytes": 12227,
+      "sha256": "04acfb245368bc1762cdcdf94f0bb81ab82dd82f785af661a4f63d3de9ccbbc9"
+    }
+  ]
+}

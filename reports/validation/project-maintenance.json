@@ -1,0 +1,1226 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12T01:35:16.680Z",
+  "passed": true,
+  "sourceManifestSHA256": "0353606ff524a76c4d3517356ece2f9d2ed89eca9590578318482afff3ba442f",
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "runtime": {
+    "modules": 115,
+    "reached": 115,
+    "unreachable": [],
+    "passed": true
+  },
+  "runtimeSourceFiles": 327,
+  "assetReferences": 91,
+  "unreferencedAssets": [],
+  "docs": {
+    "documents": 35,
+    "links": [
+      {
+        "from": "README.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/learning/guide.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/learning/conversation-handoff.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "src/third-party/notices.txt",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/project-normalization.md",
+        "generated": false
+      },
+      {
+        "from": "CONTRIBUTING.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "CONTRIBUTING.md",
+        "to": "docs/development/coding-standards.md",
+        "generated": false
+      },
+      {
+        "from": "CONTRIBUTING.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "CONTRIBUTING.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "CONTRIBUTING.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "baselines/pcol/README.md",
+        "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/composition-root-assessment.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/composition-root-assessment.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/composition-root-assessment.md",
+        "to": "docs/validation/algorithm-validation.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/composition-root-assessment.md",
+        "to": "reports/validation/game-composition.json",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "src/application/composition/compose-cues.js",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "src/presentation/rendering/cue-definitions.js",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "src/presentation/rendering/cue-material.js",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "src/infrastructure/assets/cue-asset-cache.js",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "src/presentation/rendering/cue-mesh-manager.js",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "tests/unit/cue-asset-cache.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "tests/unit/cue-composition.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/cue-composition.md",
+        "to": "tests/integration/cue-runtime.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "tests/unit/game-display-composition.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "tests/unit/game-session-composition.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "tests/unit/game-interaction-composition.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/game-composition.md",
+        "to": "reports/validation/game-composition.json",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-design-001.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-design-original.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-design-collection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/interior-selection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/styles.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/typography.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/modern-wall-study.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/source-runtime.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/validation/algorithm-validation.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/architecture/overview.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/artifacts.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/artifacts.md",
+        "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/artifacts.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/coding-standards.md",
+        "to": "docs/development/file-naming.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "src/application/compose-game.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "reports/validation/pcol-ui-layout.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "reports/validation/game-ui-browser.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "src/presentation/ui/game-loading.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "reports/validation/retired-ui-cleanup.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "tests/helpers/game-ui-actions.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/game-ui.md",
+        "to": "reports/validation/game-ui-browser.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-design-001.md",
+        "to": "docs/development/interior-design-collection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-design-001.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-design-collection.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-design-collection.md",
+        "to": "docs/development/design-asset-prompts.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-design-collection.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "docs/development/typography.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "docs/development/styles.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/drawer-motion.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "tests/e2e/interior-loading-continuity.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/startup-loading-recovery.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/interior-ui.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/interior-font-unification.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/interior-selection.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
+        "to": "reports/validation/startup-loading-recovery.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "src/third-party/notices.txt",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/repository-workflow.md",
+        "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/presentation/ui/more-things-dialog.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/application/models/snooker-game-model.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/domain/game/player.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/application/controllers/match-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/application/controls/player-turn-control.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/presentation/ui/game-scoreboard.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/presentation/ui/match-result-dialog.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/domain/physics/world.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/domain/physics/world-client.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/infrastructure/assets/collision-mesh-loader.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/domain/physics/contact-solver.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "src/start.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/game.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/game-base.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/typography.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/controls-guide.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-tokens.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-menu.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-drawer.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-more-things.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-about.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/interior-transition.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/styles/game-ui.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "docs/development/typography.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "docs/development/game-ui.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "docs/development/interior-selection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "tests/helpers/stylesheet-fixture.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "tests/helpers/runtime-fixture.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "tests/e2e/drawer-motion.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "src/presentation/ui/basic-controls-guide.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/styles.md",
+        "to": "reports/validation/ui-vector-artwork.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "src/presentation/styles/interior-tokens.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "src/presentation/styles/typography.css",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "src/presentation/typography/page-fonts.js",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "tests/e2e/interior-loading-continuity.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "reports/validation/interior-font-unification.json",
+        "generated": false
+      },
+      {
+        "from": "docs/development/typography.md",
+        "to": "tests/unit/page-fonts.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/development/source-runtime.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/development/interior-selection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/validation/continuous-play.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/validation/resource-delivery.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/development/typography.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/development/styles.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/workflow.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "AGENTS.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/interior-design-collection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "reports/validation/game-composition.json",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/artifacts.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/conversation-handoff.md",
+        "to": "docs/validation/project-normalization.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "AGENTS.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/learning/conversation-handoff.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/source-runtime.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/coding-standards.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/file-naming.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/interior-selection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/game-ui.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/styles.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/typography.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/interior-design-collection.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/interior-design-original.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/interior-design-001.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/modern-wall-study.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/validation/continuous-play.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/templates/experiment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/learning/optimization-roadmap.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/templates/experiment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/optimization-roadmap.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/development/artifacts.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/project-normalization.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/algorithm-validation.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/architecture/cue-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/architecture/game-composition.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "reports/validation/game-composition.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/continuous-play.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
+        "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/algorithm-validation.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/algorithm-validation.md",
+        "to": "docs/architecture/overview.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/context-restoration.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/continuous-play.md",
+        "to": "tests/unit/human-turn-readiness.test.mjs",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/continuous-play.md",
+        "to": "docs/validation/interior-performance.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "reports/measurement/gameplay-smoothness-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "reports/validation/gameplay-motion.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "reports/measurement/camera-rate-characterization-after.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/camera/timed-orbit-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/camera/timed-linear-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/camera/timed-look-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/camera/timed-aim-camera-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/input/smooth-person-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/application/controls/quick-stroke-motion.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/application/controls/immediate-guide-control.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/presentation/rendering/render-resolution-policy.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "src/application/smooth-snooker-application.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/gameplay-motion.md",
+        "to": "reports/validation/gameplay-motion.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/interior-performance.md",
+        "to": "reports/measurement/interior-performance-shadow-cache-chrome-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/interior-performance.md",
+        "to": "reports/measurement/interior-performance-shadow-cache-edge-summary.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/interior-performance.md",
+        "to": "docs/validation/context-restoration.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "docs/development/rooms-and-two-player-plan.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "docs/validation/algorithm-validation.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "reports/validation/project-normalization-checks.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "reports/validation/project-maintenance.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "reports/validation/project-normalization.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "docs/validation/README.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
+        "to": "docs/development/repository-workflow.md",
+        "generated": false
+      }
+    ],
+    "issues": [],
+    "passed": true
+  },
+  "commands": [
+    {
+      "name": "dev",
+      "entry": "src/start.mjs"
+    },
+    {
+      "name": "start",
+      "entry": "src/start.mjs"
+    },
+    {
+      "name": "dev:built",
+      "entry": "scripts/dev-server.mjs"
+    },
+    {
+      "name": "build",
+      "entry": "scripts/build.mjs"
+    },
+    {
+      "name": "verify",
+      "entry": "scripts/verify.mjs"
+    },
+    {
+      "name": "verify:algorithms",
+      "entry": "scripts/verify-algorithms.mjs"
+    },
+    {
+      "name": "lint",
+      "entry": "scripts/lint-code.mjs"
+    },
+    {
+      "name": "lint:fix",
+      "entry": "scripts/lint-code.mjs"
+    },
+    {
+      "name": "format",
+      "entry": "scripts/format-code.mjs"
+    },
+    {
+      "name": "format:check",
+      "entry": "scripts/format-code.mjs"
+    },
+    {
+      "name": "test",
+      "entry": "scripts/test-project.mjs"
+    },
+    {
+      "name": "test:unit",
+      "entry": "scripts/test-project.mjs"
+    },
+    {
+      "name": "test:integration",
+      "entry": "scripts/test-project.mjs"
+    },
+    {
+      "name": "test:e2e",
+      "entry": "tests/e2e/game.test.mjs"
+    },
+    {
+      "name": "test:e2e:source",
+      "entry": "tests/e2e/source-standalone.test.mjs"
+    },
+    {
+      "name": "test:e2e:continuous",
+      "entry": "tests/e2e/continuous-play.test.mjs"
+    },
+    {
+      "name": "test:e2e:motion",
+      "entry": "tests/e2e/gameplay-motion.test.mjs"
+    },
+    {
+      "name": "test:e2e:context",
+      "entry": "tests/e2e/context-restoration.test.mjs"
+    },
+    {
+      "name": "test:e2e:original",
+      "entry": "tests/e2e/interior-design-original.test.mjs"
+    },
+    {
+      "name": "check",
+      "entry": "scripts/check-project.mjs"
+    },
+    {
+      "name": "check:browser",
+      "entry": "scripts/check-project.mjs"
+    },
+    {
+      "name": "check:structure",
+      "entry": "scripts/check-structure.mjs"
+    },
+    {
+      "name": "check:naming",
+      "entry": "scripts/check-file-naming.mjs"
+    },
+    {
+      "name": "check:maintenance",
+      "entry": "scripts/check-maintenance.mjs"
+    },
+    {
+      "name": "test:e2e:interior",
+      "entry": "scripts/test-interior.mjs"
+    },
+    {
+      "name": "test:e2e:shadows",
+      "entry": "tests/e2e/interior-shadow-cache.test.mjs"
+    },
+    {
+      "name": "measure:interior",
+      "entry": "scripts/measure-interior-performance.mjs"
+    },
+    {
+      "name": "measure:summary",
+      "entry": "scripts/summarize-measurement.mjs"
+    }
+  ],
+  "retainedKernelDiagnostics": [
+    "src/domain/physics/collision-island.js"
+  ],
+  "ownSourceMarkers": [],
+  "limitations": [
+    "Reachability checks file and module references, not every branch or member inside retained algorithms.",
+    "Generated evidence links may be absent on a fresh checkout and are not treated as maintained documentation inputs.",
+    "Retained kernel diagnostics are reported explicitly; this audit does not change frozen physics behavior."
+  ]
+}

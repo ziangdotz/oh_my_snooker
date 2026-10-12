@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-11T13:58:44.279Z",
+  "targets": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54933/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54934/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54935/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54933/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54934/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "errors": [],
+      "passed": true,
+      "assets": [
+        "ui-sprite-atlas",
+        "ai-difficulty-dots",
+        "snooker-ball-icons"
+      ],
+      "guide": {
+        "background": "none",
+        "mouseAsset": "url(\"http://127.0.0.1:54935/assets/images/ui-sprite-atlas.svg\")",
+        "liveLettering": [
+          "AIMING MODE",
+          "LEFT",
+          "RIGHT",
+          "STAND",
+          "MOUSE DRAG TO LOOK AROUND",
+          "RESET VIEW"
+        ],
+        "letteringFits": true
+      }
+    }
+  ],
+  "passed": true
+}

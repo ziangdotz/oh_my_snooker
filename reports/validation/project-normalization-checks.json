@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-11T15:30:49.463Z",
+  "steps": [
+    {
+      "command": "node tests/e2e/source-standalone.test.mjs",
+      "environment": {},
+      "startedAt": "2026-10-11T15:30:49.464Z",
+      "passed": true,
+      "finishedAt": "2026-10-11T15:32:02.931Z",
+      "exitCode": 0
+    },
+    {
+      "command": "node tests/e2e/game.test.mjs",
+      "environment": {
+        "PCOL_SOURCE_RUNTIME": "1"
+      },
+      "startedAt": "2026-10-11T15:32:02.932Z",
+      "passed": true,
+      "finishedAt": "2026-10-11T15:34:33.338Z",
+      "exitCode": 0
+    },
+    {
+      "command": "node tests/e2e/interior-design-original.test.mjs",
+      "environment": {},
+      "startedAt": "2026-10-11T15:34:33.340Z",
+      "passed": true,
+      "finishedAt": "2026-10-11T15:35:42.724Z",
+      "exitCode": 0
+    },
+    {
+      "command": "node scripts/test-interior.mjs",
+      "environment": {},
+      "startedAt": "2026-10-11T15:35:42.725Z",
+      "passed": true,
+      "finishedAt": "2026-10-11T15:57:28.613Z",
+      "exitCode": 0
+    },
+    {
+      "command": "node tests/e2e/continuous-play.test.mjs",
+      "environment": {},
+      "startedAt": "2026-10-11T15:57:28.614Z",
+      "passed": true,
+      "finishedAt": "2026-10-11T16:23:19.366Z",
+      "exitCode": 0
+    }
+  ],
+  "finishedAt": "2026-10-11T16:23:19.366Z",
+  "passed": true
+}

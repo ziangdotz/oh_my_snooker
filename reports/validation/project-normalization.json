@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11T16:24:18.813Z",
+  "status": "passed",
+  "passed": true,
+  "scope": "Engineering normalization before hotseat and network-room development",
+  "sourceChanges": [
+    {
+      "path": "src/application/launch-game.js",
+      "beforeSHA256": "491c8deddbf0060c7f028994be3ee13548acecfd37df26d4ac06e5ebd635ae46",
+      "afterSHA256": "0c1a05c76d38750658b9dde132b3af78bbe50d9435c9a147f93045376e343508"
+    },
+    {
+      "path": "src/application/models/base-game-model.js",
+      "beforeSHA256": "ec1588a0922cdf9fa7c6a6a01c08e57f6feeea4ac2052ad5d213ed511e1fb9c6",
+      "afterSHA256": "9de608e8c9f36c591a3b2d170c1482f6febcc885fd99e582fe269f8d74ec1ea6"
+    },
+    {
+      "path": "src/application/models/local-game-model.js",
+      "beforeSHA256": "10801b29d5394cbe8f0cd6df9566c108ced7485e1c41d3d2b27ae5a8f38404bc",
+      "afterSHA256": "531ded11785c07ba1f036ef04f8543b26678e0c7a2266c5c520551e4fcf008d2"
+    }
+  ],
+  "sourceFilesUnchanged": 324,
+  "protectedGroups": [
+    {
+      "directory": "baselines",
+      "files": 92,
+      "unchanged": true,
+      "beforeAndAfterSHA256": "8148e80f98c4e897ea914dd810e74f6758841263efff74dc143935a3715c8fb7"
+    },
+    {
+      "directory": "src/domain",
+      "files": 46,
+      "unchanged": true,
+      "beforeAndAfterSHA256": "7217551d5da57ae43f717ad1b97d57954d43342bf78e6b5459d7a19bdc518c05"
+    },
+    {
+      "directory": "src/assets",
+      "files": 73,
+      "unchanged": true,
+      "beforeAndAfterSHA256": "657faa7d2933782810022e4d0283e243e97bcce58f1f845f4fa94ba3eab0a26f"
+    },
+    {
+      "directory": "src/third-party",
+      "files": 4,
+      "unchanged": true,
+      "beforeAndAfterSHA256": "3a6ccbee9c6ca24deb9439d92c7c61dd303b8909dcc7516dbbc0fd1be0733495"
+    },
+    {
+      "directory": "src/presentation/camera",
+      "files": 14,
+      "unchanged": true,
+      "beforeAndAfterSHA256": "004ed6e0609dd1f8ee55161b7d81a61a9b59a353390f27529895671018f8ed2e"
+    }
+  ],
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "dependencies": [
+    {
+      "name": "@eslint/js",
+      "declared": "10.0.1",
+      "installed": "10.0.1"
+    },
+    {
+      "name": "eslint",
+      "declared": "10.11.0",
+      "installed": "10.11.0"
+    },
+    {
+      "name": "playwright",
+      "declared": "1.62.1",
+      "installed": "1.62.1"
+    },
+    {
+      "name": "prettier",
+      "declared": "3.6.2",
+      "installed": "3.6.2"
+    },
+    {
+      "name": "espree",
+      "declared": "11.2.0",
+      "installed": "11.2.0"
+    },
+    {
+      "name": "eslint-scope",
+      "declared": "9.1.2",
+      "installed": "9.1.2"
+    }
+  ],
+  "gitRoundTrip": {
+    "passed": true,
+    "protectedFiles": 169,
+    "coreAutocrlf": true,
+    "realRepositoryInitialized": false
+  },
+  "removedTemporaryScripts": 7,
+  "initialCompleteCheck": {
+    "command": "node scripts/check-project.mjs --browser",
+    "passed": true,
+    "unitAndIntegrationTests": 121,
+    "algorithmStructures": 137,
+    "browsers": [
+      "Chrome 154.0.8037.98",
+      "Edge 155.0.4283.45"
+    ]
+  },
+  "specialistChecks": {
+    "schemaVersion": 1,
+    "startedAt": "2026-10-11T15:30:49.463Z",
+    "steps": [
+      {
+        "command": "node tests/e2e/source-standalone.test.mjs",
+        "environment": {},
+        "startedAt": "2026-10-11T15:30:49.464Z",
+        "passed": true,
+        "finishedAt": "2026-10-11T15:32:02.931Z",
+        "exitCode": 0
+      },
+      {
+        "command": "node tests/e2e/game.test.mjs",
+        "environment": {
+          "PCOL_SOURCE_RUNTIME": "1"
+        },
+        "startedAt": "2026-10-11T15:32:02.932Z",
+        "passed": true,
+        "finishedAt": "2026-10-11T15:34:33.338Z",
+        "exitCode": 0
+      },
+      {
+        "command": "node tests/e2e/interior-design-original.test.mjs",
+        "environment": {},
+        "startedAt": "2026-10-11T15:34:33.340Z",
+        "passed": true,
+        "finishedAt": "2026-10-11T15:35:42.724Z",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/test-interior.mjs",
+        "environment": {},
+        "startedAt": "2026-10-11T15:35:42.725Z",
+        "passed": true,
+        "finishedAt": "2026-10-11T15:57:28.613Z",
+        "exitCode": 0
+      },
+      {
+        "command": "node tests/e2e/continuous-play.test.mjs",
+        "environment": {},
+        "startedAt": "2026-10-11T15:57:28.614Z",
+        "passed": true,
+        "finishedAt": "2026-10-11T16:23:19.366Z",
+        "exitCode": 0
+      }
+    ],
+    "finishedAt": "2026-10-11T16:23:19.366Z",
+    "passed": true
+  },
+  "limitations": [
+    "Factory ABI and the actively used CushionBody are intentionally retained under documented compatibility contracts.",
+    "One retained kernel disposal diagnostic is reported by the maintenance audit; no assertion of arbitrary disposal correctness is made.",
+    "Public repository publication, full-match coverage and multi-hour stability are outside this normalization validation."
+  ],
+  "maintenanceAudit": {
+    "report": "reports/validation/project-maintenance.json",
+    "passed": true,
+    "runtime": {
+      "modules": 115,
+      "reached": 115,
+      "unreachable": [],
+      "passed": true
+    },
+    "runtimeSourceFiles": 327,
+    "assetReferences": 91,
+    "unreferencedAssets": [],
+    "documents": 35,
+    "documentLinks": 216,
+    "documentIssues": [],
+    "commands": 28,
+    "retainedKernelDiagnostics": [
+      "src/domain/physics/collision-island.js"
+    ],
+    "ownSourceMarkers": []
+  },
+  "finalCompleteCheck": {
+    "schemaVersion": 1,
+    "command": "node scripts/check-project.mjs",
+    "startedAt": "2026-10-11T16:23:31.229Z",
+    "passed": true,
+    "finishedAt": "2026-10-11T16:23:54.086Z",
+    "exitCode": 0,
+    "unitAndIntegrationTests": 121,
+    "algorithmStructures": 137
+  },
+  "continuousPlay": {
+    "sourceReport": "artifacts/testing/continuous-play/report.json",
+    "sourceReportSHA256": "268007afe3b246f5c5b12e85c45643de7490f06b5d66d73f49b7300da33c3f1b",
+    "started": "2026-10-11T15:57:33.033Z",
+    "finished": "2026-10-11T16:23:19.302Z",
+    "passed": true,
+    "options": {
+      "cycles": 3,
+      "shots": 6
+    },
+    "manifestDifferences": [],
+    "browsers": [
+      {
+        "name": "chrome",
+        "version": "154.0.8037.98",
+        "passed": true,
+        "routes": [
+          {
+            "route": "baseline",
+            "passed": true,
+            "elapsedSeconds": 392.336,
+            "summary": {
+              "practiceStrokes": 18,
+              "practiceRestarts": 3,
+              "aiDifficulties": [
+                {
+                  "mode": "ai1",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai2",
+                  "humanStrokes": 2,
+                  "aiStrokes": 5,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai3",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                }
+              ],
+              "replayChecks": 24,
+              "modeQuitTransitions": 5,
+              "resourceCountsStable": true,
+              "freshPracticeAfterAISwitching": true
+            },
+            "observations": {
+              "external": 0,
+              "failedResponses": 0,
+              "pageErrors": 0,
+              "requestFailures": 0,
+              "crashes": 0
+            }
+          },
+          {
+            "route": "runtime",
+            "passed": true,
+            "elapsedSeconds": 362.004,
+            "summary": {
+              "practiceStrokes": 18,
+              "practiceRestarts": 3,
+              "aiDifficulties": [
+                {
+                  "mode": "ai1",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai2",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai3",
+                  "humanStrokes": 2,
+                  "aiStrokes": 4,
+                  "restarts": 1,
+                  "replayChecks": 2
+                }
+              ],
+              "replayChecks": 24,
+              "modeQuitTransitions": 5,
+              "resourceCountsStable": true,
+              "freshPracticeAfterAISwitching": true
+            },
+            "observations": {
+              "external": 0,
+              "failedResponses": 0,
+              "pageErrors": 0,
+              "requestFailures": 0,
+              "crashes": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "edge",
+        "version": "155.0.4283.45",
+        "passed": true,
+        "routes": [
+          {
+            "route": "baseline",
+            "passed": true,
+            "elapsedSeconds": 404.356,
+            "summary": {
+              "practiceStrokes": 18,
+              "practiceRestarts": 3,
+              "aiDifficulties": [
+                {
+                  "mode": "ai1",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai2",
+                  "humanStrokes": 2,
+                  "aiStrokes": 4,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai3",
+                  "humanStrokes": 2,
+                  "aiStrokes": 5,
+                  "restarts": 1,
+                  "replayChecks": 2
+                }
+              ],
+              "replayChecks": 24,
+              "modeQuitTransitions": 5,
+              "resourceCountsStable": true,
+              "freshPracticeAfterAISwitching": true
+            },
+            "observations": {
+              "external": 0,
+              "failedResponses": 0,
+              "pageErrors": 0,
+              "requestFailures": 0,
+              "crashes": 0
+            }
+          },
+          {
+            "route": "runtime",
+            "passed": true,
+            "elapsedSeconds": 382.596,
+            "summary": {
+              "practiceStrokes": 18,
+              "practiceRestarts": 3,
+              "aiDifficulties": [
+                {
+                  "mode": "ai1",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai2",
+                  "humanStrokes": 2,
+                  "aiStrokes": 3,
+                  "restarts": 1,
+                  "replayChecks": 2
+                },
+                {
+                  "mode": "ai3",
+                  "humanStrokes": 2,
+                  "aiStrokes": 5,
+                  "restarts": 1,
+                  "replayChecks": 2
+                }
+              ],
+              "replayChecks": 24,
+              "modeQuitTransitions": 5,
+              "resourceCountsStable": true,
+              "freshPracticeAfterAISwitching": true
+            },
+            "observations": {
+              "external": 0,
+              "failedResponses": 0,
+              "pageErrors": 0,
+              "requestFailures": 0,
+              "crashes": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

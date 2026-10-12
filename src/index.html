@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Play high quality Snooker game now just in your browser." />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <title>OH MY SNOOKER</title>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0c1512" />
+    <meta name="application-name" content="oh-my-snooker" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon-180x180.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="oh-my-snooker" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/snooker-favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/snooker-favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="./assets/icons/snooker-favicon.ico" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="./assets/icons/snooker-favicon.svg" />
+    <link
+      rel="preload"
+      href="./assets/fonts/saira-extra-condensed-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/saira-extra-condensed-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link href="./presentation/styles/game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      id="interior-transition"
+      class="interior-transition"
+      data-state="loading"
+      data-font-state="pending"
+      data-display-phase="handoff"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="interior-transition-title"
+    >
+      <div class="interior-transition-card">
+        <div class="interior-court-mark" aria-hidden="true"></div>
+        <div class="interior-transition-heading">
+          <h2 id="interior-transition-title">OH MY SNOOKER</h2>
+          <p class="interior-loading-status" role="status">LOADING VENUE...</p>
+        </div>
+        <p class="interior-transition-message" role="status">
+          Preparing the venue and lighting. Returning to the lounge when ready.
+        </p>
+        <div class="interior-transition-track" aria-hidden="true"></div>
+        <div class="interior-transition-actions" hidden>
+          <button class="default-button" type="button" data-action="retry">RETRY</button>
+          <button
+            class="default-button"
+            type="button"
+            data-action="back"
+            aria-label="Return to previous venue"
+          >
+            BACK
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="game-container" class="game-container">
+      <canvas id="game-view"></canvas>
+      <div id="game-shade"></div>
+    </div>
+    <script src="./compatibility/browser.js"></script>
+    <script type="module" src="./runtime/source-entry.js"></script>
+  </body>
+</html>

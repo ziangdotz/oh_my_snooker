@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11T11:09:39.944Z",
+  "clientDate": "2026-10-11",
+  "scope": "Animation/display/scenes, settings/AI/session, input/camera/replay composition batches",
+  "passed": true,
+  "sourceHashes": {
+    "src/application/compose-game.js": "b1165b838a5f6749fa71d3f7cb43852534aed2b668c09ec8b6699df23ee19709",
+    "src/runtime/runtime-catalog.json": "63bcdaf584eb34c8daefa277cda27e56200916b5eaa6891488dab3a4d5e5d1c3",
+    "src/application/composition/compose-scenes.js": "12125181781b9033b11a8476d33fa180ced1ea155ef41f83aca082bd7ec9e9bd",
+    "src/application/composition/compose-animation.js": "ab3e58f0bc8db6bfc76143da25fc7e7758ba465c44945c82c963a9f13cd23028",
+    "src/application/composition/compose-display-planes.js": "23442590d71dcd725214e22cc003b903ddc950b33943f10f1fe8d5904204ce48",
+    "src/application/composition/compose-game-view.js": "146edd50b5dbff541493301fefb52323ea3aa03c670ca142c9c230adea32b885",
+    "src/application/composition/compose-motion-animation.js": "93daca2e4596f0c05148bf1623b118cad74e5ec5929acf01608fe9ad5970c8e4",
+    "src/application/composition/compose-session.js": "3904ea8cb631346fa753c042ff80d16f069748b74ccdedc78d66be7dd6fe87b8",
+    "src/application/composition/compose-route-geometry.js": "688caecb79d3587fbdcaf2a4e6049630816d75f03ddcfedd0dac4c2f34142eee",
+    "src/application/composition/compose-ai.js": "910719ad311c84b54ba9942ff3fefff2f722bc5f2c34307d3e4d5f66e6b08690",
+    "src/application/composition/compose-match-model.js": "26a4261d58edbc09c1804c35c671708f1f2b0d773def34d9993a9a66b9764d40",
+    "src/application/composition/compose-controls.js": "aad7264cc982aa1501761c913347080b6dda55367dcb98cda68bb58b2eea599a",
+    "src/application/composition/compose-ball-in-hand.js": "fa0a37e010192032aa80e963b35eba310033c609598cd911381b2eba54281966",
+    "src/application/composition/compose-orbit-camera.js": "e66c34c66109ed923a7b35707f1daf4c4e8fea14e8ac43a95719d87425a8cc5f",
+    "src/presentation/input/cue-contact-state.js": "ff31ec787372d4db534d3710fa895686151dae9830ba0c64aae2fa1090be8656",
+    "src/application/composition/compose-cue-input.js": "4095219acbc591a7e4efa433a67ee0be0d21af96093b03a427be73f2c6ea8d23",
+    "src/application/composition/compose-aim-camera.js": "e6e2c5a1bb229c72dfa0b4e4b4b33d5b6af7f5778804f9ad611678604075946a",
+    "src/application/composition/compose-person.js": "04f0e73b7cf7cc92757417d549f6035f5f31666eba30fdb034edc2842650cd47",
+    "src/application/composition/compose-player-turn.js": "478a4fd365c12a4bfcf276101e03f64808c54e687f8a7557f5b347c42d1dcd9d",
+    "src/application/composition/compose-replay.js": "a372688473e6a8382fc986d93fc1684bb1447af21410e5294f6ce1c71f1a55d9",
+    "src/presentation/scenes/create-table-scene.js": "c87d7f1b818d66a3c69c423b4e5fda4cae9ea5beb6c4651ca59487b99e2a91b3",
+    "src/presentation/animation/easing.js": "f5e0601eec0511337c7e7bf4b9ffd8dd807d329f96d8bfc76b70f77ca5421451",
+    "src/presentation/rendering/table-ui-atlas.js": "02191429843d4efda16d8f1d2e51955ed509f0e93b8e6e3bea2dc3202470c0af",
+    "src/application/settings/local-game-settings.js": "f35699180bfbfaaf1dee9f02d5003ef539f87a7fabe53c8e5a2dbb6a55d0d878",
+    "src/application/ai/ai-registry.js": "1a18e9187f3fb3d937c48500ef1fae1d6ed369473fcaa9a9676a4c65a2ee4851",
+    "src/presentation/camera/orbit-point-cache.js": "0288109563a751ff4fa4a8e8e18ad00f3a48c1f506d47aeae9976ffe7c65b3c4"
+  },
+  "testHashes": {
+    "tests/helpers/game-composition-fixture.mjs": "45237a0fb1a5be99cdd29b3555ed4d620d2a29ee731d6016fba990de5ebbc770",
+    "tests/helpers/composition-fixture.mjs": "381acedd26a0deba60fa0930d3cf400f7bf06a54e87982b2d3d62547f4f10078",
+    "tests/unit/game-display-composition.test.mjs": "87ad26feff8819540a087d42a1e2212a2c587e85158098ac4d21fb3f1ee6f7f8",
+    "tests/unit/game-session-composition.test.mjs": "9ba6e93c805f6545aaf305465f38c4a772ecfcee9e525cccae5590f1b4b89cef",
+    "tests/unit/game-interaction-composition.test.mjs": "5b5d432844a9247b7d85d24daa5e6891e32ab45b5224ef130789f0a5e46d2421"
+  },
+  "testFixtureContract": "Read the real root, require exactly one call and the expected actual import, evaluate its dependency getters, then invoke that imported factory graph.",
+  "manifestHashes": {
+    "baselines/pcol/manifests/baseline.json": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+    "build/development/build-manifest.json": "2f836089b1bb17b37fc0f34a0eb21cb012fbf81636525e45905a8bfbcf42c07a",
+    "dist/build-manifest.json": "2f836089b1bb17b37fc0f34a0eb21cb012fbf81636525e45905a8bfbcf42c07a"
+  },
+  "stages": {
+    "scope": "Remaining game composition stages",
+    "stage1": {
+      "sourceSHA256": "d5a1ef980001ec1fbaa97541c9b7fefa6abe399d91eda90d898fff2edd689e45",
+      "characterizationTests": 4,
+      "characterizationPassedBeforeAndAfter": true,
+      "checkProjectBrowserPassed": true,
+      "unitIntegrationTests": 91,
+      "algorithmMatches": 137,
+      "sourceStandalonePassed": true,
+      "originalInteriorExactPassed": true,
+      "interiorLoadingPassed": true,
+      "interiorUiPassed": true,
+      "interiorFontsPassed": true,
+      "pending": [],
+      "passed": true,
+      "completed": "2026-10-11T09:06:54.677Z",
+      "interiorSelectionPassed": true,
+      "startupRecoveryPassed": true
+    },
+    "stage2": {
+      "characterizationTestsBeforeExtraction": 6,
+      "passedBeforeExtraction": true,
+      "sourceSHA256": "1371540efe12c05ed4783826b102e47db4234bfcae9bc5f5cfb825b2a795e328",
+      "characterizationPassedAfterExtraction": true,
+      "checkProjectBrowserPassed": true,
+      "unitIntegrationTests": 97,
+      "algorithmMatches": 137,
+      "extractedGroupStructuresMatched": 9,
+      "pending": [],
+      "evidence": [
+        {
+          "path": "artifacts/testing/regression/report.json",
+          "sha256": "519597ea568588d6ff1e49dc246b6e77e690df0eb6ff79afc3ff3b6706efab77",
+          "date": "2026-10-11",
+          "passed": true
+        },
+        {
+          "path": "artifacts/testing/source-runtime/standalone/report.json",
+          "sha256": "2282c7d608fcf257a1c607fac1b20c6dcbd4af76880296d5e473afb0768ce237",
+          "date": "2026-10-11T09:12:19.871Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-design-original.json",
+          "sha256": "571ba5d898224235193793a8e75d74fd4a52f04bacc83d8980153869152585bf",
+          "date": "2026-10-11T09:13:48.207Z",
+          "passed": true
+        },
+        {
+          "path": "artifacts/testing/interior-loading-continuity/report.json",
+          "sha256": "dc2066cc8eb6ec8c82eb1a915f86095a72847ee5b54cd40d753bb0d1cf48d962",
+          "date": "2026-10-11T09:15:07.956Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-ui.json",
+          "sha256": "7bf3a5c3c560826890dee7d8eee529998a06d606aa22590278dd21d019cad064",
+          "date": "2026-10-11T09:19:43.695Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-font-unification.json",
+          "sha256": "959c69f2df38e21b3029925c918445a02bbdae5758a157df9d78ff19e8782e1a",
+          "date": "2026-10-11T09:22:42.375Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-selection.json",
+          "sha256": "e76d030174f706ef059ce52c65bcdb53c414a8982d3a92ebda4a0f92c8d66240",
+          "date": "2026-10-11T09:25:24.904Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/startup-loading-recovery.json",
+          "sha256": "aa2d9ef98bb250e3907b353c01222d2706f6e4a2fd7ab2c8722b3530cf596180",
+          "date": "2026-10-11T09:36:42.081Z",
+          "passed": true
+        }
+      ],
+      "continuousPlay": {
+        "path": "artifacts/testing/continuous-play/report.json",
+        "sha256": "ad7f7f47e83ac09375155894c9b2a85fcd4b50e430ae7a02558f14d41a3efdd5",
+        "started": "2026-10-11T09:39:46.571Z",
+        "finished": "2026-10-11T10:07:29.254Z",
+        "passed": true,
+        "options": {
+          "cycles": 3,
+          "shots": 6
+        },
+        "manifestDifferences": [],
+        "manifestHashes": {
+          "baselines/pcol/manifests/baseline.json": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+          "build/development/build-manifest.json": "2f25b20c31a8878374ac487b26402d082eda17e9467549ffa36adc7a6bea26ec",
+          "dist/build-manifest.json": "2f25b20c31a8878374ac487b26402d082eda17e9467549ffa36adc7a6bea26ec"
+        },
+        "browsers": [
+          {
+            "name": "chrome",
+            "version": "154.0.8037.98",
+            "passed": true,
+            "routes": [
+              {
+                "route": "baseline",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 6,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 433.144
+              },
+              {
+                "route": "runtime",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 424.928
+              }
+            ]
+          },
+          {
+            "name": "edge",
+            "version": "155.0.4283.45",
+            "passed": true,
+            "routes": [
+              {
+                "route": "baseline",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 409.678
+              },
+              {
+                "route": "runtime",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 385.506
+              }
+            ]
+          }
+        ]
+      },
+      "sourceStandalonePassed": true,
+      "originalInteriorExactPassed": true,
+      "interiorSuitesPassed": true,
+      "passed": true,
+      "completed": "2026-10-11T10:07:41.996Z"
+    },
+    "stage3": {
+      "characterizationTestsBeforeExtraction": 8,
+      "passedBeforeExtraction": true,
+      "sourceSHA256": "b1165b838a5f6749fa71d3f7cb43852534aed2b668c09ec8b6699df23ee19709",
+      "characterizationPassedAfterExtraction": true,
+      "extractedGroupStructuresMatched": 18,
+      "completeRootExecutionStructureMatched": true,
+      "algorithmMatches": 137,
+      "pending": [],
+      "unitIntegrationTests": 105,
+      "unitIntegrationPassed": true,
+      "checkProjectBrowserPassed": true,
+      "evidence": [
+        {
+          "path": "artifacts/testing/regression/report.json",
+          "sha256": "8e9a3b874d33017fd2b04816845e5ee90ce1c17eb59c22303ce1366d0d5f2342",
+          "date": "2026-10-11",
+          "passed": true
+        },
+        {
+          "path": "artifacts/testing/source-runtime/standalone/report.json",
+          "sha256": "6ed5edc0fee55df731ef076095aa46343a75b913ccfbed9709f44a2eda1ed62d",
+          "date": "2026-10-11T10:13:41.205Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-design-original.json",
+          "sha256": "4e81168eab42636024a387f8d6600286be90e9dbc4905d2beb9f824b3fa590c8",
+          "date": "2026-10-11T10:15:06.682Z",
+          "passed": true
+        },
+        {
+          "path": "artifacts/testing/interior-loading-continuity/report.json",
+          "sha256": "5ce8f10e40caa9b1af27f7aa67ccf41015f9ae87ae1a251f2c4e98d6d186c77a",
+          "date": "2026-10-11T10:16:21.836Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-ui.json",
+          "sha256": "bf1b518e6eeb048256188df005d7832f09a5e3cf3534c5f1cb0afd057561ec60",
+          "date": "2026-10-11T10:22:12.518Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-font-unification.json",
+          "sha256": "d5d98e70d6ed587a8d069107ee8f26112bbaa2dd1e6983959af13e6151c5a9bb",
+          "date": "2026-10-11T10:25:07.653Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/interior-selection.json",
+          "sha256": "e23251644195bbebf7df8ac2d6d0839b84ce6dfb23072d97e2f4b0e1a0daa4ac",
+          "date": "2026-10-11T10:27:25.563Z",
+          "passed": true
+        },
+        {
+          "path": "reports/validation/startup-loading-recovery.json",
+          "sha256": "661c81678842f3ca4862023260d19af99b200c321b12f63f8fddeb37cba6b755",
+          "date": "2026-10-11T10:38:36.719Z",
+          "passed": true
+        }
+      ],
+      "continuousPlay": {
+        "path": "artifacts/testing/continuous-play/report.json",
+        "sha256": "38415df2fe15c35eec6bc9389e779d62d5fc01ab3af6862bb2f5a6ac146b0e81",
+        "started": "2026-10-11T10:41:09.234Z",
+        "finished": "2026-10-11T11:08:06.356Z",
+        "passed": true,
+        "options": {
+          "cycles": 3,
+          "shots": 6
+        },
+        "manifestDifferences": [],
+        "manifestHashes": {
+          "baselines/pcol/manifests/baseline.json": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+          "build/development/build-manifest.json": "2f836089b1bb17b37fc0f34a0eb21cb012fbf81636525e45905a8bfbcf42c07a",
+          "dist/build-manifest.json": "2f836089b1bb17b37fc0f34a0eb21cb012fbf81636525e45905a8bfbcf42c07a"
+        },
+        "browsers": [
+          {
+            "name": "chrome",
+            "version": "154.0.8037.98",
+            "passed": true,
+            "routes": [
+              {
+                "route": "baseline",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 404.464
+              },
+              {
+                "route": "runtime",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 5,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 426.735
+              }
+            ]
+          },
+          {
+            "name": "edge",
+            "version": "155.0.4283.45",
+            "passed": true,
+            "routes": [
+              {
+                "route": "baseline",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 394.405
+              },
+              {
+                "route": "runtime",
+                "passed": true,
+                "summary": {
+                  "practiceStrokes": 18,
+                  "practiceRestarts": 3,
+                  "aiDifficulties": [
+                    {
+                      "mode": "ai1",
+                      "humanStrokes": 2,
+                      "aiStrokes": 2,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai2",
+                      "humanStrokes": 2,
+                      "aiStrokes": 4,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    },
+                    {
+                      "mode": "ai3",
+                      "humanStrokes": 2,
+                      "aiStrokes": 3,
+                      "restarts": 1,
+                      "replayChecks": 2
+                    }
+                  ],
+                  "replayChecks": 24,
+                  "modeQuitTransitions": 5,
+                  "resourceCountsStable": true,
+                  "freshPracticeAfterAISwitching": true
+                },
+                "observations": {
+                  "external": [],
+                  "failedResponses": [],
+                  "pageErrors": [],
+                  "requestFailures": [],
+                  "crashes": []
+                },
+                "elapsedSeconds": 386.119
+              }
+            ]
+          }
+        ]
+      },
+      "sourceStandalonePassed": true,
+      "originalInteriorExactPassed": true,
+      "interiorSuitesPassed": true,
+      "passed": true,
+      "completed": "2026-10-11T11:09:39.738Z",
+      "contextRestorationSmoke": {
+        "path": "reports/validation/context-restoration-smoke.json",
+        "sha256": "bdf28cdf6dc2826beb5937e2d3527f3c9da3b1967c50b476391b0cf83ef5f581",
+        "date": "2026-10-11T11:08:06.875Z",
+        "scope": "smoke",
+        "scenarios": [
+          {
+            "browser": "chrome",
+            "target": "source",
+            "design": "interior-design-001",
+            "errors": [],
+            "recoveries": 4,
+            "passed": true,
+            "pixelDifference": {
+              "changedChannels": 0,
+              "maxDifference": 0
+            },
+            "fullScenePixelsEqual": true,
+            "replayDuration": 8.742046356201172,
+            "restartAfterRecovery": true,
+            "delayedTextureRequests": 1,
+            "automaticIdleRedraw": true,
+            "gameplayAfterRecovery": true
+          }
+        ],
+        "passed": true,
+        "limitations": [
+          "Headless WebGL verifies recovery and exact pixels on this browser renderer; it does not measure hardware performance."
+        ]
+      }
+    }
+  },
+  "extractionStructure": {
+    "method": "Expand extracted factories and dependency getters; compare all expressions, operators, keys and execution order. Normalize declaration kind/grouping and explicit single-statement braces; do not reorder initializers.",
+    "completeRoot": {
+      "passed": true,
+      "expressionAndStatementSHA256": "f93cda26c21a522ab0e1f07fb1580de6131d48ab3f181a960e2d195980010c85"
+    },
+    "results": [
+      {
+        "file": "src/application/composition/compose-scenes.js",
+        "expressionAndStatementSHA256": "56ffc52cd1268dd111b791e22a5a9e3970116c2fc62ba45dd341e76770633679",
+        "passed": true,
+        "inputs": [
+          "CushionBodyType",
+          "Texture",
+          "ColorThree",
+          "LightProbeManager",
+          "DynamicLightingMaterial",
+          "PcolHdrCubeTexture",
+          "originalInterior",
+          "interiorDesign",
+          "applyModernWallStudy"
+        ],
+        "outputs": [
+          "scenes"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-animation.js",
+        "expressionAndStatementSHA256": "a83376f6b61c294c2c4aa9edb284be143a1ad71f52dee3163b78f2c1709c73d6",
+        "passed": true,
+        "inputs": [
+          "EventEmitter"
+        ],
+        "outputs": [
+          "Easing",
+          "Tween",
+          "ValueTween",
+          "PropertyTween",
+          "TweenGroup"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-display-planes.js",
+        "expressionAndStatementSHA256": "2df3d8d8b5be6c6fb32689a5f5fe46bb4ad861b0e8439e22cafd5a6a205e083f",
+        "passed": true,
+        "inputs": [
+          "Babylon"
+        ],
+        "outputs": [
+          "UiShaderMaterial",
+          "tableUiAtlas",
+          "OrientedUiPlane",
+          "PlaneBatch"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-game-view.js",
+        "expressionAndStatementSHA256": "9cccc5953e147e188f0900d3a3c43cf77cf8248eac1276509ea818de5c5c91fa",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "EventEmitter",
+          "physicsApi",
+          "scenes",
+          "UiColors",
+          "Easing",
+          "ValueTween",
+          "UiShaderMaterial",
+          "tableUiAtlas",
+          "OrientedUiPlane",
+          "PlaneBatch",
+          "CueEvents",
+          "CueMeshManager"
+        ],
+        "outputs": [
+          "ViewEvents",
+          "ViewState",
+          "GameView"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-motion-animation.js",
+        "expressionAndStatementSHA256": "8d2181730d458ac9fe0106cbe57697d469d19d996da42c1fd0215d13760e0403",
+        "passed": true,
+        "inputs": [
+          "EventEmitter"
+        ],
+        "outputs": [
+          "AngularController",
+          "LinearController"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-session.js",
+        "expressionAndStatementSHA256": "3bd8d1ba943a8a5157dacf712d240ff5d9d290f31e98193b6a5951e54b8a162f",
+        "passed": true,
+        "inputs": [
+          "loadModule",
+          "EventEmitter",
+          "gameRecords"
+        ],
+        "outputs": [
+          "objectUtils",
+          "localGameSettings",
+          "BaseGameModel",
+          "LocalGameModel",
+          "ControllerEvents",
+          "ApplicationEvents",
+          "ControllerState",
+          "ControllerManager",
+          "BaseController"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-route-geometry.js",
+        "expressionAndStatementSHA256": "0ae92023e5a0bddbacd2d9724f0f0430991f8564242cec957d9343c09491a5c4",
+        "passed": true,
+        "inputs": [],
+        "outputs": [
+          "VectorTwo",
+          "LineTwo",
+          "EllipseTwo"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-ai.js",
+        "expressionAndStatementSHA256": "a228533960a10bca735d64fec0747e31414bb3666455f5d5d5152249d1b58bd4",
+        "passed": true,
+        "inputs": [
+          "gameRecords",
+          "localGameSettings",
+          "BaseGameModel",
+          "physicsApi",
+          "geometryUtils",
+          "VectorTwo"
+        ],
+        "outputs": [
+          "aiRegistry",
+          "AiGameModel"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-match-model.js",
+        "expressionAndStatementSHA256": "f7055c778bb2b0df7e8271ffda31ef69792ff9cba6f21a36e19524ee30ad5960",
+        "passed": true,
+        "inputs": [
+          "gameRecords",
+          "localGameSettings",
+          "BaseGameModel",
+          "aiRegistry",
+          "Player",
+          "refereeRegistry",
+          "GameState"
+        ],
+        "outputs": [
+          "SnookerGameModel"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-controls.js",
+        "expressionAndStatementSHA256": "f182eb211287d66a835a68227b5fac90b6e58129e7e9662b5cbe4911b7e27c8c",
+        "passed": true,
+        "inputs": [],
+        "outputs": [
+          "ControlGroup",
+          "controlEvents",
+          "ToolbarGroup"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-ball-in-hand.js",
+        "expressionAndStatementSHA256": "f536f35437ea4aec47ae8c6b48c139eaca59e86418f98efcc9b85db5b741cba6",
+        "passed": true,
+        "inputs": [
+          "physicsApi",
+          "UiColors",
+          "MessageKind",
+          "GameState",
+          "ControlGroup",
+          "controlEvents",
+          "ToolbarGroup"
+        ],
+        "outputs": [
+          "BallInHandControl"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-orbit-camera.js",
+        "expressionAndStatementSHA256": "c07243eab34488752bd4191711a0b74a555720a7e1d7afe5e7ad92ce33c28344",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "Easing",
+          "Tween",
+          "PropertyTween",
+          "VectorTwo",
+          "LineTwo",
+          "EllipseTwo",
+          "AngularController",
+          "LinearController"
+        ],
+        "outputs": [
+          "OrbitController",
+          "StanceController",
+          "LookController",
+          "HeadingController"
+        ]
+      },
+      {
+        "file": "src/presentation/input/cue-contact-state.js",
+        "expressionAndStatementSHA256": "347097c7b2094e90ca5aef5a9ea89e5588892042258561644a1b53ebead2e1d2",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "Plane",
+          "physicsApi"
+        ],
+        "outputs": [
+          "ci",
+          "di",
+          "_i",
+          "pi",
+          "fi",
+          "gi",
+          "mi",
+          "yi",
+          "vi",
+          "bi",
+          "xi",
+          "Si"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-cue-input.js",
+        "expressionAndStatementSHA256": "4688a70b93e4414d0464e5689a83956fe33700a293932a119d8a260abf39f1b2",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "EventEmitter",
+          "Plane",
+          "physicsApi",
+          "Easing"
+        ],
+        "outputs": [
+          "PlayerControl",
+          "CueMotionController"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-aim-camera.js",
+        "expressionAndStatementSHA256": "716d78bb6e240529010d2d00528c11da76d464f997dd9416b81e333f90a11905",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "Easing",
+          "PropertyTween",
+          "LinearController"
+        ],
+        "outputs": [
+          "AimCameraController"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-person.js",
+        "expressionAndStatementSHA256": "893ddf3a59f580f223876ed72ad6c2cd3f6bdaf1db6053fb8055ea8ce16232fa",
+        "passed": true,
+        "inputs": [
+          "Babylon",
+          "Easing",
+          "Tween",
+          "OrbitController",
+          "StanceController",
+          "LookController",
+          "HeadingController",
+          "PlayerControl",
+          "CueMotionController",
+          "AimCameraController"
+        ],
+        "outputs": [
+          "PersonState",
+          "PersonEvents",
+          "PersonController"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-player-turn.js",
+        "expressionAndStatementSHA256": "fb0dcee7ff6ee8f3e39cdfe9146c0ff85fce9e0fe44226b5c75e342ac2cddb35",
+        "passed": true,
+        "inputs": [
+          "physicsApi",
+          "Easing",
+          "GameState",
+          "ControlGroup",
+          "controlEvents",
+          "ToolbarGroup",
+          "PersonState",
+          "PersonEvents",
+          "ShortcutBar",
+          "MessageDialog",
+          "ControlsDialog"
+        ],
+        "outputs": [
+          "PlayerTurnControl"
+        ]
+      },
+      {
+        "file": "src/application/composition/compose-replay.js",
+        "expressionAndStatementSHA256": "b4a76bedc4a983a6e1ae691f4431b0bdfed51953130893b6d971cb3f91698ec6",
+        "passed": true,
+        "inputs": [
+          "physicsApi",
+          "Easing",
+          "PropertyTween",
+          "UiComponent",
+          "dialogEvents",
+          "GameState",
+          "ControlGroup",
+          "controlEvents",
+          "ToolbarGroup"
+        ],
+        "outputs": [
+          "ReplayControl",
+          "MovieClip"
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "algorithmStructure": {
+    "path": "reports/validation/algorithm-structure.json",
+    "sha256": "d6ee01a1a7e4085a02d3768974f66c965c48e7c57b76571c8c950c13bbd43217",
+    "passed": 137,
+    "failed": 0
+  },
+  "behaviorTests": [
+    {
+      "path": "tests/unit/game-display-composition.test.mjs",
+      "cases": 4,
+      "passedBeforeAndAfterExtraction": true
+    },
+    {
+      "path": "tests/unit/game-session-composition.test.mjs",
+      "cases": 6,
+      "passedBeforeAndAfterExtraction": true
+    },
+    {
+      "path": "tests/unit/game-interaction-composition.test.mjs",
+      "cases": 8,
+      "passedBeforeAndAfterExtraction": true
+    }
+  ],
+  "limitations": [
+    "Bounded continuous sessions do not certify full matches, all stochastic AI branches or hours of play.",
+    "Headless software WebGL is behavioral evidence, not hardware performance evidence.",
+    "Final context restoration rerun covers one smoke scenario with four recoveries; earlier full-suite results retain their own source scope.",
+    "CushionBody collision operations remain in the root; this scope relocates assembly and state without changing numeric parameters."
+  ],
+  "checks": {
+    "latestUnitIntegration": {
+      "command": "node scripts/test-project.mjs",
+      "tests": 105,
+      "passed": true
+    },
+    "static": {
+      "lint": true,
+      "format": true,
+      "fileNaming": true,
+      "documentationLinks": {
+        "checked": 156,
+        "missing": 0
+      }
+    }
+  }
+}

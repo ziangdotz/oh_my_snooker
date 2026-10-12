@@ -1,0 +1,149 @@
+.interior-about-content {
+  gap: 0;
+  padding-top: 0;
+}
+.interior-about-hero {
+  position: relative;
+  padding: 28px;
+  flex-shrink: 0;
+  border: 1px solid var(--interior-line);
+  border-radius: var(--interior-card-radius);
+  background: linear-gradient(145deg, #20372b, var(--interior-surface));
+}
+.interior-about-label {
+  margin: 0;
+  font-size: var(--interior-code-size);
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  color: var(--interior-gold);
+}
+.interior-about-hero h3 {
+  margin: 24px 0 0;
+  font: 700 var(--interior-about-brand-size) / 1.04 var(--game-heading-font);
+  letter-spacing: 0.04em;
+  color: var(--interior-text);
+}
+.interior-about-hero h3 span {
+  display: block;
+}
+.interior-about-copy {
+  margin: 20px 0 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--interior-text);
+}
+.interior-about-description {
+  margin: 8px 0 0;
+  font-size: var(--interior-copy-size);
+  line-height: 1.6;
+  color: var(--interior-muted);
+}
+.interior-about-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 24px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--interior-line);
+  list-style: none;
+  font-size: var(--interior-code-size);
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: var(--interior-gold);
+}
+.interior-about-table {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 52px;
+  height: 30px;
+  border: 1px solid var(--interior-gold);
+  border-radius: 3px;
+  transform: rotate(-8deg);
+  opacity: 0.7;
+}
+.interior-about-table i {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--interior-text);
+}
+.interior-about-table i:nth-child(2) {
+  left: 32px;
+  background: var(--interior-gold);
+}
+.interior-about-table i:nth-child(3) {
+  top: 16px;
+  left: 28px;
+  background: var(--interior-gold);
+}
+.interior-about-credit,
+.interior-about-engine {
+  padding: 26px 4px;
+  flex-shrink: 0;
+}
+.interior-about-credit h3 {
+  margin: 8px 0 0;
+  font: 700 var(--interior-venue-name-size) / 1.2 var(--game-heading-font);
+  letter-spacing: 0.04em;
+  color: var(--interior-text);
+}
+.interior-about-engine {
+  padding-top: 22px;
+  padding-bottom: 4px;
+  border-top: 1px solid var(--interior-line);
+}
+.interior-about-engine-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--interior-line);
+  border-radius: var(--interior-card-radius);
+  background: var(--interior-surface);
+  color: var(--interior-text);
+  text-decoration: none;
+}
+.interior-about-engine-link strong {
+  display: block;
+  font: 700 var(--interior-venue-name-size) / 1.2 var(--game-heading-font);
+}
+.interior-about-engine-copy {
+  display: block;
+  margin-top: 6px;
+  font-size: var(--interior-code-size);
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: var(--interior-muted);
+}
+.interior-about-external {
+  color: var(--interior-gold);
+  font-size: 24px;
+}
+.interior-about-engine-link:hover {
+  border-color: var(--interior-gold);
+  background: #20362a;
+}
+.interior-about-content:focus-visible,
+.interior-about-engine-link:focus-visible {
+  outline: 2px solid var(--interior-gold);
+  outline-offset: -2px;
+}
+@media (max-width: 480px) {
+  .interior-about-hero {
+    padding: 24px 20px;
+  }
+  .interior-about-table {
+    top: 24px;
+    right: 20px;
+    width: 44px;
+  }
+  .interior-about-hero .interior-about-label {
+    max-width: calc(100% - 60px);
+  }
+}

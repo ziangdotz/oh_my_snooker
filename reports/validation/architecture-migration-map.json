@@ -1,0 +1,1904 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-03T10:16:22.615Z",
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "modules": [
+    {
+      "previousId": 0,
+      "id": "adapters/browser/browser-detector",
+      "source": "src/third-party/browser/browser-detector.js",
+      "originalFactorySHA256": "750633b35e2e59d985f95168417d009f3d4b46e0c14c73b39184ecf6c4309c7f",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 1,
+      "id": "assets/images-intro-background",
+      "source": "src/assets/images/intro-background.jpg",
+      "originalFactorySHA256": "086db3e67cbf4df462002d526500b45e9fd9792a9dd17ce87d89dd7fa45bb2af",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 2,
+      "id": "adapters/rendering/amd-guard",
+      "source": "src/adapters/rendering/amd-guard.js",
+      "originalFactorySHA256": "cf015d5002590c4adca591ec4b2b030ac65c167cb2a331f09a272b601b5e7459",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 3,
+      "id": "adapters/browser/webgl-detector",
+      "source": "src/third-party/browser/webgl-detector.js",
+      "originalFactorySHA256": "9a8b59062771d358f7a3705c7045b2027e3d5df39557fe039979d630c6bbd158",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 5,
+      "id": "compatibility/style-side-effect",
+      "source": null,
+      "originalFactorySHA256": "59809dd8f958eb7779701cbd9f4a2c375a813e27a72513ab30c160f401c27678",
+      "status": "removed-empty-style-module"
+    },
+    {
+      "previousId": 8,
+      "id": "compatibility/theme-side-effect",
+      "source": null,
+      "originalFactorySHA256": "59809dd8f958eb7779701cbd9f4a2c375a813e27a72513ab30c160f401c27678",
+      "status": "removed-empty-style-module"
+    },
+    {
+      "previousId": 9,
+      "id": "application/launch-game",
+      "source": "src/application/launch-game.js",
+      "originalFactorySHA256": "7ea71627053284d58cd12aa1e78818da8f69e7e8ee609eb02db51ee8349854d6",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 11,
+      "id": "adapters/rendering/babylon-engine",
+      "source": "src/third-party/rendering/babylon-engine.js",
+      "originalFactorySHA256": "0c71a3728e440e0af2e0b0168e274a4be7d473592fcbf0cfe0d11ca051459da9",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 97,
+      "id": "adapters/rendering/global-object",
+      "source": "src/adapters/rendering/global-object.js",
+      "originalFactorySHA256": "c0c643b8b633613491f3571c926e57b1f2d656f0a4baf0a6552cabe930178a4a",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 10,
+      "id": "application/compose-game",
+      "source": "src/application/compose-game.js",
+      "originalFactorySHA256": "a031adccb7d69997b1d19ce2d083e105d1f187992f7b62de76d7611c840e73e0",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 12,
+      "id": "domain/math/vector-three",
+      "source": "src/domain/math/vector-three.js",
+      "originalFactorySHA256": "9915ff1929ad9db144401360fc89345bfbc002d3b0316eff0b61e5dc10c6619d",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 13,
+      "id": "domain/physics/physics-api",
+      "source": "src/domain/physics/physics-api.js",
+      "originalFactorySHA256": "a7e0d21767c33a4319b14543c4cb73afe658d57da533389982792a9cc50c1a71",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 14,
+      "id": "shared/events/event-emitter",
+      "source": "src/shared/events/event-emitter.js",
+      "originalFactorySHA256": "10fe25692fa83e97e90691d1845696664fa58f831e3aa4dd9d5f44e9e4ae2f2b",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 15,
+      "id": "domain/game/game-state",
+      "source": "src/domain/game/game-state.js",
+      "originalFactorySHA256": "87507c766917e6564b198c671a88c85c7da5cd29d978539c1c2af1afb11c0226",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 16,
+      "id": "domain/physics/physics-constants",
+      "source": "src/domain/physics/physics-constants.js",
+      "originalFactorySHA256": "cf1d3857efaf2c57d9b43bc6dd3111a7521cf39e33c1e8dc66af9942adb2cb80",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 17,
+      "id": "domain/math/matrix-three",
+      "source": "src/domain/math/matrix-three.js",
+      "originalFactorySHA256": "c8756103e0916bdf8903b1728418bd2c3a19ece74d6b3415c78b5468de9e7dba",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 18,
+      "id": "domain/geometry/plane",
+      "source": "src/domain/geometry/plane.js",
+      "originalFactorySHA256": "330bdebb8402cee1d247c4b1decf22740f724854d422d83869d8dc32da5a662f",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 19,
+      "id": "domain/game/game-records",
+      "source": "src/domain/game/game-records.js",
+      "originalFactorySHA256": "39f23cfeb92f52dbe1e3d071c19940111222f53a4a6f638b45953eae2ea3b727",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 20,
+      "id": "shared/diagnostics/physics-monitor",
+      "source": "src/shared/diagnostics/physics-monitor.js",
+      "originalFactorySHA256": "6f5149a2165f1e0f675fd86a74b5c765f162bef6fc3eb86acbb91a8beae5df88",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 21,
+      "id": "domain/physics/contact-solver",
+      "source": "src/domain/physics/contact-solver.js",
+      "originalFactorySHA256": "55b7248086edadbbc618e0a2025f35dbd00001ad538bc3f5365086e4a0db28bd",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 22,
+      "id": "domain/physics/contact",
+      "source": "src/domain/physics/contact.js",
+      "originalFactorySHA256": "8615f1f3ccb42009e45df5b547c4373b9d41cca3261773d7cad48873c729c3d4",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 23,
+      "id": "domain/math/quaternion",
+      "source": "src/domain/math/quaternion.js",
+      "originalFactorySHA256": "1d0ed9ca30b15ff33553033f01c1a26857c21a76ad7f537a0f36a44ce6c6ac2e",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 24,
+      "id": "shared/data/object-utils",
+      "source": "src/shared/data/object-utils.js",
+      "originalFactorySHA256": "963e5708ff734c2953782dc010793eddc26fea514e7b99f71dfd82126f151170",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 25,
+      "id": "infrastructure/assets/resource-paths",
+      "source": "src/infrastructure/assets/resource-paths.js",
+      "originalFactorySHA256": "08c6fd7f5685197007a07e0d28a0d1efff9d596dc125cb8c3bf9b85afa60feb6",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 26,
+      "id": "domain/physics/collision-events",
+      "source": "src/domain/physics/collision-events.js",
+      "originalFactorySHA256": "b677882684b0aafb7c56d0bae13500f22b928f4b5053ff30ba44e88467c82978",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 27,
+      "id": "domain/simulation/simulation-events",
+      "source": "src/domain/simulation/simulation-events.js",
+      "originalFactorySHA256": "5307f7732a9c87e57a8073c94b7c9a74576ea4da1a552112dd08238e3bfb52e3",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 28,
+      "id": "domain/simulation/simulation-state",
+      "source": "src/domain/simulation/simulation-state.js",
+      "originalFactorySHA256": "2174c4a377845ec622d7dccef2edc12f5507f0ec23ddec6150aacf341d518116",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 29,
+      "id": "domain/scene/scene-definitions",
+      "source": "src/domain/scene/scene-definitions.js",
+      "originalFactorySHA256": "6b66249eda8154650d5e03c777b235d568f7fb3be05a2b4b92db29d7a5dc0854",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 30,
+      "id": "domain/rules/foul-codes",
+      "source": "src/domain/rules/foul-codes.js",
+      "originalFactorySHA256": "eb1b4f01a09ae5799ca6e207ab758a8a2ac3fea571ce53842d1a71650f4f0da5",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 31,
+      "id": "domain/game/player",
+      "source": "src/domain/game/player.js",
+      "originalFactorySHA256": "05fa6e2457aa93994781acd8450074a1d4af289079dcf1dabbc26f61c091615f",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 32,
+      "id": "domain/geometry/geometry-utils",
+      "source": "src/domain/geometry/geometry-utils.js",
+      "originalFactorySHA256": "252dcbf1bbf1de0fad4cab1d687278075eeedb1d28952fb5aec2e727740108c7",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 33,
+      "id": "adapters/rendering/dynamic-lighting-material",
+      "source": "src/adapters/rendering/dynamic-lighting-material.js",
+      "originalFactorySHA256": "27237b55b6d3e864e338d636a86b85ec2976e611b64814e1211c6c0c9477cf4d",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 34,
+      "id": "domain/physics/ball-motion",
+      "source": "src/domain/physics/ball-motion.js",
+      "originalFactorySHA256": "230451ea4ef0b0df9833f86fe77b745f2e0c9dd27e6bf473de869d13c496b8cf",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 35,
+      "id": "domain/physics/rigid-body",
+      "source": "src/domain/physics/rigid-body.js",
+      "originalFactorySHA256": "d38017f87862934bf6755b9ffbac4cabe9377a8b7c6f80d1fcda7687750722e8",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 36,
+      "id": "domain/physics/ball-body",
+      "source": "src/domain/physics/ball-body.js",
+      "originalFactorySHA256": "a3936381fdbb9132f9efe902612afae672de558a186b861e6a69c7f439e845ac",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 37,
+      "id": "domain/physics/ball-surface-contact",
+      "source": "src/domain/physics/ball-surface-contact.js",
+      "originalFactorySHA256": "0cdccb51806ab47d3685291f6a30df8c5e279d1022278b683b0d39edbb3c6356",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 38,
+      "id": "domain/physics/object-pool",
+      "source": "src/domain/physics/object-pool.js",
+      "originalFactorySHA256": "0ee56f149723f4f2703344936420a77616dcbddc2409808e6f833a7d7970c4aa",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 39,
+      "id": "domain/physics/world",
+      "source": "src/domain/physics/world.js",
+      "originalFactorySHA256": "a320e4268a9543d6dfb1804bbd0cd9538faceb22c4f26b5245ae7d668b4cf163",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 40,
+      "id": "presentation/templates/match-result",
+      "source": "src/presentation/templates/match-result.html",
+      "originalFactorySHA256": "188f32fc57d493ea788b3d0fd09222e6befaba19e947c81e5593b3b4c71af488",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 41,
+      "id": "presentation/templates/scoreboard",
+      "source": "src/presentation/templates/scoreboard.html",
+      "originalFactorySHA256": "ac8190baaafff059e8e66e7cb84d06c9e979d9197f1f5bb3b97cfff78cc53c04",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 42,
+      "id": "presentation/templates/replay-controls",
+      "source": "src/presentation/templates/replay-controls.html",
+      "originalFactorySHA256": "219cdd47c283f3f91097945a41b76fc9b2426c3f070f2035537102e180509ae1",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 43,
+      "id": "presentation/templates/practice-result",
+      "source": "src/presentation/templates/practice-result.html",
+      "originalFactorySHA256": "37cbc36274b9814c63a16d864797c5f085f670d272a91c3f0598ebfb300a3db3",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 44,
+      "id": "presentation/templates/controls-guide",
+      "source": "src/presentation/templates/controls-guide.html",
+      "originalFactorySHA256": "4921ad71b1e78aaabb4903b7c58bd32cff2e9fa725faf544fdbafdaa6e61fb62",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 45,
+      "id": "presentation/templates/keyboard-shortcuts",
+      "source": "src/presentation/templates/keyboard-shortcuts.html",
+      "originalFactorySHA256": "0467595502f7cabfd69696659db342923a4b2d7046499c7d3550357865916ab2",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 46,
+      "id": "infrastructure/network/local-request",
+      "source": "src/infrastructure/network/local-request.js",
+      "originalFactorySHA256": "00e065496b7c74e60e6d231ad321e3851dd1fe37762bb1bdfc45fcbd09a43867",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 47,
+      "id": "infrastructure/assets/asset-queue",
+      "source": "src/infrastructure/assets/asset-queue.js",
+      "originalFactorySHA256": "403980551448b8ab0ab5b8e8407226fe00ee49be4e536c544d3018536179689a",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 48,
+      "id": "infrastructure/assets/collision-mesh-loader",
+      "source": "src/infrastructure/assets/collision-mesh-loader.js",
+      "originalFactorySHA256": "1947bd408bdbf09c0fa7beb1257604c6e5d676ba67866d1bf8bb9244f0c7de1a",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 49,
+      "id": "domain/simulation/snooker-ball",
+      "source": "src/domain/simulation/snooker-ball.js",
+      "originalFactorySHA256": "75d1c62df1a4a1a4d693896493f463b275e0889bfd9c8cc34d1b8fec73208a54",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 50,
+      "id": "domain/simulation/simulator",
+      "source": "src/domain/simulation/simulator.js",
+      "originalFactorySHA256": "303cc6c7f38d895b469194b06a6c98bf1b0f03dca647f6ceaa681a476d3ae890",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 51,
+      "id": "domain/geometry/circle-arc",
+      "source": "src/domain/geometry/circle-arc.js",
+      "originalFactorySHA256": "aadaed5de8b93e246362754e5c38ab04cecf6dd7cd6aa9edd8603e7757e6135e",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 52,
+      "id": "domain/geometry/polygon",
+      "source": "src/domain/geometry/polygon.js",
+      "originalFactorySHA256": "c65fcfe4ff1773aa6feaf827509f7eeebc05667f27954ea7966e1e7c0e1cdfab",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 53,
+      "id": "domain/rules/base-referee",
+      "source": "src/domain/rules/base-referee.js",
+      "originalFactorySHA256": "e23aca156799796ff30cb619b80f75cb1091cef626994ddcd35b4033e5005f2c",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 54,
+      "id": "domain/rules/snooker-referee",
+      "source": "src/domain/rules/snooker-referee.js",
+      "originalFactorySHA256": "a49f8ef1059ab0b1abcf42ed1c12ab9b03632715ba67841850cda442318697f4",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 55,
+      "id": "domain/rules/referee-registry",
+      "source": "src/domain/rules/referee-registry.js",
+      "originalFactorySHA256": "5c890429f99a2f395a35a37d2e9a49fe69acdd8e041c4bd0645d1962bc2b5d82",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 56,
+      "id": "presentation/templates/about-game",
+      "source": "src/presentation/templates/about-game.html",
+      "originalFactorySHA256": "84500e6b02819e454b0a58e442b7349d9b06d416504853a73ab964198288ed1f",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 57,
+      "id": "presentation/templates/ai-difficulty",
+      "source": "src/presentation/templates/ai-difficulty.html",
+      "originalFactorySHA256": "0d162bdc9e6a76617e8ba2e5c1d75c141c26252e5b00454cb21c0e6ed957a32d",
+      "kind": "template",
+      "status": "maintained"
+    },
+    {
+      "previousId": 58,
+      "id": "assets/textures-cue-cue-color",
+      "source": "src/assets/textures/cue/cue-color.jpg",
+      "originalFactorySHA256": "59ada2e6d247338397063f697a673be45d4e481e23c090fd49401cd856ae4944",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 59,
+      "id": "assets/textures-cue-cue-gloss",
+      "source": "src/assets/textures/cue/cue-gloss.png",
+      "originalFactorySHA256": "076232621b6bfec8e3c857e07802c6d707a951ea621769770f82e4ab406cb025",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 60,
+      "id": "assets/models-alpha-cue",
+      "source": "src/assets/models/alpha-cue.babylon",
+      "originalFactorySHA256": "ba1ee7444f9c6da0864fd3d0038323a05709d0e414492698cbd4f85db463bb67",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 61,
+      "id": "assets/textures-table-table-ui-atlas",
+      "source": "src/assets/textures/table/table-ui-atlas.png",
+      "originalFactorySHA256": "1febba394b091fbba5418ff820dbd98fe7c8d1d8cb76b61ef9252e182d83f958",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 62,
+      "id": "assets/textures-table-pocket-gloss",
+      "source": "src/assets/textures/table/pocket-gloss.jpg",
+      "originalFactorySHA256": "9fe221b6efb80b7de6d750f094abd8c833c97b5bcde87f64df5029f422e16b46",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 63,
+      "id": "assets/models-interior-design-original-room",
+      "source": "src/assets/models/interior-design-original-room.babylon",
+      "originalFactorySHA256": "9ffeb8d87200f759c49cc14c0d40eb40ba7c9e722394109fec4052f3803f5101",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 64,
+      "id": "assets/textures-table-table-mask",
+      "source": "src/assets/textures/table/table-mask.png",
+      "originalFactorySHA256": "ae330178138fad59a3b1042bec207288ea43ee7c3e1c834d8f35c6c7d137a42b",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 65,
+      "id": "assets/textures-room-interior-design-original-floor-tile",
+      "source": "src/assets/textures/room/interior-design-original-floor-tile.jpg",
+      "originalFactorySHA256": "63f828c478666662b541b847a48ce3bd36cf2bb2609e66ef6c2ab45811deedc8",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 66,
+      "id": "assets/textures-table-frame-roughness",
+      "source": "src/assets/textures/table/frame-roughness.jpg",
+      "originalFactorySHA256": "4988a19faedddcfe4b3b2f142030f59447e03ccbe56d7eddcdb0727733cbd439",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 67,
+      "id": "assets/environments-frame-reflection",
+      "source": "src/assets/environments/frame-reflection.hdr",
+      "originalFactorySHA256": "a124c9bc5f458029846bc68c821508999bc8254e855854347f26ebee2162d256",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 68,
+      "id": "assets/textures-table-frame-normal",
+      "source": "src/assets/textures/table/frame-normal.png",
+      "originalFactorySHA256": "f0fd8621029641881b83e3ecc5bec4995115ae49ccdce9eedaa0d2b8a9a2571f",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 69,
+      "id": "assets/textures-table-frame-lightmap",
+      "source": "src/assets/textures/table/frame-lightmap.jpg",
+      "originalFactorySHA256": "a27ff055e5ce47193a0ca17257708e421f8102db440780b2576c8cfccb6c27e9",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 70,
+      "id": "assets/textures-table-frame-diffuse",
+      "source": "src/assets/textures/table/frame-diffuse.jpg",
+      "originalFactorySHA256": "e8a0928d6dcc4a8a48f3acee053936b1695dbf8d4b81080087be9a0df5aa26fc",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 71,
+      "id": "assets/environments-room-irradiance-secondary",
+      "source": "src/assets/environments/room-irradiance-secondary.hdr",
+      "originalFactorySHA256": "8942c78842e4b8407d8a7e1973f6f549ee43d7755c948f462749618ea6fc6620",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 72,
+      "id": "assets/environments-room-irradiance-primary",
+      "source": "src/assets/environments/room-irradiance-primary.hdr",
+      "originalFactorySHA256": "8599464c6a2b7bfcc54df6a8fc7e613a98a453d3c2ee4dacd59fc0a1306bebb7",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 73,
+      "id": "assets/textures-table-carpet-tile",
+      "source": "src/assets/textures/table/carpet-tile.jpg",
+      "originalFactorySHA256": "184e00b96c7012e7f6e604dd58167974d1563413c92c4876298b2bed5c7cd4c3",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 74,
+      "id": "assets/textures-table-carpet-overlay",
+      "source": "src/assets/textures/table/carpet-overlay.png",
+      "originalFactorySHA256": "718c5d7f4c38014bb81e00ea9404b8ff7423d2e309c7355451c561d4f2caedff",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 75,
+      "id": "assets/textures-table-carpet-normal",
+      "source": "src/assets/textures/table/carpet-normal.jpg",
+      "originalFactorySHA256": "4fe513ae0013519a1d5d89f656630659c29a84bf5093623b30b9e3875bd99e3a",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 76,
+      "id": "assets/textures-table-carpet-lightmap",
+      "source": "src/assets/textures/table/carpet-lightmap.jpg",
+      "originalFactorySHA256": "49f915cc5efb30177dea3b6d2bc8f8f52b134089dd831a69f898d938e96f8a15",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 77,
+      "id": "assets/environments-ball-reflection",
+      "source": "src/assets/environments/ball-reflection.hdr",
+      "originalFactorySHA256": "23c944cf21ae5a9975675a39be75d713da250bac86961d7c37925ff8893bdf51",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 78,
+      "id": "assets/textures-table-ball-ambient-occlusion",
+      "source": "src/assets/textures/table/ball-ambient-occlusion.png",
+      "originalFactorySHA256": "00ace18bb972b9b974c2c0087a27cd681fab9fd973f2288241b360b39b428fee",
+      "kind": "asset",
+      "status": "maintained"
+    },
+    {
+      "previousId": 79,
+      "id": "adapters/rendering/light-probe-material",
+      "source": "src/adapters/rendering/light-probe-material.js",
+      "originalFactorySHA256": "61c6e6d117e05ce2397621fb1e72cbd20fe5f5fcdad1cda6dd8365e3a81b37f4",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 80,
+      "id": "domain/geometry/collision-mesh-decoder",
+      "source": "src/domain/geometry/collision-mesh-decoder.js",
+      "originalFactorySHA256": "08124be53cfc8b95db478157eababcd04ec93429d463f079ca3d3a87c630ba7d",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 81,
+      "id": "domain/geometry/mesh-polygon-group",
+      "source": "src/domain/geometry/mesh-polygon-group.js",
+      "originalFactorySHA256": "9afcd41be685e1db3db79b63558dcf2c1c9529859ec31bbe8b5a7ce112500861",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 82,
+      "id": "domain/geometry/mesh-polygon",
+      "source": "src/domain/geometry/mesh-polygon.js",
+      "originalFactorySHA256": "9b8442c634de793ee71ee93def553a9761874f5cab1f1018f62564191467f6ca",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 83,
+      "id": "domain/geometry/mesh-edge",
+      "source": "src/domain/geometry/mesh-edge.js",
+      "originalFactorySHA256": "181356e2c018498a727ae564b19a23c7acfe58cecdae6f7d66202ceb7aca360f",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 84,
+      "id": "domain/physics/mesh-body",
+      "source": "src/domain/physics/mesh-body.js",
+      "originalFactorySHA256": "610a8f85bbea5832a2f59fc4139c11ac8dc35b2669c8096bbd0ec6d1520adc86",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 85,
+      "id": "domain/physics/prediction-solver",
+      "source": "src/domain/physics/prediction-solver.js",
+      "originalFactorySHA256": "b5272622766efe239c40aea243e7af637375db3da6df08987e58f970d864b109",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 86,
+      "id": "domain/physics/cue-tip-contact",
+      "source": "src/domain/physics/cue-tip-contact.js",
+      "originalFactorySHA256": "98fd023e3fb418869961ff7dcf4cd6f4a622c84335d272069c7d0bd901df8393",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 87,
+      "id": "shared/diagnostics/rolling-average",
+      "source": "src/shared/diagnostics/rolling-average.js",
+      "originalFactorySHA256": "b0b199141a8396159edf7f17862e4cff489c1c22a099ccb34b3ddcc23543a80f",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 88,
+      "id": "presentation/diagnostics/metric-chart",
+      "source": "src/presentation/diagnostics/metric-chart.js",
+      "originalFactorySHA256": "9295178b2aceed8bad3f28f40f2f20c06ababb51197623de9a1110c12ec1c12a",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 89,
+      "id": "presentation/diagnostics/monitor-view",
+      "source": "src/presentation/diagnostics/monitor-view.js",
+      "originalFactorySHA256": "ee7ec76e44ba5fb43c32227ce8db38c51c5a62fd7ec7f2c514db6802dd2c4c13",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 90,
+      "id": "shared/diagnostics/metric-definitions",
+      "source": "src/shared/diagnostics/metric-definitions.js",
+      "originalFactorySHA256": "ec0e8cb04bb609dae441403008f474d1999282343825f459145c9eb804fadee9",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 91,
+      "id": "domain/physics/collision-stack",
+      "source": "src/domain/physics/collision-stack.js",
+      "originalFactorySHA256": "b34896ed08531e2b5d49b80264845c5930f65c92eac8e644c607bb0afd531369",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 92,
+      "id": "domain/physics/ball-contact",
+      "source": "src/domain/physics/ball-contact.js",
+      "originalFactorySHA256": "8ab8bf0dd3c9676debb3a74d440c97b83dd5c1a855cf29c35dfa589373300c5a",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 93,
+      "id": "domain/physics/collision-island",
+      "source": "src/domain/physics/collision-island.js",
+      "originalFactorySHA256": "7dbe832ca5154c47e04c0fe7b1007d436690ab9a5e72592572fa893678303f87",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 94,
+      "id": "domain/physics/island-list",
+      "source": "src/domain/physics/island-list.js",
+      "originalFactorySHA256": "5e694b9b1c187f2b0149bf75410529c2cbde86c119d8d29c611e717d726e465d",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 95,
+      "id": "domain/physics/world-client",
+      "source": "src/domain/physics/world-client.js",
+      "originalFactorySHA256": "6d9fb1fc1728c6661b3012a0a04384821eb138132c205d0d5b5d9677a14dac7d",
+      "kind": "factory",
+      "status": "maintained"
+    },
+    {
+      "previousId": 96,
+      "id": "domain/scene/initial-layout",
+      "source": "src/domain/scene/initial-layout.js",
+      "originalFactorySHA256": "8100b1c80c8e18a403098399145a1639d9cad986c32d0229b3cd7748d9a06efa",
+      "kind": "factory",
+      "status": "maintained"
+    }
+  ],
+  "assets": [
+    {
+      "before": "res/71d7e9a206dbcc1777cadd7484cc700e.jpg",
+      "after": "assets/images/intro-background.jpg",
+      "originalSHA256": "d09e684087618388d794cbdb79009ffb54f0cfb982a402a5442c022c235925f3",
+      "maintainedSHA256": "d09e684087618388d794cbdb79009ffb54f0cfb982a402a5442c022c235925f3"
+    },
+    {
+      "before": "res/1d7af82a4bcfa1d965e85bf46a90bb29.jpg",
+      "after": "assets/textures/cue/cue-color.jpg",
+      "originalSHA256": "c174f2fb1f7e64579fe09531653a41a59ef49cb56c55964ec19a69a4129be299",
+      "maintainedSHA256": "c174f2fb1f7e64579fe09531653a41a59ef49cb56c55964ec19a69a4129be299"
+    },
+    {
+      "before": "res/fea245db64f3c20d58337e086797b65a.png",
+      "after": "assets/textures/cue/cue-gloss.png",
+      "originalSHA256": "7a0648baaad16bc54edad1193048be54ae069e844f7c67ba9f0dc3e26882f3b4",
+      "maintainedSHA256": "7a0648baaad16bc54edad1193048be54ae069e844f7c67ba9f0dc3e26882f3b4"
+    },
+    {
+      "before": "res/3427c4cbb59a2e2ab0efe1f0ecc91863.babylon",
+      "after": "assets/models/alpha-cue.babylon",
+      "originalSHA256": "c2d077b236c0833bf75495c8703c8fd91c8532375141f8bfb1559d06f0e65255",
+      "maintainedSHA256": "c2d077b236c0833bf75495c8703c8fd91c8532375141f8bfb1559d06f0e65255"
+    },
+    {
+      "before": "res/1a2152a3740bde223ab5523cc9458021.png",
+      "after": "assets/textures/table/table-ui-atlas.png",
+      "originalSHA256": "dde41bfa214c9ea3add008c8c343748457f9ac9abf41ad04bf7b5480c5eb0ef7",
+      "maintainedSHA256": "dde41bfa214c9ea3add008c8c343748457f9ac9abf41ad04bf7b5480c5eb0ef7"
+    },
+    {
+      "before": "res/50bfb6586540c6eca915efab8949b3fc.jpg",
+      "after": "assets/textures/table/pocket-gloss.jpg",
+      "originalSHA256": "8b6f0387f482cdb35623701fe4d944bf3dd3b42100f08f4fadc9ea793191d1dd",
+      "maintainedSHA256": "8b6f0387f482cdb35623701fe4d944bf3dd3b42100f08f4fadc9ea793191d1dd"
+    },
+    {
+      "before": "res/413ac7b2bf52ce05e45f4f6d8497a651.babylon",
+      "after": "assets/models/interior-design-original-room.babylon",
+      "originalSHA256": "8c7fe334be3aa5fe0f5620c6cb2d9661dfe486fba61a6e131b49973f05974b5c",
+      "maintainedSHA256": "c3364eca028b2ccf027d4973d33316dc4ae46f543c8017940a67e2e05769a5da"
+    },
+    {
+      "before": "res/0b8abbd09ae011d71d4558e0d30e0c85.png",
+      "after": "assets/textures/table/table-mask.png",
+      "originalSHA256": "dc0421170290541f75d543d9e930b10d8ce8530fa98844fbade5131ee70d39e3",
+      "maintainedSHA256": "dc0421170290541f75d543d9e930b10d8ce8530fa98844fbade5131ee70d39e3"
+    },
+    {
+      "before": "res/fab6def1bc4a56974cd45ffc0be44b25.jpg",
+      "after": "assets/textures/room/interior-design-original-floor-tile.jpg",
+      "originalSHA256": "8108744ea2c14c53021541453bb701d98f6a09e31abf2f424659fce90bcb805e",
+      "maintainedSHA256": "8108744ea2c14c53021541453bb701d98f6a09e31abf2f424659fce90bcb805e"
+    },
+    {
+      "before": "res/912c4020723463fc80e708a4ed8356cf.jpg",
+      "after": "assets/textures/table/frame-roughness.jpg",
+      "originalSHA256": "b3ec3edc232489e4d07b9adf9c753b2ba98b0775c3f0fa03403596ccf6f5879e",
+      "maintainedSHA256": "b3ec3edc232489e4d07b9adf9c753b2ba98b0775c3f0fa03403596ccf6f5879e"
+    },
+    {
+      "before": "res/49d071e163c3ec19a212dd057dad38a1.hdr",
+      "after": "assets/environments/frame-reflection.hdr",
+      "originalSHA256": "dda79c4027ac00c99f482839ddb06d0a41f40ccebd970f4c5a236fa2028e0823",
+      "maintainedSHA256": "dda79c4027ac00c99f482839ddb06d0a41f40ccebd970f4c5a236fa2028e0823"
+    },
+    {
+      "before": "res/d6e4cbeb6e1babc3e26cb444422bed49.png",
+      "after": "assets/textures/table/frame-normal.png",
+      "originalSHA256": "e94581fc4467260c1d233c09e0afcb1c0929a3a66544ebfa637e41f8d784a015",
+      "maintainedSHA256": "e94581fc4467260c1d233c09e0afcb1c0929a3a66544ebfa637e41f8d784a015"
+    },
+    {
+      "before": "res/5401661d949732feeeb754ef7f93f5be.jpg",
+      "after": "assets/textures/table/frame-lightmap.jpg",
+      "originalSHA256": "e295eff5130988840587b236f8e07c2e0dbd90a11d85e5ae56eb4cbf6c6732d0",
+      "maintainedSHA256": "e295eff5130988840587b236f8e07c2e0dbd90a11d85e5ae56eb4cbf6c6732d0"
+    },
+    {
+      "before": "res/f04dbae40e7d593c7914bf51880dfe87.jpg",
+      "after": "assets/textures/table/frame-diffuse.jpg",
+      "originalSHA256": "e5123fa813d4cc0fba7bab80a5448195c3add905e8b7461b82e2f9765954940a",
+      "maintainedSHA256": "e5123fa813d4cc0fba7bab80a5448195c3add905e8b7461b82e2f9765954940a"
+    },
+    {
+      "before": "res/19cfc57b94b49b3ebac00319a7b7a0f0.hdr",
+      "after": "assets/environments/room-irradiance-secondary.hdr",
+      "originalSHA256": "6cb93810cfb503a488461c13c4df16da7fbadf114b5920dfaaeec23c9a3e3cae",
+      "maintainedSHA256": "6cb93810cfb503a488461c13c4df16da7fbadf114b5920dfaaeec23c9a3e3cae"
+    },
+    {
+      "before": "res/819e348970711b27f3ad5f5ffeeac62e.hdr",
+      "after": "assets/environments/room-irradiance-primary.hdr",
+      "originalSHA256": "a3215d438c2433b575c44b5d020f7f39bd9703a57c366e15e1f3c08a84f98fbf",
+      "maintainedSHA256": "a3215d438c2433b575c44b5d020f7f39bd9703a57c366e15e1f3c08a84f98fbf"
+    },
+    {
+      "before": "res/154a31248c69da93379562cbf6763238.jpg",
+      "after": "assets/textures/table/carpet-tile.jpg",
+      "originalSHA256": "4e6ea676cef0d056ec6fd89658aaf9ab1f40c6f9dfdc319ab309a18bdab9fc67",
+      "maintainedSHA256": "4e6ea676cef0d056ec6fd89658aaf9ab1f40c6f9dfdc319ab309a18bdab9fc67"
+    },
+    {
+      "before": "res/1d6ef5b7e6c568c14684b0458ea0f5f4.png",
+      "after": "assets/textures/table/carpet-overlay.png",
+      "originalSHA256": "ca06ecb5b8d12ccec8b32857f7c0b77247d61cc410c48a6d2b0ba46ab74ca485",
+      "maintainedSHA256": "ca06ecb5b8d12ccec8b32857f7c0b77247d61cc410c48a6d2b0ba46ab74ca485"
+    },
+    {
+      "before": "res/d9ffaafe595fd0df1c3eb7f32b7ece5a.jpg",
+      "after": "assets/textures/table/carpet-normal.jpg",
+      "originalSHA256": "ff83544f3c11d8965d372b915e0473cc0b4c675eabf6162c282e265c690b2b48",
+      "maintainedSHA256": "ff83544f3c11d8965d372b915e0473cc0b4c675eabf6162c282e265c690b2b48"
+    },
+    {
+      "before": "res/dbbde6970d29f635825a2403197b8699.jpg",
+      "after": "assets/textures/table/carpet-lightmap.jpg",
+      "originalSHA256": "cffd521a163a230b79d81ffeee8e7fa0c4a98072c585a842e0e45b12286e49d3",
+      "maintainedSHA256": "cffd521a163a230b79d81ffeee8e7fa0c4a98072c585a842e0e45b12286e49d3"
+    },
+    {
+      "before": "res/b5198a9d33ee6ddd70a2b62c32cbc866.hdr",
+      "after": "assets/environments/ball-reflection.hdr",
+      "originalSHA256": "3bc9008b6ed4012e8957155bd7e91d9cd6916d9a9fb9fd7563054b6f1f11761a",
+      "maintainedSHA256": "3bc9008b6ed4012e8957155bd7e91d9cd6916d9a9fb9fd7563054b6f1f11761a"
+    },
+    {
+      "before": "res/bccbcdf0859ab8fd3ba7f7adac09c284.png",
+      "after": "assets/textures/table/ball-ambient-occlusion.png",
+      "originalSHA256": "30abf54cdab2ffe6a0df75e78f36a58db6b939e05cc5b5faa3aa1f4e8b027331",
+      "maintainedSHA256": "30abf54cdab2ffe6a0df75e78f36a58db6b939e05cc5b5faa3aa1f4e8b027331"
+    },
+    {
+      "before": "res/3d1b758c77b1da54d5dedf70d7a4d4d3.png",
+      "after": "assets/images/game-shade.png",
+      "originalSHA256": "e912beed685c86e535aee291361a2bc067a83f4cdeb00bc697f610683c9d9e02",
+      "maintainedSHA256": "e912beed685c86e535aee291361a2bc067a83f4cdeb00bc697f610683c9d9e02"
+    },
+    {
+      "before": "res/d73140d10f68139d2e8571c275106f8d.png",
+      "after": "assets/images/ui-sprite-atlas.png",
+      "originalSHA256": "f584278ef6552ca561a0a00ff7307cfe4e3a7799ecb2fb93b51da7cc9215006f",
+      "maintainedSHA256": "f584278ef6552ca561a0a00ff7307cfe4e3a7799ecb2fb93b51da7cc9215006f"
+    },
+    {
+      "before": "res/71fdd0575b210fed1648f685c99a7f6d.png",
+      "after": "assets/images/ai-difficulty-dots.png",
+      "originalSHA256": "2b05025b526893737a6f93f0baa9f97ed02d7d0b93a81cffd3d3b22d18baade6",
+      "maintainedSHA256": "2b05025b526893737a6f93f0baa9f97ed02d7d0b93a81cffd3d3b22d18baade6"
+    },
+    {
+      "before": "res/0cf175d36e4c6d7b1532090871e4b6ac.png",
+      "after": "assets/images/babylon-logo.png",
+      "originalSHA256": "0f35aa34d2305f39b5478f568852399e71962ab35fa97942dedcc5745c623ec1",
+      "maintainedSHA256": "0f35aa34d2305f39b5478f568852399e71962ab35fa97942dedcc5745c623ec1"
+    },
+    {
+      "before": "res/55fb3a149e6ca62215283ef802a8e674.png",
+      "after": "assets/images/basic-controls-guide.png",
+      "originalSHA256": "8d0f61370a3ea74b62f52e25f5e17ec609eb6a97a77f323d06cdb87f7845b359",
+      "maintainedSHA256": "8d0f61370a3ea74b62f52e25f5e17ec609eb6a97a77f323d06cdb87f7845b359"
+    },
+    {
+      "before": "res/d23994603bc78d7edf3a1c75cc893a6d.png",
+      "after": "assets/images/snooker-ball-icons.png",
+      "originalSHA256": "02d70d899c6c04af74380baff028dbd4a0a491fb5ea59d4e8c35e0202cb9c1b8",
+      "maintainedSHA256": "02d70d899c6c04af74380baff028dbd4a0a491fb5ea59d4e8c35e0202cb9c1b8"
+    },
+    {
+      "before": "res/19fde9655ac9e264f1555d6fdd06c7be.png",
+      "after": "assets/images/loading-spinner.png",
+      "originalSHA256": "8a357eba5b1ccf576e2bdbe642908895a78da24d47b6e463f081d6aa4f91b7d9",
+      "maintainedSHA256": "8a357eba5b1ccf576e2bdbe642908895a78da24d47b6e463f081d6aa4f91b7d9"
+    },
+    {
+      "before": "res/7ce00256097ccf0d2c0641fce8a96e57.eot",
+      "after": "assets/fonts/open-sans-regular.eot",
+      "originalSHA256": "5c44efaf07d84233ad8facee13b5a8bd1455681740390792d27b38590ff334a2",
+      "maintainedSHA256": "5c44efaf07d84233ad8facee13b5a8bd1455681740390792d27b38590ff334a2"
+    },
+    {
+      "before": "res/9015e788e127487984ded77dd0bac1a8.woff2",
+      "after": "assets/fonts/open-sans-regular.woff2",
+      "originalSHA256": "a3df721321815dc7ba85e8f1914fc7ead0fff39b2603d4e3a36a2b83b0306787",
+      "maintainedSHA256": "a3df721321815dc7ba85e8f1914fc7ead0fff39b2603d4e3a36a2b83b0306787"
+    },
+    {
+      "before": "res/ce3b96ab2b51255e60d2d1aae633dae3.woff",
+      "after": "assets/fonts/open-sans-regular.woff",
+      "originalSHA256": "baec724e63a42c587dcde455031c730f69002246904cadffcfaf20a3d75948bd",
+      "maintainedSHA256": "baec724e63a42c587dcde455031c730f69002246904cadffcfaf20a3d75948bd"
+    },
+    {
+      "before": "res/a88748791c366be26c9bdf959d583d3f.ttf",
+      "after": "assets/fonts/open-sans-regular.ttf",
+      "originalSHA256": "bf4bf60828401a5fea2ff3a0097ed50864085f9ba54826f48146207bbe97a23e",
+      "maintainedSHA256": "bf4bf60828401a5fea2ff3a0097ed50864085f9ba54826f48146207bbe97a23e"
+    },
+    {
+      "before": "res/9f6cbb23fff05a957bdf1a770a398644.svg",
+      "after": "assets/fonts/open-sans-regular.svg",
+      "originalSHA256": "c1927c6c5b70866c1ba288131947151484a19a634f2a0611589dea2ffdd38376",
+      "maintainedSHA256": "c1927c6c5b70866c1ba288131947151484a19a634f2a0611589dea2ffdd38376"
+    },
+    {
+      "before": "res/ce2af0abf8b75bf6158c85631595b617.eot",
+      "after": "assets/fonts/saira-extra-condensed-bold.eot",
+      "originalSHA256": "dec179e8671bae43919c5024d6bb9fe17ad53c5a7f1440da8d6373c73899b130",
+      "maintainedSHA256": "dec179e8671bae43919c5024d6bb9fe17ad53c5a7f1440da8d6373c73899b130"
+    },
+    {
+      "before": "res/b95c6631886fb0bdbe29a27af7fdd4cd.woff2",
+      "after": "assets/fonts/saira-extra-condensed-bold.woff2",
+      "originalSHA256": "9263b5295f46f4e382a4dfc31fd6f315d3eeff87fad90986709de1698f5e9aee",
+      "maintainedSHA256": "9263b5295f46f4e382a4dfc31fd6f315d3eeff87fad90986709de1698f5e9aee"
+    },
+    {
+      "before": "res/4aa9c46c9e05cd604db6b101017a8e68.woff",
+      "after": "assets/fonts/saira-extra-condensed-bold.woff",
+      "originalSHA256": "93850a1308bfd8d0b0791d25857dac59c1f9d662227d020bcfac0c1da8924201",
+      "maintainedSHA256": "93850a1308bfd8d0b0791d25857dac59c1f9d662227d020bcfac0c1da8924201"
+    },
+    {
+      "before": "res/7b6d5b9069bc3bf01daa9e92b8be8204.ttf",
+      "after": "assets/fonts/saira-extra-condensed-bold.ttf",
+      "originalSHA256": "d692d170acf75057cf6291ae4a24d9f5ad0148d609f957a5e591bc9bbc17ff93",
+      "maintainedSHA256": "d692d170acf75057cf6291ae4a24d9f5ad0148d609f957a5e591bc9bbc17ff93"
+    },
+    {
+      "before": "res/03d23c55623e6d9695455b64e626cd3c.svg",
+      "after": "assets/fonts/saira-extra-condensed-bold.svg",
+      "originalSHA256": "17f62b682106c9ad8f4e1691d8c399a940d24c50dfbff3abd91c5fb3a5d393fb",
+      "maintainedSHA256": "17f62b682106c9ad8f4e1691d8c399a940d24c50dfbff3abd91c5fb3a5d393fb"
+    },
+    {
+      "before": "res/7d4e3834fece222609998dc85373431c.eot",
+      "after": "assets/fonts/saira-extra-condensed-semibold.eot",
+      "originalSHA256": "937e15fb25eaccb4b6ae048170b2610f8bffa966cd50941584d1136e181ac3d4",
+      "maintainedSHA256": "937e15fb25eaccb4b6ae048170b2610f8bffa966cd50941584d1136e181ac3d4"
+    },
+    {
+      "before": "res/dc91752b541a41f86c5cd588195a6e7b.woff2",
+      "after": "assets/fonts/saira-extra-condensed-semibold.woff2",
+      "originalSHA256": "ac31980893cce5eca54db7e0741258c531eaabeae59415da025fc1a0b3091e84",
+      "maintainedSHA256": "ac31980893cce5eca54db7e0741258c531eaabeae59415da025fc1a0b3091e84"
+    },
+    {
+      "before": "res/855a855dc11807208be448e1ba95dde0.woff",
+      "after": "assets/fonts/saira-extra-condensed-semibold.woff",
+      "originalSHA256": "1ebd367239bdeda96b322e233e8913a418bcd8eccef2bbc3f3fa1b45a39f9cb2",
+      "maintainedSHA256": "1ebd367239bdeda96b322e233e8913a418bcd8eccef2bbc3f3fa1b45a39f9cb2"
+    },
+    {
+      "before": "res/76d6f505c99a8c4332a09785d278b9ea.ttf",
+      "after": "assets/fonts/saira-extra-condensed-semibold.ttf",
+      "originalSHA256": "214b4a50c0f13aa9885499e8162876fc7962f58479aa8b87e8d8296b42329290",
+      "maintainedSHA256": "214b4a50c0f13aa9885499e8162876fc7962f58479aa8b87e8d8296b42329290"
+    },
+    {
+      "before": "res/e27dc4c3e6790d75a949d0b743b7457b.svg",
+      "after": "assets/fonts/saira-extra-condensed-semibold.svg",
+      "originalSHA256": "bc401ff1eb4c12550b8636a2b222d8be4712a7c335318bbcdb4da8249a040f3a",
+      "maintainedSHA256": "bc401ff1eb4c12550b8636a2b222d8be4712a7c335318bbcdb4da8249a040f3a"
+    },
+    {
+      "before": "res/tiger-club-sno-rgb.json",
+      "after": "assets/collision/tiger-club-collision.json",
+      "originalSHA256": "04acfb245368bc1762cdcdf94f0bb81ab82dd82f785af661a4f63d3de9ccbbc9",
+      "maintainedSHA256": "ae2c9395e1582c8b105ca9719d1dd40742b86d0e21af590df0e88b15dd01ff28"
+    },
+    {
+      "before": "res/rgbnt.png",
+      "after": "assets/textures/table/collision-atlas.png",
+      "originalSHA256": "13f2218ebca0c225bcefd4ba4ada76818c42cb0508ac93d57e2887d71c06ed54",
+      "maintainedSHA256": "13f2218ebca0c225bcefd4ba4ada76818c42cb0508ac93d57e2887d71c06ed54"
+    },
+    {
+      "before": "res/pocket-normal.jpg",
+      "after": "assets/textures/table/pocket-normal.jpg",
+      "originalSHA256": "92cb5e6b41e2eec43b6a0997287b1aa1db6ca49e6d94253d39438fa10fdd887e",
+      "maintainedSHA256": "92cb5e6b41e2eec43b6a0997287b1aa1db6ca49e6d94253d39438fa10fdd887e"
+    },
+    {
+      "before": "res/planebatch.vertex.fx",
+      "after": "assets/shaders/plane-batch.vertex.fx",
+      "originalSHA256": "2c250feedcd49205a87dd566c4e2a9a6a47fc829f2048e2691ad1cc3308a0927",
+      "maintainedSHA256": "2c250feedcd49205a87dd566c4e2a9a6a47fc829f2048e2691ad1cc3308a0927"
+    },
+    {
+      "before": "res/planebatch.fragment.fx",
+      "after": "assets/shaders/plane-batch.fragment.fx",
+      "originalSHA256": "7fe1a44e93089582aa27876e3ca3abec7dd76ff122f8bb5d617a695c7743e931",
+      "maintainedSHA256": "7fe1a44e93089582aa27876e3ca3abec7dd76ff122f8bb5d617a695c7743e931"
+    },
+    {
+      "before": "res/powerview.vertex.fx",
+      "after": "assets/shaders/power-view.vertex.fx",
+      "originalSHA256": "933e4f084cc19a9c5f762cacb67ffea43e815212e687751c63e0067bfdb590f6",
+      "maintainedSHA256": "933e4f084cc19a9c5f762cacb67ffea43e815212e687751c63e0067bfdb590f6"
+    },
+    {
+      "before": "res/powerview.fragment.fx",
+      "after": "assets/shaders/power-view.fragment.fx",
+      "originalSHA256": "a58df4142408a9a46bf591f311e2111415a96e9075a37c189bfdbe57e4a6cecf",
+      "maintainedSHA256": "a58df4142408a9a46bf591f311e2111415a96e9075a37c189bfdbe57e4a6cecf"
+    },
+    {
+      "before": "res/favicon.ico",
+      "after": "assets/icons/favicon.ico",
+      "originalSHA256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601",
+      "maintainedSHA256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601"
+    },
+    {
+      "before": "res/corridor-com.jpg",
+      "after": "assets/textures/room/interior-design-original-corridor-lightmap.jpg",
+      "originalSHA256": "7cc5dacb95a4922e333cf0d60172fc5c7e9e614a2629d31798e4f4fb4fc0569a",
+      "maintainedSHA256": "7cc5dacb95a4922e333cf0d60172fc5c7e9e614a2629d31798e4f4fb4fc0569a"
+    },
+    {
+      "before": "res/ground-com.jpg",
+      "after": "assets/textures/room/interior-design-original-floor-lightmap.jpg",
+      "originalSHA256": "72ac82658b4000f9aa98b5559ffa6d7b38945bdff2b909355f6ed1409857c62e",
+      "maintainedSHA256": "72ac82658b4000f9aa98b5559ffa6d7b38945bdff2b909355f6ed1409857c62e"
+    },
+    {
+      "before": "res/items-com.jpg",
+      "after": "assets/textures/room/interior-design-original-furniture-lightmap.jpg",
+      "originalSHA256": "314710796d0bdc4f895f26aa9c83746e0088a8757e90978be577b6ff6c9ab590",
+      "maintainedSHA256": "314710796d0bdc4f895f26aa9c83746e0088a8757e90978be577b6ff6c9ab590"
+    },
+    {
+      "before": "res/mainlight-com.jpg",
+      "after": "assets/textures/room/interior-design-original-main-light-lightmap.jpg",
+      "originalSHA256": "cc75fe4dd5f6d15fff48e16e47ac41b148d82724de1e1fc70474c86de67c194e",
+      "maintainedSHA256": "cc75fe4dd5f6d15fff48e16e47ac41b148d82724de1e1fc70474c86de67c194e"
+    },
+    {
+      "before": "res/pillars-com.jpg",
+      "after": "assets/textures/room/interior-design-original-pillars-lightmap.jpg",
+      "originalSHA256": "d249515957988d6091ce90e91a3fc8e0e6a07bb5944e0c90bee4d4a720bfda3b",
+      "maintainedSHA256": "d249515957988d6091ce90e91a3fc8e0e6a07bb5944e0c90bee4d4a720bfda3b"
+    },
+    {
+      "before": "res/room-com.jpg",
+      "after": "assets/textures/room/interior-design-original-walls-lightmap.jpg",
+      "originalSHA256": "1df9b626fb0600ab77988a5507f6a3cf9ad65fdf20f9eb2b8e92fad6b006f4fd",
+      "maintainedSHA256": "1df9b626fb0600ab77988a5507f6a3cf9ad65fdf20f9eb2b8e92fad6b006f4fd"
+    },
+    {
+      "before": "res/browser-logos/chrome.png",
+      "after": "assets/icons/browsers/chrome.png",
+      "originalSHA256": "26a84e206a7f6d446233d9b2b6b497b32980183bea20c0221a341e84ee4b9928",
+      "maintainedSHA256": "26a84e206a7f6d446233d9b2b6b497b32980183bea20c0221a341e84ee4b9928"
+    },
+    {
+      "before": "res/browser-logos/edge.png",
+      "after": "assets/icons/browsers/edge.png",
+      "originalSHA256": "a725e4e07392732df6633bb78adb9eec63f44060a745c3e0ef71e18a8ff8ca57",
+      "maintainedSHA256": "a725e4e07392732df6633bb78adb9eec63f44060a745c3e0ef71e18a8ff8ca57"
+    },
+    {
+      "before": "res/browser-logos/firefox.png",
+      "after": "assets/icons/browsers/firefox.png",
+      "originalSHA256": "8d71908b806408a583c76039aa6394972a02dbc21af0823f44b1017dba982192",
+      "maintainedSHA256": "8d71908b806408a583c76039aa6394972a02dbc21af0823f44b1017dba982192"
+    },
+    {
+      "before": "res/browser-logos/safari.png",
+      "after": "assets/icons/browsers/safari.png",
+      "originalSHA256": "0610a47ba21e402131fdfc2d0885ee1d0b720b056fa76b23ea980e226994a4dd",
+      "maintainedSHA256": "0610a47ba21e402131fdfc2d0885ee1d0b720b056fa76b23ea980e226994a4dd"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-114x114.png",
+      "after": "assets/icons/apple-touch-icon-114x114.png",
+      "originalSHA256": "fbf18c0d1c3b78e1a971e1597ba747fd274d7787cf2b19c63edd57959a045d64",
+      "maintainedSHA256": "fbf18c0d1c3b78e1a971e1597ba747fd274d7787cf2b19c63edd57959a045d64"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-120x120.png",
+      "after": "assets/icons/apple-touch-icon-120x120.png",
+      "originalSHA256": "752f7e5ee18fe8b9548980e4ff8608f068b3a9ef1803072dfe992619903f2a6f",
+      "maintainedSHA256": "752f7e5ee18fe8b9548980e4ff8608f068b3a9ef1803072dfe992619903f2a6f"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-144x144.png",
+      "after": "assets/icons/apple-touch-icon-144x144.png",
+      "originalSHA256": "7740e48eef856db582333338920ffb70e1138b6ac658870402e985a42515c2e4",
+      "maintainedSHA256": "7740e48eef856db582333338920ffb70e1138b6ac658870402e985a42515c2e4"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-152x152.png",
+      "after": "assets/icons/apple-touch-icon-152x152.png",
+      "originalSHA256": "325940da8b6115ae7372b29b372646e04e3cfca24bd867dec47b6b26188b434a",
+      "maintainedSHA256": "325940da8b6115ae7372b29b372646e04e3cfca24bd867dec47b6b26188b434a"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-180x180.png",
+      "after": "assets/icons/apple-touch-icon-180x180.png",
+      "originalSHA256": "5c27cbc6b775963d7fda50854ecf97a0ed9c1b5d2d638ba41314539a53c2a1e5",
+      "maintainedSHA256": "5c27cbc6b775963d7fda50854ecf97a0ed9c1b5d2d638ba41314539a53c2a1e5"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-57x57.png",
+      "after": "assets/icons/apple-touch-icon-57x57.png",
+      "originalSHA256": "c11a61313a3946a55a50262401048f3ceaa57f244a14b615beded903006757ff",
+      "maintainedSHA256": "c11a61313a3946a55a50262401048f3ceaa57f244a14b615beded903006757ff"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-60x60.png",
+      "after": "assets/icons/apple-touch-icon-60x60.png",
+      "originalSHA256": "bae813267570ac886f814a89de174f7006315c35150effc39591d93986ba87b2",
+      "maintainedSHA256": "bae813267570ac886f814a89de174f7006315c35150effc39591d93986ba87b2"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-72x72.png",
+      "after": "assets/icons/apple-touch-icon-72x72.png",
+      "originalSHA256": "965e1728e6507eaddae8697aa47e043e81c7dcd167ca98157e0480daa9b140cf",
+      "maintainedSHA256": "965e1728e6507eaddae8697aa47e043e81c7dcd167ca98157e0480daa9b140cf"
+    },
+    {
+      "before": "res/icons/apple-touch-icon-76x76.png",
+      "after": "assets/icons/apple-touch-icon-76x76.png",
+      "originalSHA256": "6f3e3c8f9b915a75ba0a3ad778f81d4e67405510c05b65134b45357c74d32fc9",
+      "maintainedSHA256": "6f3e3c8f9b915a75ba0a3ad778f81d4e67405510c05b65134b45357c74d32fc9"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-1182x2208.png",
+      "after": "assets/icons/apple-touch-startup-image-1182x2208.png",
+      "originalSHA256": "78d9390ff7f3d9760b7b3d5c717bfc64399074aa1f5ba6be095b2892109506de",
+      "maintainedSHA256": "78d9390ff7f3d9760b7b3d5c717bfc64399074aa1f5ba6be095b2892109506de"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-1242x2148.png",
+      "after": "assets/icons/apple-touch-startup-image-1242x2148.png",
+      "originalSHA256": "380b45a3462cbd3ac8de40bc40bf9f29eb28184441b471859b44a5bab3c20015",
+      "maintainedSHA256": "380b45a3462cbd3ac8de40bc40bf9f29eb28184441b471859b44a5bab3c20015"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-1496x2048.png",
+      "after": "assets/icons/apple-touch-startup-image-1496x2048.png",
+      "originalSHA256": "a199bf7397699e54936162ce6d917c838eeef8318458b29fe57b84190db3cbe1",
+      "maintainedSHA256": "a199bf7397699e54936162ce6d917c838eeef8318458b29fe57b84190db3cbe1"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-1536x2008.png",
+      "after": "assets/icons/apple-touch-startup-image-1536x2008.png",
+      "originalSHA256": "6fa2ed024da40433a865bd3044fe07ce89b5ef2ff8610e8d327b678973d4e465",
+      "maintainedSHA256": "6fa2ed024da40433a865bd3044fe07ce89b5ef2ff8610e8d327b678973d4e465"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-320x460.png",
+      "after": "assets/icons/apple-touch-startup-image-320x460.png",
+      "originalSHA256": "dffae105ad3e6f14860ca308eb607c7fac1e2aa92e6295a97a2e4d280181039f",
+      "maintainedSHA256": "dffae105ad3e6f14860ca308eb607c7fac1e2aa92e6295a97a2e4d280181039f"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-640x1096.png",
+      "after": "assets/icons/apple-touch-startup-image-640x1096.png",
+      "originalSHA256": "bb906c6bbb306332966bd1fd1d822a4ed76f036a2f94cd731b7df6b9ee07c94a",
+      "maintainedSHA256": "bb906c6bbb306332966bd1fd1d822a4ed76f036a2f94cd731b7df6b9ee07c94a"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-640x920.png",
+      "after": "assets/icons/apple-touch-startup-image-640x920.png",
+      "originalSHA256": "cea9d9e9e0f0db9c9b88005315b965b5e1ff500351710d06868e71177c1e0e3b",
+      "maintainedSHA256": "cea9d9e9e0f0db9c9b88005315b965b5e1ff500351710d06868e71177c1e0e3b"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-748x1024.png",
+      "after": "assets/icons/apple-touch-startup-image-748x1024.png",
+      "originalSHA256": "96a66b2b2940766bb1425b5a1f6941afe1a3a6eab5eec2546062a241e0d5c791",
+      "maintainedSHA256": "96a66b2b2940766bb1425b5a1f6941afe1a3a6eab5eec2546062a241e0d5c791"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-750x1294.png",
+      "after": "assets/icons/apple-touch-startup-image-750x1294.png",
+      "originalSHA256": "83fec40a9eba0420986a2699597d3815940949dc567e110d211853327813f0f2",
+      "maintainedSHA256": "83fec40a9eba0420986a2699597d3815940949dc567e110d211853327813f0f2"
+    },
+    {
+      "before": "res/icons/apple-touch-startup-image-768x1004.png",
+      "after": "assets/icons/apple-touch-startup-image-768x1004.png",
+      "originalSHA256": "fb22d2a5564c6a61ecd9ab72b2d4b483bba8983f88cbaa95371225daf7f02919",
+      "maintainedSHA256": "fb22d2a5564c6a61ecd9ab72b2d4b483bba8983f88cbaa95371225daf7f02919"
+    },
+    {
+      "before": "res/icons/favicon-16x16.png",
+      "after": "assets/icons/favicon-16x16.png",
+      "originalSHA256": "3fdb01c930db3317e6352285c6c8fd8b0818e3f0dbc7ec6cca723b0cd11a1981",
+      "maintainedSHA256": "3fdb01c930db3317e6352285c6c8fd8b0818e3f0dbc7ec6cca723b0cd11a1981"
+    },
+    {
+      "before": "res/icons/favicon-32x32.png",
+      "after": "assets/icons/favicon-32x32.png",
+      "originalSHA256": "19e39515fd319fa2be49f90f39f020f80a96de9de106e83e996a0504717b7fed",
+      "maintainedSHA256": "19e39515fd319fa2be49f90f39f020f80a96de9de106e83e996a0504717b7fed"
+    },
+    {
+      "before": "res/icons/favicon.ico",
+      "after": "assets/icons/favicon.ico",
+      "originalSHA256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601",
+      "maintainedSHA256": "4bab22d4050a85158158af5d07de0d917e3a72a08f669b3db263aceae33c0601"
+    }
+  ],
+  "classModules": [
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "l",
+      "source": "src/application/models/local-user.js",
+      "className": "LocalUser"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "f",
+      "source": "src/application/models/base-game-model.js",
+      "className": "BaseGameModel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "g",
+      "source": "src/application/models/local-game-model.js",
+      "className": "LocalGameModel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "b",
+      "source": "src/application/controllers/controller-manager.js",
+      "className": "ControllerManager"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "S",
+      "source": "src/application/controllers/base-controller.js",
+      "className": "BaseController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "W",
+      "source": "src/presentation/animation/tween.js",
+      "className": "Tween"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Y",
+      "source": "src/presentation/animation/value-tween.js",
+      "className": "ValueTween"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "j",
+      "source": "src/presentation/animation/property-tween.js",
+      "className": "PropertyTween"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "X",
+      "source": "src/presentation/animation/tween-group.js",
+      "className": "TweenGroup"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "K",
+      "source": "src/presentation/rendering/ui-shader-material.js",
+      "className": "UiShaderMaterial"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "J",
+      "source": "src/presentation/rendering/ui-plane.js",
+      "className": "UiPlane"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "$",
+      "source": "src/presentation/rendering/oriented-ui-plane.js",
+      "className": "OrientedUiPlane"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "it",
+      "source": "src/presentation/rendering/plane-batch.js",
+      "className": "PlaneBatch"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ut",
+      "source": "src/presentation/rendering/cue-mesh-manager.js",
+      "className": "CueMeshManager"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "pt",
+      "source": "src/presentation/rendering/power-view.js",
+      "className": "PowerView"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ft",
+      "source": "src/presentation/rendering/aim-segment.js",
+      "className": "AimSegment"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "vt",
+      "source": "src/presentation/rendering/aim-guide.js",
+      "className": "AimGuide"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "xt",
+      "source": "src/presentation/rendering/table-track.js",
+      "className": "TableTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Tt",
+      "source": "src/presentation/rendering/game-view.js",
+      "className": "GameView"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "At",
+      "source": "src/application/controllers/view-controller.js",
+      "className": "ViewController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "kt",
+      "source": "src/domain/math/vector-two.js",
+      "className": "VectorTwo"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Pt",
+      "source": "src/domain/geometry/line-two.js",
+      "className": "LineTwo"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Lt",
+      "source": "src/domain/geometry/ellipse-two.js",
+      "className": "EllipseTwo"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Jt",
+      "source": "src/application/ai/route-pool.js",
+      "className": "RoutePool"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "$t",
+      "source": "src/application/ai/ai-route-planner.js",
+      "className": "AiRoutePlanner"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ee",
+      "source": "src/application/models/ai-game-model.js",
+      "className": "AiGameModel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "se",
+      "source": "src/presentation/ui/ui-component.js",
+      "className": "UiComponent"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ne",
+      "source": "src/presentation/ui/menu-item.js",
+      "className": "MenuItem"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "re",
+      "source": "src/presentation/ui/side-menu.js",
+      "className": "SideMenu"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "he",
+      "source": "src/presentation/ui/content-panel.js",
+      "className": "ContentPanel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ue",
+      "source": "src/presentation/ui/base-dialog.js",
+      "className": "BaseDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "_e",
+      "source": "src/presentation/ui/action-dialog.js",
+      "className": "ActionDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "fe",
+      "source": "src/presentation/ui/ai-difficulty-dialog.js",
+      "className": "AiDifficultyDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "me",
+      "source": "src/presentation/ui/about-dialog.js",
+      "className": "AboutDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ve",
+      "source": "src/application/controllers/menu-controller.js",
+      "className": "MenuController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ee",
+      "source": "src/application/models/snooker-game-model.js",
+      "className": "SnookerGameModel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Fe",
+      "source": "src/presentation/input/input-state.js",
+      "className": "InputState"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ze",
+      "source": "src/application/controls/control-group.js",
+      "className": "ControlGroup"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "We",
+      "source": "src/presentation/ui/toolbar.js",
+      "className": "Toolbar"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "je",
+      "source": "src/application/controls/ball-in-hand-control.js",
+      "className": "BallInHandControl"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Xe",
+      "source": "src/presentation/animation/number-controller.js",
+      "className": "NumberController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ke",
+      "source": "src/presentation/animation/angular-controller.js",
+      "className": "AngularController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ze",
+      "source": "src/presentation/animation/linear-controller.js",
+      "className": "LinearController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "$e",
+      "source": "src/presentation/camera/orbit-track.js",
+      "className": "OrbitTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ni",
+      "source": "src/presentation/camera/orbit-controller.js",
+      "className": "OrbitController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ri",
+      "source": "src/presentation/camera/stance-controller.js",
+      "className": "StanceController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ai",
+      "source": "src/presentation/camera/look-controller.js",
+      "className": "LookController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "oi",
+      "source": "src/presentation/camera/heading-controller.js",
+      "className": "HeadingController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "li",
+      "source": "src/presentation/input/player-control.js",
+      "className": "PlayerControl"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "hi",
+      "source": "src/presentation/input/cue-transform.js",
+      "className": "CueTransform"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ci",
+      "source": "src/presentation/input/cue-contact-controller.js",
+      "className": "CueContactController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ei",
+      "source": "src/presentation/input/cue-motion-controller.js",
+      "className": "CueMotionController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ui",
+      "source": "src/presentation/camera/aim-camera-controller.js",
+      "className": "AimCameraController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Fi",
+      "source": "src/presentation/input/person-controller.js",
+      "className": "PersonController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "qi",
+      "source": "src/presentation/ui/shortcut-bar.js",
+      "className": "ShortcutBar"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Wi",
+      "source": "src/presentation/ui/message-dialog.js",
+      "className": "MessageDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ji",
+      "source": "src/presentation/ui/controls-dialog.js",
+      "className": "ControlsDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "$i",
+      "source": "src/application/controls/stroke-motion.js",
+      "className": "StrokeMotion"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ts",
+      "source": "src/application/controls/player-turn-control.js",
+      "className": "PlayerTurnControl"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "es",
+      "source": "src/presentation/ui/pause-dialog.js",
+      "className": "PauseDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ss",
+      "source": "src/presentation/ui/practice-result-dialog.js",
+      "className": "PracticeResultDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "rs",
+      "source": "src/presentation/ui/replay-control-panel.js",
+      "className": "ReplayControlPanel"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "as",
+      "source": "src/presentation/camera/path-follower.js",
+      "className": "PathFollower"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ls",
+      "source": "src/presentation/camera/replay-camera-controller.js",
+      "className": "ReplayCameraController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "hs",
+      "source": "src/presentation/camera/pocket-camera.js",
+      "className": "PocketCamera"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "cs",
+      "source": "src/application/replay/track-buffer.js",
+      "className": "TrackBuffer"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ds",
+      "source": "src/application/replay/base-track.js",
+      "className": "BaseTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "us",
+      "source": "src/application/replay/ball-track.js",
+      "className": "BallTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ps",
+      "source": "src/application/replay/ball-path.js",
+      "className": "BallPath"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "bs",
+      "source": "src/application/controls/replay-control.js",
+      "className": "ReplayControl"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "xs",
+      "source": "src/application/replay/camera-track.js",
+      "className": "CameraTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ss",
+      "source": "src/application/replay/cue-track.js",
+      "className": "CueTrack"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Is",
+      "source": "src/application/replay/movie-clip.js",
+      "className": "MovieClip"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "As",
+      "source": "src/presentation/ui/scoreboard.js",
+      "className": "Scoreboard"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Es",
+      "source": "src/presentation/input/ai-person-controller.js",
+      "className": "AiPersonController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ws",
+      "source": "src/presentation/input/passive-person-controller.js",
+      "className": "PassivePersonController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "ks",
+      "source": "src/presentation/ui/match-result-dialog.js",
+      "className": "MatchResultDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Os",
+      "source": "src/application/controllers/match-controller.js",
+      "className": "MatchController"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Ms",
+      "source": "src/presentation/ui/toast-dialog.js",
+      "className": "ToastDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Us",
+      "source": "src/presentation/ui/confirmation-dialog.js",
+      "className": "ConfirmationDialog"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Vs",
+      "source": "src/presentation/ui/dialog-manager.js",
+      "className": "DialogManager"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "Gs",
+      "source": "src/application/time/frame-clock.js",
+      "className": "FrameClock"
+    },
+    {
+      "previousModuleId": 10,
+      "previousSymbol": "qs",
+      "source": "src/application/snooker-application.js",
+      "className": "SnookerApplication"
+    }
+  ],
+  "aliases": {
+    "s": "Babylon",
+    "n": "eventEmitterModule",
+    "r": "EventEmitter",
+    "a": "gameRecordsModule",
+    "o": "gameRecords",
+    "h": "initialLayoutModule",
+    "c": "initialLayout",
+    "d": "objectUtilsModule",
+    "u": "objectUtils",
+    "_": "defaultGameSettings",
+    "p": "localGameSettings",
+    "m": "ControllerEvents",
+    "y": "ApplicationEvents",
+    "v": "ControllerState",
+    "x": "nextControllerId",
+    "C": "planeModule",
+    "I": "Plane",
+    "T": "physicsApiModule",
+    "A": "physicsApi",
+    "E": "CushionBody",
+    "w": "CushionBodyType",
+    "R": "Texture",
+    "k": "ColorThree",
+    "P": "HdrCubeTexture",
+    "D": "MetallicRoughnessMaterial",
+    "L": "CarpetMaterial",
+    "O": "LightProbeManager",
+    "M": "DynamicLightingMaterial",
+    "U": "PcolHdrCubeTexture",
+    "B": "tigerClubScene",
+    "N": "sceneDefinitions",
+    "V": "sharedTableTextures",
+    "F": "scenePrototype",
+    "z": "scenes",
+    "H": "UiColors",
+    "G": "tweenPrecision",
+    "q": "Easing",
+    "Z": "PlaneDirtyFlags",
+    "Q": "tableUiAtlas",
+    "tt": "BatchDirtyFlags",
+    "et": "sortByZIndex",
+    "st": "CueMaterial",
+    "nt": "CueTexture",
+    "rt": "cueDefinitions",
+    "lt": "cueAssetCache",
+    "ht": "CueEvents",
+    "ct": "nextCueLoadId",
+    "dt": "cueLoadCancelled",
+    "_t": "PowerDirtyFlags",
+    "gt": "AimAlphaMode",
+    "mt": "aimSolidSegments",
+    "yt": "aimGradientSegments",
+    "bt": "TrackVector",
+    "St": "ViewEvents",
+    "Ct": "ViewState",
+    "It": "ballMeshResolution",
+    "Et": "geometryUtilsModule",
+    "wt": "geometryUtils",
+    "Rt": "geometryPrecision",
+    "Dt": "ellipseIntersections",
+    "Qt": "routePool",
+    "te": "aiRegistry",
+    "ie": "uiParserElement",
+    "ae": "PanelState",
+    "oe": "MessageKind",
+    "le": "messageClassNames",
+    "ce": "DialogEvents",
+    "de": "dialogEvents",
+    "pe": "aiDifficultyTemplate",
+    "ge": "aboutTemplate",
+    "ye": "menuTelemetry",
+    "be": "playerModule",
+    "xe": "Player",
+    "Se": "refereeRegistryModule",
+    "Ce": "refereeRegistry",
+    "Ie": "gameStateModule",
+    "Te": "GameState",
+    "Ae": "nextStartingPlayer",
+    "we": "simulatorModule",
+    "Re": "Simulator",
+    "ke": "simulationEventsModule",
+    "Pe": "SimulationEvents",
+    "De": "simulationStateModule",
+    "Le": "SimulationState",
+    "Oe": "collisionEventsModule",
+    "Me": "CollisionEvents",
+    "Ue": "meshLoaderModule",
+    "Be": "collisionMeshLoader",
+    "Ne": "foulCodesModule",
+    "Ve": "foulCodes",
+    "He": "ControlEvents",
+    "Ge": "controlEvents",
+    "qe": "ToolbarGroup",
+    "Ye": "ballInHandVector",
+    "Je": "orbitLine",
+    "Qe": "orbitPoints",
+    "Ii": "cueStateEase",
+    "Ti": "cueContactEase",
+    "Ai": "cueReleaseEase",
+    "Mi": "AimCameraDirtyFlags",
+    "Bi": "PersonDirtyFlags",
+    "Ni": "PersonState",
+    "Vi": "PersonEvents",
+    "zi": "browserDetectorModule",
+    "Hi": "browserDetector",
+    "Gi": "shortcutsTemplate",
+    "Yi": "controlsTemplate",
+    "Xi": "strokeEase",
+    "Ki": "StrokeVector",
+    "Zi": "strokePrecision",
+    "Qi": "maxPullbackLength",
+    "is": "practiceResultTemplate",
+    "ns": "replayControlsTemplate",
+    "os": "ReplayTargetKind",
+    "_s": "pathScratch",
+    "fs": "ReplayVector",
+    "gs": "replayLongTracks",
+    "ms": "replayPaths",
+    "ys": "replaySelection",
+    "vs": "replayVector",
+    "Cs": "maxBallTracks",
+    "Ts": "scoreboardTemplate",
+    "Rs": "matchResultTemplate",
+    "Ps": "matchTelemetry",
+    "Ds": "localSimulator",
+    "Ls": "localMovieClip",
+    "Bs": "DialogZIndex",
+    "Ns": "DialogDirtyFlags",
+    "Fs": "resourcePathsModule",
+    "zs": "resourcePaths",
+    "Hs": "applicationTelemetry"
+  }
+}

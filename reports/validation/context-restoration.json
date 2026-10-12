@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-11T14:01:58.779Z",
+  "scope": "full",
+  "scenarios": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.666003942489624,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.667002439498901,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.66700005531311,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.658498764038086,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.683000326156616,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.6829993724823,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.658498764038086,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.683002471923828,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.66700005531311,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.658498764038086,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.66600227355957,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.666004419326782,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.684003114700317,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-original",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.683000564575195,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.667004346847534,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-002",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.65849781036377,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-003",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.666001081466675,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Headless WebGL verifies recovery and exact pixels on this browser renderer; it does not measure hardware performance."
+  ]
+}

@@ -1,0 +1,8 @@
+Oh My Snooker - retained component attribution
+
+Game code and game assets: Zhengxi Zhang, as credited in the local PCOL baseline.
+Rendering engine: Babylon.js, as credited by the game.
+Browser capability detection: Modernizr 3.6.0 custom build; its embedded MIT notice is retained.
+
+This file records existing attribution. The runtime adapters retain embedded
+notices from the local frozen baseline; this migration adds no new license grant.

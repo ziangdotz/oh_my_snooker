@@ -1,0 +1,1183 @@
+{
+  "date": "2026-10-09T10:55:30.458Z",
+  "instrumentation": "Response-only runtime inspection. UI fixtures exercise presentation without altering the match model. Actual stroke/replay/rules are checked separately by the gameplay regression.",
+  "scenarios": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-original",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-original",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-001",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-001",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-002",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-002",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-003",
+      "mode": "practice",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      },
+      "layouts": [
+        {
+          "viewport": {
+            "width": 960,
+            "height": 640
+          },
+          "pause": {
+            "left": 288,
+            "right": 672,
+            "top": 185.8046875,
+            "bottom": 454.1953125,
+            "width": 960,
+            "height": 640,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 720,
+            "height": 450
+          },
+          "pause": {
+            "left": 216,
+            "right": 504,
+            "top": 90.8046875,
+            "bottom": 359.1953125,
+            "width": 720,
+            "height": 450,
+            "overflow": false
+          }
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 450
+          },
+          "pause": {
+            "left": 8,
+            "right": 472,
+            "top": 93.203125,
+            "bottom": 356.796875,
+            "width": 480,
+            "height": 450,
+            "overflow": false
+          }
+        }
+      ],
+      "deepChecks": [
+        "focus trap",
+        "input isolation",
+        "default cancel",
+        "nested focus restoration",
+        "help",
+        "narrow/200%-equivalent CSS viewport",
+        "notice priority/dedup",
+        "hover/modal dwell",
+        "placement instruction restored after transient notice",
+        "results/draw/penalty semantics",
+        "reduced motion"
+      ]
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "design": "interior-design-003",
+      "mode": "match",
+      "errors": [],
+      "passed": true,
+      "hud": {
+        "left": 0,
+        "right": 1440,
+        "top": 10,
+        "bottom": 56,
+        "width": 1440,
+        "height": 900,
+        "overflow": false
+      }
+    }
+  ],
+  "passed": true
+}

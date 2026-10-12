@@ -1,0 +1,874 @@
+{
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "schemaVersion": 1,
+  "date": "2026-10-11T15:38:28.501Z",
+  "method": "Compare operation ASTs after normalizing lexical symbol identity, explicit dependency transport, constructor/factory names and enumerated resource paths. Ignore formatting, retained declaration-kind changes, and associative logical/sequence grouping; arithmetic grouping is preserved.",
+  "results": [
+    {
+      "source": "src/application/models/local-user.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "fc330144aa4f6daed732ffe3218220a8674ce568963d6e2ee2574b13a23e4c52"
+    },
+    {
+      "source": "src/application/models/base-game-model.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "c379170108a2c7b264f713842ebe8c407afe32625a9f520315902ae8bb57d476",
+      "sessionChange": {
+        "methods": [
+          "getUserInfoData"
+        ],
+        "fields": [],
+        "reason": "Unused local/remote user lookup stub removed; no maintained caller used this method."
+      }
+    },
+    {
+      "source": "src/application/models/local-game-model.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7c48374a6bc60a5d42fc647a8f11b6b17c299b7efca91867b978c1878afb5e5b",
+      "sessionChange": {
+        "methods": [],
+        "fields": [],
+        "memberRenames": {
+          "_gameLaunchResponseWithFBLoginData": "_createLocalSessionData",
+          "first_name": "displayName",
+          "id": "userId"
+        },
+        "reason": "Local launch uses named local identity fields; restored values and timing are unchanged."
+      }
+    },
+    {
+      "source": "src/application/controllers/controller-manager.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "00cd0c34e7c5d207c37c495eace57ab6ecf57156d405bd1b17317f4988a6871a"
+    },
+    {
+      "source": "src/application/controllers/base-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ca23ada914060c0528290c73a2d522155668f5c16f0635149eb0bf869c2829d5"
+    },
+    {
+      "source": "src/presentation/animation/tween.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "4ef0a5f3ae6a2881aeeffa12183de963fd1b5653dc518004f1d80a278486d584"
+    },
+    {
+      "source": "src/presentation/animation/value-tween.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "9adbb397261dc7cd193a3c46cd51a0785420db696f6865025523aca747338a78"
+    },
+    {
+      "source": "src/presentation/animation/property-tween.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "1c8734eee7653b21624739f2c34646cb70cdc9caf9a2f73eb9746102a298ffa2"
+    },
+    {
+      "source": "src/presentation/animation/tween-group.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "2bb10e084bd7fb28d7694d0b9a983d986ea0d13eab980416abb322dc07fa91e4"
+    },
+    {
+      "source": "src/presentation/rendering/ui-shader-material.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "00c1e8a0febb88392f9367f1bbf50d2734b5b8bdf95be90a8118c4c5cac8ff9b"
+    },
+    {
+      "source": "src/presentation/rendering/ui-plane.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "0863d7aff4d315de8fca630b64a41fdf8f0db8a20d8dc237fcef80f9a74ffca8"
+    },
+    {
+      "source": "src/presentation/rendering/oriented-ui-plane.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "f44a9fdda19e95ca8e46c7c6dc636725a2324032bcb623a543deda39dcc5e4ad"
+    },
+    {
+      "source": "src/presentation/rendering/plane-batch.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "925bb622fe37e543f2e5fe7d7f67ff8aa13fcf6bb8284e80d2025853a4233a69"
+    },
+    {
+      "source": "src/presentation/rendering/cue-mesh-manager.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "3f0f99eee45993dad3890d37dd456449c45f5c4bce0e3f73edcc44cfd9b00648"
+    },
+    {
+      "source": "src/presentation/rendering/power-view.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ccaa66e7d8e7a8f76ebed585a0a2489eb5d57b970c15aacb8af57df43c63907e"
+    },
+    {
+      "source": "src/presentation/rendering/aim-segment.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "08ed44fa7e66c2b132dd5be43ed2ffe6459456386e5e2041d320cb525007812d"
+    },
+    {
+      "source": "src/presentation/rendering/aim-guide.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "8f26fe73625b6b65c71906dbfd76b9bd16e6d5252ca2c5d2f0aa8dcb98a4bb88"
+    },
+    {
+      "source": "src/presentation/rendering/table-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "100d289380edc74e51ba8ddf5ab3ca0da015d1500c881afa7aebcf146a972abf"
+    },
+    {
+      "source": "src/presentation/rendering/game-view.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "1db6c45d643bcf216071d45663e94d35ae5e3e7898e931ea3227f317285ff419"
+    },
+    {
+      "source": "src/application/controllers/view-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "23ae3ebd120ea797e0379c5b6dafb8d96829fa26b23fe098354f4d9bb9f957d5"
+    },
+    {
+      "source": "src/domain/math/vector-two.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "1ecd6315e0128a16124a1abdd31f552b1bb995e4f0273770bae435d376491323"
+    },
+    {
+      "source": "src/domain/geometry/line-two.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "dc24be96fe807d0904d405b02929432c4b96ddf3558e2ee8df1e5fa5be5b1caf"
+    },
+    {
+      "source": "src/domain/geometry/ellipse-two.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ef36b15e088cbfcb7189d3c1f5ef54e5554a0b7ca51871e76d28b67415806473"
+    },
+    {
+      "source": "src/application/ai/route-pool.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "016ca6d90543ebff29bf948e19dbcbff4c7fa30141c16fc0c00c4805032f7148"
+    },
+    {
+      "source": "src/application/ai/ai-route-planner.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "c06006e75353ded9f1b86a1cabe4d7d24edbf1985ebf1269d4b2435e017b8be6"
+    },
+    {
+      "source": "src/application/models/ai-game-model.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "42e4548f0f920226c032f73b835b3f42e7eb51dac2aa82fe3877535ad43d0ec9"
+    },
+    {
+      "source": "src/presentation/ui/ui-component.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "c44ca6027754ad50cbcdbbbbc3292fbcc4a00baaf23ad751e1141d09495c5849"
+    },
+    {
+      "source": "src/presentation/ui/menu-item.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "c3e2abed3527cdcc86e551ac7a635603bd446ffff28da2dafcef27f75a65322a"
+    },
+    {
+      "source": "src/presentation/ui/side-menu.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "de9aef0023c8e9368c0f436fe5a482f0568ebd98077ed1f77f12a405a3572dda"
+    },
+    {
+      "source": "src/presentation/ui/content-panel.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "f2b161d4efb85e17f4e7a9a40e1dc9abb70e545e9a743ea85e69e7f90e0d0dde",
+      "presentationChange": {
+        "methods": [
+          "_createLoadingIcon",
+          "loading"
+        ],
+        "fields": [
+          "_loadingIcon"
+        ],
+        "reason": "Unused content spinner removed; active message/template behavior remains compared."
+      }
+    },
+    {
+      "source": "src/presentation/ui/base-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "64a339f4f1dfd3da2553ddeeaa0ba911a30be8b5da4d985fcfa9d8e88659381d"
+    },
+    {
+      "source": "src/presentation/ui/action-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "1d95612e8d777fd003099c70bd2fe708aee4b57824d2770f451aeaec1884ce64"
+    },
+    {
+      "source": "src/presentation/ui/ai-difficulty-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "92e0ee7c865809a965501d66b8f06f3986a7d2fe02ceba1b3e70480271a5c34a"
+    },
+    {
+      "source": "src/presentation/ui/about-dialog.js",
+      "kind": "retired-presentation",
+      "passed": true,
+      "reason": "Unused original About dialog deleted; the active About drawer has browser coverage."
+    },
+    {
+      "source": "src/application/controllers/menu-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "eefe182c2e6a4449bd220333606675340f34790b8e77a340636ddf36c738c7e8"
+    },
+    {
+      "source": "src/application/models/snooker-game-model.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7bb0141e3547dd5150bce6a1c4db371361aaf115eb019db892c5e72363c9202e"
+    },
+    {
+      "source": "src/presentation/input/input-state.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "57e344e244e19c2b4492f29a8de1cef9b783749a4c4401edc4357b29bf25583d"
+    },
+    {
+      "source": "src/application/controls/control-group.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "a9d0c4b87a91e426a365ca461c2582f7dc9d8a7230b33bea676c418ad5d1c880"
+    },
+    {
+      "source": "src/presentation/ui/toolbar.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "779d727e993fb7e4dfd73bfeefb406064cfebf6ea95659023feea0039f93abdd"
+    },
+    {
+      "source": "src/application/controls/ball-in-hand-control.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "6c10988ff7ea79a6237ae4cada26bec88a2ea30d910c992441af3d2169b932ca"
+    },
+    {
+      "source": "src/presentation/animation/number-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "09bbaeafc8fed4a976d765ba45e94753eaa0302f86a1514293042ab62a45b704"
+    },
+    {
+      "source": "src/presentation/animation/angular-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "6610208840e8cb44e4c9cbb4fd16a80bdb259b8b6ab29146c2d3393d25cc4e46"
+    },
+    {
+      "source": "src/presentation/animation/linear-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "0062d22dbd12af2d07f6e6d0698ea7402d326124e19bb88cf58bf25603ee4e52"
+    },
+    {
+      "source": "src/presentation/camera/orbit-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "34f04e45d3e1adefbbae4e99eabbead3b5d0a96f5f9ba63b92b5699f6aa583b5"
+    },
+    {
+      "source": "src/presentation/camera/orbit-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "823c93ca42834c2a1de17378d426f497f496fad76783152330151b1c6bfe0b07"
+    },
+    {
+      "source": "src/presentation/camera/stance-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "352b89f12dac51bdfd5b44e5aa2325c336ea106f31b0cdd97781860953a39689"
+    },
+    {
+      "source": "src/presentation/camera/look-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "6093022811821523e94475b3cd5d1567725a6eb8284ccc964697980749832e9f"
+    },
+    {
+      "source": "src/presentation/camera/heading-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7aa549d63109f7ee63490496381613c44138d298e4626ccd07971f3fbb49f5f1"
+    },
+    {
+      "source": "src/presentation/input/player-control.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7447e66a46bd885dd06a622e974627a35414d21630d3a255a461bb89c5735c9e"
+    },
+    {
+      "source": "src/presentation/input/cue-transform.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "52725da72eaafda3cf2480a74dc7a93cc0a778008399c2eda13683550de0a73d"
+    },
+    {
+      "source": "src/presentation/input/cue-contact-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "cd20bf532a97fe0c190ca7ae8cb136106587d6d871ac023d1fb805f6d4b757a1"
+    },
+    {
+      "source": "src/presentation/input/cue-motion-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "d6737dc0f04c7d4c6b9bfc40e2352e5a1f2121c269d544219b3585dd2370c965"
+    },
+    {
+      "source": "src/presentation/camera/aim-camera-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "71787d99fe00fa9aefe678db021d90ee7748ef28897f01300c525a1c997d381c"
+    },
+    {
+      "source": "src/presentation/input/person-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "df2425bb8191eb5732271c2c7cadcc86b469240e02820c4c1c6b05bdc58bb546"
+    },
+    {
+      "source": "src/presentation/ui/shortcut-bar.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "5b78dec4eee36df59925979d5108586b53f7dad1cb40158515f2665ace04effc"
+    },
+    {
+      "source": "src/presentation/ui/message-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "dc1020ed5f79875b9726529049f2c0d99b2c9bd79e766055e46a47cef8d33b71"
+    },
+    {
+      "source": "src/presentation/ui/controls-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "42d09d0d38760af1b3fa51ef07d82d08f2c9228f1912ad2851950abe9bc5b244"
+    },
+    {
+      "source": "src/application/controls/stroke-motion.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "620263924a183c56c808a12d6d9dc6b757224dd01d58c0a1f529993e972fff81"
+    },
+    {
+      "source": "src/application/controls/player-turn-control.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "47f8bafcbad990adc19cdd2fe33d67443dd6e0b3953691bdcdad45aa1713056f"
+    },
+    {
+      "source": "src/presentation/ui/pause-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ae938dabe81bdd9160c85bf1230f92e1367f8ddd452a8dbd1d6025dba37421b8"
+    },
+    {
+      "source": "src/presentation/ui/practice-result-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "aef257add66c16c26b55cb8eb297eb4ff2faa7b55ab1e7e9f56e3d9e26736c0d"
+    },
+    {
+      "source": "src/presentation/ui/replay-control-panel.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ce4746fe70a85b67059fa8b4e22edd4482658ffd727881746f82c21f3edcfb6c"
+    },
+    {
+      "source": "src/presentation/camera/path-follower.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "5d797d8483f5ff79529f0efe55428215fd46e6c431c6f676b6dd29a4586a793a"
+    },
+    {
+      "source": "src/presentation/camera/replay-camera-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "b5022f4d87d793c1ef9453e24d60e6916a45b8c5f9c37289b7ed7a9dfa70a206"
+    },
+    {
+      "source": "src/presentation/camera/pocket-camera.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7610892e231c1b69470e1c901a858b9e6e0e7f9339150361b9648628a2eb95fa"
+    },
+    {
+      "source": "src/application/replay/track-buffer.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "ffc8d2f21dd46db087ed6204461ce1d48b00854a36390fdbe863f134f55f1c47"
+    },
+    {
+      "source": "src/application/replay/base-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "eb289feb5aba20c4749be1a53dc7c9694649674dc03946d86b8da3619f1e1e86"
+    },
+    {
+      "source": "src/application/replay/ball-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "b58a54aacf91c30b46aedc4c81a771d03fd1f7e52bb69aca88fad3ed3d2869e9"
+    },
+    {
+      "source": "src/application/replay/ball-path.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "df1241afde9247c9755c035e50973ef8fbe96f2748e06ed550fc8b759ae20d8f"
+    },
+    {
+      "source": "src/application/controls/replay-control.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "72a9661bbedd71d17b3ccd8775251822106adc77a54915b2ab293880b2a37446"
+    },
+    {
+      "source": "src/application/replay/camera-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "6aa5c25847141be3c1469e7cc20b91b26a2f406021ebe4a69363cae3755540ed"
+    },
+    {
+      "source": "src/application/replay/cue-track.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "1b87ee5f09863988c536eba3619b87446adeacda04ebe5b9aeddc8a2edaef735"
+    },
+    {
+      "source": "src/application/replay/movie-clip.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "11679fc0d273fe8b1ba8450369ef2a99c76204588b0e495b871acf0adf3dbc28"
+    },
+    {
+      "source": "src/presentation/ui/scoreboard.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "872103534786babf4c1c8f34790f1054922064b76d1f37118167be968f311641"
+    },
+    {
+      "source": "src/presentation/input/ai-person-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "0e09e4674ace955fa588bc82f021d423fb98913720910d4420c94b52a8f8feb2"
+    },
+    {
+      "source": "src/presentation/input/passive-person-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "969b8245d2a3ed80a9a04ee043e90e19e852a48838e1094624fd9c366c26d191"
+    },
+    {
+      "source": "src/presentation/ui/match-result-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "6cf7cc6ed9976afa54548d3fa07fcfba3def9cc511566975923d53865be81f8d"
+    },
+    {
+      "source": "src/application/controllers/match-controller.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "93e1cbf6d3f1c59856b340c2f157c51299ee94e16ba142252b818e8583d6bef6"
+    },
+    {
+      "source": "src/presentation/ui/toast-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "c615d8f64dee589d7b47c0485ca4d8ab89044356fea0a402a6f4688fb42ac9ad"
+    },
+    {
+      "source": "src/presentation/ui/confirmation-dialog.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "f688ba0ad1b46a582a817e7252199580d8c6e43392c28cc344409a9e8ad6e9f8"
+    },
+    {
+      "source": "src/presentation/ui/dialog-manager.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "7413b5af8a2cfbe6e250e25e96432aa12966a024e3933e5f869a39ae85ba5911"
+    },
+    {
+      "source": "src/application/time/frame-clock.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "d5f15d8f69bf5267b33cb5cba0296974d063505927683b4bf115d84280e0945b"
+    },
+    {
+      "source": "src/application/snooker-application.js",
+      "kind": "class",
+      "passed": true,
+      "normalizedSHA256": "deee879d53b9c3364f027ffbbf131b3fe86cb8cd38bf0fb0befd77852aad3348",
+      "presentationChange": {
+        "methods": [
+          "showLoading",
+          "hideLoading"
+        ],
+        "fields": [
+          "_loadingView"
+        ],
+        "reason": "Internal wait display uses the current loading surface; other application behavior remains compared."
+      }
+    },
+    {
+      "source": "src/adapters/rendering/amd-guard.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "5f101d094dcb3d88675257b5242336c11832fa759e14a431ca4ba724bbd591a1"
+    },
+    {
+      "source": "src/domain/math/vector-three.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "de9ea72348ebe9399ef091523cc80f0532c43994eb6c8664045dfcb247e3d877"
+    },
+    {
+      "source": "src/domain/physics/physics-api.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "d8ea1bede150b9f0fca61aeb7c076131b06b4387b6d44b72ecfec2bce4964c15"
+    },
+    {
+      "source": "src/shared/events/event-emitter.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "53cb680b486c635636a0886f46f3e28a1bc5428f0a919398f8463b6a94937228"
+    },
+    {
+      "source": "src/domain/game/game-state.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "b428de1b3be256b83c4ea827bf221078655522531c23836d352c369a2285fb57"
+    },
+    {
+      "source": "src/domain/physics/physics-constants.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "4d7471a89455cb41f1bddf6a827ace6cad01597cc297ca5df7a1e5b2d3dc6f0e"
+    },
+    {
+      "source": "src/domain/math/matrix-three.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "989e00d33dc9e77a13daf1d7cba3bc50bdb6d1a1bcae4be69304589472c123b2"
+    },
+    {
+      "source": "src/domain/geometry/plane.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "2e6f3095556910dc74a8bd6c6947381bd7a784e828846f3dad050c0fb40ce818"
+    },
+    {
+      "source": "src/domain/game/game-records.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "17008043b2412aeb06b52eb6f547b94f5dbccdfda44401e3bbc12597cb3733b0"
+    },
+    {
+      "source": "src/domain/physics/contact-solver.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "c59b4446f465e636f5ac4ca7660784d4225d98c27be6505cc73c735d2d350929"
+    },
+    {
+      "source": "src/domain/physics/contact.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "8703cd2a53a405b83f058bdefb0981bcdc316ae9610636c5d60777e387dbcacb"
+    },
+    {
+      "source": "src/domain/math/quaternion.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "33b2fd3b7e282fe53f1ec63eb3e346f90c971f8f9b24edeced34a0a4ae4b3e3b"
+    },
+    {
+      "source": "src/infrastructure/assets/resource-paths.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "4036bf31c6e19ff609d60db9dad7908e3842919bf4f58e318a56fd02e51d94ea"
+    },
+    {
+      "source": "src/domain/physics/collision-events.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "7dfe0ae016fd45a3005608386ab6464777e807074d2f1f2c5562ec89e8476404"
+    },
+    {
+      "source": "src/domain/simulation/simulation-events.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "051acab3a43512f26d2df02b0b17ea9e7941d2276775f1cfc060487c2f74887d"
+    },
+    {
+      "source": "src/domain/simulation/simulation-state.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "cceefbfd7f1b9e58ee573de5a106863951943e724011ec3039cbf510ef9e7d2a"
+    },
+    {
+      "source": "src/domain/scene/scene-definitions.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "a72fd94e1a704b449d98a32da09ab9be4f15957e47f79224c9694209a01797fe"
+    },
+    {
+      "source": "src/domain/rules/foul-codes.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "7b1312d2cd73a8a6cd67a33340916d7c8bbba66ab23c6785e1e8353fc6a8b620"
+    },
+    {
+      "source": "src/domain/game/player.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "a4fc01abc60a85936f04313efcbbc7b4edc04215ad1e428ef06bd80efb76f0a2"
+    },
+    {
+      "source": "src/domain/geometry/geometry-utils.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "745219259db982f469b8a1c04399cfcc4195f343cee752dbf74cac8a55e9141c"
+    },
+    {
+      "source": "src/adapters/rendering/dynamic-lighting-material.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "9ebaaccb3adadff3e2a5cd38e97d1fd99591612c3762722822ce71f8ec242a4d"
+    },
+    {
+      "source": "src/domain/physics/ball-motion.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "318df824e9c6d82a671945253b276929def4c3dc4e22bac46a0288bc0751cdcf"
+    },
+    {
+      "source": "src/domain/physics/rigid-body.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "19784f56489cc489d9fca7cb98b748c78145c6414ac586e448261da0a555a2db"
+    },
+    {
+      "source": "src/domain/physics/ball-body.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "d1a1ec53bae69dae9a000102d26c84599da0a238c474dce70923f92779455cff"
+    },
+    {
+      "source": "src/domain/physics/ball-surface-contact.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "36796ad7e2b5218d670cdc4741b6fa68fb0be346eb4fae13f3fabfd4ca1e5e3f"
+    },
+    {
+      "source": "src/domain/physics/object-pool.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "8cbdd8b2c92881849afbc8878050fe28c5a39e1ec943cd43c7ac62ad24b21aa1"
+    },
+    {
+      "source": "src/domain/physics/world.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "b1ca55d850fc9154581e2c4bd5a4ac163a5e983c9a59ac537cdfd2d919dfceae"
+    },
+    {
+      "source": "src/infrastructure/network/local-request.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "cdb0a97251946bc10337a06927113dca0782ddddf07221f321c789382f04d8bb"
+    },
+    {
+      "source": "src/infrastructure/assets/asset-queue.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "f30ef3e684f84e3605864f1a86f519489644a1e9cc76f9115da13fa682bfb59a"
+    },
+    {
+      "source": "src/domain/simulation/snooker-ball.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "6d2a5af66e34ee3ba90ba9f8086deb13d3341619dc64f3d4c2b669063579f6bf"
+    },
+    {
+      "source": "src/domain/simulation/simulator.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "055bc48bf4bdaebce1d79dc9e41af96634e2372d89eb7e5b46967f0bf813dbce"
+    },
+    {
+      "source": "src/domain/geometry/circle-arc.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "be6ecd6c573255e80909f43f8473da98dcebd9f5c6a655fcefc1719d5a05f207"
+    },
+    {
+      "source": "src/domain/geometry/polygon.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "4a105ef56ac271a5ccec64a5ba010abf7bfeb342bf8c02faedf9557d2a546356"
+    },
+    {
+      "source": "src/domain/rules/base-referee.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "63acc260dc26be0e5e3429452e2a9d29fbaaca9bacc750975b637a6307ef86d5"
+    },
+    {
+      "source": "src/domain/rules/snooker-referee.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "e71dd93d1fbd4dfb9f68d73b5f6cf460298cd998c942e92e800fca344915ee5b"
+    },
+    {
+      "source": "src/domain/rules/referee-registry.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "bfb12a687baf420aa2f928c79fe9cf75c86f8cccf7bbf5548289f526d74dce4f"
+    },
+    {
+      "source": "src/adapters/rendering/light-probe-material.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "ea6b95e3297dd0d4e8ea253673c733189ce2357cbea3f9cc49f01e583bd27c74"
+    },
+    {
+      "source": "src/domain/geometry/collision-mesh-decoder.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "47b6000c889889e1e6aceb9de271c4c5ff7763d3380abc5742b6afb4bac24762"
+    },
+    {
+      "source": "src/domain/geometry/mesh-polygon-group.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "57ea8bb74cc25c6ec41507de28ac65dc37b64b341fa7cd4f933908b5fcc7a167"
+    },
+    {
+      "source": "src/domain/geometry/mesh-polygon.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "7bfd5be08dad8d5f8aa6e95443295e32f5f06484855b2584380129dfc121b42a"
+    },
+    {
+      "source": "src/domain/geometry/mesh-edge.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "41ea891012c27ac39ac35cfeb2d4e9fa83580de6c54c249f26179aaa9de7872f"
+    },
+    {
+      "source": "src/domain/physics/mesh-body.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "a2ef7198fe9634c241bd421793972c85af701fc139ebbef8576f1470643286d9"
+    },
+    {
+      "source": "src/domain/physics/prediction-solver.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "8fcf7f27e7211b666e2d2e4090b0d3406d0606edae5991e6186f0ef43213fa46"
+    },
+    {
+      "source": "src/domain/physics/cue-tip-contact.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "97387c55a0d4af9c1daf96fe35105feeeb9be114f921b061c9810e71be8de0e6"
+    },
+    {
+      "source": "src/shared/diagnostics/rolling-average.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "faba222c0072d9ff0d632310570be960cff069ac55b24bca052c1bd688395119"
+    },
+    {
+      "source": "src/presentation/diagnostics/metric-chart.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "59c51a1870f18033dff6d35a5d3250ea8fe8121d93d0f66dd95ce68508ffb56e"
+    },
+    {
+      "source": "src/presentation/diagnostics/monitor-view.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "811d937036affec88351e836511547e31c60debebc420b1b0614c6ec853b6696"
+    },
+    {
+      "source": "src/shared/diagnostics/metric-definitions.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "312d85d2bdcade547700885404e5686bfe3af577787b1f519a7b340103d8dfbc"
+    },
+    {
+      "source": "src/domain/physics/collision-stack.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "c0ba49429fd8824f081d9c45f86acae2f48ff8224301661883fe227a9ed7be3e"
+    },
+    {
+      "source": "src/domain/physics/ball-contact.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "0c5e47010e55e7cb8700103941e08a6c20c80d80515bd162cb5238979a42f821"
+    },
+    {
+      "source": "src/domain/physics/collision-island.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "8f9ccf852534f10a93ff397e6dbcaa2dcc398fe02247b9b05faac63024b46161"
+    },
+    {
+      "source": "src/domain/physics/island-list.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "6313262c1a99d3cd16f59da9b7b53e8e8f515749c2c68578f08becd94708e69a"
+    },
+    {
+      "source": "src/domain/physics/world-client.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "a438d75de2a710eed0941242cfe341ada8ee13f365d4a17d8823b356b426fa25"
+    },
+    {
+      "source": "src/domain/scene/initial-layout.js",
+      "kind": "factory",
+      "passed": true,
+      "normalizedSHA256": "38217a50ebde271f75ce0d73b58b0142e7fb015f6b4741f92471210f4a940d4d"
+    }
+  ],
+  "passed": 137,
+  "failed": 0,
+  "limitations": [
+    "Composition and rewritten utilities require independent functional tests. This structural check does not prove arbitrary runtime behavior or reflection equality.",
+    "The rewritten collision-mesh loader is excluded from baseline AST equivalence; its loading, failure, queue, normal-map and retry contracts are covered by tests/unit/collision-mesh-loader.test.mjs.",
+    "Local-session member renames and the retired unused user lookup are scoped to the two named session classes and reported separately; functional startup is verified independently."
+  ]
+}

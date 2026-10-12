@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="160" viewBox="0 0 20 160">
+  <defs>
+    <radialGradient id="red" cx="32%" cy="27%" r="75%"><stop stop-color="#ee4147"/><stop offset=".5" stop-color="#bd1025"/><stop offset="1" stop-color="#720917"/></radialGradient>
+    <radialGradient id="yellow" cx="32%" cy="27%" r="75%"><stop stop-color="#f9dc7d"/><stop offset=".5" stop-color="#deb33f"/><stop offset="1" stop-color="#a57b1b"/></radialGradient>
+    <radialGradient id="green" cx="32%" cy="27%" r="75%"><stop stop-color="#68a782"/><stop offset=".5" stop-color="#377352"/><stop offset="1" stop-color="#1a4932"/></radialGradient>
+    <radialGradient id="brown" cx="32%" cy="27%" r="75%"><stop stop-color="#b98058"/><stop offset=".5" stop-color="#784629"/><stop offset="1" stop-color="#422514"/></radialGradient>
+    <radialGradient id="blue" cx="32%" cy="27%" r="75%"><stop stop-color="#6496e1"/><stop offset=".5" stop-color="#2056b5"/><stop offset="1" stop-color="#103168"/></radialGradient>
+    <radialGradient id="pink" cx="32%" cy="27%" r="75%"><stop stop-color="#f4b2c4"/><stop offset=".5" stop-color="#db718e"/><stop offset="1" stop-color="#a44361"/></radialGradient>
+    <radialGradient id="black" cx="32%" cy="27%" r="75%"><stop stop-color="#747474"/><stop offset=".5" stop-color="#262626"/><stop offset="1" stop-color="#090909"/></radialGradient>
+    <clipPath id="mixed"><circle cx="10" cy="150" r="9.7"/></clipPath>
+  </defs>
+  <circle cx="10" cy="10" r="9.7" fill="url(#red)"/>
+  <circle cx="10" cy="30" r="9.7" fill="url(#yellow)"/>
+  <circle cx="10" cy="50" r="9.7" fill="url(#green)"/>
+  <circle cx="10" cy="70" r="9.7" fill="url(#brown)"/>
+  <circle cx="10" cy="90" r="9.7" fill="url(#blue)"/>
+  <circle cx="10" cy="110" r="9.7" fill="url(#pink)"/>
+  <circle cx="10" cy="130" r="9.7" fill="url(#black)"/>
+  <g clip-path="url(#mixed)"><path d="M10 150L0 144v-4h20z" fill="#deb33f"/><path d="M10 150l10-6v12z" fill="#377352"/><path d="M10 150l10 6v4H0z" fill="#2056b5"/><path d="M10 150l-10 6v-12z" fill="#db718e"/></g>
+  <g fill="#fff" opacity=".35"><ellipse cx="6.4" cy="5.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="25.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="45.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="65.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="85.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="105.7" rx="2" ry="1.15"/><ellipse cx="6.4" cy="125.7" rx="2" ry="1.15"/></g>
+</svg>

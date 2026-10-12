@@ -1,0 +1,38 @@
+{
+  "mode": "built-in imagegen",
+  "prompts": [
+    {
+      "path": "src/assets/images/interior-design-002-art.png",
+      "prompt": "Use case: stylized-concept. Asset type: original gallery wall artwork for a 3D billiards club, interior-design-002, amber Art Deco salon. Produce a sophisticated landscape fine art print, flat full-bleed artwork only, no frame or room. Original abstract 1930s Art Deco composition: interlocking elegant stepped arches, long ivory curves, a subtly implied billiard ball as one small burgundy circle, rhythmic fanned golden geometric lines, geometric tension and generous negative space. Palette restricted to warm cream, deep oxblood burgundy, dusty terracotta, muted antique gold and dark chocolate. Tactile matte paper and subtly layered screenprint inks. Asymmetric but balanced editorial composition, refined architectural geometry, crafted archival art, not a logo. No lettering, no words, no labels, no gradients of neon, no photographic objects, no border. 3:2 landscape composition; integrated flowing shapes, keep visual density low enough to read elegantly from across the room."
+    },
+    {
+      "path": "src/assets/images/interior-design-003-art.png",
+      "prompt": "Use case: stylized-concept. Asset type: original panoramic artwork for three adjacent vertical framed panels in a contemporary 3D billiards lounge, interior-design-003, cobalt coastal gallery. Create flat full-bleed artwork only, no frames, no room, no text. Sophisticated large abstract paper-cut and painted architectural composition: airy chalk-white background, sculptural cobalt blue arc and circular negative spaces, pale ice blue translucent-looking planes, delicate aqua ribbon travelling across the composition, one tiny restrained clay-coral form. Composition continuous across the width, visually balanced even when separated into three equal vertical slices; distribute strong shapes across the left, middle and right thirds rather than centering all content. Smooth organic curves opposed to precise rectangular planes, refined modern gallery aesthetic, subtle matte paper grain, spacious and authored, not a decorative stock pattern. Palette chalk white, ultramarine cobalt, dusty ice blue, muted aqua, tiny clay-coral accent only. No green, no gold, no burgundy, no letters, no logos, no border, no illustrative landscape, no rendered room. 3:2 landscape composition. Quiet brightness, high artistic quality, clear silhouette from a distance."
+    },
+    {
+      "path": "src/assets/textures/room/warm-plaster.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Neutral ivory mineral plaster, finely stippled matte lime plaster, extremely subtle irregular micrograin, low contrast, no large cracks, no trowel streaks. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    },
+    {
+      "path": "src/assets/textures/room/interior-design-001-oak.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Honey oak quarter-sawn wood, warm natural pale golden timber, straight delicate grain runs vertically from top to bottom, no planks or seams, no knots, consistent scale and restrained contrast. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    },
+    {
+      "path": "src/assets/textures/room/interior-design-003-linen.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Oatmeal natural linen upholstery, delicate uniform tiny woven fibers and subtle yarn variation, refined soft beige neutral weave, no stitches, no folds. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    },
+    {
+      "path": "src/assets/textures/room/interior-design-002-leather.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Cognac tan fine-grain upholstery leather, subtly irregular tiny realistic pores, restrained warm brown color, no seams, no folds, no dramatic grain. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    },
+    {
+      "path": "src/assets/textures/room/warm-limestone.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Cream and sand honed limestone, refined tiny mineral pores and soft low contrast cloudy veining, warm neutral creamy beige, no tile borders or grout. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    },
+    {
+      "path": "src/assets/textures/room/warm-terrazzo.png",
+      "prompt": "Use case: stylized-concept. Production game asset: seamless tileable square albedo texture map, high resolution 2048 by 2048 requested. Warm sand ivory terrazzo, dense very tiny irregular marble aggregates including cream, taupe, muted terracotta and occasional dark gray, subtle speckled design, 95 percent light neutral base, no large chips or confetti triangles. Fill the entire frame with ONLY the surface. Orthographic perfectly flat top-down scanned material appearance. Even diffuse illumination, no directional light, no shadows, no reflections, no perspective, no borders, no objects, no text or labels. All four opposite edges must tile without visible seams. Material microdetail that remains convincing at game scale. This is a real material map for a warm modern snooker interior, not a render of an object."
+    }
+  ],
+  "revision": "2026-10-04 approved warm interior refinement"
+}

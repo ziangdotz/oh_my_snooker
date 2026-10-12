@@ -1,0 +1,74 @@
+.interior-home-menu,
+.interior-drawer,
+.interior-transition,
+.game-ui-loading,
+.game-ui-panel,
+.game-ui-hud,
+.game-ui-toolbar,
+.game-ui-shortcuts,
+.game-ui-replay,
+.game-ui-notice {
+  --interior-background: #0c1512;
+  --interior-surface: #15231d;
+  --interior-gold: #c9b587;
+  --interior-text: #f1f0e9;
+  --interior-muted: #a0b0a6;
+  --interior-line: rgba(201, 181, 135, 0.22);
+  --interior-menu-size: 24px;
+  --interior-menu-leading: 32px;
+  --interior-drawer-title-size: 32px;
+  --interior-venue-name-size: 22px;
+  --interior-about-brand-size: 40px;
+  --interior-code-size: 12px;
+  --interior-copy-size: 14px;
+  --interior-back-size: 20px;
+  --interior-loading-title-size: 40px;
+  --interior-loading-copy-size: 16px;
+  --interior-recovery-size: 18px;
+  --interior-panel-radius: 10px;
+  --interior-card-radius: 6px;
+  --interior-button-radius: 4px;
+  --interior-panel-inset: 24px;
+  font-family: var(--page-font);
+  font-weight: 600;
+}
+.interior-home-menu .side-button:focus-visible,
+.interior-drawer button:focus-visible,
+.interior-transition button:focus-visible {
+  outline: 2px solid var(--interior-gold);
+  outline-offset: 3px;
+}
+.interior-drawer .default-button,
+.interior-transition .default-button {
+  padding: 12px 18px;
+  border: 1px solid var(--interior-gold);
+  border-radius: var(--interior-button-radius);
+  background: var(--interior-gold);
+  color: #122017;
+  font: 600 12px/1.4 var(--page-font);
+}
+.interior-drawer .default-button:enabled:hover,
+.interior-transition .default-button:enabled:hover {
+  background: #e0cca3;
+  color: #122017;
+}
+@media (prefers-reduced-motion: reduce) {
+  .interior-home-menu .side-button,
+  .interior-design-option {
+    transition: none;
+  }
+}
+@media (max-width: 480px) {
+  .interior-home-menu,
+  .interior-drawer,
+  .interior-transition,
+  .game-ui-loading {
+    --interior-menu-size: 22px;
+    --interior-menu-leading: 28px;
+    --interior-drawer-title-size: 28px;
+    --interior-venue-name-size: 20px;
+    --interior-about-brand-size: 36px;
+    --interior-loading-title-size: 32px;
+    --interior-loading-copy-size: 15px;
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="felt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#244936"/>
+      <stop offset="1" stop-color="#10251c"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="32%" cy="26%" r="78%">
+      <stop stop-color="#ff9b85"/>
+      <stop offset=".28" stop-color="#ee4542"/>
+      <stop offset=".62" stop-color="#bd1727"/>
+      <stop offset="1" stop-color="#520919"/>
+    </radialGradient>
+    <radialGradient id="shine">
+      <stop stop-color="#fff8ee" stop-opacity=".96"/>
+      <stop offset=".45" stop-color="#fff0dd" stop-opacity=".66"/>
+      <stop offset="1" stop-color="#fff0dd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="4" width="248" height="248" rx="54" fill="url(#felt)"/>
+  <rect x="5" y="5" width="246" height="246" rx="53" fill="none" stroke="#a58f5c" stroke-opacity=".45" stroke-width="2"/>
+  <ellipse cx="136" cy="208" rx="80" ry="19" fill="#07120e" opacity=".5"/>
+  <circle cx="128" cy="125" r="90" fill="url(#ball)" stroke="#ec5b57" stroke-opacity=".32" stroke-width="1.5"/>
+  <path d="M54 104a78 78 0 0 1 52-53" fill="none" stroke="#ffb4a0" stroke-width="3" stroke-linecap="round" opacity=".38"/>
+  <ellipse cx="94" cy="84" rx="29" ry="18" transform="rotate(-31 94 84)" fill="url(#shine)"/>
+</svg>

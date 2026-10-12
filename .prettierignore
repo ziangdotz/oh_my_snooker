@@ -1,0 +1,8 @@
+baselines/
+build/
+dist/
+artifacts/
+.cache/
+node_modules/
+reports/
+pnpm-lock.yaml

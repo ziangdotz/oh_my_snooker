@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Saira ExtraCondensed Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  src: url(../../assets/fonts/saira-extra-condensed-bold.eot);
+  src:
+    url(../../assets/fonts/saira-extra-condensed-bold.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/saira-extra-condensed-bold.woff2) format('woff2'),
+    url(../../assets/fonts/saira-extra-condensed-bold.woff) format('woff'),
+    url(../../assets/fonts/saira-extra-condensed-bold.ttf) format('truetype'),
+    url(../../assets/fonts/saira-extra-condensed-bold.svg#SairaExtraCondensed-Bold) format('svg');
+}
+@font-face {
+  font-family: 'Saira ExtraCondensed SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+  src: url(../../assets/fonts/saira-extra-condensed-semibold.eot);
+  src:
+    url(../../assets/fonts/saira-extra-condensed-semibold.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/saira-extra-condensed-semibold.woff2) format('woff2'),
+    url(../../assets/fonts/saira-extra-condensed-semibold.woff) format('woff'),
+    url(../../assets/fonts/saira-extra-condensed-semibold.ttf) format('truetype'),
+    url(../../assets/fonts/saira-extra-condensed-semibold.svg#SairaExtraCondensed-SemiBold)
+      format('svg');
+}
+:root {
+  --page-font: 'Saira ExtraCondensed SemiBold', 'Microsoft YaHei', sans-serif;
+  --game-heading-font: 'Saira ExtraCondensed Bold', 'Microsoft YaHei', sans-serif;
+}
+/* Shared page typography; legacy headings/actions retain the real Bold face. */
+input,
+select,
+textarea {
+  font-family: var(--page-font);
+  font-weight: 600;
+}
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.head,
+.box-head,
+.side-button .inner,
+.ai-name,
+.shortcuts-bar a,
+.clickable-section {
+  font-family: var(--game-heading-font);
+  font-weight: 700;
+}

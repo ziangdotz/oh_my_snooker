@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-11T15:42:57.335Z",
+  "scope": "saira-font-unification-and-recovery",
+  "targets": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "passed": true,
+      "beforeFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "waitedForBothFonts": true,
+      "fontFaces": [
+        {
+          "family": "Saira ExtraCondensed Bold",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "Saira ExtraCondensed SemiBold",
+          "weight": "600",
+          "status": "loaded"
+        }
+      ],
+      "afterFonts": [
+        {
+          "text": "Modern Club",
+          "fontSize": "40px",
+          "fontFamily": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "700",
+          "width": 172.046875,
+          "height": 63
+        },
+        {
+          "text": "Preparing the venue and lighting. Returning to the lounge when ready.",
+          "fontSize": "16px",
+          "fontFamily": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+          "fontWeight": "600",
+          "width": 356.78125,
+          "height": 25
+        }
+      ],
+      "narrow": {
+        "fontSize": "32px",
+        "fits": true,
+        "buttonsFit": true
+      },
+      "homeFonts": [
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        },
+        {
+          "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+          "weight": "700"
+        }
+      ],
+      "retryAndBack": true,
+      "fontFallbacks": [
+        {
+          "failedFont": "semibold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        },
+        {
+          "failedFont": "bold",
+          "stableFallback": true,
+          "narrowRecoveryFits": true,
+          "focusAndRetryPassed": true
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "passed": true
+}

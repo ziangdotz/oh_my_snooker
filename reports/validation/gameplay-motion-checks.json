@@ -1,0 +1,70 @@
+{
+  "started": "2026-10-11T13:31:49.659Z",
+  "results": [
+    {
+      "name": "overall",
+      "command": "node scripts/check-project.mjs --browser",
+      "started": "2026-10-11T13:31:49.659Z",
+      "finished": "2026-10-11T13:34:26.567Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "source-standalone",
+      "command": "node tests/e2e/source-standalone.test.mjs",
+      "started": "2026-10-11T13:34:26.569Z",
+      "finished": "2026-10-11T13:35:38.010Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "original-room",
+      "command": "node tests/e2e/interior-design-original.test.mjs",
+      "started": "2026-10-11T13:35:38.011Z",
+      "finished": "2026-10-11T13:36:31.545Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "interior-suites",
+      "command": "node scripts/test-interior.mjs",
+      "started": "2026-10-11T13:36:31.546Z",
+      "finished": "2026-10-11T13:58:43.987Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "vector-ui",
+      "command": "node tests/e2e/ui-vector-artwork.test.mjs",
+      "started": "2026-10-11T13:58:43.988Z",
+      "finished": "2026-10-11T13:59:39.301Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "shadow-cache",
+      "command": "node tests/e2e/interior-shadow-cache.test.mjs",
+      "started": "2026-10-11T13:59:39.301Z",
+      "finished": "2026-10-11T14:01:58.258Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "context-restoration",
+      "command": "node tests/e2e/context-restoration.test.mjs",
+      "started": "2026-10-11T14:01:58.259Z",
+      "finished": "2026-10-11T14:11:10.330Z",
+      "code": 0,
+      "passed": true
+    },
+    {
+      "name": "continuous-play",
+      "command": "node tests/e2e/continuous-play.test.mjs",
+      "started": "2026-10-11T14:11:10.331Z",
+      "finished": "2026-10-11T14:38:40.928Z",
+      "code": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11T11:08:06.875Z",
+  "scope": "smoke",
+  "scenarios": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-001",
+      "errors": [],
+      "recoveries": 4,
+      "passed": true,
+      "pixelDifference": {
+        "changedChannels": 0,
+        "maxDifference": 0
+      },
+      "fullScenePixelsEqual": true,
+      "replayDuration": 8.742046356201172,
+      "restartAfterRecovery": true,
+      "delayedTextureRequests": 1,
+      "automaticIdleRedraw": true,
+      "gameplayAfterRecovery": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Headless WebGL verifies recovery and exact pixels on this browser renderer; it does not measure hardware performance."
+  ]
+}

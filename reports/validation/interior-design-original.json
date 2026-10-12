@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-11T15:34:34.382Z",
+  "design": "interior-design-original",
+  "browsers": [
+    {
+      "name": "chrome",
+      "version": "154.0.8037.98",
+      "variants": [
+        {
+          "variant": "baseline",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        },
+        {
+          "variant": "default",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        },
+        {
+          "variant": "named",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        }
+      ],
+      "pixelComparisons": [
+        {
+          "variant": "default",
+          "view": "overview",
+          "sha256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "baselineSHA256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "wall",
+          "sha256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "baselineSHA256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "ceiling",
+          "sha256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "baselineSHA256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "left-lounge",
+          "sha256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "baselineSHA256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "right-lounge",
+          "sha256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "baselineSHA256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "overview",
+          "sha256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "baselineSHA256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "wall",
+          "sha256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "baselineSHA256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "ceiling",
+          "sha256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "baselineSHA256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "left-lounge",
+          "sha256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "baselineSHA256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "right-lounge",
+          "sha256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "baselineSHA256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "changedChannels": 0,
+          "maxDifference": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "edge",
+      "version": "155.0.4283.45",
+      "variants": [
+        {
+          "variant": "baseline",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        },
+        {
+          "variant": "default",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        },
+        {
+          "variant": "named",
+          "geometryAndMaterialSHA256": "5268de49f8c4eb73e7126a4273d44af567f19c808f6f0b2e57e898cff50b9a0c",
+          "errors": []
+        }
+      ],
+      "pixelComparisons": [
+        {
+          "variant": "default",
+          "view": "overview",
+          "sha256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "baselineSHA256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "wall",
+          "sha256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "baselineSHA256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "ceiling",
+          "sha256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "baselineSHA256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "left-lounge",
+          "sha256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "baselineSHA256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "default",
+          "view": "right-lounge",
+          "sha256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "baselineSHA256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "overview",
+          "sha256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "baselineSHA256": "c8a32e490384f9c14aa02a695d982cff7fe9a38a788f47d58e2895e824c3d43b",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "wall",
+          "sha256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "baselineSHA256": "b2696e125a02f838b56cf0d1a2daefe9830ab90ff50a2d000f67d4af94f027e1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "ceiling",
+          "sha256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "baselineSHA256": "104da5a9a7b3b19319f0e5e82f1f0725aea0409bb8af495f6363b0acc846d961",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "left-lounge",
+          "sha256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "baselineSHA256": "2af34ba0da0101984968253727586280c6325e7c0c88ca7995a6dee0d826eda1",
+          "changedChannels": 0,
+          "maxDifference": 0
+        },
+        {
+          "variant": "named",
+          "view": "right-lounge",
+          "sha256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "baselineSHA256": "d4c3fc798be1ac49b14ec59abb13e38611795ffcfd38cb7fef19210e6b54af3a",
+          "changedChannels": 0,
+          "maxDifference": 0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681"
+}

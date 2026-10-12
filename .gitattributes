@@ -1,0 +1,26 @@
+* text=auto
+/.editorconfig text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/.node-version text eol=lf
+/.npmrc text eol=lf
+/.prettierignore text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.cmd text eol=crlf
+pnpm-lock.yaml text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+*.fx text eol=lf
+
+# Preserved dependencies and binary assets keep their original bytes.
+src/third-party/** -text
+src/assets/** -text
+
+# 冻结及生产资源的哈希按原始字节计算，禁止 Git 自动转换换行。
+baselines/** -text
+build/** -text
+dist/** -text

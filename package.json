@@ -1,0 +1,49 @@
+{
+  "name": "oh-my-snooker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Modular local 3D snooker game with validated source and asset builds",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.11.0",
+    "playwright": "1.62.1",
+    "prettier": "3.6.2",
+    "espree": "11.2.0",
+    "eslint-scope": "9.1.2"
+  },
+  "scripts": {
+    "dev": "node src/start.mjs",
+    "start": "node src/start.mjs",
+    "dev:built": "node scripts/dev-server.mjs",
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:algorithms": "node scripts/verify-algorithms.mjs",
+    "lint": "node scripts/lint-code.mjs",
+    "lint:fix": "node scripts/lint-code.mjs --fix",
+    "format": "node scripts/format-code.mjs --write",
+    "format:check": "node scripts/format-code.mjs --check",
+    "test": "node scripts/test-project.mjs",
+    "test:unit": "node scripts/test-project.mjs --unit",
+    "test:integration": "node scripts/test-project.mjs --integration",
+    "test:e2e": "node tests/e2e/game.test.mjs",
+    "test:e2e:source": "node tests/e2e/source-standalone.test.mjs",
+    "test:e2e:continuous": "node tests/e2e/continuous-play.test.mjs",
+    "test:e2e:motion": "node tests/e2e/gameplay-motion.test.mjs",
+    "test:e2e:context": "node tests/e2e/context-restoration.test.mjs",
+    "test:e2e:original": "node tests/e2e/interior-design-original.test.mjs",
+    "check": "node scripts/check-project.mjs",
+    "check:browser": "node scripts/check-project.mjs --browser",
+    "check:structure": "node scripts/check-structure.mjs",
+    "check:naming": "node scripts/check-file-naming.mjs",
+    "check:maintenance": "node scripts/check-maintenance.mjs",
+    "test:e2e:interior": "node scripts/test-interior.mjs",
+    "test:e2e:shadows": "node tests/e2e/interior-shadow-cache.test.mjs",
+    "measure:interior": "node scripts/measure-interior-performance.mjs",
+    "measure:summary": "node scripts/summarize-measurement.mjs"
+  }
+}

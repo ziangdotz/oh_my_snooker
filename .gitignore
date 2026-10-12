@@ -1,0 +1,65 @@
+# Dependencies and package-manager caches
+node_modules/
+/.pnpm-store/
+/.npm/
+
+# Rebuildable outputs; build locks, staging and rollback copies live in .cache
+/.cache/
+/build/
+/dist/
+
+# Current browser validation output
+/artifacts/testing/
+
+# Large raw measurements are reproducible local output; compact evidence stays versioned.
+/reports/measurement/*
+!/reports/measurement/*-summary.json
+!/reports/measurement/camera-rate-characterization*.json
+
+# Optional test-runner and coverage output
+/coverage/
+/.nyc_output/
+/playwright-report/
+/test-results/
+/blob-report/
+
+# Logs and process diagnostics
+*.log
+/npm-debug.log*
+/pnpm-debug.log*
+/report.*.json
+
+# Local environment overrides; sanitized examples remain versioned
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.template
+*.local
+
+# Personal editor state; shared VS Code configuration remains versioned
+/.idea/
+/.vs/
+*.code-workspace
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+
+# Operating-system metadata and editor backup files
+.DS_Store
+._*
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# Intentionally versioned: src/, baselines/, validation reports, measurement summaries,
+# docs/, tests/, tooling/,
+# scripts/, config/, pnpm-lock.yaml and shared project configuration.
+# reports/validation/architecture-migration-map.json is a validation input.

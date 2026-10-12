@@ -1,0 +1,1963 @@
+{
+  "date": "2026-10-09T05:57:15.658Z",
+  "comparison": "Live frozen PCOL geometry, menu order and screen locations; current home colors retained.",
+  "targets": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "source",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "mode": "practice",
+      "reference": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 8,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 59
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 8,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 52
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 188,
+            "right": 232,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "mode": "match",
+      "reference": {
+        "difficulty": {
+          "x": 490,
+          "y": 240.40625,
+          "width": 460,
+          "height": 419.1875,
+          "right": 950,
+          "bottom": 659.59375
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1373,
+          "y": 62,
+          "width": 47,
+          "height": 51,
+          "right": 1420,
+          "bottom": 113
+        },
+        "pause": {
+          "x": 432,
+          "y": 285.40625,
+          "width": 576,
+          "height": 329.1875,
+          "right": 1008,
+          "bottom": 614.59375
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 167.40625,
+          "width": 560,
+          "height": 565.1875,
+          "right": 1000,
+          "bottom": 732.59375
+        },
+        "helpBody": {
+          "x": 440,
+          "y": 235.59375,
+          "width": 560,
+          "height": 428,
+          "right": 1000,
+          "bottom": 663.59375
+        }
+      },
+      "passed": true,
+      "current": {
+        "difficulty": {
+          "x": 490,
+          "y": 239.8046875,
+          "width": 460,
+          "height": 420.390625,
+          "right": 950,
+          "bottom": 660.1953125
+        },
+        "hud": [
+          {
+            "side": "left",
+            "x": 20,
+            "y": 10,
+            "right": 378,
+            "height": 46,
+            "points": {
+              "x": 310,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 378,
+              "bottom": 56
+            }
+          },
+          {
+            "side": "right",
+            "x": 1062,
+            "y": 10,
+            "right": 1420,
+            "height": 46,
+            "points": {
+              "x": 1062,
+              "y": 10,
+              "width": 68,
+              "height": 46,
+              "right": 1130,
+              "bottom": 56
+            }
+          }
+        ],
+        "toolbar": {
+          "x": 1376,
+          "y": 62,
+          "width": 44,
+          "height": 44,
+          "right": 1420,
+          "bottom": 106
+        },
+        "pause": {
+          "x": 432,
+          "y": 315.8046875,
+          "width": 576,
+          "height": 268.390625,
+          "right": 1008,
+          "bottom": 584.1953125
+        },
+        "order": [
+          "resume",
+          "restart",
+          "controls_guide",
+          "quit"
+        ],
+        "help": {
+          "x": 440,
+          "y": 164.8046875,
+          "width": 560,
+          "height": 570.390625,
+          "right": 1000,
+          "bottom": 735.1953125
+        },
+        "helpBody": {
+          "x": 441,
+          "y": 237.1953125,
+          "width": 558,
+          "height": 428,
+          "right": 999,
+          "bottom": 665.1953125
+        },
+        "narrow": [
+          {
+            "x": 8,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 108,
+            "right": 152,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 312,
+            "y": 10,
+            "bottom": 56
+          },
+          {
+            "x": 168,
+            "right": 212,
+            "y": 10,
+            "bottom": 56
+          }
+        ]
+      }
+    }
+  ],
+  "passed": true
+}

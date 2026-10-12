@@ -1,0 +1,201 @@
+.interior-drawer {
+  position: absolute;
+  top: var(--interior-panel-inset);
+  right: var(--interior-panel-inset);
+  bottom: var(--interior-panel-inset);
+  display: none;
+  flex-direction: column;
+  width: min(480px, calc(100% - 2 * var(--interior-panel-inset)));
+  background:
+    radial-gradient(ellipse at top right, #20372b 0, transparent 65%), var(--interior-background);
+  border: 1px solid var(--interior-line);
+  border-top: 2px solid var(--interior-gold);
+  border-radius: var(--interior-panel-radius);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  color: var(--interior-text);
+  overflow: hidden;
+}
+.interior-drawer-header {
+  position: relative;
+  flex-shrink: 0;
+  padding: 32px 76px 26px 28px;
+}
+.interior-design-code {
+  display: block;
+  font-size: var(--interior-code-size);
+  font-family: var(--page-font);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--interior-gold);
+}
+.interior-drawer h2 {
+  margin: 0;
+  font: 700 var(--interior-drawer-title-size) / 1.2 var(--game-heading-font);
+  letter-spacing: 0.06em;
+}
+.interior-close {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--interior-line);
+  border-radius: var(--interior-button-radius);
+  background: rgba(12, 21, 18, 0.5);
+  color: var(--interior-text);
+  font: 400 22px/1 var(--page-font);
+  cursor: pointer;
+}
+.interior-close:hover {
+  border-color: var(--interior-gold);
+}
+.interior-design-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #687059 transparent;
+}
+.interior-design-option {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  gap: 18px;
+  padding: 14px;
+  border: 1px solid rgba(160, 176, 166, 0.16);
+  border-radius: var(--interior-card-radius);
+  background: rgba(21, 35, 29, 0.75);
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    border-color 180ms,
+    background-color 180ms,
+    transform 180ms;
+}
+.interior-design-option:hover {
+  border-color: rgba(201, 181, 135, 0.65);
+  background: #20362a;
+  transform: translateX(-2px);
+}
+.interior-design-option[aria-pressed='true'] {
+  border-color: var(--interior-gold);
+  background: #20362a;
+  box-shadow: inset 2px 0 var(--interior-gold);
+}
+.interior-design-preview {
+  position: relative;
+  width: 148px;
+  height: 98px;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #263b2f;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+.interior-design-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.interior-design-preview img[hidden] {
+  display: none;
+}
+.interior-design-preview.is-fallback::after {
+  content: attr(data-code);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--interior-gold);
+  font-size: 0.75rem;
+}
+.interior-design-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+}
+.interior-design-copy strong {
+  font: 700 var(--interior-venue-name-size) / 1.2 var(--game-heading-font);
+}
+.interior-design-description,
+.interior-design-badge {
+  font-family: var(--page-font);
+  font-size: var(--interior-copy-size);
+  line-height: 1.4;
+  color: var(--interior-muted);
+}
+.interior-design-badge {
+  align-self: flex-start;
+  padding-top: 3px;
+  color: var(--interior-gold);
+}
+.interior-design-option[aria-pressed='true'] .interior-design-badge {
+  font-weight: 600;
+}
+.interior-drawer-footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 24px;
+  border-top: 1px solid var(--interior-line);
+  background: rgba(12, 21, 18, 0.72);
+}
+.interior-drawer .default-button {
+  min-width: 96px;
+  min-height: 44px;
+  font-family: var(--game-heading-font);
+  font-size: var(--interior-back-size);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.interior-drawer button:disabled {
+  cursor: wait;
+}
+@media (max-width: 480px) {
+  .interior-drawer {
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: calc(100% - 16px);
+    border-radius: 8px;
+  }
+  .interior-drawer-header {
+    padding: 24px 72px 24px 20px;
+  }
+  .interior-close {
+    top: 24px;
+  }
+  .interior-design-list {
+    padding: 4px 12px 16px;
+  }
+  .interior-design-option {
+    gap: 12px;
+    padding: 12px;
+  }
+  .interior-design-preview {
+    width: 110px;
+    height: 88px;
+  }
+  .interior-drawer-footer {
+    padding: 16px 12px;
+  }
+  .interior-drawer .default-button {
+    padding: 12px;
+  }
+}
+.interior-drawer button {
+  font-family: var(--page-font);
+  font-weight: 600;
+}

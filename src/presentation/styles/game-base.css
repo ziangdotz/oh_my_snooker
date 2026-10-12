@@ -1,0 +1,232 @@
+/* Document, canvas and shared primitives used by the current UI. */
+html {
+  background: #000;
+  font: 600 16px var(--page-font);
+  font-synthesis: none;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  min-height: 100%;
+}
+body,
+html {
+  min-width: 320px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+#game-view,
+#game-shade,
+.game-container {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#game-view,
+.game-container {
+  top: 0;
+  height: 100%;
+}
+.game-container {
+  overflow: hidden;
+}
+#game-shade {
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+p,
+pre {
+  margin: 0;
+  font-family: var(--page-font);
+  letter-spacing: 0.01em;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+.no-drag {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.no-select,
+.box-head,
+.head,
+.default-button {
+  user-select: none;
+}
+.default-button {
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 0;
+  font: inherit;
+}
+.default-button:disabled {
+  cursor: default;
+}
+.box-body.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.head {
+  pointer-events: none;
+}
+.kb {
+  display: inline-block;
+  vertical-align: top;
+  font-family: var(--page-font);
+  color: #272727;
+  background: linear-gradient(#e4e4e4, #cecece);
+  font-size: 0.7em;
+  border-radius: 0.2em;
+  padding: 0 0.6em;
+  margin-right: 0.4em;
+  box-shadow:
+    inset 0 1px 0 #f5f5f5,
+    inset 0 -1px 0 #aaa;
+}
+.sprite {
+  overflow: hidden;
+  background: url(../../assets/images/ui-sprite-atlas.svg) no-repeat;
+  background-size: 114px 114px;
+}
+.close-icon {
+  width: 31px;
+  height: 31px;
+  background-position: -46px -41px;
+}
+.m-d-i {
+  width: 36px;
+  height: 45px;
+  background-position: -4px -4px;
+  margin-right: 0.2em;
+}
+.m-w-i {
+  width: 17px;
+  height: 26px;
+  background-position: -92px -4px;
+  margin-right: 0.25em;
+}
+.pause-icon {
+  width: 27px;
+  height: 31px;
+  background-position: -83px -41px;
+}
+.play-icon {
+  width: 31px;
+  height: 31px;
+  background-position: -42px -78px;
+}
+.plus-icon {
+  width: 10px;
+  height: 10px;
+  background-position: -4px -93px;
+  margin: 0 0.2em 1px 0;
+}
+.replay-icon {
+  width: 40px;
+  height: 31px;
+  background-position: -46px -4px;
+}
+.shortcut-group,
+.shortcut-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shortcut-item {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  line-height: 1.8;
+}
+.diff-dots {
+  height: 18px;
+  margin-top: 2px;
+}
+.diff-dots > :not(:last-child) {
+  margin-right: 4px;
+}
+.diff-dot {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 2px solid #687059;
+  border-radius: 50%;
+}
+.diff-dot-full,
+.diff-dot-half {
+  background-image: url(../../assets/images/ai-difficulty-dots.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+}
+.diff-dot-full {
+  background-position: 0 0;
+}
+.diff-dot-half {
+  background-position: -7px 0;
+}
+.ball-on-icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  background-origin: border-box;
+  background-size: 20px;
+  border-radius: 50%;
+}
+.ball-on-icon.snooker {
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/snooker-ball-icons.svg);
+}
+.ball-on-icon.snooker.b-2 {
+  display: block;
+}
+.ball-on-icon.snooker.b-4 {
+  background-position-y: -20px;
+  display: block;
+}
+.ball-on-icon.snooker.b-8 {
+  background-position-y: -40px;
+  display: block;
+}
+.ball-on-icon.snooker.b-16 {
+  background-position-y: -60px;
+  display: block;
+}
+.ball-on-icon.snooker.b-32 {
+  background-position-y: -80px;
+  display: block;
+}
+.ball-on-icon.snooker.b-64 {
+  background-position-y: -100px;
+  display: block;
+}
+.ball-on-icon.snooker.b-128 {
+  background-position-y: -120px;
+  display: block;
+}
+.ball-on-icon.snooker.b-252 {
+  background-position-y: -140px;
+  display: block;
+}

@@ -1,0 +1,84 @@
+.interior-home-menu {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  width: min(324px, calc(100% - 48px));
+  transform: translateY(-50%);
+  color: var(--interior-text);
+}
+.interior-home-menu > .side-button:not(:last-child) {
+  margin-bottom: 10px;
+}
+.interior-home-menu .side-button {
+  cursor: pointer;
+  text-align: left;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  padding: 18px 42px 18px 56px;
+  border: 1px solid var(--interior-line);
+  border-left: 2px solid transparent;
+  border-radius: var(--interior-card-radius);
+  background: rgba(12, 21, 18, 0.9);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(18px);
+  color: var(--interior-text);
+  transition:
+    border-color 180ms,
+    box-shadow 180ms;
+}
+.interior-home-menu .side-button .inner {
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: var(--game-heading-font);
+  font-size: var(--interior-menu-size);
+  font-weight: 700;
+  line-height: var(--interior-menu-leading);
+  letter-spacing: 0.025em;
+  color: inherit;
+}
+.interior-home-menu .side-button::before {
+  content: attr(data-position);
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  font: 400 10px/1 var(--page-font);
+  letter-spacing: 0.08em;
+  color: var(--interior-gold);
+  pointer-events: none;
+}
+.interior-home-menu .side-button::after {
+  content: '↗';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  font: 400 17px/1 var(--page-font);
+  color: var(--interior-muted);
+  pointer-events: none;
+}
+.interior-home-menu .side-button.is-highlighted {
+  background: #1c3026;
+  border-color: rgba(201, 181, 135, 0.58);
+  border-left-color: var(--interior-gold);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+.interior-home-menu .side-button.is-highlighted::after {
+  color: var(--interior-gold);
+}
+@media (max-width: 480px) {
+  .interior-home-menu {
+    left: 24px;
+  }
+  .interior-home-menu .side-button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+@media (max-height: 600px) {
+  .interior-home-menu .side-button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}

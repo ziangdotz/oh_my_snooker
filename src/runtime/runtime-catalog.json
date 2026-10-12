@@ -1,0 +1,1278 @@
+{
+  "schemaVersion": 1,
+  "entry": "application/launch-game",
+  "bundles": {
+    "bootstrap": "scripts/runtime-bootstrap.js",
+    "render-engine": "scripts/render-engine.js",
+    "snooker-game": "scripts/snooker-game.js"
+  },
+  "modules": [
+    {
+      "id": "adapters/browser/browser-detector",
+      "source": "src/third-party/browser/browser-detector.js",
+      "bundle": "bootstrap",
+      "dependencies": ["adapters/rendering/amd-guard"],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "adapters/rendering/amd-guard",
+      "source": "src/adapters/rendering/amd-guard.js",
+      "bundle": "bootstrap",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "adapters/browser/webgl-detector",
+      "source": "src/third-party/browser/webgl-detector.js",
+      "bundle": "bootstrap",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "application/launch-game",
+      "source": "src/application/launch-game.js",
+      "bundle": "bootstrap",
+      "dependencies": [
+        "adapters/browser/browser-detector",
+        "adapters/browser/webgl-detector",
+        "application/compose-game",
+        "application/interior-transition",
+        "presentation/typography/page-fonts"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "adapters/rendering/babylon-engine",
+      "source": "src/third-party/rendering/babylon-engine.js",
+      "bundle": "render-engine",
+      "dependencies": ["adapters/rendering/global-object"],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "adapters/rendering/global-object",
+      "source": "src/adapters/rendering/global-object.js",
+      "bundle": "render-engine",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "application/compose-game",
+      "source": "src/application/compose-game.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "adapters/browser/browser-detector",
+        "adapters/rendering/babylon-engine",
+        "adapters/rendering/dynamic-lighting-material",
+        "adapters/rendering/light-probe-material",
+        "assets/environments-ball-reflection",
+        "assets/environments-frame-reflection",
+        "assets/environments-room-irradiance-primary",
+        "assets/environments-room-irradiance-secondary",
+        "assets/models-alpha-cue",
+        "assets/models-interior-design-original-room",
+        "assets/textures-cue-cue-color",
+        "assets/textures-cue-cue-gloss",
+        "assets/textures-room-interior-design-original-floor-tile",
+        "assets/textures-table-ball-ambient-occlusion",
+        "assets/textures-table-carpet-lightmap",
+        "assets/textures-table-carpet-normal",
+        "assets/textures-table-carpet-overlay",
+        "assets/textures-table-carpet-tile",
+        "assets/textures-table-frame-diffuse",
+        "assets/textures-table-frame-lightmap",
+        "assets/textures-table-frame-normal",
+        "assets/textures-table-frame-roughness",
+        "assets/textures-table-pocket-gloss",
+        "assets/textures-table-table-mask",
+        "assets/textures-table-table-ui-atlas",
+        "domain/game/game-records",
+        "domain/game/game-state",
+        "domain/game/player",
+        "domain/geometry/geometry-utils",
+        "domain/geometry/plane",
+        "domain/physics/collision-events",
+        "domain/physics/physics-api",
+        "domain/rules/foul-codes",
+        "domain/rules/referee-registry",
+        "domain/scene/initial-layout",
+        "domain/simulation/simulation-events",
+        "domain/simulation/simulation-state",
+        "domain/simulation/simulator",
+        "infrastructure/assets/collision-mesh-loader",
+        "infrastructure/assets/resource-paths",
+        "presentation/diagnostics/monitor-view",
+        "presentation/scenes/modern-wall-study",
+        "presentation/templates/about-game",
+        "presentation/templates/ai-difficulty",
+        "presentation/templates/controls-guide",
+        "presentation/templates/keyboard-shortcuts",
+        "presentation/templates/match-result",
+        "presentation/templates/practice-result",
+        "presentation/templates/replay-controls",
+        "presentation/templates/scoreboard",
+        "shared/data/object-utils",
+        "shared/diagnostics/physics-monitor",
+        "shared/events/event-emitter",
+        "presentation/scenes/interior-design-registry",
+        "presentation/scenes/interior-design-original",
+        "application/interior-transition"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/math/vector-three",
+      "source": "src/domain/math/vector-three.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/physics-api",
+      "source": "src/domain/physics/physics-api.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/geometry/collision-mesh-decoder",
+        "domain/math/quaternion",
+        "domain/math/vector-three",
+        "domain/physics/ball-body",
+        "domain/physics/mesh-body",
+        "domain/physics/world",
+        "domain/physics/world-client"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "shared/events/event-emitter",
+      "source": "src/shared/events/event-emitter.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/game/game-state",
+      "source": "src/domain/game/game-state.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/physics-constants",
+      "source": "src/domain/physics/physics-constants.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/math/matrix-three",
+      "source": "src/domain/math/matrix-three.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/plane",
+      "source": "src/domain/geometry/plane.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/physics/physics-api"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/game/game-records",
+      "source": "src/domain/game/game-records.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "shared/diagnostics/physics-monitor",
+      "source": "src/shared/diagnostics/physics-monitor.js",
+      "bundle": "snooker-game",
+      "dependencies": ["shared/diagnostics/metric-definitions"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/contact-solver",
+      "source": "src/domain/physics/contact-solver.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three", "shared/diagnostics/physics-monitor"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/contact",
+      "source": "src/domain/physics/contact.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/matrix-three", "domain/math/vector-three"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/math/quaternion",
+      "source": "src/domain/math/quaternion.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "shared/data/object-utils",
+      "source": "src/shared/data/object-utils.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "infrastructure/assets/resource-paths",
+      "source": "src/infrastructure/assets/resource-paths.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/collision-events",
+      "source": "src/domain/physics/collision-events.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/simulation/simulation-events",
+      "source": "src/domain/simulation/simulation-events.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/simulation/simulation-state",
+      "source": "src/domain/simulation/simulation-state.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/scene/scene-definitions",
+      "source": "src/domain/scene/scene-definitions.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/rules/foul-codes",
+      "source": "src/domain/rules/foul-codes.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/game/player",
+      "source": "src/domain/game/player.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/geometry-utils",
+      "source": "src/domain/geometry/geometry-utils.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/physics/physics-api"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "adapters/rendering/dynamic-lighting-material",
+      "source": "src/adapters/rendering/dynamic-lighting-material.js",
+      "bundle": "snooker-game",
+      "dependencies": ["adapters/rendering/babylon-engine"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/ball-motion",
+      "source": "src/domain/physics/ball-motion.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/vector-three",
+        "domain/physics/physics-constants",
+        "shared/diagnostics/physics-monitor"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/rigid-body",
+      "source": "src/domain/physics/rigid-body.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/matrix-three",
+        "domain/math/quaternion",
+        "domain/math/vector-three",
+        "domain/physics/physics-constants"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/ball-body",
+      "source": "src/domain/physics/ball-body.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/quaternion",
+        "domain/math/vector-three",
+        "domain/physics/rigid-body"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/ball-surface-contact",
+      "source": "src/domain/physics/ball-surface-contact.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/matrix-three",
+        "domain/math/vector-three",
+        "domain/physics/contact"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/object-pool",
+      "source": "src/domain/physics/object-pool.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/world",
+      "source": "src/domain/physics/world.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/physics/ball-body",
+        "domain/physics/ball-contact",
+        "domain/physics/ball-motion",
+        "domain/physics/ball-surface-contact",
+        "domain/physics/collision-stack",
+        "domain/physics/contact",
+        "domain/physics/contact-solver",
+        "domain/physics/cue-tip-contact",
+        "domain/physics/island-list",
+        "domain/physics/object-pool",
+        "domain/physics/physics-constants",
+        "domain/physics/rigid-body",
+        "shared/diagnostics/physics-monitor"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/templates/match-result",
+      "source": "src/presentation/templates/match-result.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/scoreboard",
+      "source": "src/presentation/templates/scoreboard.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/replay-controls",
+      "source": "src/presentation/templates/replay-controls.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/practice-result",
+      "source": "src/presentation/templates/practice-result.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/controls-guide",
+      "source": "src/presentation/templates/controls-guide.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/keyboard-shortcuts",
+      "source": "src/presentation/templates/keyboard-shortcuts.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "infrastructure/network/local-request",
+      "source": "src/infrastructure/network/local-request.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "infrastructure/assets/asset-queue",
+      "source": "src/infrastructure/assets/asset-queue.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "infrastructure/assets/collision-mesh-loader",
+      "source": "src/infrastructure/assets/collision-mesh-loader.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/physics/physics-api",
+        "infrastructure/assets/asset-queue",
+        "infrastructure/assets/resource-paths",
+        "infrastructure/network/local-request"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/simulation/snooker-ball",
+      "source": "src/domain/simulation/snooker-ball.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/physics/physics-api"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/simulation/simulator",
+      "source": "src/domain/simulation/simulator.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/game/game-records",
+        "domain/physics/collision-events",
+        "domain/physics/physics-api",
+        "domain/scene/scene-definitions",
+        "domain/simulation/simulation-events",
+        "domain/simulation/simulation-state",
+        "domain/simulation/snooker-ball",
+        "shared/events/event-emitter"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/circle-arc",
+      "source": "src/domain/geometry/circle-arc.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/geometry/plane", "domain/physics/physics-api"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/polygon",
+      "source": "src/domain/geometry/polygon.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/geometry/plane", "domain/physics/physics-api"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/rules/base-referee",
+      "source": "src/domain/rules/base-referee.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/geometry/polygon", "shared/events/event-emitter"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/rules/snooker-referee",
+      "source": "src/domain/rules/snooker-referee.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/geometry/circle-arc",
+        "domain/geometry/geometry-utils",
+        "domain/physics/physics-api",
+        "domain/rules/base-referee",
+        "domain/rules/foul-codes",
+        "domain/scene/scene-definitions"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/rules/referee-registry",
+      "source": "src/domain/rules/referee-registry.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/rules/snooker-referee"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/templates/about-game",
+      "source": "src/presentation/templates/about-game.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "presentation/templates/ai-difficulty",
+      "source": "src/presentation/templates/ai-difficulty.html",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "template"
+    },
+    {
+      "id": "assets/textures-cue-cue-color",
+      "source": "src/assets/textures/cue/cue-color.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/cue/cue-color.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-cue-cue-gloss",
+      "source": "src/assets/textures/cue/cue-gloss.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/cue/cue-gloss.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/models-alpha-cue",
+      "source": "src/assets/models/alpha-cue.babylon",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/models/alpha-cue.babylon",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-table-ui-atlas",
+      "source": "src/assets/textures/table/table-ui-atlas.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/table-ui-atlas.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-pocket-gloss",
+      "source": "src/assets/textures/table/pocket-gloss.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/pocket-gloss.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/models-interior-design-original-room",
+      "source": "src/assets/models/interior-design-original-room.babylon",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/models/interior-design-original-room.babylon",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-table-mask",
+      "source": "src/assets/textures/table/table-mask.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/table-mask.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-room-interior-design-original-floor-tile",
+      "source": "src/assets/textures/room/interior-design-original-floor-tile.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/room/interior-design-original-floor-tile.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-frame-roughness",
+      "source": "src/assets/textures/table/frame-roughness.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/frame-roughness.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/environments-frame-reflection",
+      "source": "src/assets/environments/frame-reflection.hdr",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/environments/frame-reflection.hdr",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-frame-normal",
+      "source": "src/assets/textures/table/frame-normal.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/frame-normal.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-frame-lightmap",
+      "source": "src/assets/textures/table/frame-lightmap.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/frame-lightmap.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-frame-diffuse",
+      "source": "src/assets/textures/table/frame-diffuse.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/frame-diffuse.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/environments-room-irradiance-secondary",
+      "source": "src/assets/environments/room-irradiance-secondary.hdr",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/environments/room-irradiance-secondary.hdr",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/environments-room-irradiance-primary",
+      "source": "src/assets/environments/room-irradiance-primary.hdr",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/environments/room-irradiance-primary.hdr",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-carpet-tile",
+      "source": "src/assets/textures/table/carpet-tile.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/carpet-tile.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-carpet-overlay",
+      "source": "src/assets/textures/table/carpet-overlay.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/carpet-overlay.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-carpet-normal",
+      "source": "src/assets/textures/table/carpet-normal.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/carpet-normal.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-carpet-lightmap",
+      "source": "src/assets/textures/table/carpet-lightmap.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/carpet-lightmap.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/environments-ball-reflection",
+      "source": "src/assets/environments/ball-reflection.hdr",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/environments/ball-reflection.hdr",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-table-ball-ambient-occlusion",
+      "source": "src/assets/textures/table/ball-ambient-occlusion.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/table/ball-ambient-occlusion.png",
+      "kind": "asset"
+    },
+    {
+      "id": "adapters/rendering/light-probe-material",
+      "source": "src/adapters/rendering/light-probe-material.js",
+      "bundle": "snooker-game",
+      "dependencies": ["adapters/rendering/babylon-engine"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/collision-mesh-decoder",
+      "source": "src/domain/geometry/collision-mesh-decoder.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/mesh-polygon-group",
+      "source": "src/domain/geometry/mesh-polygon-group.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/physics/physics-constants"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/mesh-polygon",
+      "source": "src/domain/geometry/mesh-polygon.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/geometry/mesh-edge",
+      "source": "src/domain/geometry/mesh-edge.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/mesh-body",
+      "source": "src/domain/physics/mesh-body.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/geometry/mesh-edge",
+        "domain/geometry/mesh-polygon",
+        "domain/geometry/mesh-polygon-group",
+        "domain/math/vector-three"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/prediction-solver",
+      "source": "src/domain/physics/prediction-solver.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three", "domain/physics/contact-solver"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/cue-tip-contact",
+      "source": "src/domain/physics/cue-tip-contact.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/matrix-three",
+        "domain/math/vector-three",
+        "domain/physics/ball-surface-contact"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "shared/diagnostics/rolling-average",
+      "source": "src/shared/diagnostics/rolling-average.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/diagnostics/metric-chart",
+      "source": "src/presentation/diagnostics/metric-chart.js",
+      "bundle": "snooker-game",
+      "dependencies": ["shared/diagnostics/rolling-average"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/diagnostics/monitor-view",
+      "source": "src/presentation/diagnostics/monitor-view.js",
+      "bundle": "snooker-game",
+      "dependencies": ["presentation/diagnostics/metric-chart"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "shared/diagnostics/metric-definitions",
+      "source": "src/shared/diagnostics/metric-definitions.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/collision-stack",
+      "source": "src/domain/physics/collision-stack.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/physics/physics-constants"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/ball-contact",
+      "source": "src/domain/physics/ball-contact.js",
+      "bundle": "snooker-game",
+      "dependencies": ["domain/math/vector-three", "domain/physics/contact"],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/collision-island",
+      "source": "src/domain/physics/collision-island.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/island-list",
+      "source": "src/domain/physics/island-list.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/vector-three",
+        "domain/physics/collision-island",
+        "domain/physics/object-pool"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/physics/world-client",
+      "source": "src/domain/physics/world-client.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "domain/math/vector-three",
+        "domain/physics/ball-motion",
+        "domain/physics/contact-solver",
+        "domain/physics/prediction-solver",
+        "domain/physics/world"
+      ],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "domain/scene/initial-layout",
+      "source": "src/domain/scene/initial-layout.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": true,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/scenes/modern-wall-study",
+      "source": "src/presentation/scenes/modern-wall-study.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "adapters/rendering/babylon-engine",
+        "assets/images-interior-design-001-art"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/images-interior-design-001-art",
+      "source": "src/assets/images/interior-design-001-art.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-001-art.png",
+      "kind": "asset"
+    },
+    {
+      "id": "presentation/scenes/interior-design-registry",
+      "source": "src/presentation/scenes/interior-design-registry.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "presentation/scenes/interior-design-original",
+        "presentation/scenes/interior-design-001",
+        "presentation/scenes/interior-design-002",
+        "presentation/scenes/interior-design-003",
+        "assets/images-interior-design-original-preview",
+        "assets/images-interior-design-001-preview",
+        "assets/images-interior-design-002-preview",
+        "assets/images-interior-design-003-preview"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/scenes/interior-design-001",
+      "source": "src/presentation/scenes/interior-design-001.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "adapters/rendering/babylon-engine",
+        "assets/images-interior-design-001-art",
+        "assets/textures-room-interior-design-001-oak",
+        "assets/textures-room-warm-plaster",
+        "assets/textures-room-interior-design-003-linen"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/textures-room-interior-design-001-oak",
+      "source": "src/assets/textures/room/interior-design-001-oak.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/room/interior-design-001-oak.png",
+      "kind": "asset"
+    },
+    {
+      "id": "presentation/scenes/interior-design-builder",
+      "source": "src/presentation/scenes/interior-design-builder.js",
+      "bundle": "snooker-game",
+      "dependencies": ["adapters/rendering/babylon-engine", "assets/textures-room-warm-plaster"],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/scenes/interior-design-002",
+      "source": "src/presentation/scenes/interior-design-002.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "presentation/scenes/interior-design-builder",
+        "assets/images-interior-design-002-art",
+        "assets/textures-room-interior-design-001-oak",
+        "assets/textures-room-interior-design-002-leather",
+        "assets/textures-room-warm-limestone",
+        "assets/textures-room-interior-design-003-linen"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/images-interior-design-002-art",
+      "source": "src/assets/images/interior-design-002-art.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-002-art.png",
+      "kind": "asset"
+    },
+    {
+      "id": "presentation/scenes/interior-design-003",
+      "source": "src/presentation/scenes/interior-design-003.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "presentation/scenes/interior-design-builder",
+        "assets/images-interior-design-003-art",
+        "assets/textures-room-interior-design-003-linen",
+        "assets/textures-room-warm-limestone",
+        "assets/textures-room-warm-terrazzo",
+        "assets/textures-room-interior-design-001-oak"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/images-interior-design-003-art",
+      "source": "src/assets/images/interior-design-003-art.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-003-art.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-room-interior-design-002-leather",
+      "source": "src/assets/textures/room/interior-design-002-leather.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/room/interior-design-002-leather.png",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/textures-room-interior-design-003-linen",
+      "source": "src/assets/textures/room/interior-design-003-linen.png",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/textures/room/interior-design-003-linen.png",
+      "kind": "asset"
+    },
+    {
+      "id": "presentation/scenes/interior-design-original",
+      "source": "src/presentation/scenes/interior-design-original.js",
+      "bundle": "snooker-game",
+      "dependencies": [
+        "adapters/rendering/babylon-engine",
+        "presentation/scenes/interior-design-original-config"
+      ],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "presentation/scenes/interior-design-original-config",
+      "source": "src/presentation/scenes/interior-design-original-config.js",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "application/interior-transition",
+      "source": "src/application/interior-transition.js",
+      "bundle": "bootstrap",
+      "dependencies": ["presentation/typography/page-fonts"],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/images-interior-design-original-preview",
+      "source": "src/assets/images/interior-design-original-preview.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-original-preview.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/images-interior-design-001-preview",
+      "source": "src/assets/images/interior-design-001-preview.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-001-preview.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/images-interior-design-002-preview",
+      "source": "src/assets/images/interior-design-002-preview.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-002-preview.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "assets/images-interior-design-003-preview",
+      "source": "src/assets/images/interior-design-003-preview.jpg",
+      "bundle": "snooker-game",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "asset": "assets/images/interior-design-003-preview.jpg",
+      "kind": "asset"
+    },
+    {
+      "id": "presentation/typography/page-fonts",
+      "source": "src/presentation/typography/page-fonts.js",
+      "bundle": "bootstrap",
+      "dependencies": [],
+      "preservedAlgorithm": false,
+      "kind": "factory"
+    },
+    {
+      "id": "assets/textures-room-warm-plaster",
+      "source": "src/assets/textures/room/warm-plaster.png",
+      "bundle": "snooker-game",
+      "kind": "asset",
+      "asset": "assets/textures/room/warm-plaster.png",
+      "dependencies": []
+    },
+    {
+      "id": "assets/textures-room-warm-limestone",
+      "source": "src/assets/textures/room/warm-limestone.png",
+      "bundle": "snooker-game",
+      "kind": "asset",
+      "asset": "assets/textures/room/warm-limestone.png",
+      "dependencies": []
+    },
+    {
+      "id": "assets/textures-room-warm-terrazzo",
+      "source": "src/assets/textures/room/warm-terrazzo.png",
+      "bundle": "snooker-game",
+      "kind": "asset",
+      "asset": "assets/textures/room/warm-terrazzo.png",
+      "dependencies": []
+    }
+  ],
+  "preservedSources": [
+    "src/adapters/rendering/amd-guard.js",
+    "src/adapters/rendering/dynamic-lighting-material.js",
+    "src/adapters/rendering/light-probe-material.js",
+    "src/application/ai/ai-route-planner.js",
+    "src/application/ai/route-pool.js",
+    "src/application/compose-game.js",
+    "src/application/controllers/base-controller.js",
+    "src/application/controllers/controller-manager.js",
+    "src/application/controllers/match-controller.js",
+    "src/application/controllers/menu-controller.js",
+    "src/application/controllers/view-controller.js",
+    "src/application/controls/ball-in-hand-control.js",
+    "src/application/controls/control-group.js",
+    "src/application/controls/player-turn-control.js",
+    "src/application/controls/replay-control.js",
+    "src/application/controls/stroke-motion.js",
+    "src/application/models/ai-game-model.js",
+    "src/application/models/base-game-model.js",
+    "src/application/models/local-game-model.js",
+    "src/application/models/local-user.js",
+    "src/application/models/snooker-game-model.js",
+    "src/application/replay/ball-path.js",
+    "src/application/replay/ball-track.js",
+    "src/application/replay/base-track.js",
+    "src/application/replay/camera-track.js",
+    "src/application/replay/cue-track.js",
+    "src/application/replay/movie-clip.js",
+    "src/application/replay/track-buffer.js",
+    "src/application/snooker-application.js",
+    "src/application/time/frame-clock.js",
+    "src/domain/game/game-records.js",
+    "src/domain/game/game-state.js",
+    "src/domain/game/player.js",
+    "src/domain/geometry/circle-arc.js",
+    "src/domain/geometry/collision-mesh-decoder.js",
+    "src/domain/geometry/ellipse-two.js",
+    "src/domain/geometry/geometry-utils.js",
+    "src/domain/geometry/line-two.js",
+    "src/domain/geometry/mesh-edge.js",
+    "src/domain/geometry/mesh-polygon-group.js",
+    "src/domain/geometry/mesh-polygon.js",
+    "src/domain/geometry/plane.js",
+    "src/domain/geometry/polygon.js",
+    "src/domain/math/matrix-three.js",
+    "src/domain/math/quaternion.js",
+    "src/domain/math/vector-three.js",
+    "src/domain/math/vector-two.js",
+    "src/domain/physics/ball-body.js",
+    "src/domain/physics/ball-contact.js",
+    "src/domain/physics/ball-motion.js",
+    "src/domain/physics/ball-surface-contact.js",
+    "src/domain/physics/collision-events.js",
+    "src/domain/physics/collision-island.js",
+    "src/domain/physics/collision-stack.js",
+    "src/domain/physics/contact-solver.js",
+    "src/domain/physics/contact.js",
+    "src/domain/physics/cue-tip-contact.js",
+    "src/domain/physics/island-list.js",
+    "src/domain/physics/mesh-body.js",
+    "src/domain/physics/object-pool.js",
+    "src/domain/physics/physics-api.js",
+    "src/domain/physics/physics-constants.js",
+    "src/domain/physics/prediction-solver.js",
+    "src/domain/physics/rigid-body.js",
+    "src/domain/physics/world-client.js",
+    "src/domain/physics/world.js",
+    "src/domain/rules/base-referee.js",
+    "src/domain/rules/foul-codes.js",
+    "src/domain/rules/referee-registry.js",
+    "src/domain/rules/snooker-referee.js",
+    "src/domain/scene/initial-layout.js",
+    "src/domain/scene/scene-definitions.js",
+    "src/domain/simulation/simulation-events.js",
+    "src/domain/simulation/simulation-state.js",
+    "src/domain/simulation/simulator.js",
+    "src/domain/simulation/snooker-ball.js",
+    "src/infrastructure/assets/asset-queue.js",
+    "src/infrastructure/assets/resource-paths.js",
+    "src/infrastructure/network/local-request.js",
+    "src/presentation/animation/angular-controller.js",
+    "src/presentation/animation/linear-controller.js",
+    "src/presentation/animation/number-controller.js",
+    "src/presentation/animation/property-tween.js",
+    "src/presentation/animation/tween-group.js",
+    "src/presentation/animation/tween.js",
+    "src/presentation/animation/value-tween.js",
+    "src/presentation/camera/aim-camera-controller.js",
+    "src/presentation/camera/heading-controller.js",
+    "src/presentation/camera/look-controller.js",
+    "src/presentation/camera/orbit-controller.js",
+    "src/presentation/camera/orbit-track.js",
+    "src/presentation/camera/path-follower.js",
+    "src/presentation/camera/pocket-camera.js",
+    "src/presentation/camera/replay-camera-controller.js",
+    "src/presentation/camera/stance-controller.js",
+    "src/presentation/input/ai-person-controller.js",
+    "src/presentation/input/cue-contact-controller.js",
+    "src/presentation/input/cue-motion-controller.js",
+    "src/presentation/input/cue-transform.js",
+    "src/presentation/input/input-state.js",
+    "src/presentation/input/passive-person-controller.js",
+    "src/presentation/input/person-controller.js",
+    "src/presentation/input/player-control.js",
+    "src/presentation/rendering/aim-guide.js",
+    "src/presentation/rendering/aim-segment.js",
+    "src/presentation/rendering/cue-mesh-manager.js",
+    "src/presentation/rendering/game-view.js",
+    "src/presentation/rendering/oriented-ui-plane.js",
+    "src/presentation/rendering/plane-batch.js",
+    "src/presentation/rendering/power-view.js",
+    "src/presentation/rendering/table-track.js",
+    "src/presentation/rendering/ui-plane.js",
+    "src/presentation/rendering/ui-shader-material.js",
+    "src/presentation/ui/action-dialog.js",
+    "src/presentation/ui/ai-difficulty-dialog.js",
+    "src/presentation/ui/base-dialog.js",
+    "src/presentation/ui/confirmation-dialog.js",
+    "src/presentation/ui/content-panel.js",
+    "src/presentation/ui/controls-dialog.js",
+    "src/presentation/ui/dialog-manager.js",
+    "src/presentation/ui/match-result-dialog.js",
+    "src/presentation/ui/menu-item.js",
+    "src/presentation/ui/message-dialog.js",
+    "src/presentation/ui/pause-dialog.js",
+    "src/presentation/ui/practice-result-dialog.js",
+    "src/presentation/ui/replay-control-panel.js",
+    "src/presentation/ui/scoreboard.js",
+    "src/presentation/ui/shortcut-bar.js",
+    "src/presentation/ui/side-menu.js",
+    "src/presentation/ui/toast-dialog.js",
+    "src/presentation/ui/toolbar.js",
+    "src/presentation/ui/ui-component.js",
+    "src/presentation/diagnostics/metric-chart.js",
+    "src/shared/diagnostics/metric-definitions.js",
+    "src/presentation/diagnostics/monitor-view.js",
+    "src/shared/diagnostics/rolling-average.js",
+    "src/shared/events/event-emitter.js"
+  ]
+}

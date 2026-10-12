@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09T14:47:58.051Z",
+  "scope": "Cue definitions, URL model cache, material factory and per-composition state extraction",
+  "passed": true,
+  "sourceHashes": {
+    "src/application/compose-game.js": "53fc9f5f19cc49f18517a43ceaebc1a71d309a847cba0b9d61b57c43cf883831",
+    "src/application/composition/compose-cues.js": "9cdbe838e2ba3df74c93d29a82877157fc404b57b09b3697ebe8afcb79246968",
+    "src/presentation/rendering/cue-definitions.js": "f3e57b465c22b693209972d4ee774f70708f253811b46db40e8ac5a1439acccd",
+    "src/presentation/rendering/cue-material.js": "ee3686d72222858808ca69f10edb5f2c93c1ef044cfeb61862119fe72a40f50e",
+    "src/infrastructure/assets/cue-asset-cache.js": "0e80921e285087b62773c71cdfcd8dc05de070569334a7b5169bdb653da456d9",
+    "src/presentation/rendering/cue-mesh-manager.js": "8549c072af598ccaf20c62e5b63226e525fc0d04567020dc9b0e6239f2eed681",
+    "src/adapters/rendering/dynamic-lighting-material.js": "b02c981c75c85692450b442f3f16fdd900cd07b8714cd6ebd547b9611fa7ee12",
+    "src/assets/models/alpha-cue.babylon": "c2d077b236c0833bf75495c8703c8fd91c8532375141f8bfb1559d06f0e65255",
+    "src/runtime/runtime-catalog.json": "63bcdaf584eb34c8daefa277cda27e56200916b5eaa6891488dab3a4d5e5d1c3"
+  },
+  "manifestHashes": {
+    "baselines/pcol/manifests/baseline.json": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+    "build/development/build-manifest.json": "7393bd817f6dc8c1316f699b4ed2404227495b93b1a5c5e2c841248081bcc246",
+    "dist/build-manifest.json": "7393bd817f6dc8c1316f699b4ed2404227495b93b1a5c5e2c841248081bcc246"
+  },
+  "implementation": {
+    "composition": "src/application/composition/compose-cues.js",
+    "definitions": "src/presentation/rendering/cue-definitions.js",
+    "material": "src/presentation/rendering/cue-material.js",
+    "cache": "src/infrastructure/assets/cue-asset-cache.js",
+    "sharedOwners": [
+      "one definition family and URL cache per game composition",
+      "one default-file prefetch guard and clone counter per composition",
+      "scene meshes, materials and readiness timers per manager"
+    ],
+    "preservedContracts": [
+      "constructor capture and model/glossy/color module lookup order",
+      "four maximum request attempts and retained terminal errors",
+      "nCachedFiles counts responses, including parse errors",
+      "pending lookup and synchronous-response first lookup return null",
+      "source mesh/spec identity and prefixed mesh IDs",
+      "cross-manager cache reuse and independent composition state",
+      "material parameter, texture order, LOD and freeze behavior",
+      "original migrated cue-mesh-manager algorithm and gameplay"
+    ]
+  },
+  "checks": {
+    "checkProjectBrowser": {
+      "command": "node scripts/check-project.mjs --browser",
+      "passed": true,
+      "unitIntegrationTestsAtExecution": 83,
+      "browsers": [
+        "chrome",
+        "edge"
+      ],
+      "developmentAndProductionBuildsVerified": true
+    },
+    "latestUnitIntegration": {
+      "command": "node scripts/test-project.mjs",
+      "passed": true,
+      "tests": 87
+    },
+    "characterization": {
+      "beforeExtractionTests": 8,
+      "beforeExtractionPassed": 8,
+      "cueSpecificTestsAfterExtraction": 10,
+      "cueSpecificPassed": 10,
+      "realEngineIntegration": "Babylon 3.2 NullEngine with real alpha-cue model and compiled composition"
+    },
+    "static": {
+      "lint": true,
+      "format": true,
+      "fileNaming": true,
+      "localDocumentationLinks": {
+        "checked": 143,
+        "missing": 0
+      }
+    },
+    "algorithmStructure": {
+      "path": "reports/validation/algorithm-structure.json",
+      "passed": 137,
+      "failed": 0
+    },
+    "sourceStandalone": {
+      "command": "node tests/e2e/source-standalone.test.mjs",
+      "passed": true,
+      "browsers": 2,
+      "designsPerBrowser": 4
+    },
+    "originalInterior": {
+      "command": "node tests/e2e/interior-design-original.test.mjs",
+      "passed": true,
+      "browsers": 2,
+      "variantsPerBrowser": 2,
+      "viewsPerVariant": 5,
+      "exactPixels": true
+    },
+    "interiorSuites": {
+      "command": "node scripts/test-interior.mjs",
+      "passed": true,
+      "suites": [
+        "interior-loading-continuity",
+        "interior-ui",
+        "interior-transition",
+        "interior-selection",
+        "startup-recovery"
+      ],
+      "browsers": 2,
+      "targets": [
+        "source",
+        "development",
+        "production"
+      ]
+    },
+    "contextRestorationSmoke": {
+      "command": "node tests/e2e/context-restoration.test.mjs --smoke",
+      "passed": true,
+      "scenarios": 1,
+      "recoveries": 4,
+      "changedPixelChannels": 0,
+      "actualDelayedTextureRequests": 1,
+      "automaticIdleRedraw": true
+    },
+    "continuousPlay": {
+      "command": "node tests/e2e/continuous-play.test.mjs",
+      "path": "artifacts/testing/continuous-play/report.json",
+      "sha256": "b2aa0fd5f2e4f7e3469aa130385e28ebf9e33e0244be74dee90e4c546167279d",
+      "passed": true,
+      "options": {
+        "cycles": 3,
+        "shots": 6
+      },
+      "started": "2026-10-09T14:19:44.292Z",
+      "finished": "2026-10-09T14:47:42.968Z",
+      "manifestDifferences": [],
+      "browsers": [
+        {
+          "name": "chrome",
+          "version": "154.0.8037.98",
+          "passed": true,
+          "routes": [
+            {
+              "route": "baseline",
+              "passed": true,
+              "elapsedSeconds": 389.915,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "observations": {
+                "external": 0,
+                "failedResponses": 0,
+                "pageErrors": 0,
+                "requestFailures": 0,
+                "crashes": 0
+              }
+            },
+            {
+              "route": "runtime",
+              "passed": true,
+              "elapsedSeconds": 465.917,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 8,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 5,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "observations": {
+                "external": 0,
+                "failedResponses": 0,
+                "pageErrors": 0,
+                "requestFailures": 0,
+                "crashes": 0
+              }
+            }
+          ]
+        },
+        {
+          "name": "edge",
+          "version": "154.0.4258.62",
+          "passed": true,
+          "routes": [
+            {
+              "route": "baseline",
+              "passed": true,
+              "elapsedSeconds": 418.865,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 7,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "observations": {
+                "external": 0,
+                "failedResponses": 0,
+                "pageErrors": 0,
+                "requestFailures": 0,
+                "crashes": 0
+              }
+            },
+            {
+              "route": "runtime",
+              "passed": true,
+              "elapsedSeconds": 394.303,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 5,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "observations": {
+                "external": 0,
+                "failedResponses": 0,
+                "pageErrors": 0,
+                "requestFailures": 0,
+                "crashes": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "validationHarnessAdjustment": {
+    "file": "tests/helpers/human-turn-readiness.mjs",
+    "reason": "AI scoring breaks can exceed the old total 180-second human-return wait while judged rounds continue progressing.",
+    "stallTimeoutMilliseconds": 180000,
+    "maximumJudgedRounds": 64,
+    "progressSignal": "Only an advance of the actual model nRounds resets the observation deadline.",
+    "unitTests": 4,
+    "gameClockRngInputAiUnchanged": true
+  },
+  "evidence": [
+    {
+      "path": "artifacts/testing/regression/report.json",
+      "date": "2026-10-09",
+      "sha256": "967e55be27e3ca4c468aff93c10f553af85463c3210b04dd9f0b4d8997ca00c1",
+      "passed": true
+    },
+    {
+      "path": "artifacts/testing/interior-loading-continuity/report.json",
+      "date": "2026-10-09T13:59:17.557Z",
+      "sha256": "a5e8d9d6e6f4720518dc399693b3f308d3fa005e6758abf40094c78690b39abd",
+      "passed": true
+    },
+    {
+      "path": "artifacts/testing/source-runtime/regression/report.json",
+      "date": "2026-10-04",
+      "sha256": "730510c9b1d01015286ca49da56a92e880bba67a7428dbb978d270fcfb7c4a27",
+      "passed": true
+    },
+    {
+      "path": "artifacts/testing/source-runtime/standalone/report.json",
+      "date": "2026-10-09T14:16:17.535Z",
+      "sha256": "57604e8d7b893967c2fd74b517f68374e106065f2332098130c6390155bf4e75",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/interior-design-original.json",
+      "date": "2026-10-09T13:57:44.154Z",
+      "sha256": "0bf598fd05e4815eadc7b1b56ef07db5967d0828e891a806ce30b562fe6019c8",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/interior-ui.json",
+      "date": "2026-10-09T14:05:06.274Z",
+      "sha256": "027c57e0e0abc49754af553af351cf808aca03bc7095c8939ac683c3a05b257b",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/interior-font-unification.json",
+      "date": "2026-10-09T14:07:58.897Z",
+      "sha256": "ebe0f1382cbb971fa17c5046d7e48696e7346c9244a38d4a2d2dbac692237fbb",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/interior-selection.json",
+      "date": "2026-10-09T14:10:56.397Z",
+      "sha256": "0c90165a2169d388c4e1cd4898622f3c5cf789333c3ba3fa0f92c2cd129c15b0",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/startup-loading-recovery.json",
+      "date": "2026-10-09T14:23:32.537Z",
+      "sha256": "09bc562826cc22e98bea2fba8a585859d03aadee94ba2e055c9c00632ee782ee",
+      "passed": true
+    },
+    {
+      "path": "reports/validation/context-restoration-smoke.json",
+      "date": "2026-10-09T14:26:28.954Z",
+      "sha256": "baf1e9898bf63a453ec5fda696e859274f135f17e05eb56d9f9ccae7209abad1",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "NullEngine integration verifies data and lifecycle, not final GPU rendering.",
+    "Browser checks use headless software WebGL and do not establish hardware performance.",
+    "Continuous play covers bounded sessions, not full matches or unattended hours.",
+    "The previous complete 24-scenario WebGL recovery matrix was not rerun in this batch; only the current smoke result is included."
+  ]
+}

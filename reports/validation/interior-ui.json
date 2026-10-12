@@ -1,0 +1,2611 @@
+{
+  "date": "2026-10-11T15:40:12.000Z",
+  "scope": "current-interior-ui-layout-and-menu-lifecycle",
+  "targets": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1014,
+            "height": 704
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "24px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "32px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 480,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "32px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 344,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 400
+          },
+          "menu": {
+            "fits": true,
+            "brandAbsent": true,
+            "labels": [
+              {
+                "text": "SINGLE PLAY",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "One more thing...",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "PRACTICE",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "INTERIOR DESIGN",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              },
+              {
+                "text": "ABOUT",
+                "size": "22px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "clearOfIcons": true
+              }
+            ]
+          },
+          "drawer": {
+            "title": {
+              "size": "28px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "clearOfClose": true,
+            "noHorizontalOverflow": true,
+            "footerFits": true,
+            "back": {
+              "size": "20px",
+              "weight": "700",
+              "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+              "singleLine": true,
+              "fits": true
+            },
+            "names": [
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "20px",
+                "weight": "700",
+                "family": "\"Saira ExtraCondensed Bold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ],
+            "descriptions": [
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": false,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              },
+              {
+                "size": "14px",
+                "weight": "600",
+                "family": "\"Saira ExtraCondensed SemiBold\", \"Microsoft YaHei\", sans-serif",
+                "singleLine": true,
+                "fits": true
+              }
+            ]
+          },
+          "about": {
+            "fits": true,
+            "width": 304,
+            "textFits": true,
+            "horizontalOverflow": false,
+            "scrollable": true,
+            "footerFits": true,
+            "titleSize": "28px",
+            "clearOfClose": true
+          },
+          "currentAndBackPassed": true
+        }
+      ],
+      "errors": [],
+      "reducedMotionPassed": true
+    }
+  ],
+  "passed": true
+}

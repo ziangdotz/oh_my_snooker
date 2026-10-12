@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-11T15:55:26.764Z",
+  "before": {
+    "delayedBootstrap": {
+      "loadingCards": 0,
+      "bodyBackground": "rgba(0, 0, 0, 0)",
+      "loadingSpinnerVisible": false
+    },
+    "launchException": {
+      "loadingCards": 0,
+      "introPresent": false,
+      "bodyText": ""
+    }
+  },
+  "targets": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    },
+    {
+      "browser": "chrome",
+      "target": "development",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    },
+    {
+      "browser": "chrome",
+      "target": "production",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    },
+    {
+      "browser": "edge",
+      "target": "development",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    },
+    {
+      "browser": "edge",
+      "target": "production",
+      "passed": true,
+      "delayedBootstrap": {
+        "readableLoadingBeforeJavaScript": true
+      },
+      "coldStartupExceptionAndRetry": true,
+      "coldModelFailureAndBack": true,
+      "roomSelectionAfterRecovery": true,
+      "collisionParseFailureAndRetry": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-11T13:13:34.682Z",
+  "method": "Call actual timed OrbitController and LinearController factories with identical inputs and 30/60/120/144 update counts per second. Isolated circular track removes geometric speed modulation; no global clocks or runtime code altered. This is source characterization, not a browser refresh-rate measurement.",
+  "results": [
+    {
+      "hz": 30,
+      "heldSeconds": 2,
+      "circularTrackRadians": 0.6655101014690293,
+      "degrees": 38.13092003749855,
+      "releaseFrames": 11,
+      "releaseMilliseconds": 366.6666666666667,
+      "lookAtSettleFrames": 27,
+      "lookAtSettleMilliseconds": 900
+    },
+    {
+      "hz": 60,
+      "heldSeconds": 2,
+      "circularTrackRadians": 0.6655101014690293,
+      "degrees": 38.13092003749855,
+      "releaseFrames": 23,
+      "releaseMilliseconds": 383.3333333333333,
+      "lookAtSettleFrames": 52,
+      "lookAtSettleMilliseconds": 866.6666666666666
+    },
+    {
+      "hz": 120,
+      "heldSeconds": 2,
+      "circularTrackRadians": 0.6655101014690293,
+      "degrees": 38.13092003749855,
+      "releaseFrames": 47,
+      "releaseMilliseconds": 391.6666666666667,
+      "lookAtSettleFrames": 103,
+      "lookAtSettleMilliseconds": 858.3333333333334
+    },
+    {
+      "hz": 144,
+      "heldSeconds": 2,
+      "circularTrackRadians": 0.6655101014690297,
+      "degrees": 38.13092003749857,
+      "releaseFrames": 56,
+      "releaseMilliseconds": 388.8888888888889,
+      "lookAtSettleFrames": 124,
+      "lookAtSettleMilliseconds": 861.1111111111111
+    }
+  ]
+}

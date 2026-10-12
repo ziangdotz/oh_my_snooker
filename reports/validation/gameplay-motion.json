@@ -1,0 +1,4601 @@
+{
+  "date": "2026-10-11T14:39:38.167Z",
+  "passed": true,
+  "authorization": "User requested implementation of all previously proposed gameplay smoothness optimizations.",
+  "implementation": {
+    "cameraElapsedSeconds": true,
+    "referenceRate": 60,
+    "renderDprRange": [
+      0.5,
+      1.5
+    ],
+    "aimTransitionSeconds": 0.8,
+    "crouchSeconds": 0.6,
+    "strokePreparationFactor": 0.65,
+    "immediateFirstGuideWithModalCommit": true,
+    "originalSteadyOrbitSpeed": true,
+    "physicsRulesContactSpeedUnchanged": true,
+    "staticLightsMaterialsShadowsRetained": true
+  },
+  "sourceHashes": {
+    "src/presentation/camera/timed-orbit-controller.js": "265c0f225d0347cf3a9b72232a27044245ef46c8da0582fe223aab888676b518",
+    "src/presentation/camera/timed-linear-controller.js": "b4bb4fcd87ca83037dddccfd6d4fd34dc49c237245d9d2351fcaa38decb5e597",
+    "src/presentation/camera/timed-look-controller.js": "66ebd5d4bcc313be2a537cb227f264683e28625a2f3e3db18901881c80eed296",
+    "src/presentation/camera/timed-aim-camera-controller.js": "19f7036c4c081152faa797847f6ef6513efd8f467ca2cf340dffe197149c5e49",
+    "src/presentation/input/smooth-person-controller.js": "507019e91948256f1fcc16d12c602d767f6e89973087e5f2dfa8996e933c4fd9",
+    "src/application/controls/quick-stroke-motion.js": "9bc380112fc9a6435df49bf42ca66a54f8164b06437ab84c6eae1b88d24ee233",
+    "src/application/controls/immediate-guide-control.js": "0aae0fd0a51ef74fd836185fa02b429b3e95ea01e552471a6c14b8bcb406617f",
+    "src/presentation/rendering/render-resolution-policy.js": "53d9afbfc677b74daff7f43d7aa4db67ef788419e2f8925be4bfe47bd889d5c9",
+    "src/application/smooth-snooker-application.js": "32e31db83ed655fec66886d3c81a80b71924bfd88f26a51c481cb55a02803751",
+    "src/application/compose-game.js": "27f2ef40c0fd4c114eeeff3794b8d76e03b1bc486a3bbb2b0a9b6475aaf6122d",
+    "src/application/composition/compose-orbit-camera.js": "1d7daf95e2148d705f6787d8f823276513596f5065ba243b6cb5be66c19dcb2a",
+    "src/application/composition/compose-aim-camera.js": "8c2d8bc45524717b9f050c549ac92e0c5c0d5bffc4af2e2f73b6850c70fd5189",
+    "src/application/composition/compose-person.js": "f5afcd64e51a0e61208e9c87bba24c9c0fd806c8e5e4e3fbfe02f770a30b9480",
+    "src/application/composition/compose-player-turn.js": "f29e0910ae06beaf6e17f7c6546d32b38acda234868b97bee17931a14682e40b"
+  },
+  "originalSourceHashesUnchanged": [
+    {
+      "file": "src/presentation/camera/orbit-controller.js",
+      "before": "1f257d10b11e69c77cec0dd2767a2daa37c58786bba747e5467b91d65594ec33",
+      "after": "1f257d10b11e69c77cec0dd2767a2daa37c58786bba747e5467b91d65594ec33"
+    },
+    {
+      "file": "src/presentation/camera/aim-camera-controller.js",
+      "before": "b42b08aa184d3a33dec5fc082c58009ebebaf888b79c926322ab2f6530cc9205",
+      "after": "b42b08aa184d3a33dec5fc082c58009ebebaf888b79c926322ab2f6530cc9205"
+    },
+    {
+      "file": "src/presentation/camera/look-controller.js",
+      "before": "577ded77d7e5a0019cddf998fe87b73e1fe42ee6be98c267d90e3a00fcb3d273",
+      "after": "577ded77d7e5a0019cddf998fe87b73e1fe42ee6be98c267d90e3a00fcb3d273"
+    },
+    {
+      "file": "src/presentation/input/person-controller.js",
+      "before": "77efe3f19a6e553689c5d032b04e585e80068458968d196d7feefb98957e1b1c",
+      "after": "77efe3f19a6e553689c5d032b04e585e80068458968d196d7feefb98957e1b1c"
+    },
+    {
+      "file": "src/presentation/animation/angular-controller.js",
+      "before": "3bf3811ae862863ba018a532b70d32e6ce3a90f99f5a464124d15c0e1fe1e570",
+      "after": "3bf3811ae862863ba018a532b70d32e6ce3a90f99f5a464124d15c0e1fe1e570"
+    },
+    {
+      "file": "src/presentation/animation/linear-controller.js",
+      "before": "1c7182a1e12ccf00e38962fbe64a12ab0e1b2e45da256db0d56627b5c1d4161c",
+      "after": "1c7182a1e12ccf00e38962fbe64a12ab0e1b2e45da256db0d56627b5c1d4161c"
+    },
+    {
+      "file": "src/application/controls/player-turn-control.js",
+      "before": "3d712b2f82c5e1ee277f3253a0351f0202f21f3752c6748bb132b59481b5e985",
+      "after": "3d712b2f82c5e1ee277f3253a0351f0202f21f3752c6748bb132b59481b5e985"
+    },
+    {
+      "file": "src/application/controls/stroke-motion.js",
+      "before": "2050e75164e75e43b2d58efb4ecb797b6bdc65f172edfa194f1de9d6f4105694",
+      "after": "2050e75164e75e43b2d58efb4ecb797b6bdc65f172edfa194f1de9d6f4105694"
+    },
+    {
+      "file": "src/application/snooker-application.js",
+      "before": "90e35ba43ff1f5179dff7b6e3fdc75692def2979042925fb0fe495214985f9bb",
+      "after": "90e35ba43ff1f5179dff7b6e3fdc75692def2979042925fb0fe495214985f9bb"
+    },
+    {
+      "file": "src/presentation/scenes/interior-surface.js",
+      "before": "16eb3d373fb78c94b931fe4af747bd7fa53f3313bea77be507207214651aebf8",
+      "after": "16eb3d373fb78c94b931fe4af747bd7fa53f3313bea77be507207214651aebf8"
+    },
+    {
+      "file": "src/presentation/scenes/interior-lighting.js",
+      "before": "b7716a564cb70a69af6d1e47108b5e83836f0ff74cd0566ffaf680e6e4f577c5",
+      "after": "b7716a564cb70a69af6d1e47108b5e83836f0ff74cd0566ffaf680e6e4f577c5"
+    }
+  ],
+  "frozenManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
+  "buildManifests": {
+    "development": "6d5d68ed053ea7c02e2a17d2516acfa1c421f49181177a01c1f3dd6db5ce1433",
+    "production": "6d5d68ed053ea7c02e2a17d2516acfa1c421f49181177a01c1f3dd6db5ce1433"
+  },
+  "characterization": {
+    "date": "2026-10-11T13:13:34.682Z",
+    "method": "Call actual timed OrbitController and LinearController factories with identical inputs and 30/60/120/144 update counts per second. Isolated circular track removes geometric speed modulation; no global clocks or runtime code altered. This is source characterization, not a browser refresh-rate measurement.",
+    "results": [
+      {
+        "hz": 30,
+        "heldSeconds": 2,
+        "circularTrackRadians": 0.6655101014690293,
+        "degrees": 38.13092003749855,
+        "releaseFrames": 11,
+        "releaseMilliseconds": 366.6666666666667,
+        "lookAtSettleFrames": 27,
+        "lookAtSettleMilliseconds": 900
+      },
+      {
+        "hz": 60,
+        "heldSeconds": 2,
+        "circularTrackRadians": 0.6655101014690293,
+        "degrees": 38.13092003749855,
+        "releaseFrames": 23,
+        "releaseMilliseconds": 383.3333333333333,
+        "lookAtSettleFrames": 52,
+        "lookAtSettleMilliseconds": 866.6666666666666
+      },
+      {
+        "hz": 120,
+        "heldSeconds": 2,
+        "circularTrackRadians": 0.6655101014690293,
+        "degrees": 38.13092003749855,
+        "releaseFrames": 47,
+        "releaseMilliseconds": 391.6666666666667,
+        "lookAtSettleFrames": 103,
+        "lookAtSettleMilliseconds": 858.3333333333334
+      },
+      {
+        "hz": 144,
+        "heldSeconds": 2,
+        "circularTrackRadians": 0.6655101014690297,
+        "degrees": 38.13092003749857,
+        "releaseFrames": 56,
+        "releaseMilliseconds": 388.8888888888889,
+        "lookAtSettleFrames": 124,
+        "lookAtSettleMilliseconds": 861.1111111111111
+      }
+    ]
+  },
+  "hardwareMeasurement": {
+    "method": "Optimized source game, actual mouse/keyboard, Chrome/Edge hardware WebGL, 1440x900 DPR2, GPU timer queries disabled. Real aim direction changes and Alt-drag spin tip changes supplement walking and shooting. No clock, RAF or WebGL replacement. Input latency is event-to-observed-render, not display latency.",
+    "before": [
+      {
+        "browser": "chrome",
+        "design": "interior-design-original",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2880,
+            1800
+          ],
+          "hardwareScaling": 0.5,
+          "triangles": 53476,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 0
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.7,
+              "max": 18.9
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.1,
+              "p95": 2.3,
+              "p99": 2.5,
+              "max": 3.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 21.699999928474426
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.1,
+              "max": 17.2
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 1.1,
+              "p95": 1.7,
+              "p99": 1.9,
+              "max": 1.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.600000023841858
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.6,
+              "p99": 18.5,
+              "max": 18.7
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1,
+              "p95": 2,
+              "p99": 2.4,
+              "max": 2.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 23.100000023841858
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.2,
+              "max": 18
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 0.9,
+              "p95": 1.7,
+              "p99": 1.7,
+              "max": 2.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.300000071525574
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 139,
+              "p50": 16.6,
+              "p95": 17.8,
+              "p99": 18.6,
+              "max": 18.9
+            },
+            "submissionMs": {
+              "samples": 140,
+              "p50": 0.9,
+              "p95": 2,
+              "p99": 2.5,
+              "max": 3.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 77.60000002384186
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.9,
+              "max": 150.1
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1,
+              "p95": 2.1,
+              "p99": 2.3,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 9.600000023841858
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.6,
+              "p95": 17.8,
+              "p99": 18.5,
+              "max": 21
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 0.9,
+              "p95": 1.7,
+              "p99": 1.8,
+              "max": 1.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.200000047683716
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 18.4,
+              "max": 18.5
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 0.9,
+              "p95": 1.9,
+              "p99": 2.3,
+              "max": 2.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 74.39999997615814
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.6,
+              "p95": 18,
+              "p99": 18.8,
+              "max": 22.9
+            },
+            "submissionMs": {
+              "samples": 212,
+              "p50": 0.7,
+              "p95": 1.4,
+              "p99": 1.6,
+              "max": 2.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 38.09999990463257
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.5,
+              "p95": 18.6,
+              "p99": 19.1,
+              "max": 19.5
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 0.8,
+              "p95": 1.7,
+              "p99": 2,
+              "max": 2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 97
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 417,
+              "p50": 16.7,
+              "p95": 17.6,
+              "p99": 18.3,
+              "max": 20.8
+            },
+            "submissionMs": {
+              "samples": 418,
+              "p50": 0.8,
+              "p95": 1.7,
+              "p99": 1.9,
+              "max": 6.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 282,
+              "p50": 16.7,
+              "p95": 17.5,
+              "p99": 18.3,
+              "max": 20.8
+            },
+            "firstBallFromSpaceMs": 597.5,
+            "longTasks": 0,
+            "firstPoseChangeMs": 619.6999999284744
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-001",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2880,
+            1800
+          ],
+          "hardwareScaling": 0.5,
+          "triangles": 90824,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 31
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 190,
+              "p50": 17.9,
+              "p95": 23.4,
+              "p99": 35,
+              "max": 42.5
+            },
+            "submissionMs": {
+              "samples": 190,
+              "p50": 1.8,
+              "p95": 2.5,
+              "p99": 3,
+              "max": 4.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 23.199999928474426
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 25,
+              "p50": 16.8,
+              "p95": 21.3,
+              "p99": 27.6,
+              "max": 31.7
+            },
+            "submissionMs": {
+              "samples": 26,
+              "p50": 1.7,
+              "p95": 2.2,
+              "p99": 2.2,
+              "max": 2.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.399999976158142
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 170,
+              "p50": 20.6,
+              "p95": 26.8,
+              "p99": 29.9,
+              "max": 31.8
+            },
+            "submissionMs": {
+              "samples": 170,
+              "p50": 1.7,
+              "p95": 2.8,
+              "p99": 3.7,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 25.199999928474426
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 21.2,
+              "p95": 25,
+              "p99": 25.1,
+              "max": 30.6
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 1.9,
+              "p95": 2.6,
+              "p99": 3,
+              "max": 3.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 11.799999952316284
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 130,
+              "p50": 18.8,
+              "p95": 23.8,
+              "p99": 25.5,
+              "max": 39.3
+            },
+            "submissionMs": {
+              "samples": 131,
+              "p50": 1.7,
+              "p95": 2.5,
+              "p99": 2.8,
+              "max": 2.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 85.80000007152557
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 70,
+              "p50": 16.7,
+              "p95": 20.3,
+              "p99": 25.6,
+              "max": 127.5
+            },
+            "submissionMs": {
+              "samples": 71,
+              "p50": 1.9,
+              "p95": 2.6,
+              "p99": 3.4,
+              "max": 3.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 18.2,
+              "p99": 18.7,
+              "max": 18.8
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.9,
+              "p95": 2.7,
+              "p99": 3.4,
+              "max": 3.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 17.799999952316284
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.6,
+              "max": 17.7
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 1.7,
+              "p95": 2.6,
+              "p99": 3.4,
+              "max": 3.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 87
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 202,
+              "p50": 17.3,
+              "p95": 22.1,
+              "p99": 25,
+              "max": 27.1
+            },
+            "submissionMs": {
+              "samples": 203,
+              "p50": 1.2,
+              "p95": 1.8,
+              "p99": 2.4,
+              "max": 4.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 34.700000047683716
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.7,
+              "p95": 18.2,
+              "p99": 18.4,
+              "max": 18.5
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 1.8,
+              "p95": 2.8,
+              "p99": 3,
+              "max": 3.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 80.69999992847443
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 318,
+              "p50": 23.9,
+              "p95": 30.3,
+              "p99": 31.4,
+              "max": 43.6
+            },
+            "submissionMs": {
+              "samples": 319,
+              "p50": 1.4,
+              "p95": 2.3,
+              "p99": 2.9,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 283,
+              "p50": 24.3,
+              "p95": 30.3,
+              "p99": 31.7,
+              "max": 43.6
+            },
+            "firstBallFromSpaceMs": 600.4,
+            "longTasks": 0,
+            "firstPoseChangeMs": 602.2999999523163
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-002",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2880,
+            1800
+          ],
+          "hardwareScaling": 0.5,
+          "triangles": 158992,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 32
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 191,
+              "p50": 17.3,
+              "p95": 26.4,
+              "p99": 30.3,
+              "max": 32.7
+            },
+            "submissionMs": {
+              "samples": 191,
+              "p50": 1.8,
+              "p95": 2.8,
+              "p99": 3.3,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 19.699999928474426
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 18.3,
+              "p95": 22.2,
+              "p99": 22.2,
+              "max": 23.7
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 1.8,
+              "p95": 2.4,
+              "p99": 2.5,
+              "max": 2.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 11.899999976158142
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 166,
+              "p50": 20.6,
+              "p95": 28.2,
+              "p99": 40.2,
+              "max": 49.3
+            },
+            "submissionMs": {
+              "samples": 166,
+              "p50": 1.7,
+              "p95": 2.6,
+              "p99": 3.3,
+              "max": 4.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 26.299999952316284
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 27,
+              "p50": 19.1,
+              "p95": 21.4,
+              "p99": 21.9,
+              "max": 22
+            },
+            "submissionMs": {
+              "samples": 28,
+              "p50": 1.6,
+              "p95": 2.4,
+              "p99": 2.5,
+              "max": 3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 12.299999952316284
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 135,
+              "p50": 16.9,
+              "p95": 22.9,
+              "p99": 29.2,
+              "max": 31.8
+            },
+            "submissionMs": {
+              "samples": 136,
+              "p50": 1.8,
+              "p95": 3,
+              "p99": 3.5,
+              "max": 5.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 75.5
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 19.8,
+              "p99": 24,
+              "max": 127.3
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 2,
+              "p95": 2.9,
+              "p99": 3.3,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.199999928474426
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 72,
+              "p50": 16.7,
+              "p95": 17.8,
+              "p99": 18.4,
+              "max": 19.3
+            },
+            "submissionMs": {
+              "samples": 73,
+              "p50": 1.9,
+              "p95": 2.6,
+              "p99": 3.3,
+              "max": 4.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.899999976158142
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 87,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.9,
+              "max": 18
+            },
+            "submissionMs": {
+              "samples": 88,
+              "p50": 1.8,
+              "p95": 2.4,
+              "p99": 2.9,
+              "max": 3.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 73.89999997615814
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 207,
+              "p50": 17,
+              "p95": 24.1,
+              "p99": 25.9,
+              "max": 27.8
+            },
+            "submissionMs": {
+              "samples": 208,
+              "p50": 1.3,
+              "p95": 2.2,
+              "p99": 2.7,
+              "max": 5.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 36.800000071525574
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 81,
+              "p50": 19.7,
+              "p95": 25,
+              "p99": 25.8,
+              "max": 27.2
+            },
+            "submissionMs": {
+              "samples": 82,
+              "p50": 1.5,
+              "p95": 2.7,
+              "p99": 3,
+              "max": 3.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 79.59999990463257
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 324,
+              "p50": 22.7,
+              "p95": 29.4,
+              "p99": 31.7,
+              "max": 41.7
+            },
+            "submissionMs": {
+              "samples": 325,
+              "p50": 1.5,
+              "p95": 2.5,
+              "p99": 3.3,
+              "max": 4.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 213,
+              "p50": 23.2,
+              "p95": 29.5,
+              "p99": 31.7,
+              "max": 41.7
+            },
+            "firstBallFromSpaceMs": 591.6,
+            "longTasks": 0,
+            "firstPoseChangeMs": 593.4000000953674
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2880,
+            1800
+          ],
+          "hardwareScaling": 0.5,
+          "triangles": 209512,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 41
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 18,
+              "p99": 18.8,
+              "max": 20.5
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 2.2,
+              "p95": 3.1,
+              "p99": 3.7,
+              "max": 5.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 32.200000047683716
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 17.6,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 2.2,
+              "p95": 2.5,
+              "p99": 2.8,
+              "max": 3.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 18.40000009536743
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 203,
+              "p50": 16.8,
+              "p95": 21.1,
+              "p99": 28.8,
+              "max": 39.4
+            },
+            "submissionMs": {
+              "samples": 203,
+              "p50": 2,
+              "p95": 3.1,
+              "p99": 3.9,
+              "max": 4.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 51.799999952316284
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 26,
+              "p50": 19.6,
+              "p95": 25.3,
+              "p99": 25.9,
+              "max": 26.4
+            },
+            "submissionMs": {
+              "samples": 27,
+              "p50": 1.8,
+              "p95": 2.7,
+              "p99": 2.7,
+              "max": 2.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 15.100000023841858
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 141,
+              "p50": 16.7,
+              "p95": 18.3,
+              "p99": 20.6,
+              "max": 28.4
+            },
+            "submissionMs": {
+              "samples": 142,
+              "p50": 1.7,
+              "p95": 2.7,
+              "p99": 3.4,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 77.79999995231628
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.6,
+              "p95": 18.5,
+              "p99": 18.8,
+              "max": 133.3
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.9,
+              "p95": 3.7,
+              "p99": 4.1,
+              "max": 4.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 8.699999928474426
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 18.4
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.5,
+              "p95": 2.2,
+              "p99": 2.7,
+              "max": 2.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 20.199999928474426
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 86,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 87,
+              "p50": 1.7,
+              "p95": 2.8,
+              "p99": 3.5,
+              "max": 3.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 76.80000007152557
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 18.1,
+              "p99": 19.4,
+              "max": 22.4
+            },
+            "submissionMs": {
+              "samples": 212,
+              "p50": 1.4,
+              "p95": 2.4,
+              "p99": 3.1,
+              "max": 8.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 38.89999997615814
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 96,
+              "p50": 16.7,
+              "p95": 18.1,
+              "p99": 19.1,
+              "max": 19.6
+            },
+            "submissionMs": {
+              "samples": 97,
+              "p50": 1.8,
+              "p95": 2.7,
+              "p99": 3,
+              "max": 3.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 78.10000002384186
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 384,
+              "p50": 19,
+              "p95": 25.4,
+              "p99": 28.9,
+              "max": 40.4
+            },
+            "submissionMs": {
+              "samples": 385,
+              "p50": 1.7,
+              "p95": 2.7,
+              "p99": 3.2,
+              "max": 4.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 268,
+              "p50": 18.8,
+              "p95": 25,
+              "p99": 28.8,
+              "max": 40.4
+            },
+            "firstBallFromSpaceMs": 597.7,
+            "longTasks": 0,
+            "firstPoseChangeMs": 599.5
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "browser": "chrome",
+        "design": "interior-design-original",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 53476,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 0
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17,
+              "p99": 17.2,
+              "max": 18
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1,
+              "p95": 2.1,
+              "p99": 2.4,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.5
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 20,
+              "p50": 16.6,
+              "p95": 17,
+              "p99": 17,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 21,
+              "p50": 1.1,
+              "p95": 1.8,
+              "p99": 1.8,
+              "max": 1.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.800000071525574
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 16.9,
+              "p99": 17,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.1,
+              "p95": 2.1,
+              "p99": 2.4,
+              "max": 3.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 9.300000071525574
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 21,
+              "p50": 16.7,
+              "p95": 16.9,
+              "p99": 16.9,
+              "max": 17
+            },
+            "submissionMs": {
+              "samples": 22,
+              "p50": 0.7,
+              "p95": 1.9,
+              "p99": 2.3,
+              "max": 2.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 14.599999904632568
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 139,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 18,
+              "max": 18.9
+            },
+            "submissionMs": {
+              "samples": 140,
+              "p50": 1,
+              "p95": 2.1,
+              "p99": 2.3,
+              "max": 2.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 74
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 16.9,
+              "p99": 17,
+              "max": 116.5
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 0.9,
+              "p95": 2.1,
+              "p99": 2.3,
+              "max": 2.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 14.100000023841858
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 58,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.2,
+              "max": 17.2
+            },
+            "submissionMs": {
+              "samples": 59,
+              "p50": 0.8,
+              "p95": 1.7,
+              "p99": 1.9,
+              "max": 2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 26.100000023841858
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 81,
+              "p50": 16.7,
+              "p95": 17,
+              "p99": 17.1,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 82,
+              "p50": 0.7,
+              "p95": 1.6,
+              "p99": 2,
+              "max": 2.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 78.80000007152557
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.4,
+              "p99": 18.1,
+              "max": 20.1
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 0.6,
+              "p95": 1.1,
+              "p99": 1.3,
+              "max": 3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.700000047683716
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 82,
+              "p50": 16.7,
+              "p95": 18.3,
+              "p99": 19.7,
+              "max": 19.8
+            },
+            "submissionMs": {
+              "samples": 83,
+              "p50": 0.7,
+              "p95": 1.3,
+              "p99": 2.1,
+              "max": 2.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 90
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 366,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.7,
+              "max": 19.3
+            },
+            "submissionMs": {
+              "samples": 367,
+              "p50": 0.9,
+              "p95": 1.5,
+              "p99": 1.8,
+              "max": 2.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 342,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 18.1
+            },
+            "firstBallFromSpaceMs": 416.1,
+            "longTasks": 0,
+            "firstPoseChangeMs": 418.1999999284744
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-001",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 90824,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 31
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.5,
+              "p99": 18.8,
+              "max": 19.7
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 2.6,
+              "p95": 3.7,
+              "p99": 4,
+              "max": 4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.5
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 21,
+              "p50": 16.7,
+              "p95": 16.9,
+              "p99": 16.9,
+              "max": 18.3
+            },
+            "submissionMs": {
+              "samples": 22,
+              "p50": 2.5,
+              "p95": 3.5,
+              "p99": 3.6,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 4.800000071525574
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.9,
+              "p99": 18.8,
+              "max": 19.7
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 2.8,
+              "p95": 4.2,
+              "p99": 4.9,
+              "max": 8.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 8.100000023841858
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 19,
+              "p50": 16.8,
+              "p95": 17.3,
+              "p99": 17.3,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 20,
+              "p50": 3,
+              "p95": 4.6,
+              "p99": 4.6,
+              "max": 6.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.199999928474426
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 140,
+              "p50": 16.7,
+              "p95": 17.9,
+              "p99": 18.5,
+              "max": 19.1
+            },
+            "submissionMs": {
+              "samples": 141,
+              "p50": 2.3,
+              "p95": 3.4,
+              "p99": 3.7,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 73.70000004768372
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 72,
+              "p50": 16.7,
+              "p95": 18.6,
+              "p99": 19.4,
+              "max": 132.9
+            },
+            "submissionMs": {
+              "samples": 73,
+              "p50": 2.6,
+              "p95": 3.7,
+              "p99": 3.9,
+              "max": 4.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 9.5
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 58,
+              "p50": 16.6,
+              "p95": 17.9,
+              "p99": 18.1,
+              "max": 18.3
+            },
+            "submissionMs": {
+              "samples": 59,
+              "p50": 2.3,
+              "p95": 3.5,
+              "p99": 3.5,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.399999976158142
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 86,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 17.8,
+              "max": 28.7
+            },
+            "submissionMs": {
+              "samples": 87,
+              "p50": 2,
+              "p95": 2.8,
+              "p99": 3,
+              "max": 3.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 82.39999997615814
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.7,
+              "p95": 18.5,
+              "p99": 18.7,
+              "max": 19.2
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.2,
+              "p95": 2,
+              "p99": 2.5,
+              "max": 2.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 23.200000047683716
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.7,
+              "p95": 19.1,
+              "p99": 19.7,
+              "max": 20.3
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 1.9,
+              "p95": 3.1,
+              "p99": 3.2,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 55.10000002384186
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 366,
+              "p50": 16.6,
+              "p95": 18,
+              "p99": 18.9,
+              "max": 20.3
+            },
+            "submissionMs": {
+              "samples": 367,
+              "p50": 1.9,
+              "p95": 3,
+              "p99": 3.4,
+              "max": 4.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 342,
+              "p50": 16.6,
+              "p95": 18,
+              "p99": 18.9,
+              "max": 19.2
+            },
+            "firstBallFromSpaceMs": 414.2,
+            "longTasks": 0,
+            "firstPoseChangeMs": 416.60000002384186
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-002",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 158992,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 32
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.4,
+              "max": 17.5
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 3.2,
+              "p95": 4.2,
+              "p99": 4.8,
+              "max": 5.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 16.40000009536743
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 19,
+              "p50": 16.7,
+              "p95": 17,
+              "p99": 17,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 20,
+              "p50": 2.9,
+              "p95": 3.8,
+              "p99": 3.8,
+              "max": 4.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.600000023841858
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 18
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 3,
+              "p95": 4.3,
+              "p99": 5.1,
+              "max": 6.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 7.899999976158142
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 18,
+              "p50": 16.6,
+              "p95": 17,
+              "p99": 17,
+              "max": 17
+            },
+            "submissionMs": {
+              "samples": 19,
+              "p50": 3.6,
+              "p95": 4.4,
+              "p99": 4.4,
+              "max": 5.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 11.799999952316284
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 140,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 17.5
+            },
+            "submissionMs": {
+              "samples": 141,
+              "p50": 2,
+              "p95": 3.2,
+              "p99": 3.2,
+              "max": 4.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 77.19999992847443
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 72,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 19.3,
+              "max": 116.6
+            },
+            "submissionMs": {
+              "samples": 73,
+              "p50": 2.9,
+              "p95": 4.1,
+              "p99": 5.4,
+              "max": 6.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 8.300000071525574
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 59,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 17.7
+            },
+            "submissionMs": {
+              "samples": 60,
+              "p50": 1.8,
+              "p95": 2.5,
+              "p99": 2.6,
+              "max": 2.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 20.100000023841858
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 89,
+              "p50": 16.7,
+              "p95": 19.6,
+              "p99": 33.1,
+              "max": 73.3
+            },
+            "submissionMs": {
+              "samples": 90,
+              "p50": 1.2,
+              "p95": 2.2,
+              "p99": 3.3,
+              "max": 5.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 88.60000002384186
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.7,
+              "p95": 17.6,
+              "p99": 17.9,
+              "max": 19.1
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.1,
+              "p95": 1.9,
+              "p99": 2.4,
+              "max": 4.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 18
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.7,
+              "p95": 17.6,
+              "p99": 17.9,
+              "max": 18.7
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 1.1,
+              "p95": 2.1,
+              "p99": 2.5,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 106.5
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 367,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 19.6
+            },
+            "submissionMs": {
+              "samples": 368,
+              "p50": 1.3,
+              "p95": 2.3,
+              "p99": 3,
+              "max": 4.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 343,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 19.6
+            },
+            "firstBallFromSpaceMs": 409.5,
+            "longTasks": 0,
+            "firstPoseChangeMs": 410
+          }
+        ]
+      },
+      {
+        "browser": "chrome",
+        "design": "interior-design-003",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 209512,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 41
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.8,
+              "p95": 3.1,
+              "p99": 3.5,
+              "max": 11.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 7.100000023841858
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.3,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.1,
+              "p95": 2.4,
+              "p99": 2.6,
+              "max": 2.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 3.799999952316284
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.5,
+              "p95": 3.3,
+              "p99": 4.6,
+              "max": 7.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 22.899999976158142
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.1,
+              "max": 17.4
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.8,
+              "p95": 2.5,
+              "p99": 2.8,
+              "max": 4.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 13
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 139,
+              "p50": 16.6,
+              "p95": 17.6,
+              "p99": 17.7,
+              "max": 17.9
+            },
+            "submissionMs": {
+              "samples": 140,
+              "p50": 1.4,
+              "p95": 2.3,
+              "p99": 2.8,
+              "max": 3.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 76.60000002384186
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 72,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 20.2,
+              "max": 132.5
+            },
+            "submissionMs": {
+              "samples": 73,
+              "p50": 1.6,
+              "p95": 3.1,
+              "p99": 4.2,
+              "max": 4.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 10.600000023841858
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 59,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.7,
+              "max": 18.2
+            },
+            "submissionMs": {
+              "samples": 60,
+              "p50": 1.5,
+              "p95": 2.4,
+              "p99": 2.9,
+              "max": 5.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 23.40000009536743
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.3,
+              "max": 17.5
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 1.6,
+              "p95": 2.5,
+              "p99": 2.6,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 74
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 18.1,
+              "max": 18.6
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.2,
+              "p95": 2.1,
+              "p99": 3.7,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 13.400000095367432
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.6,
+              "p95": 18.2,
+              "p99": 18.4,
+              "max": 19.1
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 1.4,
+              "p95": 2.4,
+              "p99": 2.9,
+              "max": 3.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 88.5
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 366,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.7,
+              "max": 19.2
+            },
+            "submissionMs": {
+              "samples": 367,
+              "p50": 1.4,
+              "p95": 2.5,
+              "p99": 3.5,
+              "max": 4.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 342,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 19.2
+            },
+            "firstBallFromSpaceMs": 404.6,
+            "longTasks": 0,
+            "firstPoseChangeMs": 422.60000002384186
+          }
+        ]
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-original",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 53476,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 0
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.2,
+              "p95": 2.2,
+              "p99": 2.5,
+              "max": 5.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 9.399999976158142
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.6,
+              "p95": 17.1,
+              "p99": 17.2,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.1,
+              "p95": 2.4,
+              "p99": 2.4,
+              "max": 2.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 4.5
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.6,
+              "p95": 17.2,
+              "p99": 17.3,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.1,
+              "p95": 2.2,
+              "p99": 2.7,
+              "max": 3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.199999928474426
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.3,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.1,
+              "p95": 2.5,
+              "p99": 2.6,
+              "max": 3.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 4.300000071525574
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 138,
+              "p50": 16.6,
+              "p95": 17.6,
+              "p99": 17.8,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 139,
+              "p50": 1,
+              "p95": 2.2,
+              "p99": 2.5,
+              "max": 2.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 80.39999997615814
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.4,
+              "max": 116.3
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.1,
+              "p95": 2.1,
+              "p99": 2.2,
+              "max": 2.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 19.09999990463257
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 58,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.5,
+              "max": 17.9
+            },
+            "submissionMs": {
+              "samples": 59,
+              "p50": 1,
+              "p95": 2.3,
+              "p99": 3.1,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 22.399999976158142
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.5,
+              "p95": 17.5,
+              "p99": 17.6,
+              "max": 18.2
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 1,
+              "p95": 2.1,
+              "p99": 2.5,
+              "max": 2.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 83.29999995231628
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.7,
+              "p99": 19.1,
+              "max": 19.5
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 0.9,
+              "p95": 1.5,
+              "p99": 1.8,
+              "max": 2.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 22.700000047683716
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.7,
+              "p95": 18,
+              "p99": 19.2,
+              "max": 19.3
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 0.9,
+              "p95": 1.9,
+              "p99": 2.2,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 80.09999990463257
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 366,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 20.7
+            },
+            "submissionMs": {
+              "samples": 367,
+              "p50": 1,
+              "p95": 2.2,
+              "p99": 2.6,
+              "max": 3.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 342,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.5,
+              "max": 18.6
+            },
+            "firstBallFromSpaceMs": 403.2,
+            "longTasks": 0,
+            "firstPoseChangeMs": 422.10000002384186
+          }
+        ]
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-001",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 90824,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-001-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 31
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.6,
+              "p95": 17.2,
+              "p99": 17.5,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.8,
+              "p95": 3.2,
+              "p99": 4.1,
+              "max": 5.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 4.199999928474426
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.6,
+              "p95": 17.2,
+              "p99": 17.5,
+              "max": 17.9
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 2.1,
+              "p95": 3.1,
+              "p99": 3.3,
+              "max": 4.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 13.900000095367432
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 17.9
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.8,
+              "p95": 3.1,
+              "p99": 4,
+              "max": 6.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 22.399999976158142
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.6,
+              "p95": 17.1,
+              "p99": 17.1,
+              "max": 17.3
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.6,
+              "p95": 3.8,
+              "p99": 4,
+              "max": 4.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.800000071525574
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 139,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.5,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 140,
+              "p50": 1.4,
+              "p95": 2.7,
+              "p99": 3.5,
+              "max": 5.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 92.59999990463257
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.6,
+              "p95": 17.2,
+              "p99": 18.1,
+              "max": 133.4
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.9,
+              "p95": 3.5,
+              "p99": 4,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.600000023841858
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 58,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.4,
+              "max": 17.4
+            },
+            "submissionMs": {
+              "samples": 59,
+              "p50": 1.6,
+              "p95": 2.6,
+              "p99": 2.7,
+              "max": 2.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 9.600000023841858
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 85,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 17.7,
+              "max": 17.9
+            },
+            "submissionMs": {
+              "samples": 86,
+              "p50": 1.5,
+              "p95": 2.6,
+              "p99": 2.8,
+              "max": 2.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 83.69999992847443
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 18.4,
+              "max": 19
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.1,
+              "p95": 1.9,
+              "p99": 2.4,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 20.300000071525574
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 82,
+              "p50": 16.6,
+              "p95": 17.6,
+              "p99": 18.7,
+              "max": 19
+            },
+            "submissionMs": {
+              "samples": 83,
+              "p50": 0.8,
+              "p95": 1.4,
+              "p99": 2.1,
+              "max": 2.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 80.89999997615814
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 367,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 18.7
+            },
+            "submissionMs": {
+              "samples": 368,
+              "p50": 1.5,
+              "p95": 2.5,
+              "p99": 3.2,
+              "max": 5
+            },
+            "movingBallIntervalMs": {
+              "samples": 343,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 18.7
+            },
+            "firstBallFromSpaceMs": 411.9,
+            "longTasks": 0,
+            "firstPoseChangeMs": 412.5
+          }
+        ]
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-002",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 158992,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-002-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 32
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.3,
+              "max": 17.4
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.8,
+              "p95": 3.2,
+              "p99": 3.6,
+              "max": 4.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 8.699999928474426
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.5,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.7,
+              "p95": 2.7,
+              "p99": 3.2,
+              "max": 4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 12.5
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 18.1,
+              "max": 40.2
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.9,
+              "p95": 2.9,
+              "p99": 4.2,
+              "max": 5.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 21.899999976158142
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 21,
+              "p50": 16.8,
+              "p95": 17.1,
+              "p99": 17.1,
+              "max": 17.1
+            },
+            "submissionMs": {
+              "samples": 22,
+              "p50": 2.3,
+              "p95": 3.1,
+              "p99": 3.2,
+              "max": 3.4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 5.5
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 139,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.6,
+              "max": 18.2
+            },
+            "submissionMs": {
+              "samples": 140,
+              "p50": 1.5,
+              "p95": 2.6,
+              "p99": 3.4,
+              "max": 4.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 76
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 132.9
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.4,
+              "p95": 2.9,
+              "p99": 4,
+              "max": 4.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 15.799999952316284
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 59,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 17.6,
+              "max": 18.9
+            },
+            "submissionMs": {
+              "samples": 60,
+              "p50": 1.4,
+              "p95": 2.9,
+              "p99": 3.7,
+              "max": 6.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 17.700000047683716
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 86,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.5,
+              "max": 17.6
+            },
+            "submissionMs": {
+              "samples": 87,
+              "p50": 1.5,
+              "p95": 2.7,
+              "p99": 3.3,
+              "max": 3.9
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 78.5
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.6,
+              "p99": 17.9,
+              "max": 19.2
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.2,
+              "p95": 2.1,
+              "p99": 3.2,
+              "max": 5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 83,
+              "p50": 16.7,
+              "p95": 17.6,
+              "p99": 18.2,
+              "max": 18.4
+            },
+            "submissionMs": {
+              "samples": 84,
+              "p50": 0.5,
+              "p95": 1.7,
+              "p99": 2.2,
+              "max": 2.2
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 84.69999992847443
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 365,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 18.4,
+              "max": 19.3
+            },
+            "submissionMs": {
+              "samples": 366,
+              "p50": 1.4,
+              "p95": 2.5,
+              "p99": 3.5,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 341,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.8,
+              "max": 19.2
+            },
+            "firstBallFromSpaceMs": 408.7,
+            "longTasks": 0,
+            "firstPoseChangeMs": 409.39999997615814
+          }
+        ]
+      },
+      {
+        "browser": "edge",
+        "design": "interior-design-003",
+        "passed": true,
+        "environment": {
+          "renderer": "ANGLE (Intel, Intel(R) Arc(TM) 140V GPU (16GB) (0x000064A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "webGLVersion": 2,
+          "samples": 4,
+          "drawingBuffer": [
+            2160,
+            1350
+          ],
+          "hardwareScaling": 0.6666666666666666,
+          "triangles": 209512,
+          "lights": [
+            {
+              "name": "GameLight",
+              "enabled": true
+            },
+            {
+              "name": "PocketLight",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-floor-light",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-ambient",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-gallery-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-lounge-wash",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-window-light-1",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-0",
+              "enabled": true
+            },
+            {
+              "name": "interior-design-003-wall-lamp-light-1",
+              "enabled": true
+            }
+          ],
+          "roomMeshes": 41
+        },
+        "phases": [
+          {
+            "name": "orbit-clockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.7,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 18.1
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.9,
+              "p95": 3.4,
+              "p99": 3.7,
+              "max": 4.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 11.600000023841858
+          },
+          {
+            "name": "orbit-release-KeyD",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.6,
+              "p95": 17.1,
+              "p99": 17.2,
+              "max": 17.8
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 1.2,
+              "p95": 2.8,
+              "p99": 3.2,
+              "max": 4.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 1.1999999284744263
+          },
+          {
+            "name": "orbit-counterclockwise",
+            "intervalMs": {
+              "samples": 211,
+              "p50": 16.6,
+              "p95": 17.2,
+              "p99": 17.4,
+              "max": 18.8
+            },
+            "submissionMs": {
+              "samples": 211,
+              "p50": 1.8,
+              "p95": 3.3,
+              "p99": 4.1,
+              "max": 5.1
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 8.800000071525574
+          },
+          {
+            "name": "orbit-release-KeyA",
+            "intervalMs": {
+              "samples": 22,
+              "p50": 16.6,
+              "p95": 17.3,
+              "p99": 17.4,
+              "max": 17.7
+            },
+            "submissionMs": {
+              "samples": 23,
+              "p50": 2,
+              "p95": 3.2,
+              "p99": 3.3,
+              "max": 4.7
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 6.700000047683716
+          },
+          {
+            "name": "standing-mouse-look",
+            "intervalMs": {
+              "samples": 113,
+              "p50": 16.7,
+              "p95": 60.1,
+              "p99": 443.3,
+              "max": 1290.7
+            },
+            "submissionMs": {
+              "samples": 114,
+              "p50": 1.4,
+              "p95": 3.5,
+              "p99": 35.7,
+              "max": 507.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 4,
+            "firstPoseChangeMs": 83.20000004768372
+          },
+          {
+            "name": "crouch-and-rise",
+            "intervalMs": {
+              "samples": 71,
+              "p50": 16.7,
+              "p95": 17.1,
+              "p99": 17.2,
+              "max": 132.8
+            },
+            "submissionMs": {
+              "samples": 72,
+              "p50": 1.3,
+              "p95": 2.7,
+              "p99": 3.2,
+              "max": 3.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 4
+          },
+          {
+            "name": "enter-aim",
+            "intervalMs": {
+              "samples": 58,
+              "p50": 16.7,
+              "p95": 17.3,
+              "p99": 17.6,
+              "max": 27.7
+            },
+            "submissionMs": {
+              "samples": 59,
+              "p50": 1.6,
+              "p95": 3,
+              "p99": 3.3,
+              "max": 3.6
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 17
+          },
+          {
+            "name": "aim-mouse-look",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.7,
+              "p95": 17.4,
+              "p99": 17.8,
+              "max": 18
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 1.4,
+              "p95": 2.4,
+              "p99": 3.6,
+              "max": 4
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 76.10000002384186
+          },
+          {
+            "name": "aim-direction-prediction",
+            "intervalMs": {
+              "samples": 205,
+              "p50": 16.6,
+              "p95": 17.5,
+              "p99": 17.8,
+              "max": 18.7
+            },
+            "submissionMs": {
+              "samples": 206,
+              "p50": 1.3,
+              "p95": 2.2,
+              "p99": 3,
+              "max": 4.3
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 28
+          },
+          {
+            "name": "spin-tip-prediction",
+            "intervalMs": {
+              "samples": 84,
+              "p50": 16.8,
+              "p95": 17.9,
+              "p99": 18.1,
+              "max": 18.2
+            },
+            "submissionMs": {
+              "samples": 85,
+              "p50": 1.5,
+              "p95": 2.9,
+              "p99": 3.8,
+              "max": 3.8
+            },
+            "movingBallIntervalMs": {
+              "samples": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "max": null
+            },
+            "firstBallFromSpaceMs": null,
+            "longTasks": 0,
+            "firstPoseChangeMs": 82.5
+          },
+          {
+            "name": "strike-and-roll",
+            "intervalMs": {
+              "samples": 366,
+              "p50": 16.6,
+              "p95": 17.4,
+              "p99": 17.9,
+              "max": 19.8
+            },
+            "submissionMs": {
+              "samples": 367,
+              "p50": 1.7,
+              "p95": 2.7,
+              "p99": 3.8,
+              "max": 4.5
+            },
+            "movingBallIntervalMs": {
+              "samples": 342,
+              "p50": 16.6,
+              "p95": 17.4,
+              "p99": 17.8,
+              "max": 19
+            },
+            "firstBallFromSpaceMs": 417.8,
+            "longTasks": 0,
+            "firstPoseChangeMs": 418.59999990463257
+          }
+        ]
+      }
+    ],
+    "interpretation": "Same query-free input script, viewport and native DPR 2 on this GPU. Walking trims first 500 ms and frames after key-up. Source-level rate characterization is not a high-refresh display measurement. Camera angles and shot trajectories are not pixel-matched between versions. Short Practice scenarios; interval includes render scheduling, not presented display latency."
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "overall",
+        "command": "node scripts/check-project.mjs --browser",
+        "started": "2026-10-11T13:31:49.659Z",
+        "finished": "2026-10-11T13:34:26.567Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "source-standalone",
+        "command": "node tests/e2e/source-standalone.test.mjs",
+        "started": "2026-10-11T13:34:26.569Z",
+        "finished": "2026-10-11T13:35:38.010Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "original-room",
+        "command": "node tests/e2e/interior-design-original.test.mjs",
+        "started": "2026-10-11T13:35:38.011Z",
+        "finished": "2026-10-11T13:36:31.545Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "interior-suites",
+        "command": "node scripts/test-interior.mjs",
+        "started": "2026-10-11T13:36:31.546Z",
+        "finished": "2026-10-11T13:58:43.987Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "vector-ui",
+        "command": "node tests/e2e/ui-vector-artwork.test.mjs",
+        "started": "2026-10-11T13:58:43.988Z",
+        "finished": "2026-10-11T13:59:39.301Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "shadow-cache",
+        "command": "node tests/e2e/interior-shadow-cache.test.mjs",
+        "started": "2026-10-11T13:59:39.301Z",
+        "finished": "2026-10-11T14:01:58.258Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "context-restoration",
+        "command": "node tests/e2e/context-restoration.test.mjs",
+        "started": "2026-10-11T14:01:58.259Z",
+        "finished": "2026-10-11T14:11:10.330Z",
+        "code": 0,
+        "passed": true
+      },
+      {
+        "name": "continuous-play",
+        "command": "node tests/e2e/continuous-play.test.mjs",
+        "started": "2026-10-11T14:11:10.331Z",
+        "finished": "2026-10-11T14:38:40.928Z",
+        "code": 0,
+        "passed": true
+      }
+    ],
+    "unitIntegrationTests": 114,
+    "retainedAlgorithmMatches": 137,
+    "hardwareScenarios": 8,
+    "continuousPlay": {
+      "options": {
+        "cycles": 3,
+        "shots": 6
+      },
+      "browsers": [
+        {
+          "name": "chrome",
+          "passed": true,
+          "routes": [
+            {
+              "route": "baseline",
+              "passed": true,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 7,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "elapsedSeconds": 411.115
+            },
+            {
+              "route": "runtime",
+              "passed": true,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 5,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 4,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "elapsedSeconds": 398.538
+            }
+          ]
+        },
+        {
+          "name": "edge",
+          "passed": true,
+          "routes": [
+            {
+              "route": "baseline",
+              "passed": true,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 4,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 4,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 7,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "elapsedSeconds": 435.058
+            },
+            {
+              "route": "runtime",
+              "passed": true,
+              "summary": {
+                "practiceStrokes": 18,
+                "practiceRestarts": 3,
+                "aiDifficulties": [
+                  {
+                    "mode": "ai1",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai2",
+                    "humanStrokes": 2,
+                    "aiStrokes": 3,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  },
+                  {
+                    "mode": "ai3",
+                    "humanStrokes": 2,
+                    "aiStrokes": 7,
+                    "restarts": 1,
+                    "replayChecks": 2
+                  }
+                ],
+                "replayChecks": 24,
+                "modeQuitTransitions": 5,
+                "resourceCountsStable": true,
+                "freshPracticeAfterAISwitching": true
+              },
+              "elapsedSeconds": 388.731
+            }
+          ]
+        }
+      ]
+    },
+    "contextRestoration": {
+      "scope": "full",
+      "scenarios": 24,
+      "passed": true
+    }
+  },
+  "limitations": [
+    "Measurements apply to this Intel GPU and Chrome/Edge versions, with a 60 Hz schedule.",
+    "No subjective ghosting assessment or real 120/144 Hz display certification.",
+    "Finite continuous sessions are not complete-match or hours-long endurance certification."
+  ],
+  "priorFailedAttempt": {
+    "file": "reports/measurement/gameplay-motion-attempt-1.json",
+    "cause": "First modal blocking was originally deferred until the next UI update; fixed by a zero-time UI commit and rerun all eight hardware scenarios."
+  }
+}
