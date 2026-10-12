@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-12T01:35:16.680Z",
+  "date": "2026-10-12T02:49:36.257Z",
   "passed": true,
   "sourceManifestSHA256": "0353606ff524a76c4d3517356ece2f9d2ed89eca9590578318482afff3ba442f",
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
@@ -918,6 +918,11 @@
       },
       {
         "from": "docs/validation/README.md",
+        "to": "reports/validation/npm-migration.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
         "to": "docs/validation/algorithm-validation.md",
         "generated": false
       },
@@ -1073,6 +1078,11 @@
       },
       {
         "from": "docs/validation/project-normalization.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/project-normalization.md",
         "to": "reports/validation/project-normalization-checks.json",
         "generated": false
       },
@@ -1214,6 +1224,14 @@
       "entry": "scripts/summarize-measurement.mjs"
     }
   ],
+  "packageLock": {
+    "file": "package-lock.json",
+    "packageManager": "npm@11.19.0",
+    "directDependencies": 6,
+    "lockedPackages": 82,
+    "issues": [],
+    "passed": true
+  },
   "retainedKernelDiagnostics": [
     "src/domain/physics/collision-island.js"
   ],

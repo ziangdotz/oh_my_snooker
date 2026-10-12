@@ -5,8 +5,39 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { ROOT } from '../../config/project.config.mjs';
 import {
   auditDocumentLinks,
+  auditPackageLock,
   auditRuntimeReachability,
 } from '../../tooling/validation/project-maintenance.mjs';
+
+test('npm lock audit detects stale declarations and mismatched direct versions', () => {
+  const packageInfo = {
+    name: 'project',
+    version: '1.0.0',
+    packageManager: 'npm@11.19.0',
+    devDependencies: { tool: '1.2.3' },
+  };
+  const lock = {
+    name: 'project',
+    version: '1.0.0',
+    lockfileVersion: 3,
+    packages: {
+      '': { devDependencies: { tool: '1.2.3' } },
+      'node_modules/tool': { version: '1.2.3' },
+    },
+  };
+  assert.equal(auditPackageLock(packageInfo, lock).passed, true);
+  const changedVersion = JSON.parse(JSON.stringify(lock));
+  changedVersion.packages['node_modules/tool'].version = '1.2.4';
+  assert.equal(auditPackageLock(packageInfo, changedVersion).passed, false);
+  const staleDeclaration = JSON.parse(JSON.stringify(lock));
+  staleDeclaration.packages[''].devDependencies.tool = '1.2.2';
+  assert.equal(auditPackageLock(packageInfo, staleDeclaration).passed, false);
+  assert.equal(auditPackageLock(packageInfo, { ...lock, lockfileVersion: 2 }).passed, false);
+  assert.equal(
+    auditPackageLock({ ...packageInfo, packageManager: 'other@1.0.0' }, lock).passed,
+    false,
+  );
+});
 
 test('maintenance finds isolated modules and rejects missing dependency IDs', () => {
   const catalog = {

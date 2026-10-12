@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12T02:52:59.510Z",
+  "passed": true,
+  "packageManager": "npm@11.19.0",
+  "nodeVersion": "v24.20.0",
+  "lockfile": "package-lock.json",
+  "lockfileVersion": 3,
+  "lockfileSHA256": "e7147170237085a9974b8aa93c3a919755234af1853a9c676409008f2b8089b7",
+  "cleanInstallPreservedLockfile": true,
+  "lockedPackages": 82,
+  "unchangedVersionsAndIntegrities": 82,
+  "removedOptionalEntries": [
+    "has-flag@4.0.0",
+    "supports-color@7.2.0"
+  ],
+  "removedEntryReason": "No remaining dependency, optional-dependency or peer-dependency declaration in the npm lock references these entries.",
+  "directDependencies": [
+    {
+      "name": "@eslint/js",
+      "declared": "10.0.1",
+      "installed": "10.0.1"
+    },
+    {
+      "name": "eslint",
+      "declared": "10.11.0",
+      "installed": "10.11.0"
+    },
+    {
+      "name": "playwright",
+      "declared": "1.62.1",
+      "installed": "1.62.1"
+    },
+    {
+      "name": "prettier",
+      "declared": "3.6.2",
+      "installed": "3.6.2"
+    },
+    {
+      "name": "espree",
+      "declared": "11.2.0",
+      "installed": "11.2.0"
+    },
+    {
+      "name": "eslint-scope",
+      "declared": "9.1.2",
+      "installed": "9.1.2"
+    }
+  ],
+  "protectedFiles": {
+    "runtime": 327,
+    "baseline": 92,
+    "unchanged": true
+  },
+  "validation": [
+    {
+      "command": "npm ci --no-audit --no-fund",
+      "passed": true
+    },
+    {
+      "command": "npm ls --all",
+      "passed": true
+    },
+    {
+      "command": "npm run check:browser",
+      "passed": true,
+      "unitAndIntegrationTests": 122,
+      "algorithmStructures": 137
+    },
+    {
+      "command": "npm run check",
+      "passed": true,
+      "unitAndIntegrationTests": 122,
+      "algorithmStructures": 137
+    }
+  ],
+  "browserRegression": {
+    "sourceReport": "artifacts/testing/regression/report.json",
+    "sourceReportSHA256": "072eca5806fec8648040dedddad862ba9a765fc5bbc76d4bc810976275ec9371",
+    "date": "2026-10-12",
+    "browsers": [
+      {
+        "name": "chrome",
+        "version": "154.0.8037.98"
+      },
+      {
+        "name": "edge",
+        "version": "155.0.4283.45"
+      }
+    ]
+  },
+  "maintenance": {
+    "file": "package-lock.json",
+    "packageManager": "npm@11.19.0",
+    "directDependencies": 6,
+    "lockedPackages": 82,
+    "issues": [],
+    "passed": true
+  }
+}

@@ -9,7 +9,7 @@ test('naming audit accepts fixed ecosystem names, typed suffixes and design iden
     'AGENTS.md',
     '.gitignore',
     'package.json',
-    'pnpm-lock.yaml',
+    'package-lock.json',
     'docs/validation/README.md',
     'config/project.config.mjs',
     'tests/e2e/interior-design-original.test.mjs',

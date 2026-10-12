@@ -4,7 +4,7 @@
 
 ## 提交内容
 
-维护源码 src、冻结对照 baselines、配置、命令、tooling、测试、文档、pnpm-lock.yaml 和 reports/validation 一起提交。架构映射 `reports/validation/architecture-migration-map.json` 是算法检查输入，必须保留。验证报告记录对应日期和源码，不把旧报告当成当前版本复测。
+维护源码 src、冻结对照 baselines、配置、命令、tooling、测试、文档、package-lock.json 和 reports/validation 一起提交。架构映射 `reports/validation/architecture-migration-map.json` 是算法检查输入，必须保留。验证报告记录对应日期和源码，不把旧报告当成当前版本复测。
 
 node_modules、包管理器缓存、build、dist、.cache、浏览器截图和逐帧测量数组不提交。reports/measurement 中的 `*-summary.json` 与相机时间刻画例外保留：它们提供可审查的统计及测量条件。原始测量数据可以留在本地，用专题命令重新生成；室内性能摘要使用 `node scripts/summarize-measurement.mjs reports/measurement/interior-performance-LABEL.json` 生成。
 
@@ -19,7 +19,7 @@ node_modules、包管理器缓存、build、dist、.cache、浏览器截图和�
 ## 首次提交
 
 1. 阅读 [架构](../architecture/overview.md)、[维护边界](../architecture/composition-root-assessment.md)和[开发流程](workflow.md)。
-2. 安装 package.json 指定版本的 pnpm，运行 `pnpm install --frozen-lockfile`；运行 `pnpm check:browser` 及修改涉及的专项。
+2. 使用 package.json 记录版本的 npm，运行 `npm ci`；运行 `npm run check:browser` 及修改涉及的专项。
 3. 明确本次提交包含的源码与有效证据，检查 src 独立复制启动、冻结基准完整性和新增行为。
 4. 确定需要建立仓库时再执行 `git init -b main`。运行 `git status --short --ignored` 检查目录分类，暂存维护文件后检查 `git diff --cached --stat` 和 `git diff --cached --check`。
 5. 人工核对暂存内容、署名及验证结果后创建本地提交。提交信息描述实际问题和结果；远程地址、发布范围和推送另行确定。
@@ -32,6 +32,6 @@ node_modules、包管理器缓存、build、dist、.cache、浏览器截图和�
 
 ## 持续检查
 
-`pnpm check:maintenance` 校验模块可达性、资产引用、文档本地链接与命令入口，报告写入 reports/validation/project-maintenance.json，已加入整体检查。该检查区分维护输入与可缺省的生成证据；它不证明保留算法中的每个成员都被调用。
+`npm run check:maintenance` 校验模块可达性、资产引用、文档本地链接、命令入口，以及 package.json 与 package-lock.json 的声明和直接依赖版本一致性，报告写入 reports/validation/project-maintenance.json，已加入整体检查。该检查区分维护输入与可缺省的生成证据；它不证明保留算法中的每个成员都被调用。
 
 开发者按照[验证矩阵](workflow.md#按修改选择验证)选择专项。浏览器、硬件条件及完整比赛覆盖仍需结合[验证限制](../validation/README.md#限制)解释。

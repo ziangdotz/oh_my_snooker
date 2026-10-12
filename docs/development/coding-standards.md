@@ -10,7 +10,7 @@
 
 src/runtime/runtime-catalog.json 是模块登记入口。新增工厂登记来源、分包、实际具名依赖；类模块使用显式默认导入接入组合根。模板、资产分别使用 template / asset 类型，避免重复维护包装代码。新增资源必须同步 HTML、CSS、模型、碰撞数据与代码引用。
 
-全工程文件命名、室内方案标识、标准文件例外及冻结基准规则见 [文件命名](file-naming.md)。`pnpm check:naming` 检查所有维护文件，已接入整体工程检查。
+全工程文件命名、室内方案标识、标准文件例外及冻结基准规则见 [文件命名](file-naming.md)。`npm run check:naming` 检查所有维护文件，已接入整体工程检查。
 
 ## 代码与边界
 
@@ -24,9 +24,9 @@ src/runtime/runtime-catalog.json 是模块登记入口。新增工厂登记来�
 
 ## 验证与维护
 
-- pnpm check 是日常门槛；运行代码、资源或构建变化执行 pnpm check:browser，并执行相关专项。
+- npm run check 是日常门槛；运行代码、资源或构建变化执行 npm run check:browser，并执行相关专项。
 - 构建清单记录源码、依赖、资产引用和输出哈希。缺失引用、未登记源码、路径冲突或越层依赖阻止发布。
 - JSON 验证记录放 reports，人工说明放 docs，浏览器状态及截图放 artifacts。
 - 格式化只使用 node scripts/format-code.mjs --write 的文件白名单。二进制资产、冻结基准和生成输出不被格式化。
-- 依赖固定版本，同步 package.json 与 pnpm-lock.yaml。开发和构建工具不进入浏览器交付。
+- 依赖固定版本，同步 package.json 与 package-lock.json。开发和构建工具不进入浏览器交付。
 - 验证结果必须对应当前源码及明确范围，不能自动代替后续修改的复测。

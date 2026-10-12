@@ -24,7 +24,7 @@ export default [
       'artifacts/**',
       'reports/**',
       '.cache/**',
-      '.pnpm-store/**',
+      '.npm/**',
       'node_modules/**',
     ],
   },

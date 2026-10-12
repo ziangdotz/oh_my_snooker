@@ -116,6 +116,41 @@ export function auditRuntimeReachability(catalog) {
   };
 }
 
+export function auditPackageLock(packageInfo, lock) {
+  const issues = [];
+  const root = lock.packages?.[''];
+  if (!/^npm@\d+\.\d+\.\d+$/.test(packageInfo.packageManager ?? '')) {
+    issues.push('packageManager must record an exact npm version');
+  }
+  if (lock.lockfileVersion !== 3 || !root) {
+    issues.push('Expected a version 3 package-lock.json with a root package');
+  }
+  if (lock.name !== packageInfo.name || lock.version !== packageInfo.version) {
+    issues.push('Lockfile package identity differs from package.json');
+  }
+  const directDependencies = new Set();
+  for (const type of ['dependencies', 'devDependencies', 'optionalDependencies']) {
+    const declared = packageInfo[type] ?? {};
+    const locked = root?.[type] ?? {};
+    for (const name of new Set([...Object.keys(declared), ...Object.keys(locked)])) {
+      directDependencies.add(name);
+      if (declared[name] !== locked[name]) {
+        issues.push('Lockfile dependency declaration differs: ' + name);
+      } else if (lock.packages?.['node_modules/' + name]?.version !== declared[name]) {
+        issues.push('Locked direct dependency version differs: ' + name);
+      }
+    }
+  }
+  return {
+    file: 'package-lock.json',
+    packageManager: packageInfo.packageManager,
+    directDependencies: directDependencies.size,
+    lockedPackages: Object.keys(lock.packages ?? {}).filter(Boolean).length,
+    issues,
+    passed: issues.length === 0,
+  };
+}
+
 /** Complement build validation with repository-facing maintenance checks. */
 export async function auditProjectMaintenance(root = ROOT) {
   const input = await readBuildInputs({ root });
@@ -123,6 +158,10 @@ export async function auditProjectMaintenance(root = ROOT) {
     await readFile(path.join(root, 'src/runtime/runtime-catalog.json'), 'utf8'),
   );
   const packageInfo = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
+  const packageLock = auditPackageLock(
+    packageInfo,
+    JSON.parse(await readFile(path.join(root, 'package-lock.json'), 'utf8')),
+  );
   const docs = await auditDocumentLinks(root);
   const runtime = auditRuntimeReachability(catalog);
   const references = new Set(input.manifest.references.map((reference) => reference.to));
@@ -155,6 +194,7 @@ export async function auditProjectMaintenance(root = ROOT) {
     schemaVersion: 1,
     date: new Date().toISOString(),
     passed:
+      packageLock.passed &&
       docs.passed &&
       runtime.passed &&
       unreferencedAssets.length === 0 &&
@@ -168,6 +208,7 @@ export async function auditProjectMaintenance(root = ROOT) {
     unreferencedAssets,
     docs,
     commands,
+    packageLock,
     retainedKernelDiagnostics,
     ownSourceMarkers,
     limitations: [

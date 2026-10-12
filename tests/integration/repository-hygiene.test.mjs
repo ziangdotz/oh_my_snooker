@@ -60,7 +60,7 @@ test('Git ignores generated output and private overrides while retaining require
   await withRepository(context, async ({ git }) => {
     const ignored = [
       'node_modules/dependency/index.js',
-      '.pnpm-store/file',
+      '.npm/_cacache/file',
       '.cache/probe.mjs',
       'build/development/index.html',
       'dist/index.html',
@@ -73,7 +73,7 @@ test('Git ignores generated output and private overrides while retaining require
     const maintained = [
       'src/start.mjs',
       'baselines/pcol/game/res/index.js',
-      'pnpm-lock.yaml',
+      'package-lock.json',
       'reports/validation/architecture-migration-map.json',
       'reports/validation/project-maintenance.json',
       'reports/measurement/gameplay-smoothness-summary.json',

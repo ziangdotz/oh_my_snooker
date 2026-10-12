@@ -27,26 +27,26 @@
 
 ## 维护命令
 
-先执行pnpm install --frozen-lockfile。构建服务node scripts/dev-server.mjs提供当前交付及/baseline/冻结对照；与源码服务同时运行时使用不同端口。dist可通过HTTP静态交付。
+先执行npm ci。构建服务node scripts/dev-server.mjs提供当前交付及/baseline/冻结对照；与源码服务同时运行时使用不同端口。dist可通过HTTP静态交付。
 
-| 命令                                  | 用途                       |
-| ------------------------------------- | -------------------------- |
-| pnpm dev / pnpm start                 | 从src启动                  |
-| pnpm dev:built                        | 校验并启动构建版           |
-| pnpm build / pnpm verify              | 构建及输入输出完整性       |
-| pnpm verify:algorithms                | 137项算法结构对照          |
-| pnpm lint / pnpm format:check         | lint与格式检查             |
-| pnpm test                             | 单元与集成测试             |
-| pnpm check / pnpm check:browser       | 整体检查及浏览器对照       |
-| pnpm check:maintenance                | 模块、资产、文档与命令审计 |
-| pnpm test:e2e:source                  | 仅复制src独立运行          |
-| pnpm test:e2e:interior                | 室内界面、字体、切换和恢复 |
-| pnpm test:e2e:continuous              | AI、连续击球、回放及重开   |
-| pnpm test:e2e:shadows                 | 静态阴影缓存验证           |
-| pnpm test:e2e:motion                  | 四室内真实硬件操作验证     |
-| pnpm test:e2e:context                 | 完整 WebGL 恢复验证        |
-| pnpm test:e2e:original                | 原始场景精确对照           |
-| pnpm measure:interior --label current | 实际GPU室内移动测量        |
+| 命令                                        | 用途                               |
+| ------------------------------------------- | ---------------------------------- |
+| npm run dev / npm start                     | 从src启动                          |
+| npm run dev:built                           | 校验并启动构建版                   |
+| npm run build / npm run verify              | 构建及输入输出完整性               |
+| npm run verify:algorithms                   | 137项算法结构对照                  |
+| npm run lint / npm run format:check         | lint与格式检查                     |
+| npm test                                    | 单元与集成测试                     |
+| npm run check / npm run check:browser       | 整体检查及浏览器对照               |
+| npm run check:maintenance                   | 模块、资产、文档、命令与锁文件审计 |
+| npm run test:e2e:source                     | 仅复制src独立运行                  |
+| npm run test:e2e:interior                   | 室内界面、字体、切换和恢复         |
+| npm run test:e2e:continuous                 | AI、连续击球、回放及重开           |
+| npm run test:e2e:shadows                    | 静态阴影缓存验证                   |
+| npm run test:e2e:motion                     | 四室内真实硬件操作验证             |
+| npm run test:e2e:context                    | 完整 WebGL 恢复验证                |
+| npm run test:e2e:original                   | 原始场景精确对照                   |
+| npm run measure:interior -- --label current | 实际GPU室内移动测量                |
 
 维护以[架构](docs/architecture/overview.md)、[开发流程](docs/development/workflow.md)、[学习入口](docs/learning/guide.md)及[当前交接](docs/learning/conversation-handoff.md)为入口。组合根与子装配的职责和状态寿命已明确，见[维护边界](docs/architecture/composition-root-assessment.md)。
 

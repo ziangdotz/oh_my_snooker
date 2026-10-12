@@ -2,7 +2,7 @@
 
 ## 范围与复现
 
-运行 `node tests/e2e/continuous-play.test.mjs`，或 `pnpm test:e2e:continuous`。开发和生产输出必须先通过完整校验；需要重新构建时运行 `node scripts/check-project.mjs --browser`。专项测试默认检测本机 Chrome 与 Edge，可用 `PCOL_BROWSER_PATH` 指定其他 Chromium 浏览器。
+运行 `node tests/e2e/continuous-play.test.mjs`，或 `npm run test:e2e:continuous`。开发和生产输出必须先通过完整校验；需要重新构建时运行 `node scripts/check-project.mjs --browser`。专项测试默认检测本机 Chrome 与 Edge，可用 `PCOL_BROWSER_PATH` 指定其他 Chromium 浏览器。
 
 每个浏览器分别测试冻结基准与开发版，每条路线只有一个页面和一次导航。默认先完成 Practice 的 3 轮 × 6 杆；每杆执行真实放球（需要时）、W 瞄准、滚轮力度、Space 击球、回放暂停/播放/退出，每轮结束后通过 PAUSED → RESTART → YES 重开。之后在同一页面依次进入 AI-1、AI-2、AI-3，各执行两次人类及 AI 自主击球、球权回到人类、回放；两次之间重开，第二次结束后返回菜单。最后重新进入 Practice 检查初始状态恢复，再退出到菜单。
 

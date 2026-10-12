@@ -5,4 +5,4 @@ artifacts/
 .cache/
 node_modules/
 reports/
-pnpm-lock.yaml
+package-lock.json

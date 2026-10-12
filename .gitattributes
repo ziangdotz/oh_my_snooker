@@ -10,7 +10,7 @@
 *.md text eol=lf
 *.json text eol=lf
 *.cmd text eol=crlf
-pnpm-lock.yaml text eol=lf
+package-lock.json text eol=lf
 *.css text eol=lf
 *.html text eol=lf
 *.txt text eol=lf
