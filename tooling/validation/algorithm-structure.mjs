@@ -293,7 +293,35 @@ export async function auditAlgorithmStructure() {
     const before = originalMain.root.body.body.find(
       (n) => n.type === 'ClassDeclaration' && n.id.name === symbol,
     );
-    const afterAst = parse(fs.readFileSync(absolute('src/' + file + '.js'), 'utf8'), options);
+    let afterSource = fs.readFileSync(absolute('src/' + file + '.js'), 'utf8');
+    if (file === 'application/controllers/match-controller') {
+      // Inline the zero-argument extraction before comparison. The complete original
+      // operations still have to match; no match, scoring or input method is omitted.
+      const extractionAst = parse(afterSource, options);
+      const extractedClass = extractionAst.body
+        .find((node) => node.type === 'ExportDefaultDeclaration')
+        .declaration.body.body.find((node) => node.type === 'ReturnStatement').argument;
+      const method = extractedClass.body.body.find(
+        (node) => node.key.name === '_createPlayerControllers',
+      );
+      assert.ok(method);
+      assert.equal(method.value.params.length, 0);
+      assert.equal(method.value.async, false);
+      assert.equal(method.value.generator, false);
+      assert.equal(method.static, false);
+      assert.equal(method.computed, false);
+      assert.equal(method.kind, 'method');
+      const call = 'this._createPlayerControllers();';
+      assert.equal(afterSource.split(call).length, 2);
+      const body = afterSource.slice(
+        method.value.body.range[0] + 1,
+        method.value.body.range[1] - 1,
+      );
+      afterSource = (
+        afterSource.slice(0, method.range[0]) + afterSource.slice(method.range[1])
+      ).replace(call, body);
+    }
+    const afterAst = parse(afterSource, options);
     const after = afterAst.body
       .find((n) => n.type === 'ExportDefaultDeclaration')
       .declaration.body.body.find((n) => n.type === 'ReturnStatement').argument;
@@ -316,6 +344,9 @@ export async function auditAlgorithmStructure() {
         normalizedSHA256: sha256(JSON.stringify(normalizer(afterAst, after, false, true))),
         ...(presentationChange ? { presentationChange } : {}),
         ...(sessionChange ? { sessionChange } : {}),
+        ...(file === 'application/controllers/match-controller'
+          ? { inlinedExtraction: '_createPlayerControllers; complete original class compared' }
+          : {}),
       });
     } catch (error) {
       results.push({ source: 'src/' + file + '.js', kind: 'class', passed: false });

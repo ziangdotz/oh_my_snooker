@@ -40,6 +40,9 @@ import createGameShortcuts from '../presentation/ui/game-shortcuts.js';
 
 import createGameToast from '../presentation/ui/game-toast.js';
 import createGameUiController from './controllers/game-ui-controller.js';
+import createHotseatGameModel from './models/hotseat-game-model.js';
+import createHotseatMatchController from './controllers/hotseat-match-controller.js';
+import createHotseatSession from '../infrastructure/navigation/hotseat-session.js';
 import createMenuController from './controllers/menu-controller.js';
 
 import createToolbar from '../presentation/ui/toolbar.js';
@@ -65,6 +68,7 @@ import createSnookerApplication from './snooker-application.js';
 import createSmoothSnookerApplication from './smooth-snooker-application.js';
 export default function composeGameModule(module, exports, loadModule) {
   'use strict';
+  const matchSession = createHotseatSession(window);
   loadModule.r(exports);
   var Babylon = loadModule('adapters/rendering/babylon-engine'),
     eventEmitterModule = loadModule('shared/events/event-emitter'),
@@ -518,6 +522,8 @@ export default function composeGameModule(module, exports, loadModule) {
     selection: createInteriorDesignSelection(interiorDesignRegistry),
     transition: loadModule('application/interior-transition'),
     dialogEvents,
+    matchSession,
+    ApplicationEvents,
   });
   var playerModule = loadModule('domain/game/player'),
     Player = loadModule.n(playerModule),
@@ -547,6 +553,13 @@ export default function composeGameModule(module, exports, loadModule) {
     get GameState() {
       return GameState;
     },
+  });
+  const SessionGameModel = createHotseatGameModel(SnookerGameModel, {
+    session: matchSession,
+    GameState,
+    Player,
+    localGameSettings,
+    refereeRegistry,
   });
   var simulatorModule = loadModule('domain/simulation/simulator'),
     Simulator = loadModule.n(simulatorModule),
@@ -896,7 +909,7 @@ export default function composeGameModule(module, exports, loadModule) {
       collisionMeshLoader.a,
     ),
     localMovieClip = new MovieClip();
-  const MatchController = createGameUiController(
+  const GameUiController = createGameUiController(
     createMatchController({
       get AiPersonController() {
         return AiPersonController;
@@ -962,7 +975,7 @@ export default function composeGameModule(module, exports, loadModule) {
         return SimulationState;
       },
       get SnookerGameModel() {
-        return SnookerGameModel;
+        return SessionGameModel;
       },
       get Toolbar() {
         return Toolbar;
@@ -999,6 +1012,11 @@ export default function composeGameModule(module, exports, loadModule) {
       },
     }),
     GameState.a,
+  );
+  const MatchController = createHotseatMatchController(
+    GameUiController,
+    GameState.a,
+    ControllerState,
   );
   const ToastDialog = createGameToast(
     createToastDialog({

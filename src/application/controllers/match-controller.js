@@ -168,6 +168,24 @@ export default function createMatchController(dependencies) {
             (e.lockedTarget.z = t.lookAtZ),
             this._gView.requireRender());
         }));
+      this._createPlayerControllers();
+      let s = this._movieClip;
+      (s.getTrack('cam').setSource(this._gView.camera).setActor(this._gView.camera),
+        s.syncBallTracks(this._simulator, this._gView.ballMeshes),
+        this._gView.removeAllListeners(dependencies.ViewEvents.READY),
+        this._simulator.removeAllListeners(dependencies.SimulationEvents.a.SYNCHRONIZED),
+        this._model
+          .on('response', (t) => {
+            (this._onModelResponse(t),
+              this._state === dependencies.ControllerState.PENDING &&
+                this.emit(dependencies.ControllerEvents.READY));
+          })
+          .on('gstate_change', (t) => {
+            this._onModelGStateChanged(t);
+          })
+          .reqReset(this._simulator));
+    }
+    _createPlayerControllers() {
       let t,
         e = this._model.players,
         i = this._playerCtls;
@@ -200,21 +218,6 @@ export default function createMatchController(dependencies) {
       }
       -1 === i.indexOf(this._fpc) &&
         (this._fpc.reset(this._gView, this._simulator, this._model, -1, void 0), i.push(this._fpc));
-      let s = this._movieClip;
-      (s.getTrack('cam').setSource(this._gView.camera).setActor(this._gView.camera),
-        s.syncBallTracks(this._simulator, this._gView.ballMeshes),
-        this._gView.removeAllListeners(dependencies.ViewEvents.READY),
-        this._simulator.removeAllListeners(dependencies.SimulationEvents.a.SYNCHRONIZED),
-        this._model
-          .on('response', (t) => {
-            (this._onModelResponse(t),
-              this._state === dependencies.ControllerState.PENDING &&
-                this.emit(dependencies.ControllerEvents.READY));
-          })
-          .on('gstate_change', (t) => {
-            this._onModelGStateChanged(t);
-          })
-          .reqReset(this._simulator));
     }
     enter() {
       const t = this._gView.camera,

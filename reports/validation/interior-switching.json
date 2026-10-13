@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-12T06:21:25.302Z",
+  "date": "2026-10-13T03:02:29.279Z",
   "viewport": {
     "width": 960,
     "height": 600
   },
   "buildManifestHashes": {
-    "development": "2a92f6a912cddda7b7644e2136cf85e9521a46bb794b5e8da0fb8e7fd3f857b8",
-    "production": "2a92f6a912cddda7b7644e2136cf85e9521a46bb794b5e8da0fb8e7fd3f857b8"
+    "development": "87c291f87d865117047007a65d528deee09b3a34873dcade66b3e82f317ad2ac",
+    "production": "87c291f87d865117047007a65d528deee09b3a34873dcade66b3e82f317ad2ac"
   },
   "targets": [
     {
@@ -15,8 +15,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 768.4880000000012,
-          "sceneReadyMs": 334.4118000000017,
+          "elapsedMs": 785.9572999999982,
+          "sceneReadyMs": 352.98089999999866,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -30,8 +30,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 849.7347000000009,
-          "sceneReadyMs": 420.1288999999997,
+          "elapsedMs": 820.5387999999984,
+          "sceneReadyMs": 388.7740999999987,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -44,8 +44,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1002.4290999999976,
-          "sceneReadyMs": 577.0963999999985,
+          "elapsedMs": 1023.1071000000011,
+          "sceneReadyMs": 589.7432000000008,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -57,8 +57,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.21050000000105,
-          "sceneReadyMs": 31.63130000000092,
+          "elapsedMs": 466.47279999999955,
+          "sceneReadyMs": 29.088599999999133,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -68,8 +68,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 457.4291999999987,
-          "sceneReadyMs": 27.376100000001315,
+          "elapsedMs": 453.90690000000177,
+          "sceneReadyMs": 25.103800000000774,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -79,8 +79,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 456.46540000000095,
-          "sceneReadyMs": 26.132400000002235,
+          "elapsedMs": 453.9275999999991,
+          "sceneReadyMs": 24.70679999999993,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -90,8 +90,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 448.9571999999971,
-          "sceneReadyMs": 25.206599999997707,
+          "elapsedMs": 450.5862000000052,
+          "sceneReadyMs": 33.26190000000497,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -101,8 +101,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.9844000000012,
-          "sceneReadyMs": 28.25340000000142,
+          "elapsedMs": 449.42490000000544,
+          "sceneReadyMs": 31.828600000000733,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -112,8 +112,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 451.8188999999984,
-          "sceneReadyMs": 26.97099999999773,
+          "elapsedMs": 449.8863999999958,
+          "sceneReadyMs": 33.22060000000056,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -188,8 +188,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 819.2834000000003,
-          "sceneReadyMs": 383.83580000000075,
+          "elapsedMs": 783.9037000000098,
+          "sceneReadyMs": 349.73249999999825,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -203,8 +203,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 867.0628000000142,
-          "sceneReadyMs": 431.5659000000014,
+          "elapsedMs": 818.0149999999994,
+          "sceneReadyMs": 400.60119999999006,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -217,8 +217,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1020.3225999999995,
-          "sceneReadyMs": 594.3689999999915,
+          "elapsedMs": 1001.8148999999976,
+          "sceneReadyMs": 574.0953999999911,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -230,8 +230,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 450.2502999999997,
-          "sceneReadyMs": 25.31610000001092,
+          "elapsedMs": 454.6493000000046,
+          "sceneReadyMs": 26.238500000006752,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -241,8 +241,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 466.45879999999306,
-          "sceneReadyMs": 34.09179999999469,
+          "elapsedMs": 451.77369999999064,
+          "sceneReadyMs": 24.58299999999872,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -252,8 +252,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 451.367499999993,
-          "sceneReadyMs": 25.386799999992945,
+          "elapsedMs": 451.4285999999993,
+          "sceneReadyMs": 32.65020000000368,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -263,8 +263,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 453.54959999999846,
-          "sceneReadyMs": 24.901400000002468,
+          "elapsedMs": 446.84739999999874,
+          "sceneReadyMs": 30.625,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -274,8 +274,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.0309999999881,
-          "sceneReadyMs": 24.477899999998044,
+          "elapsedMs": 466.21429999999236,
+          "sceneReadyMs": 33.18309999999474,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -285,8 +285,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 451.9360000000015,
-          "sceneReadyMs": 32.50879999999597,
+          "elapsedMs": 453.48070000000007,
+          "sceneReadyMs": 32.1930999999895,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -360,8 +360,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 817.7966000000015,
-          "sceneReadyMs": 382.13439999999537,
+          "elapsedMs": 803.7329000000027,
+          "sceneReadyMs": 372.3390999999974,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -375,8 +375,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 857.4545999999973,
-          "sceneReadyMs": 416.7911000000022,
+          "elapsedMs": 836.0387000000046,
+          "sceneReadyMs": 403.1450999999943,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -389,8 +389,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1120.0194999999949,
-          "sceneReadyMs": 694.403999999995,
+          "elapsedMs": 1030.4672999999893,
+          "sceneReadyMs": 605.2822999999917,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -402,8 +402,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 449.75560000000405,
-          "sceneReadyMs": 29.838199999998324,
+          "elapsedMs": 456.42989999998827,
+          "sceneReadyMs": 28.303999999989173,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -413,8 +413,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 451.607600000003,
-          "sceneReadyMs": 33.29200000000128,
+          "elapsedMs": 460.7402000000002,
+          "sceneReadyMs": 34.44659999999567,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -424,8 +424,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 452.9563999999955,
-          "sceneReadyMs": 25.916599999996834,
+          "elapsedMs": 450.6198000000004,
+          "sceneReadyMs": 29.265299999999115,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -435,8 +435,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 451.72669999999925,
-          "sceneReadyMs": 26.070699999996577,
+          "elapsedMs": 449.64400000000023,
+          "sceneReadyMs": 35.924199999994016,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -446,8 +446,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 449.34709999999905,
-          "sceneReadyMs": 24.29899999999907,
+          "elapsedMs": 448.0573999999906,
+          "sceneReadyMs": 28.120899999994435,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -457,8 +457,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 453.2219000000041,
-          "sceneReadyMs": 25.47950000000128,
+          "elapsedMs": 453.51789999999164,
+          "sceneReadyMs": 25.913300000000163,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -532,8 +532,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 923.5239000000001,
-          "sceneReadyMs": 492.89340000000084,
+          "elapsedMs": 802.4239999999991,
+          "sceneReadyMs": 370.81889999998384,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -547,8 +547,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 954.4631000000227,
-          "sceneReadyMs": 520.4679000000178,
+          "elapsedMs": 837.9855999999854,
+          "sceneReadyMs": 393.8250999999873,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -561,8 +561,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1236.2287999999826,
-          "sceneReadyMs": 805.5602999999828,
+          "elapsedMs": 1036.0009999999893,
+          "sceneReadyMs": 601.6206999999995,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -574,8 +574,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.9357000000018,
-          "sceneReadyMs": 34.94229999999516,
+          "elapsedMs": 462.4573000000091,
+          "sceneReadyMs": 31.306199999991804,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -585,8 +585,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 532.0815000000002,
-          "sceneReadyMs": 107.20629999999073,
+          "elapsedMs": 453.72789999999804,
+          "sceneReadyMs": 24.53049999999348,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -596,8 +596,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 447.8415999999852,
-          "sceneReadyMs": 34.367700000002515,
+          "elapsedMs": 453.0332000000053,
+          "sceneReadyMs": 33.720100000005914,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -607,8 +607,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 450.39850000001024,
-          "sceneReadyMs": 56.47239999999874,
+          "elapsedMs": 448.956600000005,
+          "sceneReadyMs": 34.07730000000447,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -618,8 +618,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 450.0823000000091,
-          "sceneReadyMs": 43.70810000001802,
+          "elapsedMs": 452.79060000000754,
+          "sceneReadyMs": 34.01910000000498,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -629,8 +629,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 450.3565000000235,
-          "sceneReadyMs": 32.39350000000559,
+          "elapsedMs": 452.25109999999404,
+          "sceneReadyMs": 24.969899999996414,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -704,8 +704,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 861.8299999999872,
-          "sceneReadyMs": 422.16130000000703,
+          "elapsedMs": 953.5865000000049,
+          "sceneReadyMs": 505.8992000000144,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -719,8 +719,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 872.2865000000165,
-          "sceneReadyMs": 443.12510000000475,
+          "elapsedMs": 853.561800000025,
+          "sceneReadyMs": 409.79960000002757,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -733,8 +733,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1505.9200000000128,
-          "sceneReadyMs": 1073.8495000000112,
+          "elapsedMs": 1021.777700000006,
+          "sceneReadyMs": 593.5773000000045,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -746,8 +746,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 491.9549999999872,
-          "sceneReadyMs": 33.62249999999767,
+          "elapsedMs": 454.93880000000354,
+          "sceneReadyMs": 26.13890000001993,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -757,8 +757,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 449.68539999998757,
-          "sceneReadyMs": 38.65769999998156,
+          "elapsedMs": 464.3497999999963,
+          "sceneReadyMs": 46.492599999997765,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -768,8 +768,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 452.32219999999506,
-          "sceneReadyMs": 34.03979999999865,
+          "elapsedMs": 454.93369999999413,
+          "sceneReadyMs": 30.008600000001024,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -779,8 +779,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 453.1314999999886,
-          "sceneReadyMs": 28.253899999981513,
+          "elapsedMs": 452.45389999999315,
+          "sceneReadyMs": 32.303599999984726,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -790,8 +790,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.6284999999916,
-          "sceneReadyMs": 25.78029999998398,
+          "elapsedMs": 453.30629999999655,
+          "sceneReadyMs": 36.77749999999651,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -801,8 +801,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 451.39040000000386,
-          "sceneReadyMs": 31.336100000014994,
+          "elapsedMs": 453.46199999999953,
+          "sceneReadyMs": 36.664099999994505,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -876,8 +876,8 @@
       "switches": [
         {
           "id": "interior-design-001",
-          "elapsedMs": 784.1848999999929,
-          "sceneReadyMs": 358.7133999999787,
+          "elapsedMs": 802.6803000000073,
+          "sceneReadyMs": 374.35959999999614,
           "requests": [
             "/assets/textures/room/interior-design-001-oak.png",
             "/assets/textures/room/warm-plaster.png",
@@ -891,8 +891,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 850.8883999999962,
-          "sceneReadyMs": 419.43189999999595,
+          "elapsedMs": 800.2894000000088,
+          "sceneReadyMs": 397.800900000002,
           "requests": [
             "/assets/textures/room/interior-design-002-leather.png",
             "/assets/textures/room/warm-limestone.png",
@@ -905,8 +905,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 1303.304599999974,
-          "sceneReadyMs": 874.6195999999763,
+          "elapsedMs": 1017.2881000000052,
+          "sceneReadyMs": 582.9206999999878,
           "requests": [
             "/assets/textures/room/warm-terrazzo.png",
             "/assets/images/interior-design-003-art.png",
@@ -918,8 +918,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 453.5938000000024,
-          "sceneReadyMs": 27.685800000006566,
+          "elapsedMs": 453.1775000000198,
+          "sceneReadyMs": 25.183300000004238,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -929,8 +929,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 466.86250000001746,
-          "sceneReadyMs": 36.11019999999553,
+          "elapsedMs": 451.24929999999586,
+          "sceneReadyMs": 26.269100000004983,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -940,8 +940,8 @@
         },
         {
           "id": "interior-design-002",
-          "elapsedMs": 459.89989999998943,
-          "sceneReadyMs": 40.522899999981746,
+          "elapsedMs": 450.85310000000754,
+          "sceneReadyMs": 32.72279999998864,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -951,8 +951,8 @@
         },
         {
           "id": "interior-design-003",
-          "elapsedMs": 451.5830999999889,
-          "sceneReadyMs": 34.710699999995995,
+          "elapsedMs": 452.26559999998426,
+          "sceneReadyMs": 33.713099999993574,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -962,8 +962,8 @@
         },
         {
           "id": "interior-design-original",
-          "elapsedMs": 451.60700000001816,
-          "sceneReadyMs": 33.38310000000638,
+          "elapsedMs": 470.11799999998766,
+          "sceneReadyMs": 36.310599999997066,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"
@@ -973,8 +973,8 @@
         },
         {
           "id": "interior-design-001",
-          "elapsedMs": 453.39240000001155,
-          "sceneReadyMs": 28.867599999997765,
+          "elapsedMs": 456.14949999999953,
+          "sceneReadyMs": 29.758399999991525,
           "requests": [
             "/assets/icons/snooker-favicon.svg",
             "/assets/icons/snooker-favicon.ico"

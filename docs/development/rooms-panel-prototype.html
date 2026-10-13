@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>One more thing... · Panel design preview</title>
+    <title>PLAY TOGETHER · Panel design preview</title>
     <link rel="stylesheet" href="../../src/presentation/styles/typography.css" />
     <link rel="stylesheet" href="../../src/presentation/styles/interior-tokens.css" />
     <link rel="stylesheet" href="../../src/presentation/styles/interior-drawer.css" />
@@ -132,7 +132,7 @@
   </head>
   <body>
     <header class="review-bar" lang="zh-CN">
-      <strong>设计预览 · One more thing...</strong>
+      <strong>设计预览 · PLAY TOGETHER</strong>
       <label
         >面板
         <select id="review-view" aria-label="预览面板">
@@ -176,7 +176,7 @@
       </div>
       <nav class="home-menu" aria-label="Home menu">
         <button type="button" disabled>SINGLE PLAY</button>
-        <button type="button" class="active" id="open-more">One more thing...</button>
+        <button type="button" class="active" id="open-more">PLAY TOGETHER</button>
         <button type="button" disabled>PRACTICE</button>
         <button type="button" disabled>INTERIOR DESIGN</button>
         <button type="button" disabled>ABOUT</button>
@@ -191,7 +191,7 @@
       >
         <header class="interior-drawer-header">
           <p class="eyebrow" id="panel-kicker"></p>
-          <h2 id="panel-title">One more thing...</h2>
+          <h2 id="panel-title">PLAY TOGETHER</h2>
           <button type="button" class="interior-close" id="close-drawer" aria-label="Close panel">
             ×
           </button>
@@ -353,7 +353,7 @@
         body.replaceChildren(); footer.replaceChildren();
         const title = document.querySelector('#panel-title');
         const kicker = document.querySelector('#panel-kicker');
-        const titles = { overview: 'One more thing...', hotseat: 'TWO-PLAYER MATCH', rooms: 'ROOMS', create: 'CREATE ROOM', join: 'JOIN ROOM', lobby: 'ROOM' };
+        const titles = { overview: 'PLAY TOGETHER', hotseat: 'TWO-PLAYER MATCH', rooms: 'ROOMS', create: 'CREATE ROOM', join: 'JOIN ROOM', lobby: 'ROOM' };
         title.textContent = titles[state.view];
         kicker.hidden = ['overview', 'hotseat'].includes(state.view);
         kicker.textContent = kicker.hidden ? '' : 'ONLINE · NEXT PHASE · SIMULATED';

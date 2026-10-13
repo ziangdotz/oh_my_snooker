@@ -15,7 +15,11 @@ export default function createGameScoreboard(Scoreboard) {
       return element;
     }
     resetPlayers(players) {
-      super.resetPlayers(players);
+      super.resetPlayers(players.map(() => ({ displayName: '' })));
+      for (const [index, player] of players.entries()) {
+        this._groups[index].head.value = player.displayName.toUpperCase();
+        this._groups[index].head.e.textContent = this._groups[index].head.value;
+      }
       if (players.length > 1) {
         this._groups[1].e.style.display = 'grid';
       }

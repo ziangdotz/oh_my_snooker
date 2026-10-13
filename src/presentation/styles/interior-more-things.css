@@ -63,6 +63,115 @@
   font-size: 12px;
   letter-spacing: 0.1em;
 }
+.interior-more-option[data-hotseat-setup] {
+  text-align: left;
+  cursor: pointer;
+}
+.interior-more-option[data-hotseat-setup]:hover,
+.interior-more-option[data-hotseat-setup]:focus-visible {
+  border-color: var(--interior-gold);
+  outline: 2px solid var(--interior-gold);
+  outline-offset: 3px;
+}
+.hotseat-setup-form {
+  width: 100%;
+  flex-shrink: 0;
+}
+.hotseat-players {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.hotseat-name-field {
+  display: grid;
+  min-width: 0;
+  gap: 12px;
+  color: var(--interior-muted);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+.hotseat-name-field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--interior-line);
+  border-radius: var(--interior-card-radius);
+  background: var(--interior-surface);
+  color: var(--interior-text);
+  font: 600 18px/1.4 var(--page-font);
+}
+.hotseat-error {
+  min-height: 24px;
+  margin: 16px 0;
+  color: var(--interior-gold);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.hotseat-venues {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.hotseat-venues legend {
+  margin-bottom: 16px;
+  color: var(--interior-muted);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+.hotseat-venue-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.hotseat-venue {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  padding: 8px;
+  gap: 10px;
+  border: 1px solid var(--interior-line);
+  border-radius: var(--interior-card-radius);
+  background: var(--interior-surface);
+  cursor: pointer;
+}
+.hotseat-venue:has(input:checked) {
+  border-color: var(--interior-gold);
+  box-shadow: inset 0 0 0 1px var(--interior-gold);
+}
+.hotseat-venue input {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  accent-color: var(--interior-gold);
+}
+.hotseat-venue img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.hotseat-venue span {
+  padding: 0 2px 4px;
+  color: var(--interior-text);
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.hotseat-start {
+  margin-left: auto;
+}
+.game-ui-results .box-head {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1199px) {
+  .hotseat-venue-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (max-width: 1000px) {
   .interior-more-things {
     --interior-drawer-title-size: 32px;
@@ -77,6 +186,10 @@
   }
 }
 @media (max-width: 480px) {
+  .hotseat-players {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
   .interior-more-things {
     width: calc(100% - 16px);
     --interior-drawer-title-size: 28px;

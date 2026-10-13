@@ -19,9 +19,9 @@ export default function createInteriorSideMenu(dependencies) {
       this._interiorItem = item;
       element.insertBefore(item.element, this._bns[2].element);
       this._bns.splice(2, 0, item);
-      const moreItem = new dependencies.MenuItem(this, 'One more thing...', 4, false);
+      const moreItem = new dependencies.MenuItem(this, 'PLAY TOGETHER', 4, false);
       moreItem.element.classList.add('interior-more-menu-item');
-      moreItem.element.querySelector('.inner').textContent = 'One more thing...';
+      moreItem.element.querySelector('.inner').textContent = 'PLAY TOGETHER';
       moreItem.element.setAttribute('aria-haspopup', 'dialog');
       this._moreItem = moreItem;
       element.insertBefore(moreItem.element, this._bns[1].element);

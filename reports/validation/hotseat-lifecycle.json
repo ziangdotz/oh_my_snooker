@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-13T02:17:50.613Z",
+  "scenarios": [
+    {
+      "browser": "chrome",
+      "target": "source",
+      "design": "interior-design-original",
+      "errors": [],
+      "refreshRestoresSetupWithoutMatch": true,
+      "venueFailureCancelRetry": true,
+      "realShots": [
+        {
+          "owner": 0,
+          "rounds": 1,
+          "shotCounts": [
+            1,
+            0
+          ],
+          "nextPlayer": 1
+        },
+        {
+          "owner": 1,
+          "rounds": 2,
+          "shotCounts": [
+            1,
+            1
+          ],
+          "nextPlayer": 0
+        }
+      ],
+      "heldInputCleared": true,
+      "replayPreservesModelAndBalls": true,
+      "restartOpener": 1,
+      "openingMatchesSinglePlay": true,
+      "playerTwoQuitAndResultRetry": true,
+      "returnToPractice": true,
+      "passed": true
+    },
+    {
+      "browser": "edge",
+      "target": "source",
+      "design": "interior-design-original",
+      "errors": [],
+      "refreshRestoresSetupWithoutMatch": true,
+      "venueFailureCancelRetry": true,
+      "realShots": [
+        {
+          "owner": 0,
+          "rounds": 1,
+          "shotCounts": [
+            1,
+            0
+          ],
+          "nextPlayer": 1
+        },
+        {
+          "owner": 1,
+          "rounds": 2,
+          "shotCounts": [
+            1,
+            1
+          ],
+          "nextPlayer": 0
+        }
+      ],
+      "heldInputCleared": true,
+      "replayPreservesModelAndBalls": true,
+      "restartOpener": 1,
+      "openingMatchesSinglePlay": true,
+      "playerTwoQuitAndResultRetry": true,
+      "returnToPractice": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Rule cases inject contact/pot outcomes into the actual referee, separate from real keyboard/mouse strokes. Results use controlled score fixtures; this does not represent a complete physically played frame.",
+    "Headless software WebGL checks functionality, not hardware latency."
+  ]
+}

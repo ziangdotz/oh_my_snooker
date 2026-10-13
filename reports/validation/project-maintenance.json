@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-12T08:33:48.801Z",
+  "date": "2026-10-13T02:50:45.412Z",
   "passed": true,
-  "sourceManifestSHA256": "a584a1777073246251bf3f19ededb1b46972f81ed74b2397f831c7436f0baf60",
+  "sourceManifestSHA256": "e06a5635fc6841b812fabc7087e6d83639b95adcd869b0060da70420c17ad6b2",
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
   "runtime": {
     "modules": 115,
@@ -10,11 +10,11 @@
     "unreachable": [],
     "passed": true
   },
-  "runtimeSourceFiles": 329,
+  "runtimeSourceFiles": 333,
   "assetReferences": 91,
   "unreferencedAssets": [],
   "docs": {
-    "documents": 36,
+    "documents": 37,
     "links": [
       {
         "from": "README.md",
@@ -44,6 +44,11 @@
       {
         "from": "README.md",
         "to": "docs/architecture/composition-root-assessment.md",
+        "generated": false
+      },
+      {
+        "from": "README.md",
+        "to": "docs/validation/hotseat-match.md",
         "generated": false
       },
       {
@@ -368,6 +373,11 @@
       },
       {
         "from": "docs/development/interior-selection.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/interior-selection.md",
         "to": "reports/validation/drawer-motion.json",
         "generated": false
       },
@@ -448,6 +458,11 @@
       },
       {
         "from": "docs/development/rooms-and-two-player-plan.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-and-two-player-plan.md",
         "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
@@ -524,6 +539,11 @@
       {
         "from": "docs/development/rooms-and-two-player-plan.md",
         "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/development/rooms-panel-design.md",
+        "to": "docs/validation/hotseat-match.md",
         "generated": false
       },
       {
@@ -778,22 +798,17 @@
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "docs/development/rooms-and-two-player-plan.md",
-        "generated": false
-      },
-      {
-        "from": "docs/learning/conversation-handoff.md",
         "to": "docs/development/rooms-panel-prototype.html",
         "generated": false
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "reports/validation/rooms-panel-design.json",
+        "to": "docs/validation/hotseat-match.md",
         "generated": false
       },
       {
         "from": "docs/learning/conversation-handoff.md",
-        "to": "reports/validation/match-opening-scenes.json",
+        "to": "reports/validation/hotseat-match.json",
         "generated": false
       },
       {
@@ -983,6 +998,11 @@
       },
       {
         "from": "docs/learning/guide.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/learning/guide.md",
         "to": "docs/development/rooms-panel-design.md",
         "generated": false
       },
@@ -1043,6 +1063,11 @@
       },
       {
         "from": "docs/validation/README.md",
+        "to": "docs/validation/hotseat-match.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/README.md",
         "to": "reports/validation/npm-migration.json",
         "generated": false
       },
@@ -1089,6 +1114,11 @@
       {
         "from": "docs/validation/README.md",
         "to": "docs/validation/gameplay-motion.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/algorithm-validation.md",
+        "to": "docs/validation/hotseat-match.md",
         "generated": false
       },
       {
@@ -1180,6 +1210,51 @@
         "from": "docs/validation/gameplay-motion.md",
         "to": "reports/validation/gameplay-motion.json",
         "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "src/application/models/hotseat-game-model.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "src/application/controllers/hotseat-match-controller.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "src/presentation/ui/more-things-dialog.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "src/infrastructure/navigation/hotseat-session.js",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "reports/validation/hotseat-lifecycle.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "reports/validation/hotseat-match.json",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "artifacts/testing/hotseat-match",
+        "generated": true
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "docs/development/workflow.md",
+        "generated": false
+      },
+      {
+        "from": "docs/validation/hotseat-match.md",
+        "to": "artifacts/testing/continuous-play/report.json",
+        "generated": true
       },
       {
         "from": "docs/validation/interior-performance.md",

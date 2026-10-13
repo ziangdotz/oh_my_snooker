@@ -1,16 +1,16 @@
 # 房间与双人对战实施方案
 
-状态：2026-10-12，用户确认按当前前端设计保留实施计划，等待后续明确启动；真实同机双人与联网房间尚未实施。用户已明确选择：先完成同机双人，再扩展联网房间。本文件中的网络频率、超时和容量都是待验证的设计值。
+状态：2026-10-13，用户已启动双人开发。同机双人已接入真实游戏，验收入口与证据见[同机开发与验证](../validation/hotseat-match.md)；联网房间继续留在第二阶段。本文件中的网络频率、超时和容量都是待验证的设计值。
 
-2026-10-12 的前端设计见[面板系统设计](rooms-panel-design.md)及[独立交互预览](rooms-panel-prototype.html)。设计稿先明确首版与后续阶段的入口、表单、等待、恢复及结果呈现；当前尚未接入真实同机模型或房间服务。
+2026-10-12 的前端设计见[面板系统设计](rooms-panel-design.md)及[独立交互预览](rooms-panel-prototype.html)。静态预览继续用于设计对照，运行游戏使用真实模型、裁判、相机和22球布局。
 
-后续用户要求启动本功能时，先读取本方案、上述已确认设计及[当前交接](../learning/conversation-handoff.md)，核对届时源码状态，再从同机模型与操作权交接开始，依次接入设置／场馆启动、HUD／结果、重开／回放与四室内专项。沿用已确认交互和视觉，不重新展开设计选型；实现中发现实质冲突时记录具体问题。用户启动前只保留计划与现有设计稿，不主动实施比赛功能、联网服务或部署。
+同机实现沿用已确认交互与视觉；后续开发先核对[当前交接](../learning/conversation-handoff.md)和最新专项记录，不将设计稿的模拟功能作为运行实现。联网服务或部署尚未启动。
 
 ## 首版目标与入口
 
 第一阶段提供同一台电脑、同一套键鼠、同一张球台的双人轮流比赛。两位玩家使用独立姓名、分数、罚分、单杆和击球统计，沿用当前 PCOL 规则、22 球布局与操作方式。四套室内均可使用；继续保留已经完成的相机、走位、击球节奏和像素密度优化。
 
-从现有 One more thing... 抽屉进入 TWO-PLAYER MATCH，在原抽屉内填写两位玩家姓名并开始比赛。默认姓名为 PLAYER 1 / PLAYER 2。ROOMS 在联网阶段再开放。首页、室内选择、About 和紧凑游戏界面继续沿用当前布局。
+从现有 PLAY TOGETHER 抽屉进入 TWO-PLAYER MATCH，在原抽屉内填写两位玩家姓名并开始比赛。默认姓名为 PLAYER 1 / PLAYER 2。ROOMS 在联网阶段再开放。首页、室内选择、About 和紧凑游戏界面继续沿用当前布局。
 
 后续 ROOMS 提供创建房间、输入房间码加入、两席准备、房主开始和联网对局。同机模式始终可以脱离房间服务运行。公网好友房作为后续交付方向，先在本机双浏览器和局域网验证同一套联网实现；公网部署位置及资源在发布阶段确定。
 
@@ -20,10 +20,10 @@
 
 | 已有实现                                                                                                   | 可复用内容与缺口                                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [more-things-dialog.js](../../src/presentation/ui/more-things-dialog.js)                                   | ROOMS / TWO-PLAYER MATCH 当前仅显示 COMING SOON，没有功能事件。                                                                     |
+| [more-things-dialog.js](../../src/presentation/ui/more-things-dialog.js)                                   | 同机设置与真实开始事件已接入，ROOMS 仍为 COMING SOON。                                                                              |
 | [snooker-game-model.js](../../src/application/models/snooker-game-model.js)                                | 已有两人轮换、得分续杆、罚分与重开，但启动只创建本地用户及可选 AI。                                                                 |
 | [player.js](../../src/domain/game/player.js)                                                               | 玩家统计独立；REMOTE 类型仅是枚举，没有远程实现。                                                                                   |
-| [match-controller.js](../../src/application/controllers/match-controller.js)                               | 已有双人 HUD、结果、放球与回放流程；每个 USER 都重置并加入同一个 `_fpc`，不能直接放入两个 USER。REMOTE 会进入未处理分支。           |
+| [match-controller.js](../../src/application/controllers/match-controller.js)                               | 提取玩家控制器创建入口；同机扩展只加入一个共享 `_fpc`。原创建方法内联后仍按冻结AST核对。REMOTE 未实现。                             |
 | [player-turn-control.js](../../src/application/controls/player-turn-control.js)                            | 操作事件、击球与回放关联 `_fpc` 和 `_playerCtls`，换人必须同步这些绑定。                                                            |
 | [game-scoreboard.js](../../src/presentation/ui/game-scoreboard.js)                                         | 已有两人显示、当前玩家标识及状态文本接口。                                                                                          |
 | [match-result-dialog.js](../../src/presentation/ui/match-result-dialog.js)                                 | 已有双方统计，但 YOU WIN / YOU LOSE 以玩家 0 为观看者；同机需要显示具体获胜者。姓名标签使用 innerHTML，新姓名入口需要改为文本呈现。 |
@@ -50,7 +50,7 @@
 - 球未停稳及判罚过程中阻止新击球。暂停、帮助、回放及返回菜单的输入不会穿透到球台。
 - 同机暂停继续暂停本地比赛；回放结束后恢复实际球位、当前席位与操作状态。
 - 结果显示具体玩家获胜或平局，保留现有双方统计；重开清空本局统计并交替开球。
-- 姓名采用文本渲染，限制长度并处理空白与重名；重名可以自动附加席位标识。
+- 姓名采用文本渲染，限制20个Unicode码点；重名按确认设计提示修改。
 
 ### 建议代码落点
 

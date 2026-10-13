@@ -2,13 +2,13 @@
 
 可离线运行的3D斯诺克工程。全部运行源码、资产、模板与第三方依赖位于src；冻结PCOL仅用于完整性校验和行为对照。
 
-当前功能包括 Practice、三档 AI 对战与四套室内。同机双人和联网房间尚未实现，开发顺序已明确为[先同机双人，再扩展联网房间](docs/development/rooms-and-two-player-plan.md)。
+当前功能包括 Practice、三档 AI 对战、同机双人与四套室内。联网房间留在第二阶段，开发顺序见[先同机双人，再扩展联网房间](docs/development/rooms-and-two-player-plan.md)。
 
 ## 启动
 
 推荐Node.js 24，最低22.13。执行 `node src/start.mjs`，打开http://127.0.0.1:5173/；也可双击start.cmd。无需安装工程依赖或先构建。复制整个src后，在其中运行node start.mjs即可；修改源码后刷新页面。
 
-启动页提供Single Play、Practice、Interior Design及About。四套场馆为原始、001、002、003，可通过菜单或?interior=interior-design-001等参数选择。One more thing...为房间及双人对战预留面板，尚未实现这些功能。桌面浏览器需要支持WebGL；D区放母球、W瞄准、滚轮控制力度、Space击球。
+启动页提供Single Play、Practice、Interior Design及About。四套场馆为原始、001、002、003，可通过菜单或?interior=interior-design-001等参数选择。PLAY TOGETHER提供同机双人对战设置，联网房间留在第二阶段。桌面浏览器需要支持WebGL；D区放母球、W瞄准、滚轮控制力度、Space击球。
 
 ## 工程目录
 
@@ -49,6 +49,8 @@
 | npm run measure:interior -- --label current | 实际GPU室内移动测量                |
 
 维护以[架构](docs/architecture/overview.md)、[开发流程](docs/development/workflow.md)、[学习入口](docs/learning/guide.md)及[当前交接](docs/learning/conversation-handoff.md)为入口。组合根与子装配的职责和状态寿命已明确，见[维护边界](docs/architecture/composition-root-assessment.md)。
+
+同机双人入口为PLAY TOGETHER → TWO-PLAYER MATCH，可设置两位姓名和四套室内，轮流使用一套键鼠。实现与验证见[同机双人专项](docs/validation/hotseat-match.md)；联网房间继续留在第二阶段。
 
 源码、冻结基准、测试、文档和验证摘要按[仓库维护约定](docs/development/repository-workflow.md)提交；生成输出、缓存、截图与逐帧测量数据由 .gitignore 排除。冻结资源、第三方依赖和资产保持原始字节。现有署名见[src/third-party/notices.txt](src/third-party/notices.txt)。
 

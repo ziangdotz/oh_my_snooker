@@ -171,7 +171,7 @@ try {
             assert.equal(menu.labels.length, 5);
             assert.deepEqual(
               menu.labels.map((label) => label.text),
-              ['SINGLE PLAY', 'One more thing...', 'PRACTICE', 'INTERIOR DESIGN', 'ABOUT'],
+              ['SINGLE PLAY', 'PLAY TOGETHER', 'PRACTICE', 'INTERIOR DESIGN', 'ABOUT'],
             );
             for (const label of menu.labels) {
               assert.equal(label.size, viewport.width <= 480 ? '22px' : '24px');
@@ -198,13 +198,13 @@ try {
               return panel?.isActive && !panel.needsUpdate && !panel.blocked;
             });
             const morePanel = page.locator('.interior-more-things');
-            assert.equal(await morePanel.locator('h2').textContent(), 'One more thing...');
+            assert.equal(await morePanel.locator('h2').textContent(), 'PLAY TOGETHER');
             assert.deepEqual(
               await morePanel.locator('.interior-more-option h3').allTextContents(),
               ['TWO-PLAYER MATCH', 'ROOMS'],
             );
             assert.deepEqual(await morePanel.locator('.interior-more-status').allTextContents(), [
-              'COMING SOON',
+              'SET UP A MATCH ↗',
               'COMING SOON',
             ]);
             assert.equal(await morePanel.locator('.interior-more-option button').count(), 0);
@@ -231,17 +231,17 @@ try {
                 moreBounds.y + moreBounds.height <= viewport.height + 1,
             );
             const previousUrl = page.url();
-            await morePanel.locator('.interior-more-option').first().click();
+            await morePanel.locator('.interior-more-option').last().click();
             assert.equal(page.url(), previousUrl);
             await morePanel
-              .getByRole('button', { name: 'Close One more thing...', exact: true })
+              .getByRole('button', { name: 'Close PLAY TOGETHER', exact: true })
               .focus();
             await page.keyboard.press('Shift+Tab');
             assert.equal(await page.evaluate(() => document.activeElement.textContent), 'BACK');
             await page.keyboard.press('Tab');
             assert.equal(
               await page.evaluate(() => document.activeElement.getAttribute('aria-label')),
-              'Close One more thing...',
+              'Close PLAY TOGETHER',
             );
             await page.keyboard.press('ArrowDown');
             await page.screenshot({
@@ -256,7 +256,7 @@ try {
               await morePanel.getByRole('button', { name: 'BACK', exact: true }).click();
             } else {
               await morePanel
-                .getByRole('button', { name: 'Close One more thing...', exact: true })
+                .getByRole('button', { name: 'Close PLAY TOGETHER', exact: true })
                 .click();
             }
             await waitForHome(page, 'interior-design-003');

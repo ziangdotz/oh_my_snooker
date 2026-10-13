@@ -19,8 +19,8 @@
 
 docs记录当前机制与维护方法，reports记录验证输入和结果，artifacts/testing保存浏览器状态及截图。优化先使用[实验模板](../templates/experiment.md)，按[后续方法](optimization-roadmap.md)选择独立范围。
 
-后续双人功能的实施提案见[房间与双人对战方案](../development/rooms-and-two-player-plan.md)：先交付同机轮流比赛，再验证权威比赛服务并扩展联网房间；该文档不代表功能已实现。
+双人功能按[房间与双人对战方案](../development/rooms-and-two-player-plan.md)推进：第一阶段已接入真实同机轮流比赛，模型、输入交接、设置与验证入口见[同机双人](../validation/hotseat-match.md)。权威比赛服务与联网房间留在第二阶段。
 
-本轮前端面板的[系统设计](../development/rooms-panel-design.md)与[交互预览](../development/rooms-panel-prototype.html)覆盖 One more thing... 入口、同机设置、后续联网等待及结果状态。预览是独立设计稿，模拟状态不能作为真实双人功能验收。
+本轮前端面板的[系统设计](../development/rooms-panel-design.md)与[交互预览](../development/rooms-panel-prototype.html)覆盖 PLAY TOGETHER 入口、同机设置、后续联网等待及结果状态。预览是独立设计稿，模拟状态不能作为真实双人功能验收。
 
 Git 提交分类、冻结字节保护和维护审计见[仓库维护](../development/repository-workflow.md)。开始新增功能前先完成整体检查，并按专题验证矩阵选择受影响的测试。

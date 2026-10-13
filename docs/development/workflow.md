@@ -24,6 +24,7 @@
 | 游戏内UI专项           | node tests/e2e/game-ui.test.mjs                                                              |
 | PCOL布局实际对照       | node tests/e2e/pcol-ui-layout.test.mjs                                                       |
 | 双人设计稿开局实景采集 | node scripts/capture-match-opening.mjs                                                       |
+| 真实同机双人专项       | node tests/e2e/hotseat-match.test.mjs                                                        |
 | 矢量操作图及高密度显示 | node tests/e2e/ui-vector-artwork.test.mjs                                                    |
 | 加载连续性专项         | node tests/e2e/interior-loading-continuity.test.mjs                                          |
 | 仅复制src独立启动专项  | node tests/e2e/source-standalone.test.mjs                                                    |

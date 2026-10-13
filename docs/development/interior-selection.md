@@ -1,8 +1,8 @@
 # 启动页室内设计选择
 
-启动页按SINGLE PLAY、One more thing...、PRACTICE、INTERIOR DESIGN、ABOUT排列五项入口，自然居中，没有品牌标题、横线或当前场馆小字。菜单、右侧面板与加载/恢复页使用统一的墨绿黑、香槟金及暖白视觉；字号唯一说明见 [页面字体](typography.md)，CSS职责见 [样式组织](styles.md)。
+启动页按SINGLE PLAY、PLAY TOGETHER、PRACTICE、INTERIOR DESIGN、ABOUT排列五项入口，自然居中，没有品牌标题、横线或当前场馆小字。菜单、右侧面板与加载/恢复页使用统一的墨绿黑、香槟金及暖白视觉；字号唯一说明见 [页面字体](typography.md)，CSS职责见 [样式组织](styles.md)。
 
-One more thing...沿用SELECT VENUE的右侧抽屉生命周期，但使用更宽的面板突出双人玩法：桌面宽度60vw，最小480px、最大840px，并限制在视口留白内；480px以下适配可用宽度。TWO-PLAYER MATCH（同机轮流）前置为主卡，ROOMS（创建或加入房间）为次卡，1000px以上并列，以下单列。两项仍标记COMING SOON，当前不提供真实房间创建或双人对局。关闭、BACK、Escape均返回首页并恢复入口焦点。五项菜单支持Enter/Space、上下方向键及Home/End，面板保留Tab焦点循环及减少动画。原单人、练习与About使用原动作标识，新增入口不改变其路由。完整前端规划见[面板设计](rooms-panel-design.md)。
+PLAY TOGETHER沿用SELECT VENUE的右侧抽屉生命周期，但使用更宽的面板突出双人玩法：桌面宽度60vw，最小480px、最大840px，并限制在视口留白内；480px以下适配可用宽度。TWO-PLAYER MATCH（同机轮流）前置为主卡，ROOMS（创建或加入房间）为次卡，1000px以上并列，以下单列。同机主卡现已进入姓名与四室内设置，START MATCH在场馆就绪后启动真实比赛；ROOMS仍标记COMING SOON。设置页BACK返回入口，关闭或Escape返回首页并恢复焦点。五项菜单支持Enter/Space、上下方向键及Home/End，面板保留Tab焦点循环及减少动画。原单人、练习与About使用原动作标识。完整前端规划见[面板设计](rooms-panel-design.md)，运行实现与验收见[同机双人](../validation/hotseat-match.md)。
 
 ABOUT沿用原菜单动作标识和aboutBox注册名，改用同一套右侧抽屉。内容分为游戏简介、纯文字ZIANG ZHANG署名与Babylon.js引擎信息，保持英文、墨绿、香槟金与暖白视觉。引擎链接保留官方网站，在新标签打开并使用noopener/noreferrer；不会在打开面板时发起外部请求。关闭、BACK和Escape恢复ABOUT入口焦点，Tab循环涵盖关闭按钮、可滚动正文、引擎链接和BACK。矮屏正文独立滚动，标题和底部操作固定。专项由interior-ui与drawer-motion覆盖。
 
@@ -16,7 +16,7 @@ ABOUT沿用原菜单动作标识和aboutBox注册名，改用同一套右侧抽�
 
 动画由既有PropertyTween和控制器循环驱动，保留原显示、悬停与选中状态更新，扩展接管整张按钮位移/透明度并清除文字独立位移；颜色由CSS状态类呈现。面板关闭事件在退出动画完成后发出，UI管理器随后解除阻挡，不替换RAF、输入或时钟。
 
-SELECT VENUE、One more thing...与ABOUT继承同一套右侧面板动画：从自身宽度100%的右侧位置滑入并淡入，320ms、Power1.easeOut；退出播放倍率1.25，减少动画时16ms。聚焦使用preventScroll，选中项只滚动面板内列表，防止关闭按钮进入焦点时将隐藏溢出的游戏容器横向滚动，造成跳入或背景移动。逐帧轨迹、外层滚动与窄屏/减少动画证据见[drawer-motion.json](../../reports/validation/drawer-motion.json)。
+SELECT VENUE、PLAY TOGETHER与ABOUT继承同一套右侧面板动画：从自身宽度100%的右侧位置滑入并淡入，320ms、Power1.easeOut；退出播放倍率1.25，减少动画时16ms。聚焦使用preventScroll，选中项只滚动面板内列表，防止关闭按钮进入焦点时将隐藏溢出的游戏容器横向滚动，造成跳入或背景移动。逐帧轨迹、外层滚动与窄屏/减少动画证据见[drawer-motion.json](../../reports/validation/drawer-motion.json)。
 
 ABOUT继承相同的抽屉动画和关闭完成事件，正文及链接的焦点只调整面板内部滚动；菜单控制器在退出完成、阻挡解除后恢复入口焦点。AboutDrawer直接参与当前UI注册，基础菜单算法继续用于结构对照。
 

@@ -1,7 +1,7 @@
 {
   "baselineManifestSHA256": "d0ace5802ce84ee0afea98df0cad204e770aae09376e8354c77adc2234af4681",
   "schemaVersion": 1,
-  "date": "2026-10-11T15:38:28.501Z",
+  "date": "2026-10-13T02:07:24.774Z",
   "method": "Compare operation ASTs after normalizing lexical symbol identity, explicit dependency transport, constructor/factory names and enumerated resource paths. Ignore formatting, retained declaration-kind changes, and associative logical/sequence grouping; arithmetic grouping is preserved.",
   "results": [
     {
@@ -497,7 +497,8 @@
       "source": "src/application/controllers/match-controller.js",
       "kind": "class",
       "passed": true,
-      "normalizedSHA256": "93e1cbf6d3f1c59856b340c2f157c51299ee94e16ba142252b818e8583d6bef6"
+      "normalizedSHA256": "93e1cbf6d3f1c59856b340c2f157c51299ee94e16ba142252b818e8583d6bef6",
+      "inlinedExtraction": "_createPlayerControllers; complete original class compared"
     },
     {
       "source": "src/presentation/ui/toast-dialog.js",
